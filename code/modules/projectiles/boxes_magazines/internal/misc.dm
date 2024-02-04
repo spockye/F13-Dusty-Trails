@@ -28,12 +28,11 @@
 	caliber = "a5mm"
 	max_ammo = 480
 */
-/obj/item/ammo_box/magazine/internal/m2flamethrower
-	name = "m2 flamethower fuel tank"
+/obj/item/ammo_box/magazine/internal/flamethrower
+	name = "flamethower fuel tank"
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
 	caliber = "fuel"
-	max_ammo = 12 //6 bursts, iirc its about the same ammount as the IRL M2
-
+	max_ammo = 99
 
 // BETA STUFF // Obsolete
 /obj/item/ammo_box/magazine/internal/shot/lethal/test
