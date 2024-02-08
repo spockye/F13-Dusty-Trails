@@ -1,5 +1,5 @@
-## Fallout: New Babylon
-Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna, The Wasteland, and Sunset Wasteland.
+## Fallout: Blazing Sun
+Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna, The Wasteland, Sunset Wasteland, and New Babylon.
 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/f13babylon/f13babylon.svg)](http://isitmaintained.com/project/f13babylon/f13babylon "Percentage of issues still open")
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/f13babylon/f13babylon.svg)](http://isitmaintained.com/project/f13babylon/f13babylon "Average time to resolve an issue")
@@ -8,6 +8,10 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 
 [![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
 
+**Fallout: Blazing Sun Information**
+* **Code:** <https://github.com/FO13-Blazing-Sun/Blazing-Sun>
+* **Discord:** <https://discord.gg/fX43s6JNTq>
+* 
 **Fallout: New Babylon Information**
 * **Code:** <https://github.com/f13babylon/f13babylon>
 * **Discord:** <https://discord.gg/UdRnzwrtuT>
