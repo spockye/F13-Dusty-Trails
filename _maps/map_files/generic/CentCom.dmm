@@ -4538,6 +4538,12 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
+"pt" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/centcom/evac)
 "pu" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Equipment Room";
@@ -4699,6 +4705,12 @@
 /obj/effect/landmark/ai_multicam_room,
 /turf/open/ai_visible,
 /area/ai_multicam_room)
+"pY" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "qb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/airlock/centcom{
@@ -6881,6 +6893,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
+"xL" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "xR" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 4
@@ -7630,6 +7648,12 @@
 /obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
+"Dg" = (
+/obj/vertibird,
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/centcom/evac)
 "Dh" = (
 /obj/item/clipboard,
 /obj/item/folder/red,
@@ -8262,6 +8286,15 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/decoration/rag,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
+"Jf" = (
+/obj/machinery/light/floor{
+	light_color = "#6C8DA6";
+	bulb_colour = "#6C8DA6"
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
 /area/centcom/evac)
 "Jg" = (
 /obj/machinery/camera{
@@ -8901,6 +8934,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/four)
+"NL" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "NR" = (
 /obj/machinery/light{
 	dir = 8
@@ -8942,6 +8981,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/four)
+"Oz" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/centcom{
+	name = "Vertibird Hangar"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "OA" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -8967,6 +9016,12 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
+"Pg" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/centcom/evac)
 "Pq" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 1
@@ -9595,6 +9650,10 @@
 /obj/structure/simple_door/metal/ventilation,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
+"Xc" = (
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plasteel,
 /area/centcom/evac)
 "Xz" = (
 /obj/machinery/light/small,
@@ -40206,7 +40265,7 @@ qx
 qx
 qx
 qx
-qx
+Oz
 qx
 qx
 qx
@@ -40456,19 +40515,19 @@ rb
 rb
 rb
 rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
+qx
+Xc
+tU
+tU
+tU
+tU
+tU
+tU
+tU
+tU
+tU
+pY
+qx
 rb
 rb
 aa
@@ -40713,19 +40772,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+Jf
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Jf
+Pg
+qx
 aa
 aa
 aa
@@ -40970,19 +41029,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 aa
@@ -41227,19 +41286,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 aa
@@ -41484,19 +41543,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 aa
@@ -41741,19 +41800,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -41998,19 +42057,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+pt
+CQ
+Dg
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -42255,19 +42314,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -42512,19 +42571,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -42769,19 +42828,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -43026,19 +43085,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Pg
+qx
 aa
 aa
 rb
@@ -43283,19 +43342,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+AW
+Jf
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+CQ
+Jf
+Pg
+qx
 aa
 aa
 aa
@@ -43540,19 +43599,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+xL
+wK
+wK
+wK
+wK
+wK
+wK
+wK
+wK
+wK
+NL
+qx
 aa
 aa
 aa
@@ -43797,19 +43856,19 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
+qx
 aa
 aa
 aa
