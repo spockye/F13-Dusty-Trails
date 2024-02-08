@@ -81,7 +81,7 @@ Moving interrupts
 /obj/item/chisel/proc/set_block(obj/structure/carving_block/B,mob/living/user)
 	prepared_block = B
 	tracked_user = user
-	RegisterSignal(tracked_user,COMSIG_MOVABLE_MOVED,PROC_REF(break_sculpting))
+	RegisterSignal(tracked_user,COMSIG_MOVABLE_MOVED,.proc/break_sculpting)
 	to_chat(user,span_notice("You prepare to work on [B]."))
 
 /obj/item/chisel/dropped(mob/user, silent)
@@ -232,3 +232,4 @@ Moving interrupts
 	materials = list(/datum/material/iron = 75)
 	build_path = /obj/item/chisel
 	category = list("initial","Tools")
+

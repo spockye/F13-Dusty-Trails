@@ -72,8 +72,6 @@
 
 /obj/item/gun/energy/Destroy()
 	STOP_PROCESSING(SSobj, src)
-	if(cell)
-		QDEL_NULL(cell)
 	return ..()
 
 /obj/item/gun/energy/handle_atom_del(atom/A)

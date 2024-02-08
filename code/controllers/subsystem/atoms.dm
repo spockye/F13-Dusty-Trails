@@ -10,7 +10,7 @@ SUBSYSTEM_DEF(atoms)
 
 	var/old_initialized
 
-	var/list/late_loaders = list()
+	var/list/late_loaders
 
 	var/list/BadInitializeCalls = list()
 
