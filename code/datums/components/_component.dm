@@ -223,8 +223,9 @@
 				lookup[sig] -= src
 
 	signal_procs[target] -= sig_type_or_types
-	if(!length(signal_procs[target]))
+	if(!signal_procs[target].len)
 		signal_procs -= target
+
 
 /datum/proc/RemoveComponentByType(path)
 	for (var/datum/component/dc in datum_components)
