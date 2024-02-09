@@ -1,3 +1,4 @@
+/*
 /datum/job/enclave
 	department_flag = ENCLAVE
 	selection_color = "#434944"
@@ -847,3 +848,4 @@
 	R.apply_pref_name("cyborg", M.client)
 	R.gender = NEUTER
 	R.forceMove(pick(GLOB.enclave_borg_start))
+*/
