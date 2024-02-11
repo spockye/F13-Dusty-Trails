@@ -16,7 +16,7 @@
 
 See [this page](https://github.com/f13babylon/f13babylon/issues/new/choose) for a guide and format to issue reports.
 
-## New Babylon Contributions and Modularization
+## Fallout: Blazing Sun Contributions and Modularization
 
 Everything below this New Babylon entry comes from the original /tg/ documentation for contribution and code quality. There are a few key things we ask from our contributors specifically however and I'd like to cover those briefly.
 
