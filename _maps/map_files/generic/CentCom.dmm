@@ -2173,9 +2173,6 @@
 	icon_state = "floorrusty"
 	},
 /area/vertibird_interior/temp)
-"gu" = (
-/turf/closed/indestructible/splashscreen,
-/area/start)
 "gV" = (
 /turf/closed/indestructible/fakedoor{
 	name = "CentCom Warehouse"
@@ -7826,6 +7823,9 @@
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
+"Fc" = (
+/turf/closed/indestructible/splashscreen,
+/area/start)
 "Fd" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/effect/decal/cleanable/dirt,
@@ -53223,21 +53223,21 @@ aa
 "}
 (170,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+Fc
 aa
 aa
 aa
@@ -53480,21 +53480,21 @@ aa
 "}
 (171,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
 aa
 aa
 aa
@@ -53737,21 +53737,21 @@ aa
 "}
 (172,1,1) = {"
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
 aa
 aa
 aa
@@ -54008,7 +54008,7 @@ fX
 fX
 fX
 fX
-gu
+fX
 aa
 aa
 aa

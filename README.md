@@ -11,7 +11,7 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 **Fallout: Blazing Sun Information**
 * **Code:** <https://github.com/FO13-Blazing-Sun/Blazing-Sun>
 * **Discord:** <https://discord.gg/fX43s6JNTq>
-* 
+*
 **Fallout: New Babylon Information**
 * **Code:** <https://github.com/f13babylon/f13babylon>
 * **Discord:** <https://discord.gg/UdRnzwrtuT>
@@ -20,7 +20,7 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 * **Code:** <https://github.com/sunset-wasteland/sunset-wasteland>
 * **Discord:** <https://discord.gg/h5UDdCMHhm>
 
-**The Wasteland Information**  
+**The Wasteland Information**
 * **Code:** <https://github.com/ogrigbe/thewasteland>
 * **Discord:** <https://discord.gg/xCgEwJTppx>
 
@@ -31,7 +31,7 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 * **Code** <https://github.com/DesertRose2/desertrose>
 * **Legacy Code** <https://github.com/judgex/desertrose>
 
-**Citadel Station Information**  
+**Citadel Station Information**
 * **Website:** <http://citadel-station.net>
 * **Code:** <https://github.com/Citadel-Station-13/Citadel-Station-13>
 * **Wiki:** <https://citadel-station.net/wiki/index.php?title=Main_Page>
@@ -39,15 +39,15 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 * **Ban Appeals:** <http://citadel-station.net/forum/forumdisplay.php?fid=8>
 * **Discord:**  <https://discord.gg/E6SQuhz>
 
-**/tg/station Information**  
+**/tg/station Information**
 * **Website:** <https://www.tgstation13.org>
 * **Code:** <https://github.com/tgstation/tgstation>
 * **Wiki:** <https://tgstation13.org/wiki/Main_Page>
 * **Codedocs:** <https://codedocs.tgstation13.org>
 * **/tg/station Discord:** <https://tgstation13.org/phpBB/viewforum.php?f=60>
 * **Coderbus Discord:** <https://discord.gg/Vh8TJp9>
-* ~~**IRC:** <irc://irc.rizon.net/coderbus>~~ (dead)  
-  
+* ~~**IRC:** <irc://irc.rizon.net/coderbus>~~ (dead)
+
 ## DOWNLOADING
 
 There are a number of ways to download the source code. Some are described here, an alternative all-inclusive guide is also located at http://www.tgstation13.org/wiki/Downloading_the_source_code
@@ -70,7 +70,7 @@ BYOND installed. You can get it from https://www.byond.com/download. Once you've
 that, extract the game files to wherever you want to keep them. This is a
 sourcecode-only release, so the next step is to compile the server files.
 ~~Open fortune13.dme by double-clicking it, open the Build menu, and click
-compile.~~ Use the **BUILD.bat** file instead as the reglar DM compiler can't 
+compile.~~ Use the **BUILD.bat** file instead as the reglar DM compiler can't
 handle the codebase properly. This'll take a little while, and if everything's
 done right you'll get a message like this:
 
@@ -136,7 +136,7 @@ the new version.
 ## HOSTING
 
 If you'd like a more robust server hosting option for tgstation and its
-derivatives. Check out /tg/'s server tools suite at 
+derivatives. Check out /tg/'s server tools suite at
 https://github.com/tgstation/tgstation-server
 
 ## MAPS
@@ -153,7 +153,7 @@ If you are hosting a server, and want randomly picked maps to be played each rou
 
 The SQL backend requires a Mariadb server running 10.2 or later. Mysql is not supported but Mariadb is a drop in replacement for mysql. SQL is required for the library, stats tracking, admin notes, and job-only bans, among other features, mostly related to server administration. Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql and /SQL/tgstation_schema_prefix.sql depending on if you want table prefixes.  More detailed setup instructions are located here: https://www.tgstation13.org/wiki/Downloading_the_source_code#Setting_up_the_database
 
-## WEB/CDN RESOURCE DELIVERY 
+## WEB/CDN RESOURCE DELIVERY
 
 Web delivery of game resources makes it quicker for players to join and reduces some of the stress on the game server.
 
@@ -168,7 +168,7 @@ Please see (.github/CONTRIBUTING.md) OR our Discord!
 
 ## DISCLAIMER
 
-Note: This is not associated with Bethesda Softworks in any way! Fallout: New Babylon is neither a trademark, nor a commercial product. 2023 Bethesda Softworks LLC. Trademarks belong to their respective owners.
+Note: This is not associated with Bethesda Softworks in any way! Fallout: Blazing Sun is neither a trademark, nor a commercial product. 2023 Bethesda Softworks LLC. Trademarks belong to their respective owners.
 
 ## LICENSE
 
