@@ -444,20 +444,26 @@ SILICON_MAX_LAW_AMOUNT 12
 
 ## You probably want humans on your space station, but technically speaking you can turn them off without any ill effect
 ROUNDSTART_RACES human
+ROUNDSTART_RACES mammal
+ROUNDSTART_RACES avian
+ROUNDSTART_RACES aquatic
 ROUNDSTART_RACES ghoul
 ROUNDSTART_RACES ghoulanthro
+ROUNDSTART_RACES synth
+ROUNDSTART_RACES synthanthro
+ROUNDSTART_RACES ipc
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
-ROUNDSTART_RACES lizard
-ROUNDSTART_RACES synthliz
-ROUNDSTART_RACES synthanthro
-ROUNDSTART_RACES fly
+#ROUNDSTART_RACES lizard
 #ROUNDSTART_RACES insect
+#ROUNDSTART_RACES arachnid
 #ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
-ROUNDSTART_RACES felinid
-ROUNDSTART_RACES dwarf
+#ROUNDSTART_RACES felinid
+#ROUNDSTART_RACES dwarf
 #ROUNDSTART_RACES ethereal
+#ROUNDSTART_RACES fly
+#ROUNDSTART_RACES synthliz
 
 ## Races that are better than humans in some ways, but worse in others
 #ROUNDSTART_RACES jelly
@@ -469,8 +475,7 @@ ROUNDSTART_RACES dwarf
 #ROUNDSTART_RACES silver
 #ROUNDSTART_RACES uranium
 #ROUNDSTART_RACES abductor
-ROUNDSTART_RACES synth
-ROUNDSTART_RACES podweak
+#ROUNDSTART_RACES podweak
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
 #ROUNDSTART_RACES skeleton
@@ -481,15 +486,9 @@ ROUNDSTART_RACES podweak
 #ROUNDSTART_RACES agent
 
 ## CITADEL Races
-ROUNDSTART_RACES mammal
-ROUNDSTART_RACES avian
-ROUNDSTART_RACES aquatic
-ROUNDSTART_RACES insect
 #ROUNDSTART_RACES xeno
-ROUNDSTART_RACES slimeperson
+#ROUNDSTART_RACES slimeperson
 #ROUNDSTART_RACES guilmon
-ROUNDSTART_RACES ipc
-ROUNDSTART_RACES arachnid
 
 ##-------------------------------------------------------------------------------------------
 
