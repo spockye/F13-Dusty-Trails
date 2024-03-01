@@ -29,12 +29,6 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	outfit = /datum/outfit/job/raider/f13raider
 
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/patron = list(
-			/datum/job/raider/f13raider,
-		),
-		/datum/matchmaking_pref/protegee = list(
-			/datum/job/raider/f13raider,
-		),
 		/datum/matchmaking_pref/outlaw = list(
 			/datum/job/raider/f13raider,
 		),
@@ -276,12 +270,6 @@ Reason this is commented out: Not needed, may re-use loadouts later
 	supervisors = "Your desire to make things interesting and fun"
 
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/patron = list(
-			/datum/job/raider/outsiders,
-		),
-		/datum/matchmaking_pref/protegee = list(
-			/datum/job/raider/outsiders,
-		),
 		/datum/matchmaking_pref/outlaw = list(
 			/datum/job/raider/outsiders,
 		),

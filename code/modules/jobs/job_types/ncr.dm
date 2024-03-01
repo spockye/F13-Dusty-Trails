@@ -237,15 +237,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/ncrltshotgun, // Riot Shotgun
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
-
 /datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, M1911 custom
 	name = "NCR Lieutenant"
 	jobtype	= /datum/job/ncr/f13lieutenant
@@ -315,15 +306,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/sergeantrecon, // Marksman carbine
 		/datum/outfit/loadout/sergeantcqc, // Armor plus browning.
 		)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
 
 /datum/outfit/job/ncr/f13sergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -679,15 +661,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/combatengineersapper, //  Advanced Explosive Crafting
 	)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
-
 /datum/outfit/job/ncr/f13combatengineer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
@@ -757,15 +730,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/ncrdocrifle,	 //Service Carbine + Seeds (2 Broc, 2 Xander)
 	)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
-
 /datum/outfit/job/ncr/f13combatmedic
 	name = "NCR Combat Medic"
 	jobtype = /datum/job/ncr/f13combatmedic
@@ -831,15 +795,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/corporalcqc,					//Trench shotgun
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
-
 /datum/outfit/job/ncr/f13corporal
 	name = "NCR Corporal"
 	jobtype	= /datum/job/ncr/f13corporal
@@ -900,15 +855,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/trooperhunter,		// Hunting Rifle
 	)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-	)
-
 /datum/outfit/job/ncr/f13trooper
 	name = "NCR Trooper"
 	jobtype	= /datum/job/ncr/f13trooper
@@ -963,15 +909,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/conscriptvarmint,		// Varmint rifle, Trench tool, Sandbags
 		/datum/outfit/loadout/conscripthalal,		// M1911, Machete, Big Leagues
-	)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
 	)
 
 /datum/outfit/job/ncr/f13conscript
@@ -1030,15 +967,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/repbrahminbaron, //
 		/datum/outfit/loadout/repambassador, //
 		/datum/outfit/loadout/repexecutive //
-		)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr
-			),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr
-			)
 		)
 
 /datum/outfit/job/ncr/f13representative/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1108,14 +1036,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 840
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-			),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-			),
-		)
 
 /datum/outfit/job/ncr/f13medicalofficer		// M1911 Custom
 	name = "NCR Medical Officer"
@@ -1331,16 +1251,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/seacommand, //45 revolver
 		/datum/outfit/loadout/seastaff, //9mm pistol
 		)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/ncr,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/ncr,
-		),
-		)
-
 
 /datum/outfit/job/ncr/f13drillsergeant
 	name = "NCR Senior Enlisted Advisor"
