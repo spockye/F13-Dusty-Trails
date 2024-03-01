@@ -198,14 +198,6 @@ Mayor
 
 	access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_TOWN_BAR, ACCESS_TOWN, ACCESS_FUSION)
 	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_TOWN_BAR, ACCESS_TOWN)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/bighorn,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/bighorn,
-		),
-	)
 
 
 /datum/outfit/job/bighorn/f13barkeep
@@ -279,14 +271,6 @@ Mayor
 	outfit = /datum/outfit/job/bighorn/f13shopkeeper
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP, ACCESS_FUSION)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN, ACCESS_SHOPKEEP)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/bighorn,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/bighorn,
-		),
-	)
 
 /datum/outfit/job/bighorn/f13shopkeeper
 	name = "Shopkeeper"
@@ -357,14 +341,6 @@ Mayor
 	)
 	access = list(ACCESS_BAR, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/bighorn,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/bighorn,
-		),
-	)
 
 //Wasteland Preacher
 /datum/job/bighorn/f13preacher
@@ -391,22 +367,10 @@ Mayor
 	access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE, ACCESS_FUSION)		//we can expand on this and make alterations as people suggest different loadouts
 	minimal_access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/wasteland/f13wastelander,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/wasteland/f13wastelander,
-		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/wasteland/f13wastelander,
 		),
 		/datum/matchmaking_pref/disciple = list(
-			/datum/job/wasteland/f13wastelander,
-		),
-		/datum/matchmaking_pref/patron = list(
-			/datum/job/wasteland/f13wastelander,
-		),
-		/datum/matchmaking_pref/protegee = list(
 			/datum/job/wasteland/f13wastelander,
 		),
 	)

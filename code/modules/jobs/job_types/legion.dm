@@ -461,15 +461,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/decprimboom, // GL, .44 Revolver, Frag grenades
 	)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-	)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -547,15 +538,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/recdectribal,	// Trail Carbine, Throwing spears, Reinforced machete, Bottlecap mine
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-		)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -627,15 +609,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/vexfox,	//	Type 93, Spatha
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-		)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -704,15 +677,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/expstalker,	// MP5, Smoke Grenade
 		/datum/outfit/loadout/expsniper,	// Explorer Sniper Rifle, .45 Revolver
 	)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-			),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-			),
-		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
@@ -790,15 +754,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/vetrifle,		// Trail gun w/ Scope
 	)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-		)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -874,15 +829,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/primebrave,	// Hunting shotgun, Throwing spears
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-		)
-
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -948,15 +894,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/recruittribal,	// Fireaxe
 		/datum/outfit/loadout/recruitlegion,	// .357 Revolver
 		/datum/outfit/loadout/recruitutah, 		// Double barrel
-		)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1132,15 +1069,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/auxservant,
 		)
 
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion,
-		),
-		)
-
 
 /datum/outfit/job/CaesarsLegion/auxilia
 	name = "Legion Auxilia"
@@ -1253,15 +1181,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/slaveservant,
 		/datum/outfit/loadout/slaveworker,
 		)
-
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion/slave,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion/slave,
-		),
-	)
 
 /datum/outfit/job/CaesarsLegion/slave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

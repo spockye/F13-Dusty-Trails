@@ -125,7 +125,7 @@ SUBSYSTEM_DEF(matchmaking)
 	for(var/mob/living/bachelor as anything in bachelors)
 		if(bachelor == pref_holder || bachelor.stat != CONSCIOUS || !bachelor.mind || !bachelor.client)
 			continue
-		
+
 		var/bachelor_ref = REF(bachelor)
 		if(bachelor_ref in SSmatchmaking.matches_made[candidate_ref])
 			continue // Already matched with this one.
@@ -197,25 +197,6 @@ SUBSYSTEM_DEF(matchmaking)
 /datum/matchmaking_pref/proc/on_match_enacted(mob/living/target)
 	return
 
-
-/datum/matchmaking_pref/friend
-	pref_text = "Friends"
-	target_type = /datum/matchmaking_pref/friend
-	acquire_memory = "You remember a friendly face you haven't seen in a while"
-	span_class = "nicegreen"
-	max_matches = 3
-	log_verb = "revisited fond moments with"
-
-
-/datum/matchmaking_pref/rival
-	pref_text = "Rivals"
-	target_type = /datum/matchmaking_pref/rival
-	acquire_memory = "You remember a good-for-nothing piece of bad memory"
-	span_class = "red"
-	max_matches = 3
-	log_verb = "held mutual contempt for"
-
-
 /datum/matchmaking_pref/mentor
 	pref_text = "Be someone's mentor"
 	target_type = /datum/matchmaking_pref/disciple
@@ -223,30 +204,12 @@ SUBSYSTEM_DEF(matchmaking)
 	span_class = "blue"
 	log_verb = "taught"
 
-
 /datum/matchmaking_pref/disciple
 	pref_text = "Have a mentor"
 	target_type = /datum/matchmaking_pref/mentor
 	acquire_memory = "You remember an old mentor you've lost contact with"
 	span_class = "blue"
 	log_verb = "was mentored by"
-
-
-/datum/matchmaking_pref/patron
-	pref_text = "Be someone's patron"
-	target_type = /datum/matchmaking_pref/protegee
-	acquire_memory = "You remember an old protegee you once took care of. They owe you, and should remember it"
-	span_class = "green"
-	log_verb = "extended their protection to"
-
-
-/datum/matchmaking_pref/protegee
-	pref_text = "Have a patron"
-	target_type = /datum/matchmaking_pref/patron
-	acquire_memory = "You remember an old patron who once helped you set youreself up in life. You owe them one, you'd be in a bad position if not for them"
-	span_class = "green"
-	log_verb = "owed favors to"
-
 
 /datum/matchmaking_pref/outlaw
 	pref_text = "Hunters after you"

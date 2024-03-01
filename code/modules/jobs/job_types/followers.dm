@@ -125,12 +125,6 @@ Practitioner
 
 	outfit = /datum/outfit/job/followers/f13practitioner
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/followers/f13practitioner,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/followers/f13practitioner,
-		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/followers/f13followervolunteer,
 		),
@@ -245,12 +239,6 @@ Follower Volunteer
 	/datum/outfit/loadout/volunteer_student
 	)
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/followers/f13followervolunteer,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/followers/f13followervolunteer,
-		),
 		/datum/matchmaking_pref/disciple = list(
 			/datum/job/followers/f13practitioner,
 		),
