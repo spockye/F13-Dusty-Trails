@@ -441,8 +441,6 @@ Records disabled until a use for them is found
 				dat += "<h2>Eyes</h2>"
 				dat += "<b>Eye Type</b><a style='display:block;width:100px' href='?_src_=prefs;preference=eye_type;task=input'>[eye_type]</a>"
 				if((EYECOLOR in pref_species.species_traits))
-					if(left_eye_color != right_eye_color)
-						split_eye_colors = TRUE
 					dat += "<center><b>Heterochromia</b><a style='display:block;width:100px' href='?_src_=prefs;preference=toggle_split_eyes;task=input'>[split_eye_colors ? "Enabled" : "Disabled"]</a>"
 					if(!split_eye_colors)
 						dat += "<center><span style='border: 1px solid #161616; background-color: #[left_eye_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=eyes;task=input'>Eye Color</a>"
