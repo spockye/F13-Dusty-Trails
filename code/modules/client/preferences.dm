@@ -405,7 +405,7 @@ Records disabled until a use for them is found
 			dat += "<center><h2>Settings</h2>"
 			dat += "<center><b>Advanced Coloring:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=color_scheme;task=input'>[(features["color_scheme"] == ADVANCED_CHARACTER_COLORING) ? "Enabled" : "Disabled"]</a>"
 			dat += "<center><b>Show Mismatched Markings:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=mismatched_markings;task=input'>[show_mismatched_markings ? "Yes" : "No"]</a>"
-			dat += "<b>(Random Body):</b><a style='display:block;width:100px' href='?_src_=prefs;preference=all;task=random'>Randomize!</A>"
+			dat += "<b>Random Body:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=all;task=random'>Randomize!</A>"
 			dat += "<b>Cycle background:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=cycle_bg;task=input'>[bgstate]</a>"
 			dat += APPEARANCE_CATEGORY_COLUMN
 			dat += "<center><h2>Body</h2>"
@@ -439,7 +439,8 @@ Records disabled until a use for them is found
 
 			if(!(NOEYES in pref_species.species_traits))
 				dat += "<h2>Eyes</h2>"
-				dat += "<b>Eye Type</b><a style='display:block;width:100px' href='?_src_=prefs;preference=eye_type;task=input'>[eye_type]</a>"
+				if((EYETYPE in pref_species.species_traits))
+					dat += "<b>Eye Type</b><a style='display:block;width:100px' href='?_src_=prefs;preference=eye_type;task=input'>[eye_type]</a>"
 				if((EYECOLOR in pref_species.species_traits))
 					dat += "<center><b>Heterochromia</b><a style='display:block;width:100px' href='?_src_=prefs;preference=toggle_split_eyes;task=input'>[split_eye_colors ? "Enabled" : "Disabled"]</a>"
 					if(!split_eye_colors)
