@@ -149,6 +149,7 @@
 #define HAS_FLESH	29 /// if we have flesh (can suffer slash/piercing/burn wounds, requires they don't have NOBLOOD)
 #define HAS_BONE	30 /// if we have bones (can suffer bone wounds)
 #define EYETYPE		31
+#define NOSPEECH	32
 
 //organ slots
 #define ORGAN_SLOT_BRAIN "brain"

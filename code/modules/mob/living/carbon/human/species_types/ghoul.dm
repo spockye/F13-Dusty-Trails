@@ -8,7 +8,7 @@
 	id = "ghoul"
 	say_mod = "rasps"
 	limbs_id = "ghoul"
-	species_traits = list(HAIR,FACEHAIR,HAS_BONE,NOBLOOD,EYECOLOR)
+	species_traits = list(HAIR,FACEHAIR,HAS_BONE,NOBLOOD,EYECOLOR,NOSPEECH)
 	mutant_bodyparts = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_body_markings" = list())
 	inherent_traits = list(TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NOBREATH, TRAIT_NOHARDCRIT, TRAIT_NOSOFTCRIT, TRAIT_GHOULMELEE, TRAIT_EASYDISMEMBER, TRAIT_EASYLIMBDISABLE, TRAIT_FAKEDEATH/*, TRAIT_LIMBATTACHMENT*/)
 	inherent_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)

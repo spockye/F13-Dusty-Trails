@@ -454,9 +454,10 @@ Records disabled until a use for them is found
 					dat += "</td>"
 
 			dat += APPEARANCE_CATEGORY_COLUMN
-			dat += "<center><h2>Speech</h2>"
-			dat += "<center><b>Custom Speech Verb:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a>"
-			dat += "<center><b>Custom Tongue:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a>"
+			if(!(NOSPEECH in pref_species.species_traits))
+				dat += "<center><h2>Speech</h2>"
+				dat += "<center><b>Custom Speech Verb:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=speech_verb;task=input'>[custom_speech_verb]</a>"
+				dat += "<center><b>Custom Tongue:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=tongue;task=input'>[custom_tongue]</a>"
 
 			if(HAIR in pref_species.species_traits)
 
