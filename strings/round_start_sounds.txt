@@ -1,8 +1,9 @@
+sound/f13music/jukebox_music/13 Women+Base+1730+5+51.ogg
+sound/f13music/jukebox_music/Ain't I Right+Base+1980+5+35.ogg
+sound/f13music/jukebox_music/Fujiyama Mama+Base+1330+5+37.ogg
 sound/f13music/jukebox_music/Goodbye Maria I'm Off To Korea+Base+1310+5+8.ogg
 sound/f13music/jukebox_music/I'm No Communist+Base+1680+5+41.ogg
 sound/f13music/jukebox_music/Krushchev And The Devil+Base+1050+5+40.ogg
-sound/f13music/jukebox_music/Mack the Knife+Base+1870+5+12.ogg
-sound/f13music/jukebox_music/Radioactive Mama+Base+1050+5+38.ogg
 sound/f13music/jukebox_music/Satellite Baby+Base+1320+5+49.ogg
 sound/f13music/jukebox_music/Trial Of Francis Powers+Base+1570+5+43.ogg
 sound/f13music/jukebox_music/Uranium Rock+Base+1270+5+45.ogg
