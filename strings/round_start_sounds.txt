@@ -1,13 +1,11 @@
-sound/f13/anythinggoes.ogg
-sound/f13/bingobango.ogg
-sound/f13/hanging_me.ogg
-sound/f13/meetagain.ogg
-sound/f13/masters_call.ogg
-sound/f13/mightyman.ogg
-sound/f13/orangesky.ogg
-sound/f13/ragtime_cowboyjoe.ogg
-sound/f13/rainmustfall.ogg
-sound/f13/sixtyminute.ogg
-sound/f13/thats_life.ogg
-sound/f13/waybackhome.ogg
-
+sound/f13music/jukebox_music/Goodbye Maria I'm Off To Korea+Base+1310+5+8.ogg
+sound/f13music/jukebox_music/I'm No Communist+Base+1680+5+41.ogg
+sound/f13music/jukebox_music/Krushchev And The Devil+Base+1050+5+40.ogg
+sound/f13music/jukebox_music/Mack the Knife+Base+1870+5+12.ogg
+sound/f13music/jukebox_music/Radioactive Mama+Base+1050+5+38.ogg
+sound/f13music/jukebox_music/Satellite Baby+Base+1320+5+49.ogg
+sound/f13music/jukebox_music/Trial Of Francis Powers+Base+1570+5+43.ogg
+sound/f13music/jukebox_music/Uranium Rock+Base+1270+5+45.ogg
+sound/f13music/jukebox_music/Watch World War Three+Base+1320+5+50.ogg
+sound/f13music/jukebox_music/West Of The Wall+Base+1520+5+44.ogg
+sound/f13music/jukebox_music/When That Hell Bomb Falls+Base+1560+5+42.ogg
