@@ -383,14 +383,14 @@ Records disabled until a use for them is found
 					dat += "\[...\]"
 				else
 					dat += "[features["flavor_text"]]"
-			else
+			/*else
 				dat += "[TextPreview(features["flavor_text"])]...<BR>"
 			dat += "<center><a href='?_src_=prefs;preference=silicon_flavor_text;task=input'><b>Set Silicon Examine Text</b></a><br>"
 			if(length(features["silicon_flavor_text"]) <= 40)
 				if(!length(features["silicon_flavor_text"]))
 					dat += "\[...\]"
 				else
-					dat += "[features["silicon_flavor_text"]]"
+					dat += "[features["silicon_flavor_text"]]"*/ //DUSTY TRAILS: REENABLE IF SILICONS ADDED.
 			else
 				dat += "[TextPreview(features["silicon_flavor_text"])]...<BR>"
 			dat += "<center><a href='?_src_=prefs;preference=ooc_notes;task=input'><b>Set OOC notes</b></a><br>"
