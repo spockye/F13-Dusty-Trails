@@ -1,4 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "ac" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/advcrafting,
@@ -1008,8 +1015,7 @@
 	dir = 5
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "dq" = (
@@ -1022,6 +1028,13 @@
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
+"ds" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/railing,
+/turf/open/transparent/openspace{
+	name = "air"
+	},
+/area/f13/building)
 "dt" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	dir = 4;
@@ -1121,8 +1134,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "dM" = (
@@ -1153,8 +1165,7 @@
 /area/f13/ncr)
 "dR" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building)
 "dS" = (
@@ -1164,6 +1175,9 @@
 	icon_state = "whitepurplerustychess2"
 	},
 /area/f13/wasteland)
+"dT" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/building)
 "dU" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks,
@@ -1198,8 +1212,7 @@
 "dZ" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "ea" = (
@@ -1464,8 +1477,7 @@
 	pixel_y = 23
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "eS" = (
@@ -1825,8 +1837,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "ga" = (
@@ -1852,8 +1863,7 @@
 "gf" = (
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "gg" = (
@@ -1874,8 +1884,7 @@
 "gk" = (
 /obj/structure/railing,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "gl" = (
@@ -1895,8 +1904,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "gq" = (
@@ -1905,6 +1913,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/building/mall)
+"gr" = (
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/building)
 "gt" = (
 /obj/structure/junk/small,
 /obj/machinery/light{
@@ -2093,8 +2106,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "hd" = (
@@ -2188,8 +2200,7 @@
 /area/f13/wasteland)
 "ht" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "hu" = (
@@ -2214,8 +2225,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "hy" = (
@@ -2315,6 +2325,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/wasteland)
+"hK" = (
+/turf/closed/wall/f13/store,
+/area/f13/building)
 "hL" = (
 /obj/structure/sign/plaques/ncr_lo{
 	pixel_y = -32
@@ -2395,8 +2408,7 @@
 /area/f13/building/mall)
 "hX" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/legion)
 "hY" = (
@@ -2723,8 +2735,7 @@
 /area/f13/brotherhood/leisure)
 "ja" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "jb" = (
@@ -3580,8 +3591,7 @@
 	dir = 5
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building)
 "lR" = (
@@ -3721,8 +3731,7 @@
 /area/f13/building)
 "mo" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "mp" = (
@@ -3967,8 +3976,7 @@
 	dir = 9
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building)
 "ng" = (
@@ -4013,8 +4021,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/legion)
 "nn" = (
@@ -4292,6 +4299,15 @@
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
+"on" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "oo" = (
 /obj/structure/statue/bos/ladyright{
 	desc = "A statue of the Mary Magdalene, arm outstretched beseechingly... For being a biblical figure, she seems to have quite the bust in this rendition.'"
@@ -4412,6 +4428,15 @@
 	icon_state = "purplerustychess"
 	},
 /area/f13/wasteland)
+"oK" = (
+/obj/item/storage/briefcase{
+	pixel_x = 2;
+	pixel_y = -5
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "oL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -5096,8 +5121,7 @@
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "rb" = (
@@ -5168,8 +5192,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "rs" = (
@@ -5196,8 +5219,7 @@
 /area/f13/wasteland)
 "rv" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/ncr)
 "rw" = (
@@ -5783,6 +5805,14 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building/mall)
+"to" = (
+/obj/structure/simple_door/metal/dirtystore{
+	name = "Pioneer Food Inc"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "tp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -6020,8 +6050,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "uk" = (
@@ -6131,8 +6160,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "uK" = (
@@ -6319,8 +6347,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "vq" = (
@@ -6947,8 +6974,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "xG" = (
@@ -7087,8 +7113,7 @@
 	dir = 9
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "yd" = (
@@ -7389,6 +7414,12 @@
 	icon_state = "purplerustycorner"
 	},
 /area/f13/wasteland)
+"yZ" = (
+/obj/structure/window/fulltile/store,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "za" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood,
@@ -7804,6 +7835,9 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/mall)
+"Ax" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/building)
 "Ay" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/plasteel/f13/vault_floor/floor{
@@ -7837,8 +7871,7 @@
 	dir = 10
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "AE" = (
@@ -8439,8 +8472,7 @@
 "CG" = (
 /obj/structure/railing,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "CJ" = (
@@ -8590,8 +8622,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "Dh" = (
@@ -8766,8 +8797,7 @@
 	dir = 6
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "DL" = (
@@ -8983,8 +9013,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Ey" = (
@@ -9040,6 +9069,12 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
+	},
+/area/f13/building)
+"EF" = (
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace{
+	name = "air"
 	},
 /area/f13/building)
 "EG" = (
@@ -9237,6 +9272,11 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/mall)
+"Fo" = (
+/turf/open/indestructible/ground/outside/roof{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/wasteland)
 "Fq" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt{
@@ -9254,8 +9294,7 @@
 "Ft" = (
 /obj/machinery/light/small,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Fu" = (
@@ -9388,8 +9427,7 @@
 /area/f13/wasteland)
 "FW" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/brotherhood)
 "FZ" = (
@@ -9697,8 +9735,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/legion)
 "Hd" = (
@@ -9818,6 +9855,22 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
+"HC" = (
+/obj/structure/filingcabinet{
+	density = 0;
+	pixel_x = 10;
+	pixel_y = 23
+	},
+/obj/structure/filingcabinet{
+	density = 0;
+	pixel_x = -8;
+	pixel_y = 23
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid"
+	},
+/area/f13/building)
 "HE" = (
 /obj/structure/toilet{
 	dir = 4;
@@ -9860,8 +9913,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "HI" = (
@@ -10165,8 +10217,7 @@
 	},
 /obj/structure/railing/corner,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "IR" = (
@@ -10320,6 +10371,18 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/wasteland)
+"Jt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/locker,
+/obj/item/clothing/shoes/f13/fancy{
+	pixel_y = -6
+	},
+/obj/item/clothing/under/suit/charcoal,
+/obj/effect/spawner/lootdrop/f13/medical/rnd/mid,
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Ju" = (
 /obj/structure/curtain{
 	color = "#363636";
@@ -10942,8 +11005,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "LI" = (
@@ -11073,8 +11135,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "Mg" = (
@@ -11321,8 +11382,7 @@
 	color = "#A47449"
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Nb" = (
@@ -11371,8 +11431,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "Nl" = (
@@ -11559,8 +11618,7 @@
 	plane = -14
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "NV" = (
@@ -11620,6 +11678,14 @@
 "Ok" = (
 /turf/open/floor/carpet/green,
 /area/f13/wasteland)
+"Om" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "On" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/wardrobe/chef_wardrobe,
@@ -11715,8 +11781,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "OH" = (
@@ -11901,8 +11966,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "Ps" = (
@@ -12197,8 +12261,7 @@
 "Qw" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/caves)
 "Qy" = (
@@ -12276,6 +12339,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/ncr)
+"QJ" = (
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/building)
 "QK" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
@@ -12328,8 +12396,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland/ncr)
 "QR" = (
@@ -12390,8 +12457,7 @@
 "Ra" = (
 /obj/structure/window/fulltile/house,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Rb" = (
@@ -12526,6 +12592,11 @@
 	icon_state = "purpledirtysolid"
 	},
 /area/f13/wasteland)
+"RB" = (
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "RC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -13146,6 +13217,15 @@
 	color = "#e4e4e4"
 	},
 /area/f13/building/mall)
+"TR" = (
+/obj/structure/sign/poster/prewar/corporate_espionage{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/building)
 "TS" = (
 /obj/machinery/light/broken{
 	dir = 1;
@@ -13162,6 +13242,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
+"TU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "TW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/chair/stool,
@@ -13486,8 +13575,7 @@
 "Vg" = (
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Vh" = (
@@ -13496,8 +13584,7 @@
 	dir = 8
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/wasteland)
 "Vj" = (
@@ -14147,6 +14234,23 @@
 	icon_state = "neutralrusty_chess"
 	},
 /area/f13/wasteland)
+"Xe" = (
+/obj/item/storage/fancy/rollingpapers{
+	pixel_x = 7;
+	pixel_y = -15
+	},
+/obj/structure/table/reinforced,
+/obj/item/flashlight/lamp{
+	pixel_y = 14
+	},
+/obj/item/clothing/mask/cigarette/pipe{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "Xf" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 1
@@ -14570,8 +14674,7 @@
 /area/f13/wasteland)
 "Yp" = (
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/caves)
 "Yq" = (
@@ -14730,8 +14833,7 @@
 "YP" = (
 /obj/structure/lattice,
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/building/mall)
 "YQ" = (
@@ -14755,6 +14857,13 @@
 	icon_state = "neutralrusty_chess"
 	},
 /area/f13/wasteland)
+"YU" = (
+/obj/structure/window/fulltile/store,
+/obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "YV" = (
 /turf/closed/wall,
 /area/f13/building/mall)
@@ -14890,8 +14999,7 @@
 	layer = 2
 	},
 /turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+	name = "air"
 	},
 /area/f13/ncr)
 "Zs" = (
@@ -15788,28 +15896,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
@@ -16290,28 +16398,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -16792,28 +16900,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -17294,28 +17402,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -17795,29 +17903,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+Fo
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -18297,29 +18405,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -18800,28 +18908,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -19301,29 +19409,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -19803,29 +19911,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -20305,29 +20413,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -20807,29 +20915,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -21310,28 +21418,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
 ja
 ja
 ja
@@ -21812,28 +21920,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
 ja
 ja
 ja
@@ -22314,28 +22422,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
 ja
 ja
 ja
@@ -22816,28 +22924,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
 ja
 ja
 ja
@@ -23318,28 +23426,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
 ja
 ja
 ja
@@ -23820,28 +23928,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
 ja
 ja
 ja
@@ -24322,28 +24430,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
 ja
 ja
 ja
@@ -24824,28 +24932,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+bu
+Lt
+Lt
+Lt
+Lt
 ja
 ja
 ja
@@ -25326,28 +25434,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+bu
+Lt
+Lt
+Lt
+Lt
+Lt
+bu
+bu
+bu
+bu
+bu
+Lt
+Lt
 ja
 ja
 ja
@@ -25828,28 +25936,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+Lt
+Lt
+Lt
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -26330,28 +26438,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -26832,28 +26940,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -27334,28 +27442,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -27836,28 +27944,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -28338,28 +28446,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -28840,28 +28948,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -29342,28 +29450,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -29844,28 +29952,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -30346,28 +30454,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -30848,28 +30956,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -31349,29 +31457,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -31851,29 +31959,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -32353,29 +32461,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -32855,29 +32963,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -33357,29 +33465,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -33859,29 +33967,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -34361,29 +34469,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -34863,29 +34971,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -35365,29 +35473,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -35867,29 +35975,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -36369,29 +36477,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -36871,29 +36979,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -37373,29 +37481,29 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
@@ -37875,21 +37983,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -38377,21 +38485,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -38879,21 +38987,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -39381,21 +39489,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -39883,21 +39991,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -40385,21 +40493,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -40887,21 +40995,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -41389,21 +41497,21 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Lt
+Lt
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
@@ -41891,8 +41999,8 @@ ja
 ja
 ja
 ja
-ja
-ja
+Lt
+Lt
 ja
 ja
 ja
@@ -46411,19 +46519,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
@@ -46913,19 +47021,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -47415,19 +47523,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -47917,19 +48025,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -48419,19 +48527,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -48921,19 +49029,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -49423,19 +49531,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -49925,19 +50033,19 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Fo
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -50427,28 +50535,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Ax
+hK
+hK
+dT
+dT
+hK
+dT
+hK
+hK
+hK
+dT
+hK
+dT
+dT
+dT
+hK
+Ax
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
@@ -50929,28 +51037,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+hK
+HC
+RB
+Jt
+yZ
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -51431,28 +51539,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+YU
+TU
+gr
+RB
+yZ
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -51933,28 +52041,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+YU
+Xe
+on
+RB
+yZ
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+hK
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -52435,28 +52543,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+YU
+Rr
+ab
+QJ
+yZ
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -52937,28 +53045,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+dT
+TR
+Om
+oK
+yZ
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -53439,28 +53547,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+dT
+to
+hK
+hK
+hK
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -53941,28 +54049,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+dT
+ds
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dT
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -54443,28 +54551,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+hK
+ds
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+hK
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -54945,28 +55053,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+hK
+EF
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+dR
+hK
+bu
+bu
+bu
+bu
+Fo
 ja
 ja
 ja
@@ -55447,28 +55555,28 @@ ja
 ja
 ja
 ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
-ja
+Ax
+dT
+hK
+hK
+hK
+dT
+dT
+dT
+hK
+hK
+dT
+hK
+hK
+hK
+dT
+dT
+Ax
+Fo
+Fo
+Fo
+Fo
+Fo
 ja
 ja
 ja
