@@ -171,3 +171,18 @@
 	category = list ("Misc. Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
+/datum/design/board/libraryscanner
+	name ="Machine Design (Library Scanner)"
+	desc = "Allows for the construction of a scanner that scans books to add to the archives."
+	id = "libraryscanner"
+	build_path = /obj/item/circuitboard/machine/libraryscanner
+	category = list("Misc. Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
+
+/datum/design/board/bookbinder
+	name ="Machine Design (Book Binder)"
+	desc = "Allows for the construction of a machine that binds paper into books."
+	id = "bookbinder"
+	build_path = /obj/item/circuitboard/machine/bookbinder
+	category = list("Misc. Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ALL

@@ -251,7 +251,7 @@
 	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen."
 	color = "#AAAAAA77" // rgb: 170, 170, 170, 77 (alpha)
 	taste_description = "water"
-	overdose_threshold = 150 //Imagine drinking a gallon of water
+//	overdose_threshold = 150 //Imagine drinking a gallon of water
 	var/cooling_temperature = 2
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of water"
@@ -369,9 +369,9 @@
 		M.ExtinguishMob()
 	..()
 
-/datum/reagent/water/overdose_start(mob/living/M)
-	metabolization_rate = 45 * REAGENTS_METABOLISM
-	. = 1
+// /datum/reagent/water/overdose_start(mob/living/M)
+// 	metabolization_rate = 45 * REAGENTS_METABOLISM
+// 	. = 1
 
 ///For weird backwards situations where water manages to get added to trays nutrients, as opposed to being snowflaked away like usual.
 /datum/reagent/water/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray)
