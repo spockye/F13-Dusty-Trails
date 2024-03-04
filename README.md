@@ -4,10 +4,10 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 * **Code:** <https://github.com/F13-Dusty-Trails/F13-Dusty-Trails>
 * **Discord:** <https://discord.gg/cUdXfTFr5j>
 
-## Contributing
+## Contributing & Reporting Issues
 Please see [the contribution guide.](https://github.com/F13-Dusty-Trails/F13-Dusty-Trails/blob/main/.github/CONTRIBUTING.md)
 
-## Downloading/Hosting/Etc
+## Downloading & Hosting
 Please see [the technical guide](https://github.com/F13-Dusty-Trails/F13-Dusty-Trails/blob/main/.github/TECHNICAL.md) copied from TG.
 
 ## Links
