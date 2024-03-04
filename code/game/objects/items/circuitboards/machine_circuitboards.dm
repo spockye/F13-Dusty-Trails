@@ -1240,3 +1240,13 @@
 		/obj/item/stock_parts/manipulator = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/sheet/glass = 2)
+
+/obj/item/circuitboard/machine/bookbinder
+	name = "Book Binder (Machine Board)"
+	build_path = /obj/machinery/bookbinder
+	req_components = list()
+
+/obj/item/circuitboard/machine/libraryscanner
+	name = "Library Scanner (Machine Board)"
+	build_path = /obj/machinery/libraryscanner
+	req_components = list()
