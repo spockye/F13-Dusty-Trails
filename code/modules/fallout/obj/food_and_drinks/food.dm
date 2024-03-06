@@ -618,6 +618,7 @@
 	filling_color = "#a7510b"
 	tastes = list("oily broth" = 5, "chewy meat" = 1)
 	foodtype = MEAT | LONGPORK
+	trash = /obj/item/reagent_containers/glass/bowl
 
 /obj/item/reagent_containers/food/snacks/soup/mirelurkstew
 	name = "mirelurk stew"
