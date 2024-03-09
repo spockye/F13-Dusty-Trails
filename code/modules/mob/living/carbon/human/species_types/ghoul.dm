@@ -10,7 +10,7 @@
 	limbs_id = "ghoul"
 	species_traits = list(HAIR,FACEHAIR,HAS_BONE,NOBLOOD,EYECOLOR,NOSPEECH)
 	mutant_bodyparts = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_body_markings" = list())
-	inherent_traits = list(TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NOBREATH, TRAIT_NOHARDCRIT, TRAIT_NOSOFTCRIT, TRAIT_GHOULMELEE, TRAIT_EASYDISMEMBER, TRAIT_EASYLIMBDISABLE, TRAIT_FAKEDEATH/*, TRAIT_LIMBATTACHMENT*/)
+	inherent_traits = list(TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NOBREATH, TRAIT_NOHARDCRIT, TRAIT_NOSOFTCRIT, TRAIT_GHOULMELEE, TRAIT_EASYDISMEMBER, TRAIT_EASYLIMBDISABLE, TRAIT_FAKEDEATH)
 	inherent_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
 	punchstunthreshold = 9
 	use_skintones = 0
@@ -20,11 +20,10 @@
 	sharp_edged_mod = 2
 	disliked_food = NONE
 	liked_food = NONE
-	var/info_text = "You are a <span class='danger'>Ghoul.</span>. As pre-war zombified relic, or an unluckily recently made post-necrotic, you cannot bleed, cannot breathe, and heal from radiation. On surface examination, you are indistinguishable from a corpse. \
-					Your <span class='warning'>fragile limbs</span> are a source of vulnerability for you-they are easily dismembered and easily detached, though you can stick them on just as easily. You are incredibly fragile in melee. \
-					<span class='boldwarning'>Stimpaks and powder</span> will have reduced effect on your bizzare biology. Sutures, radiation, and other, non-chemical sources of healing are more effective. All chemicals that do not heal brute or burn work as normal. \
-					<span class='nicegreen'>Radiation heals you slowly.</span> \
-					<span class='warning'>You are terrible at melee</span> and innately slower than humans. You also cannot go into critical condition-ever. You will keep shambling forward until you are <span class='danger'>dead.</span>"
+	var/info_text = "You are a <span class='danger'>Ghoul.</span>. Whether a pre-war zombified relic or a more recent victim, you cannot bleed or breathe, and heal from radiation. On surface examination, you are indistinguishable from a corpse. \
+					Your <span class='warning'>fragile limbs</span> are a source of vulnerability for you - they are easily dismembered and detached. You are weaker and slower in melee than non-ghouls. \
+					<span class='boldwarning'>Stimpaks and powder</span> will have reduced effect on your bizarre biology. Sutures, radiation, and other, non-chemical sources of healing are more effective. All chemicals that do not heal brute or burn work as normal. \
+					<span class='warning'>You also cannot go into critical condition - ever. You will keep shambling forward until you are <span class='danger'>dead!</span>"
 
 //Ghouls have weak limbs.
 /datum/species/ghoul/on_species_gain(mob/living/carbon/C, datum/species/old_species)
@@ -151,10 +150,10 @@
 	default_color = "00FF00"
 	allowed_limb_ids = list("mammal","aquatic","avian", "lizard", "insect", "apid", "moth", "moth_not_greyscale", "fly")
 	species_traits = list(HAIR,FACEHAIR,HAS_BONE, NOBLOOD,MUTCOLORS,EYECOLOR,EYETYPE,LIPS,HORNCOLOR,WINGCOLOR)
-	inherent_traits = list(TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NOBREATH, TRAIT_NOHARDCRIT, TRAIT_NOSOFTCRIT, TRAIT_GHOULMELEE, TRAIT_EASYDISMEMBER, TRAIT_EASYLIMBDISABLE, TRAIT_LIMBATTACHMENT, TRAIT_FAKEDEATH)
+	inherent_traits = list(TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NOBREATH, TRAIT_NOHARDCRIT, TRAIT_NOSOFTCRIT, TRAIT_GHOULMELEE, TRAIT_EASYDISMEMBER, TRAIT_EASYLIMBDISABLE, TRAIT_FAKEDEATH)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BEAST
 	mutant_bodyparts = list("mcolor" = "FFFFFF","mcolor2" = "FFFFFF","mcolor3" = "FFFFFF", "mam_snouts" = "Husky", "mam_tail" = "Husky", "mam_ears" = "Husky", "deco_wings" = "None",
-						"frills" = "None", "spines" = "None", "insect_markings" = "None", "mam_body_markings" = "Husky", "taur" = "None", "horns" = "None", "legs" = "Plantigrade", "meat_type" = "Mammalian")
+						"frills" = "None", "spines" = "None", "ipc_antenna" = "None", "insect_fluff" = "None", "insect_markings" = "None", "mam_body_markings" = "Husky", "taur" = "None", "horns" = "None", "legs" = "Plantigrade", "meat_type" = "Mammalian")
 	attack_verb = "claw"
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'

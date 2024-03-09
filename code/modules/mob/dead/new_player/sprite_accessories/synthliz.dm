@@ -27,6 +27,47 @@
 	icon_state = "synthliz_tertunder"
 	matrixed_sections = MATRIX_ALL
 
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/synthliz_comm
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Synthetic Lizard - Legacy Systems"
+	icon_state = "synthliz_commodore"
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/synthliz_communder
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Synthetic Lizard - Legacy Systems Under"
+	icon_state = "synthliz_commodoreunder"
+	matrixed_sections = MATRIX_ALL
+
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/protogen
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MUTCOLORS
+	name = "Synthetic - Snout"
+	icon_state = "proto_basic"
+
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/protogen_under
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Synthetic - Snout Under"
+	icon_state = "proto_under"
+	matrixed_sections = MATRIX_RED_GREEN
+
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/protogen_tert
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Synthetic - Snout Tertiary"
+	icon_state = "proto_tert"
+	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/snouts/mam_snouts/synthliz/protogen_tertunder
+	icon = 'modular_citadel/icons/mob/synthliz_snouts.dmi'
+	color_src = MATRIXED
+	name = "Synthetic - Snout Tertiary Under"
+	icon_state = "proto_tertunder"
+	matrixed_sections = MATRIX_ALL
+
 //Synth body markings
 /datum/sprite_accessory/mam_body_markings/synthliz/synthliz_pecs
 	icon = 'modular_citadel/icons/mob/synthliz_body_markings.dmi'
@@ -120,6 +161,12 @@
 	name = "Synthetic Lizard - Thick Light"
 	icon_state = "synth_thicklight"
 	matrixed_sections = MATRIX_RED_BLUE
+
+/datum/sprite_accessory/antenna/synthliz/eartenna
+	icon = 'modular_citadel/icons/mob/synthliz_antennas.dmi'
+	color_src = MUTCOLORS
+	name = "Synthetic - Eartennas"
+	icon_state = "synth_eartenna"
 
 //Synth Taurs (Ported from Virgo)
 /datum/sprite_accessory/taur/synthliz
