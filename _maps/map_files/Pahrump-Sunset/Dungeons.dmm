@@ -4472,9 +4472,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
-"dQM" = (
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/tunnel)
 "dQR" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 6
@@ -6089,16 +6086,6 @@
 	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
-"fml" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/tunnel)
 "fmA" = (
 /obj/structure/table/booth,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -11857,16 +11844,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/vault)
-"kcr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/railing{
-	dir = 9
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/tunnel)
 "kcz" = (
 /obj/item/kirbyplants/random,
 /obj/effect/overlay/junk/oldpipes,
@@ -18379,12 +18356,6 @@
 /area/f13/caves)
 "plS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/railing/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 1
-	},
 /obj/item/radio/intercom{
 	frequency = 1361;
 	name = "Vault Intercom";
@@ -18751,10 +18722,6 @@
 /obj/item/grenade/f13/frag,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
-"pDR" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/f13/tunnel)
 "pDW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair{
@@ -22258,13 +22225,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"sBD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/loading_area/red{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/tunnel)
 "sBJ" = (
 /obj/structure/closet/radiation,
 /obj/effect/decal/cleanable/cobweb,
@@ -22707,18 +22667,6 @@
 /obj/item/crafting/abraxo,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
 /area/f13/bunker)
-"sXZ" = (
-/obj/structure/railing{
-	dir = 10
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
-/obj/machinery/computer/shuttle/vaultelevator{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/tunnel)
 "sYi" = (
 /obj/structure/closet/fridge{
 	anchored = 1
@@ -26996,20 +26944,6 @@
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
 /area/f13/vault)
-"wup" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dir = 8;
-	dwidth = 1;
-	height = 3;
-	id = "Vault_Level_1";
-	name = "Ground";
-	roundstart_template = /datum/map_template/shuttle/southbunker/elevator;
-	width = 4
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/tunnel)
 "wux" = (
 /obj/structure/obstacle/barbedwire{
 	dir = 4
@@ -39755,12 +39689,12 @@ hrZ
 hrZ
 hrZ
 hrZ
-vXu
-vXu
-vXu
-vXu
-vXu
-vXu
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
 hrZ
 shC
 aTA
@@ -40012,12 +39946,12 @@ hrZ
 hrZ
 hrZ
 hrZ
-vXu
-dQM
-dQM
-dQM
-dQM
-vXu
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
 hrZ
 shC
 aTA
@@ -40269,12 +40203,12 @@ hrZ
 hrZ
 hrZ
 hrZ
-vXu
-dQM
-dQM
-dQM
-dQM
-vXu
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
 hrZ
 shC
 aTA
@@ -40526,12 +40460,12 @@ hrZ
 hrZ
 hrZ
 hrZ
-vXu
-dQM
-dQM
-wup
-dQM
-vXu
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
+hrZ
 hrZ
 shC
 aTA
@@ -40784,10 +40718,10 @@ hrZ
 hrZ
 asG
 vXu
-sXZ
-pDR
-pDR
-kcr
+vXu
+vXu
+vXu
+vXu
 vXu
 vXu
 shC
@@ -41042,9 +40976,9 @@ asG
 jgN
 ctL
 plS
-sBD
-sBD
-fml
+cTL
+cTL
+cTL
 hsO
 vXu
 shC
