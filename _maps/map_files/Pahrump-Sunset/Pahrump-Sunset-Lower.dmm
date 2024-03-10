@@ -18313,10 +18313,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/reactor)
-"qQZ" = (
-/obj/machinery/autolathe/ammo,
-/turf/closed/mineral/random/high_chance,
-/area/f13/caves)
 "qRf" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -80310,7 +80306,7 @@ aak
 aaa
 aae
 aae
-qQZ
+aak
 aae
 aae
 aae
