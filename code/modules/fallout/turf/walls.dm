@@ -355,6 +355,12 @@
 	..()
 	icon_state = "rock[rand(1,6)]"
 
+/turf/closed/indestructible/f13/harshrock //Just like that one game studio that worked on the original game, or that block in Minecraft!
+	name = "cliff"
+	desc = "Harsh desert rock tempered by the scorching wasteland."
+	icon = 'icons/fallout/turfs/mining.dmi'
+	icon_state = "harshrock"
+
 //Splashscreen
 /*
 /turf/closed/indestructible/f13/splashscreen
