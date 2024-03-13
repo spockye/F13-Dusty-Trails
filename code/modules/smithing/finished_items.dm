@@ -28,7 +28,6 @@
 	if(force < 0)
 		force = 0
 
-
 /obj/item/melee/smith/twohand
 	icon = 'icons/fallout/objects/crafting/blacksmith.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
@@ -245,8 +244,8 @@
 	parry_time_active = 6
 	parry_time_perfect = 3
 	parry_time_perfect_leeway = 2
-	parry_failed_stagger_duration = 6 SECONDS
-	parry_failed_clickcd_duration = 5 SECONDS
+	parry_failed_stagger_duration = 3 SECONDS
+	parry_failed_clickcd_duration = 2 SECONDS
 	parry_time_windup = 0
 	parry_time_spindown = 0
 	parry_imperfect_falloff_percent = 10
@@ -260,8 +259,8 @@
 	parry_time_active = 8
 	parry_time_perfect = 4
 	parry_time_perfect_leeway = 2
-	parry_failed_stagger_duration = 6 SECONDS
-	parry_failed_clickcd_duration = 5 SECONDS
+	parry_failed_stagger_duration = 3 SECONDS
+	parry_failed_clickcd_duration = 2 SECONDS
 	parry_time_windup = 0
 	parry_time_spindown = 0
 	parry_imperfect_falloff_percent = 0
@@ -377,10 +376,10 @@
 /datum/block_parry_data/smithkatana
 	parry_stamina_cost = 24 //dont miss
 	parry_time_active = 6
-	parry_time_perfect = 3
+	parry_time_perfect = 4
 	parry_time_perfect_leeway = 3
-	parry_failed_stagger_duration = 6 SECONDS
-	parry_failed_clickcd_duration = 5 SECONDS
+	parry_failed_stagger_duration = 3 SECONDS
+	parry_failed_clickcd_duration = 2 SECONDS
 	parry_time_windup = 0
 	parry_time_spindown = 0
 	parry_imperfect_falloff_percent = 0
@@ -415,6 +414,25 @@
 		var/obj/structure/simple_door/M = A
 		M.take_damage(20, BRUTE, "melee", 0)
 
+//Has 11 less damage than the heavy axe at the highest level but very high armor pen. Functionally a sidegrade.
+/obj/item/melee/smith/twohand/kanobo
+	name = "kanobo"
+	icon_state = "kanobo_smith"
+	icon_prefix = "kanobo_smith"
+	overlay_state = "shaft_kanobo"
+	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
+	force = 16
+	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
+	slot_flags = ITEM_SLOT_BACK
+	layer = MOB_UPPER_LAYER
+	wound_bonus = 10
+	bare_wound_bonus = 10
+
+/obj/item/melee/smith/twohand/kanobo/attack(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(30, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 // Legion axe
 /obj/item/melee/smith/twohand/axe/warhoned
@@ -479,7 +497,7 @@
 
 
 // Good throwing, thats about it (27, 40)
-/obj/item/melee/smith/javelin 
+/obj/item/melee/smith/javelin
 	name = "javelin"
 	icon_state = "javelin_smith"
 	overlay_state = "shaft_javelin"

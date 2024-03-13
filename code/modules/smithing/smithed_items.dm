@@ -577,7 +577,18 @@
 	finalitem.armour_penetration += quality*0.05
 	..()
 
+/obj/item/smithing/kanobostuds
+	name = "smithed kanobo studs"
+	icon_state = "kanobo_smith"
+	finalitem = /obj/item/melee/smith/twohand/kanobo
 
+/obj/item/smithing/kanobostuds/startfinish()
+	var/obj/item/melee/smith/twohand/kanobo/finalforreal = new /obj/item/melee/smith/twohand/kanobo(src)
+	finalforreal.force += quality*1.5
+	finalforreal.wield_force = finalforreal.force*finalforreal.wielded_mult
+	finalforreal.AddComponent(/datum/component/two_handed, force_unwielded=finalforreal.force, force_wielded=finalforreal.wield_force, icon_wielded="[icon_state]2")
+	finalitem = finalforreal
+	..()
 
 /obj/item/smithing/wakiblade
 	name = "smithed wakizashi blade"
