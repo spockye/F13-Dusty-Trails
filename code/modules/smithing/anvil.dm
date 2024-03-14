@@ -39,6 +39,9 @@
 #define RECIPE_SPATHA "ffdf" // fold fold draw fold
 #define RECIPE_WARHONED "udsp" //upset draw shrink punch
 
+// Armor
+#define RECIPE_ARMOR_LIGHT "uffdp" //upset fold fold draw punch
+
 // Logic of smithing recipes: Tools start with bend and have 3 steps. 1h weapons have 3-4 steps. 2h weapons have 4-5 steps. Bigger bladed stuff start with a fold. Pointy stuff generally start with a draw. Unusual stuff migth start with upset.
 // Point of having a structure is obviously to help remember, not just keeping every recipe as pure rote memory with no internal logic. If you add more stuff and fuck this up and don't read comments I hope you get a prolapse. - Pebbles
 
@@ -85,7 +88,8 @@
 	RECIPE_SPEAR = /obj/item/smithing/spearhead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
-	RECIPE_KANOBO = /obj/item/smithing/kanobostuds
+	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light
 )
 
 /obj/structure/anvil/Initialize(mapload)
@@ -323,11 +327,13 @@
 	RECIPE_LANCE = /obj/item/smithing/lancehead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
-	RECIPE_KANOBO = /obj/item/smithing/kanobostuds
+	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light
 )
 
 
 // Decent makeshift anvil, can break, mobile. Gets the exclusive scrap version of the machete and 2h chopper, as well as the universal tool instead of a crowbar
+// Cannot make armor.
 /obj/structure/anvil/obtainable/table
 	name = "table anvil"
 	desc = "A reinforced table. Usable as an anvil, favored by mad wastelanders and the dregs of the wasteland. Can be loosened from its bolts and moved."

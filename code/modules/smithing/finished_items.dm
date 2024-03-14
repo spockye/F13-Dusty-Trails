@@ -342,6 +342,7 @@
 	overlay_state = "handle_mace"
 	force = 17
 	block_parry_data = /datum/block_parry_data/smith_generic
+	sharpness = SHARP_NONE
 
 /obj/item/melee/smith/mace/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -356,12 +357,13 @@
 //						//
 //////////////////////////
 
+// 35/46.2 Good at parrying and +20% speed, only really excels at highly mobile builds.
 /obj/item/melee/smith/twohand/katana
 	name = "katana"
 	icon_state = "katana_smith"
 	icon_prefix = "katana_smith"
 	overlay_state = "hilt_katana"
-	force = 22
+	force = 20
 	wielded_mult = 1.4
 	item_flags = ITEM_CAN_PARRY | NEEDS_PERMIT
 	block_parry_data = /datum/block_parry_data/smithkatana
@@ -372,6 +374,7 @@
 	block_chance = 30
 	wound_bonus = 35
 	bare_wound_bonus = 40
+	attack_speed = CLICK_CD_MELEE * 0.8
 
 /datum/block_parry_data/smithkatana
 	parry_stamina_cost = 24 //dont miss
@@ -388,7 +391,7 @@
 	parry_efficiency_perfect = 120
 	parry_data = list(PARRY_COUNTERATTACK_MELEE_ATTACK_CHAIN = 1.5)
 
-// Heavy axe, 2H focused chopper 27/54. Can be worn on your back.
+// Heavy axe, 2H focused chopper 33/59.4. Can be worn on your back.
 /obj/item/melee/smith/twohand/axe
 	name = "heavy axe"
 	icon_state = "axe_smith"
@@ -396,12 +399,13 @@
 	overlay_state = "shaft_axe"
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
 	force = 18
-	wielded_mult = 2
+	wielded_mult = 1.8
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	layer = MOB_UPPER_LAYER
 	wound_bonus = 10
 	bare_wound_bonus = 10
+	block_parry_data = /datum/block_parry_data/smith_generic
 
 /obj/item/melee/smith/twohand/axe/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
@@ -414,7 +418,7 @@
 		var/obj/structure/simple_door/M = A
 		M.take_damage(20, BRUTE, "melee", 0)
 
-//Has 11 less damage than the heavy axe at the highest level but very high armor pen. Functionally a sidegrade.
+// 31/49.6 Blunt Thunker. Compared to the heavy axe is has -20% attack speed and 10 less damage but ignors 30 armor.
 /obj/item/melee/smith/twohand/kanobo
 	name = "kanobo"
 	icon_state = "kanobo_smith"
@@ -422,11 +426,15 @@
 	overlay_state = "shaft_kanobo"
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
 	force = 16
+	wielded_mult = 1.8
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	layer = MOB_UPPER_LAYER
 	wound_bonus = 10
 	bare_wound_bonus = 10
+	attack_speed = CLICK_CD_MELEE * 1.2
+	block_parry_data = /datum/block_parry_data/smith_generic
+	sharpness = SHARP_NONE
 
 /obj/item/melee/smith/twohand/kanobo/attack(mob/living/M, mob/living/user)
 	. = ..()

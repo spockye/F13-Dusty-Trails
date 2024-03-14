@@ -310,7 +310,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/bronze
 	value_per_unit = 0.025
-	armor_modifiers = list("melee" = 0.9, "bullet" = 0.9, "laser" = 0, "energy" = 0, "bomb" = 0.9, "bio" = 0.9, "rad" = 0.8, "fire" = 0.5, "acid" = 0.8)
+	armor_modifiers = list("melee" = 0.9, "bullet" = 0.9, "laser" = 0.1, "energy" = 0.1, "bomb" = 0.9, "bio" = 0.9, "rad" = 0.8, "fire" = 0.5, "acid" = 0.8)
 	beauty_modifier = 0.2
 
 /datum/material/paper

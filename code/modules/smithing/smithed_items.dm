@@ -409,6 +409,35 @@
 	..()
 
 
+///////////////////
+// SMITHED ARMOR //
+///////////////////
+/obj/item/smithing/smith_armor_light
+	name = "light weight plates"
+	desc = "Finish by strapping it together with leather."
+	icon_state = "ball"
+	finishingitem = /obj/item/stack/sheet/leather
+	finalitem = /obj/item/clothing/suit/armored/light/smith_armor_light
+
+/obj/item/smithing/smith_armor_light/startfinish()
+	var/obj/item/smithing/smith_armor_light/finalforreal = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
+	finalitem = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
+	finalforreal.force += quality
+	finalforreal.armor.melee += quality*1.5
+	finalforreal.armor.bullet += quality*1.5
+	finalforreal.armor.laser += quality*1.5
+	finalforreal.armor.energy += quality*1.5
+	finalforreal.armor.bomb += quality*1.5
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	finalitem.icon_state = "smithed_armor_light"
+	finalitem.name = "forged light armor"
+	finalitem.desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
+
+
+
 ///////////////
 // NEW STUFF //
 ///////////////
