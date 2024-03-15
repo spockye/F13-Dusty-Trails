@@ -1206,7 +1206,7 @@
 // But worse bomb armor and slows you x3 as much.
 // Other materials barely beat out equal category armor, but have more rounded protection. -Possum
 /obj/item/clothing/suit/armored/light/smith_armor_light
-	name = "forged light armor"
+	name = "light armor" // Name gains quality and material as a prefix.
 	desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
 	icon_state = "smithed_armor_light"
 	item_state = "smithed_armor_light"
@@ -1215,16 +1215,16 @@
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/smith_armor_medium
-	name = "forged medium armor"
+	name = "medium armor"
 	desc = "A set of newly forged medium plates padded with leather to be more comfortable."
 	icon_state = "smithed_armor_medium"
 	item_state = "smithed_armor_medium"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 15, "bio" = 0, "rad" = 30, "fire" = 10, "acid" = 10, "wound" = 20)
-	// Slowdown = 0.01 | Medium armor Standard
+	// Slowdown = 0.10 | Medium armor Standard
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/heavy/smith_armor_heavy
-	name = "forged heavy armor"
+	name = "heavy armor"
 	desc = "A set of newly forged heavy plates padded with leather to be more comfortable."
 	icon_state = "smith_armor_heavy"
 	item_state = "smith_armor_heavy"
