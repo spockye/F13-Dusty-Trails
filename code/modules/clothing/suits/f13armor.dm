@@ -1212,8 +1212,7 @@
 	item_state = "smithed_armor_light"
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 5, "wound" = 10)
 	// Slowdown = 0.05 | Light armor standard.
-	icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
-	icon_state = "smithed_armor_light"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/medium/smith_armor_medium
 	name = "forged medium armor"
@@ -1222,8 +1221,7 @@
 	item_state = "smithed_armor_medium"
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 15, "bio" = 0, "rad" = 30, "fire" = 10, "acid" = 10, "wound" = 20)
 	// Slowdown = 0.01 | Medium armor Standard
-	icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
-	icon_state = "smithed_armor_medium"
+	mutantrace_variation = STYLE_DIGITIGRADE
 
 /obj/item/clothing/suit/armored/heavy/smith_armor_heavy
 	name = "forged heavy armor"
@@ -1232,5 +1230,4 @@
 	item_state = "smith_armor_heavy"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 35, "fire" = 20, "acid" = 20, "wound" = 25)
 	// Slowdown = 0.15 | Heavy armor standard
-	icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
-	icon_state = "smithed_armor_heavy"
+	mutantrace_variation = STYLE_DIGITIGRADE
