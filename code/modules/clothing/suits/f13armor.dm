@@ -1213,6 +1213,7 @@
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 5, "wound" = 10)
 	// Slowdown = 0.05 | Light armor standard.
 	mutantrace_variation = STYLE_DIGITIGRADE
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/suit/armored/medium/smith_armor_medium
 	name = "medium armor"
@@ -1222,6 +1223,7 @@
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 15, "bio" = 0, "rad" = 30, "fire" = 10, "acid" = 10, "wound" = 20)
 	// Slowdown = 0.10 | Medium armor Standard
 	mutantrace_variation = STYLE_DIGITIGRADE
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/suit/armored/heavy/smith_armor_heavy
 	name = "heavy armor"
@@ -1231,3 +1233,4 @@
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 35, "fire" = 20, "acid" = 20, "wound" = 25)
 	// Slowdown = 0.15 | Heavy armor standard
 	mutantrace_variation = STYLE_DIGITIGRADE
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
