@@ -41,6 +41,9 @@
 
 // Armor
 #define RECIPE_ARMOR_LIGHT "uffdp" //upset fold fold draw punch
+#define RECIPE_ARMOR_MEDIUM "uffdfdp" //upset fold fold draw fold draw punch
+#define RECIPE_ARMOR_HEAVY "uffddfbffp" //upset fold fold draw draw fold bend fold fold punch
+
 
 // Logic of smithing recipes: Tools start with bend and have 3 steps. 1h weapons have 3-4 steps. 2h weapons have 4-5 steps. Bigger bladed stuff start with a fold. Pointy stuff generally start with a draw. Unusual stuff migth start with upset.
 // Point of having a structure is obviously to help remember, not just keeping every recipe as pure rote memory with no internal logic. If you add more stuff and fuck this up and don't read comments I hope you get a prolapse. - Pebbles
@@ -89,7 +92,9 @@
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
 	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
-	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
+	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy
 )
 
 /obj/structure/anvil/Initialize(mapload)
@@ -328,7 +333,9 @@
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
 	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
-	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
+	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy
 )
 
 

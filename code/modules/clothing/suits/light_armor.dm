@@ -195,19 +195,6 @@
 	armor = list("melee" = 35, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 25, "bio" = 20, "rad" = 30, "fire" = 30, "acid" = 20, "wound" = 10)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 
-///////////////////
-// SMITHED ARMOR //
-///////////////////
-
-/obj/item/clothing/suit/armored/light/smith_armor_light
-	name = "forged light armor"
-	desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
-	icon_state = "smithed_armor_light"
-	item_state = "smithed_armor_light"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 5, "wound" = 10)
-	mutantrace_variation = STYLE_DIGITIGRADE
-	material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
-
 ////////////////
 // ARMOR KITS //
 ////////////////

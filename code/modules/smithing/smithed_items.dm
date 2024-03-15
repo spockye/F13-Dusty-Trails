@@ -412,22 +412,24 @@
 ///////////////////
 // SMITHED ARMOR //
 ///////////////////
+// Light Armor
 /obj/item/smithing/smith_armor_light
 	name = "light weight plates"
 	desc = "Finish by strapping it together with leather."
-	icon_state = "ball"
+	icon_state = "plates"
 	finishingitem = /obj/item/stack/sheet/leather
 	finalitem = /obj/item/clothing/suit/armored/light/smith_armor_light
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
 
 /obj/item/smithing/smith_armor_light/startfinish()
 	var/obj/item/smithing/smith_armor_light/finalforreal = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
 	finalitem = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
 	finalforreal.force += quality
-	finalforreal.armor.melee += quality*1.5
-	finalforreal.armor.bullet += quality*1.5
-	finalforreal.armor.laser += quality*1.5
-	finalforreal.armor.energy += quality*1.5
-	finalforreal.armor.bomb += quality*1.5
+	finalforreal.armor.melee += quality
+	finalforreal.armor.bullet += quality
+	finalforreal.armor.laser += quality
+	finalforreal.armor.energy += quality
+	finalforreal.armor.bomb += quality
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	finalitem.icon_state = "smithed_armor_light"
@@ -436,7 +438,57 @@
 	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	..()
 
+// Medium Armor
+/obj/item/smithing/smith_armor_medium
+	name = "medium plates"
+	desc = "Finish by strapping it together with leather."
+	icon_state = "plates"
+	finishingitem = /obj/item/stack/sheet/leather
+	finalitem = /obj/item/clothing/suit/armored/medium/smith_armor_medium
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
 
+/obj/item/smithing/smith_armor_medium/startfinish()
+	var/obj/item/smithing/smith_armor_medium/finalforreal = new /obj/item/clothing/suit/armored/medium/smith_armor_medium(src)
+	finalitem = new /obj/item/clothing/suit/armored/light/smith_armor_medium(src)
+	finalforreal.force += quality
+	finalforreal.armor.melee += quality
+	finalforreal.armor.bullet += quality
+	finalforreal.armor.laser += quality
+	finalforreal.armor.energy += quality
+	finalforreal.armor.bomb += quality
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	finalitem.icon_state = "smithed_armor_medium"
+	finalitem.name = "forged medium armor"
+	finalitem.desc = "A set of newly forged medium plates padded with leather to be more comfortable."
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
+
+// Heavy Armor
+/obj/item/smithing/smith_armor_heavy
+	name = "heavy plates"
+	desc = "Finish by strapping it together with leather."
+	icon_state = "plates"
+	finishingitem = /obj/item/stack/sheet/leather
+	finalitem = /obj/item/clothing/suit/armored/light/smith_armor_heavy
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
+
+/obj/item/smithing/smith_armor_heavy/startfinish()
+	var/obj/item/smithing/smith_armor_heavy/finalforreal = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
+	finalitem = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
+	finalforreal.force += quality
+	finalforreal.armor.melee += quality
+	finalforreal.armor.bullet += quality
+	finalforreal.armor.laser += quality
+	finalforreal.armor.energy += quality
+	finalforreal.armor.bomb += quality
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
+	finalitem.icon_state = "smithed_armor_heavy"
+	finalitem.name = "forged heavy armor"
+	finalitem.desc = "A set of newly forged heavy plates padded with leather to be more comfortable."
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
 
 ///////////////
 // NEW STUFF //

@@ -1195,3 +1195,42 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "western_wayfarer_armor_heavy"
 	item_state = "western_wayfarer_armor_heavy"
+
+///////////////////
+// SMITHED ARMOR //
+///////////////////
+//material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS // It does, but this is assigned elsewhere.
+// Quality of smithed armor adds a maximum total of +10 to M/B/L/E/B. Other armor types are not affected.
+// Material type caps at a maximum effective bonus of 1.5 for Saturnite (45 armor).
+// By comparison, masterwork forged heavy armor made of saturnite has better energy resistance than the combat duster.
+// But worse bomb armor and slows you x3 as much.
+// Other materials barely beat out equal category armor, but have more rounded protection. -Possum
+/obj/item/clothing/suit/armored/light/smith_armor_light
+	name = "forged light armor"
+	desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
+	icon_state = "smithed_armor_light"
+	item_state = "smithed_armor_light"
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 5, "wound" = 10)
+	// Slowdown = 0.05 | Light armor standard.
+	icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	icon_state = "smithed_armor_light"
+
+/obj/item/clothing/suit/armored/medium/smith_armor_medium
+	name = "forged medium armor"
+	desc = "A set of newly forged medium plates padded with leather to be more comfortable."
+	icon_state = "smithed_armor_medium"
+	item_state = "smithed_armor_medium"
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 15, "bio" = 0, "rad" = 30, "fire" = 10, "acid" = 10, "wound" = 20)
+	// Slowdown = 0.01 | Medium armor Standard
+	icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	icon_state = "smithed_armor_medium"
+
+/obj/item/clothing/suit/armored/heavy/smith_armor_heavy
+	name = "forged heavy armor"
+	desc = "A set of newly forged heavy plates padded with leather to be more comfortable."
+	icon_state = "smith_armor_heavy"
+	item_state = "smith_armor_heavy"
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 35, "fire" = 20, "acid" = 20, "wound" = 25)
+	// Slowdown = 0.15 | Heavy armor standard
+	icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
+	icon_state = "smithed_armor_heavy"
