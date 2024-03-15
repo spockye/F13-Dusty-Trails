@@ -13494,14 +13494,6 @@
 /mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"nfC" = (
-/obj/machinery/door/password,
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/tunnel)
 "nfL" = (
 /obj/structure/fence/corner/wooden{
 	dir = 1;
@@ -106414,7 +106406,7 @@ vpN
 jRs
 kNO
 whW
-nfC
+htH
 msE
 waR
 rSb

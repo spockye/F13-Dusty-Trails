@@ -197,3 +197,12 @@
 	icon_state = "sign_trade_south"
 	density = TRUE
 	bound_width = 64
+
+// HUGE SIGNS
+
+/obj/structure/sign/badlands
+	name = "badlands sign"
+	desc = "A scaffold crafted from thick wood. A sign above it reads 'BADLANDS'."
+	icon = 'icons/fallout/structures/signs_huge.dmi'
+	icon_state = "badlands"
+	density = FALSE
