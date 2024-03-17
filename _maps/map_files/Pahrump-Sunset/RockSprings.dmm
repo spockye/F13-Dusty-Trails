@@ -297,7 +297,7 @@
 /turf/closed/wall/f13/wood/house{
 	icon_state = "house1"
 	},
-/area/f13/caves)
+/area/f13/building)
 "amp" = (
 /obj/structure/closet/crate/large,
 /obj/item/stack/sheet/metal{
@@ -1089,7 +1089,7 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
 	},
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "bbp" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -2843,7 +2843,7 @@
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "cHb" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/grass/wasteland{
@@ -5147,11 +5147,6 @@
 	},
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland/rocksprings)
-"eQu" = (
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken"
-	},
-/area/f13/wasteland/rocksprings)
 "eRn" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -6509,7 +6504,7 @@
 	color = "#845f58"
 	},
 /turf/closed/wall/f13/wood/house,
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "gld" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -6556,11 +6551,6 @@
 /obj/structure/safe/floor,
 /turf/open/floor/carpet,
 /area/f13/building)
-"gmC" = (
-/turf/open/floor/f13/wood{
-	icon_state = "housewood1-broken"
-	},
-/area/f13/wasteland/rocksprings)
 "gmP" = (
 /obj/effect/decal/marking{
 	icon_state = "dottedverticalcorroded"
@@ -6673,7 +6663,7 @@
 /turf/closed/wall/f13/wood/house{
 	icon_state = "house3"
 	},
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "gsA" = (
 /obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/savannah{
@@ -7744,8 +7734,10 @@
 /obj/item/grenade/f13/dynamite,
 /obj/item/mining_scanner,
 /obj/item/pickaxe,
+/obj/item/clothing/mask/gas/explorer,
+/obj/item/storage/bag/ore,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "hvl" = (
 /obj/structure/car,
 /turf/open/indestructible/ground/outside/road{
@@ -8094,7 +8086,7 @@
 "hQp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "hQu" = (
 /mob/living/simple_animal/hostile/mirelurk/hunter,
 /turf/open/indestructible/ground/inside/mountain,
@@ -16122,7 +16114,7 @@
 /turf/closed/wall/f13/wood/house{
 	icon_state = "house2-broken"
 	},
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "pMj" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -16901,10 +16893,6 @@
 	name = "stone tile"
 	},
 /area/f13/caves)
-"qyX" = (
-/obj/structure/simple_door/wood,
-/turf/open/floor/f13/wood,
-/area/f13/wasteland/rocksprings)
 "qyY" = (
 /obj/item/defibrillator/primitive,
 /obj/effect/decal/cleanable/dirt,
@@ -17474,9 +17462,6 @@
 	},
 /obj/structure/flora/tree/jungle,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland/rocksprings)
-"rcu" = (
-/turf/open/floor/f13/wood,
 /area/f13/wasteland/rocksprings)
 "rcx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24886,7 +24871,7 @@
 /turf/closed/wall/f13/wood/house{
 	icon_state = "house2"
 	},
-/area/f13/wasteland/rocksprings)
+/area/f13/building)
 "yej" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt,
@@ -84377,8 +84362,8 @@ hgP
 hgP
 gkC
 baZ
-rcu
-eQu
+coX
+gJl
 lOb
 duT
 rPW
@@ -84632,7 +84617,7 @@ hgP
 sJx
 hgP
 hgP
-glr
+oXV
 hvg
 hQp
 hQp
@@ -84889,10 +84874,10 @@ hgP
 tWE
 hgP
 wxj
-qyX
+wkl
 hQp
-gmC
-rcu
+hFX
+coX
 xhn
 faW
 iTx
@@ -85146,9 +85131,9 @@ hgP
 sJx
 hgP
 hgP
-glr
+oXV
 cGZ
-rcu
+coX
 hQp
 cCp
 gYt
