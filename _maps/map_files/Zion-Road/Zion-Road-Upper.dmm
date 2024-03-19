@@ -506,7 +506,7 @@
 /area/f13/caves)
 "br" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "bs" = (
 /obj/structure/sign/poster/official/work_for_a_future{
@@ -2536,7 +2536,7 @@
 /area/f13/ncr)
 "gW" = (
 /obj/structure/spacevine,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "gX" = (
 /obj/structure/chair/sofa/right{
@@ -2619,7 +2619,7 @@
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "hj" = (
 /obj/structure/fluff/beach_umbrella,
@@ -2958,7 +2958,7 @@
 /area/f13/wasteland)
 "ib" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/legion)
 "ic" = (
 /obj/structure/rack/shelf_metal,
@@ -3476,7 +3476,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "jy" = (
 /obj/structure/barricade/concrete,
@@ -5609,7 +5609,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "py" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "pz" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -6333,7 +6333,7 @@
 	brightness = 3;
 	dir = 8
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "ru" = (
 /obj/machinery/smartfridge/bottlerack/grownbin,
@@ -7646,7 +7646,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "vc" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/building)
 "vd" = (
 /obj/machinery/photocopier,
@@ -8553,7 +8553,7 @@
 	},
 /area/f13/ncr)
 "xC" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/valley)
 "xD" = (
 /obj/item/cigbutt{
@@ -10194,7 +10194,7 @@
 /turf/open/floor/carpet/purple,
 /area/f13/building)
 "BK" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/legion)
 "BL" = (
 /obj/structure/closet/cabinet,
@@ -10245,7 +10245,7 @@
 	},
 /area/f13/building)
 "BS" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/wasteland)
 "BT" = (
 /turf/open/transparent/openspace,
@@ -10946,7 +10946,7 @@
 	},
 /area/f13/building)
 "DQ" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "DR" = (
 /obj/structure/curtain{
@@ -11786,7 +11786,7 @@
 /area/f13/building)
 "Gp" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "Gq" = (
 /obj/structure/bookcase,
@@ -13602,7 +13602,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "Ld" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/building/mall)
 "Le" = (
 /obj/item/kirbyplants/random,
@@ -15539,7 +15539,7 @@
 "Qu" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "Qv" = (
 /obj/structure/table/wood,
@@ -16450,7 +16450,7 @@
 "SP" = (
 /obj/structure/spacevine,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "SQ" = (
 /obj/effect/decal/cleanable/dirt{

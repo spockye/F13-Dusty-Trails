@@ -1836,7 +1836,7 @@
 /obj/structure/spacevine{
 	icon_state = "Hvy1"
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "aKG" = (
 /obj/structure/flora/tree/wasteland{
@@ -2388,7 +2388,7 @@
 "aUy" = (
 /obj/structure/spacevine,
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "aUG" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -7037,7 +7037,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "cGp" = (
 /obj/structure/chair/office/dark,
@@ -8118,7 +8118,7 @@
 /area/f13/ncr)
 "dbh" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "dbl" = (
 /obj/effect/landmark/start/f13/orator,
@@ -9118,7 +9118,7 @@
 /area/f13/tunnel)
 "duR" = (
 /obj/effect/spawner/structure/window/survival_pod,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "duT" = (
 /obj/structure/wreck/bus/rusted{
@@ -9422,7 +9422,7 @@
 	},
 /area/f13/wasteland)
 "dAI" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/wasteland)
 "dAK" = (
 /obj/machinery/vending/cola/space_up,
@@ -12656,7 +12656,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "ePl" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "ePp" = (
 /obj/structure/car/rubbish2,
@@ -13654,7 +13654,7 @@
 /obj/structure/spacevine{
 	icon_state = "Hvy2"
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "fhf" = (
 /obj/structure/railing{
@@ -15490,7 +15490,7 @@
 /obj/structure/spacevine{
 	layer = 2.9
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "fMi" = (
 /obj/effect/decal/remains/human,
@@ -16860,7 +16860,7 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_light,
 /area/f13/building)
 "gnL" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/legion)
 "gnV" = (
 /obj/structure/flora/grass/wasteland{
@@ -17202,7 +17202,7 @@
 /obj/structure/fence{
 	dir = 8
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "gtg" = (
 /obj/structure/chair/booth{
@@ -23663,7 +23663,7 @@
 /turf/closed/indestructible/opshuttle,
 /area/f13/building)
 "iLA" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "iLM" = (
 /obj/structure/rack,
@@ -25282,7 +25282,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "jqZ" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "jre" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -26239,7 +26239,7 @@
 /area/f13/wasteland)
 "jIA" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "jJa" = (
 /obj/structure/chair/office/dark,
@@ -26379,7 +26379,7 @@
 	},
 /area/f13/wasteland)
 "jLD" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/building)
 "jLF" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
@@ -27020,7 +27020,7 @@
 /area/f13/utah/badlands/valley)
 "jWV" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "jWZ" = (
 /obj/structure/closet/boxinggloves,
@@ -27959,7 +27959,7 @@
 /obj/structure/railing/wood{
 	pixel_y = -12
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "kpI" = (
 /obj/structure/simple_door/metal{
@@ -29447,7 +29447,7 @@
 "kSa" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "kSe" = (
 /obj/structure/fluff/rails{
@@ -32821,7 +32821,7 @@
 /area/f13/legion)
 "mhP" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "mhR" = (
 /obj/effect/turf_decal/stripes/asteroid/line,
@@ -36497,7 +36497,7 @@
 /area/f13/village)
 "nBg" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/legion)
 "nBi" = (
 /obj/structure/table/reinforced{
@@ -37443,7 +37443,7 @@
 /area/f13/building/mall)
 "nUk" = (
 /obj/structure/spacevine,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "nUF" = (
 /obj/effect/decal/cleanable/dirt{
@@ -43536,7 +43536,7 @@
 "qdu" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "qdw" = (
 /obj/structure/disposalpipe/segment{
@@ -45707,7 +45707,7 @@
 /area/f13/utah/badlands/valley)
 "qVp" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "qVE" = (
 /obj/structure/car/rubbish1,
@@ -50432,7 +50432,7 @@
 /obj/structure/spacevine{
 	icon_state = "Light3"
 	},
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "sFP" = (
 /obj/structure/chair/stool/retro/black,
@@ -51774,7 +51774,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side,
 /area/f13/building)
 "tfx" = (
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/brotherhood)
 "tfA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -54265,7 +54265,7 @@
 /area/f13/building/hospital)
 "uaE" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/utah/badlands/caves)
 "uaG" = (
 /obj/structure/barricade/wooden/planks,
@@ -58087,7 +58087,7 @@
 /area/f13/wasteland)
 "vBF" = (
 /obj/structure/barricade/wooden/planks,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "vBM" = (
 /obj/structure/fence/corner/wooden{
@@ -60003,7 +60003,7 @@
 /area/f13/ncr)
 "wos" = (
 /obj/structure/grille,
-/turf/closed/indestructible/f13/harshrock,
+/turf/closed/mineral/indestructible/harsh,
 /area/f13/tunnel)
 "woy" = (
 /obj/effect/decal/cleanable/blood/old{
