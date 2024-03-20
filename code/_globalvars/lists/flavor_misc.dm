@@ -266,9 +266,10 @@ GLOBAL_LIST_INIT(redacted_strings, list("\[REDACTED\]", "\[CLASSIFIED\]", "\[ARC
 
 GLOBAL_LIST_INIT(wisdoms, world.file2list("strings/wisdoms.txt"))
 
-GLOBAL_LIST_INIT(speech_verbs, list("default", "says", "rasps", "states", "bellows", "chirps", "hisses", "mumbles", "squeals"))
+GLOBAL_LIST_INIT(speech_verbs, list("default", "barks", "bellows", "bleats", "chirps", "chitters", "cries", "declares", "drawls", "growls", "hisses", "howls", "meows", "mumbles", "murmurs", "mutters", "rasps", "says", "squeals", "states"))
 
-GLOBAL_LIST_INIT(roundstart_tongues, list("default","human tongue" = /obj/item/organ/tongue/*, "lizard tongue" = /obj/item/organ/tongue/lizard, "skeleton tongue" = /obj/item/organ/tongue/bone, "fly tongue" = /obj/item/organ/tongue/fly, "ipc tongue" = /obj/item/organ/tongue/robot/ipc*/))
+GLOBAL_LIST_INIT(roundstart_tongues, list("default", "tongue" = /obj/item/organ/tongue, "forked tongue" = /obj/item/organ/tongue/lizard, "proboscis" = /obj/item/organ/tongue/fly))
+
 
 //locked parts are those that your picked species requires to have
 //unlocked parts are those that anyone can choose on customisation regardless

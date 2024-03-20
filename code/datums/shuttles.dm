@@ -656,10 +656,6 @@
 	suffix = "elevator"
 	name = "South Bunker Elevator"
 
-/datum/map_template/shuttle/vault113/elevator
-	suffix = "elevator"
-	name = "Vault 113 Elevator"
-
 /datum/map_template/shuttle/mining/elevator
 	suffix = "elevator"
 	name = "Mining Elevator"

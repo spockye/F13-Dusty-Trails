@@ -293,6 +293,11 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
+"ama" = (
+/turf/closed/wall/f13/wood/house{
+	icon_state = "house1"
+	},
+/area/f13/building)
 "amp" = (
 /obj/structure/closet/crate/large,
 /obj/item/stack/sheet/metal{
@@ -1079,6 +1084,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
+"baZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/building)
 "bbp" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -2706,6 +2717,14 @@
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/rocksprings)
+"cCp" = (
+/obj/item/stack/ore/titanium,
+/obj/item/stack/ore/titanium,
+/obj/item/stack/ore/titanium,
+/obj/item/stack/ore/titanium,
+/obj/item/stack/ore/titanium,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "cCx" = (
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/indestructible/ground/outside/dirt/harsh,
@@ -2819,6 +2838,11 @@
 /turf/open/indestructible/ground/outside/savannah{
 	icon_state = "savannah2"
 	},
+/area/f13/building)
+"cGZ" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "cHb" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -3395,6 +3419,10 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/rocksprings)
+"did" = (
+/obj/structure/tires,
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "dio" = (
 /obj/machinery/porta_turret/syndicate/vehicle_turret{
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
@@ -3622,6 +3650,10 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland/rocksprings)
+"duT" = (
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "dvr" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
@@ -4856,6 +4888,12 @@
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
+"eDj" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "eDC" = (
 /obj/structure/fence/corner{
 	dir = 5
@@ -5284,6 +5322,10 @@
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/bar,
 /area/f13/building)
+"faW" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "fba" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -5842,6 +5884,12 @@
 	pixel_y = -9
 	},
 /turf/open/indestructible/ground/outside/dirt/harsh,
+/area/f13/wasteland/rocksprings)
+"fCr" = (
+/obj/structure/car/rubbish1{
+	pixel_y = -12
+	},
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "fCY" = (
 /obj/structure/table/wood,
@@ -6450,6 +6498,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/building)
+"gkC" = (
+/obj/structure/window/fulltile/wood,
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/turf/closed/wall/f13/wood/house,
+/area/f13/building)
 "gld" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -6504,6 +6559,10 @@
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain1"
 	},
+/area/f13/wasteland/rocksprings)
+"gmS" = (
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
 "gnc" = (
 /obj/effect/decal/riverbank{
@@ -6600,6 +6659,11 @@
 /obj/structure/girder/displaced,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
+"gsk" = (
+/turf/closed/wall/f13/wood/house{
+	icon_state = "house3"
+	},
+/area/f13/building)
 "gsA" = (
 /obj/structure/fence/wooden,
 /turf/open/indestructible/ground/outside/savannah{
@@ -7218,6 +7282,10 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland/rocksprings)
+"gYt" = (
+/obj/item/trash/f13/porknbeans,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "gYS" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/toolsbasic,
@@ -7661,6 +7729,15 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/building)
+"hvg" = (
+/obj/structure/shelf_wood,
+/obj/item/grenade/f13/dynamite,
+/obj/item/mining_scanner,
+/obj/item/pickaxe,
+/obj/item/clothing/mask/gas/explorer,
+/obj/item/storage/bag/ore,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "hvl" = (
 /obj/structure/car,
 /turf/open/indestructible/ground/outside/road{
@@ -8004,6 +8081,10 @@
 /obj/machinery/mineral/wasteland_vendor/crafting{
 	icon_state = "parts_idle"
 	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"hQp" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "hQu" = (
@@ -9048,6 +9129,11 @@
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
+"iTx" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "iUa" = (
 /obj/structure/table,
 /obj/machinery/processor/chopping_block,
@@ -9775,6 +9861,11 @@
 "jLa" = (
 /turf/closed/wall/f13/sunset/brick_small_dark,
 /area/f13/legion)
+"jLb" = (
+/obj/structure/bed/old,
+/obj/effect/spawner/lootdrop/weapons/hunting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "jLk" = (
 /obj/effect/overlay/turfs/sidewalk{
 	dir = 4
@@ -14748,6 +14839,14 @@
 /obj/structure/stacklifter,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/rocksprings)
+"oAD" = (
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "oAV" = (
 /obj/effect/overlay/turfs/sidewalk{
 	dir = 8
@@ -16011,6 +16110,11 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland/rocksprings)
+"pLz" = (
+/turf/closed/wall/f13/wood/house{
+	icon_state = "house2-broken"
+	},
+/area/f13/building)
 "pMj" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0"
@@ -18227,6 +18331,10 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/building)
+"rOZ" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "rPW" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
@@ -20443,6 +20551,10 @@
 	icon_state = "greenrustychess"
 	},
 /area/f13/building)
+"tWE" = (
+/obj/structure/fence/door,
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "tWN" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_8";
@@ -22654,6 +22766,12 @@
 	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland/rocksprings)
+"waX" = (
+/obj/structure/fence/corner{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "wbz" = (
 /turf/open/floor/plasteel/f13{
 	dir = 4;
@@ -23090,6 +23208,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/caves)
+"wxj" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/indestructible/ground/outside/desert/harsh,
+/area/f13/wasteland/rocksprings)
 "wxt" = (
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -24745,6 +24867,11 @@
 	icon_state = "horizontalinnermain2left"
 	},
 /area/f13/wasteland/rocksprings)
+"yeg" = (
+/turf/closed/wall/f13/wood/house{
+	icon_state = "house2"
+	},
+/area/f13/building)
 "yej" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/dirt,
@@ -83716,11 +83843,11 @@ hgP
 hgP
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
+waX
+eEc
+eEc
+eEc
+eEc
 rPW
 rPW
 rPW
@@ -83973,13 +84100,13 @@ hgP
 hgP
 hgP
 hgP
+sJx
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-rPW
+yeg
+gsk
+gsk
+ama
 rPW
 rPW
 rPW
@@ -84230,15 +84357,15 @@ hgP
 hgP
 hgP
 hgP
+sJx
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
-rPW
-rPW
+gkC
+baZ
+coX
+gJl
+lOb
+duT
 rPW
 rPW
 rPW
@@ -84487,16 +84614,16 @@ hgP
 hgP
 hgP
 hgP
+sJx
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
-rPW
-rPW
-rPW
+oXV
+hvg
+hQp
+hQp
+lOb
+lOb
+oAD
 rPW
 rPW
 rPW
@@ -84744,17 +84871,17 @@ hgP
 nzH
 hgP
 hgP
+tWE
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
-hgP
-rPW
-rPW
-rPW
-rPW
+wxj
+wkl
+hQp
+hFX
+coX
+xhn
+faW
+iTx
+jLb
 rPW
 rPW
 rPW
@@ -85001,15 +85128,15 @@ hgP
 hgP
 hgP
 hgP
+sJx
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
-rPW
-rPW
+oXV
+cGZ
+coX
+hQp
+cCp
+gYt
 rPW
 rPW
 rPW
@@ -85258,13 +85385,13 @@ hgP
 hgP
 hgP
 hgP
+sJx
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-rPW
+pLz
+gsk
+gsk
+ama
 rPW
 rPW
 rPW
@@ -85514,13 +85641,13 @@ hgP
 hgP
 hgP
 hgP
+fkx
+sJx
+hgP
+mWW
 hgP
 hgP
-hgP
-hgP
-hgP
-hgP
-hgP
+gmS
 rPW
 rPW
 rPW
@@ -85772,9 +85899,9 @@ hgP
 hgP
 hgP
 hgP
+fCr
 hgP
-hgP
-hgP
+rOZ
 hgP
 hgP
 rPW
@@ -86031,9 +86158,9 @@ hgP
 hgP
 hgP
 hgP
+eDj
 hgP
-hgP
-hgP
+did
 rPW
 rPW
 rPW
@@ -86286,8 +86413,8 @@ hgP
 hgP
 hgP
 hgP
-hgP
-hgP
+sJx
+did
 hgP
 hgP
 rPW
@@ -86543,7 +86670,7 @@ hgP
 hgP
 rTl
 hgP
-hgP
+sJx
 hgP
 hgP
 rPW
