@@ -1572,6 +1572,11 @@
 /obj/item/warpaint_bowl,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"bpF" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "bqf" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -4520,6 +4525,10 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"dYd" = (
+/obj/structure/stairs/north,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "dYG" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13/wood,
@@ -4666,6 +4675,13 @@
 "egv" = (
 /obj/structure/sign/directions/engineering,
 /turf/closed/wall/r_wall/rust,
+/area/f13/tunnel)
+"ehk" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 1;
+	pixel_x = 7
+	},
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "eho" = (
 /obj/structure/pondlily_big,
@@ -5642,6 +5658,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"eUz" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "eUL" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress3"
@@ -5977,6 +5997,10 @@
 "fhH" = (
 /turf/closed/indestructible/vaultdoor,
 /area/f13/caves)
+"fhR" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "fic" = (
 /mob/living/simple_animal/hostile/renegade,
 /turf/open/indestructible/ground/inside/mountain,
@@ -8485,6 +8509,10 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "hydrofloor"
 	},
+/area/f13/tunnel)
+"hox" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "hoy" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -12347,6 +12375,16 @@
 	icon_state = "dirt"
 	},
 /area/f13/caves)
+"kHY" = (
+/obj/machinery/porta_turret/syndicate,
+/obj/machinery/light{
+	dir = 1;
+	flickering = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
+/area/f13/tunnel)
 "kIx" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp{
@@ -14190,6 +14228,12 @@
 /obj/effect/spawner/lootdrop/f13/advcrafting,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
+/area/f13/tunnel)
+"mlq" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess"
+	},
 /area/f13/tunnel)
 "mlJ" = (
 /obj/structure/table,
@@ -16358,6 +16402,10 @@
 "nWu" = (
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
+"nWM" = (
+/obj/structure/falsewall/rust,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "nXC" = (
 /obj/structure/simple_door/house{
 	icon_state = "interior"
@@ -19337,6 +19385,14 @@
 "qyU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
+/area/f13/tunnel)
+"qyY" = (
+/obj/effect/decal/remains/robot,
+/obj/machinery/light{
+	dir = 1;
+	flickering = 1
+	},
+/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "qzW" = (
 /obj/structure/lattice,
@@ -23461,6 +23517,11 @@
 /mob/living/simple_animal/hostile/wolf/playable/shepherd,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"ubj" = (
+/obj/effect/decal/remains/deadeyebot,
+/obj/machinery/light,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "ubw" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/f13{
@@ -24294,6 +24355,10 @@
 /obj/item/storage/firstaid/ancient,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"uPJ" = (
+/obj/structure/obstacle/barbedwire/end,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "uPU" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -25064,6 +25129,11 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"vxr" = (
+/obj/machinery/porta_turret/syndicate,
+/obj/machinery/light,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "vym" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -25687,6 +25757,12 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/caves)
+"weJ" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "weK" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -26431,6 +26507,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"wEw" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "wEy" = (
 /obj/structure/simple_door/bunker,
 /turf/open/indestructible/ground/inside/subway,
@@ -26526,6 +26606,10 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/caves)
+"wIy" = (
+/mob/living/simple_animal/hostile/handy/liberator/yellow,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "wIO" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -27097,6 +27181,10 @@
 	icon_state = "bar";
 	color = "#d9c4b9"
 	},
+/area/f13/tunnel)
+"xlL" = (
+/obj/structure/sign/poster/contraband/communist_state,
+/turf/closed/wall/rust,
 /area/f13/tunnel)
 "xlR" = (
 /obj/structure/barricade/wooden,
@@ -32003,15 +32091,15 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
 agV
 uuH
 uuH
@@ -32505,15 +32593,15 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+qyY
+xEy
+uoC
+xEy
+uoC
+xEy
+fhR
+vxr
 agV
 uuH
 uuH
@@ -33003,19 +33091,19 @@ bly
 bly
 bly
 bly
-bly
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+jiC
+jiC
+jiC
+jiC
+fhR
+fhR
+xEy
+xEy
+ruw
+xEy
+mlq
+mlq
 agV
 uuH
 uuH
@@ -33505,19 +33593,19 @@ vpN
 vpN
 vpN
 vpN
-vpN
-bly
-bly
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+dYd
+wmN
+xEy
+xEy
+wmN
+xEy
+ruw
+ruw
+uoC
+xEy
+xEy
+xEy
 agV
 uuH
 uuH
@@ -34007,21 +34095,21 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-bly
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-agV
-uuH
+jiC
+dYd
+wmN
+uoC
+xEy
+wmN
+uoC
+uoC
+ruw
+xEy
+xEy
+ruw
+uoC
+nWM
+eUz
 uuH
 uuH
 agV
@@ -34509,20 +34597,20 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-bly
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-agV
+jiC
+dYd
+xEy
+uoC
+xEy
+xEy
+xEy
+wmN
+xEy
+ruw
+xEy
+wmN
+uoC
+xlL
 uuH
 uuH
 uuH
@@ -35011,22 +35099,22 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+jiC
+jiC
+jiC
+jiC
+fhR
+fhR
+xEy
+uoC
+xEy
+xEy
+fhR
+xEy
 agV
 uuH
-uuH
+weJ
 uuH
 agV
 vpN
@@ -35517,15 +35605,15 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+kHY
+fhR
+ruw
+wmN
+xEy
+xEy
+fhR
+ubj
 agV
 uuH
 uuH
@@ -36019,15 +36107,15 @@ bly
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
+jiC
 agV
 uuH
 uuH
@@ -37536,7 +37624,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+wIy
 uuH
 agV
 vpN
@@ -38037,9 +38125,9 @@ vpN
 vpN
 vpN
 agV
-uuH
-uuH
-uuH
+bpF
+bpF
+hox
 agV
 vpN
 vpN
@@ -39042,7 +39130,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+weJ
 uuH
 agV
 vpN
@@ -43057,9 +43145,9 @@ vpN
 vpN
 vpN
 agV
-uuH
-uuH
-uuH
+hBX
+wIy
+hBX
 agV
 vpN
 vpN
@@ -43559,9 +43647,9 @@ vpN
 vpN
 vpN
 agV
-uuH
-uuH
-uuH
+hBX
+hBX
+weJ
 agV
 vpN
 vpN
@@ -47578,7 +47666,7 @@ agV
 uuH
 uuH
 uuH
-agV
+xlL
 vpN
 vpN
 vpN
@@ -48078,7 +48166,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+weJ
 uuH
 agV
 vpN
@@ -49082,7 +49170,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+wIy
 uuH
 agV
 vpN
@@ -49584,7 +49672,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+wIy
 uuH
 agV
 vpN
@@ -50587,8 +50675,8 @@ vpN
 vpN
 vpN
 agV
-uuH
-uuH
+bpF
+bpF
 uuH
 agV
 vpN
@@ -51591,7 +51679,7 @@ vpN
 vpN
 vpN
 agV
-uuH
+weJ
 uuH
 uuH
 agV
@@ -52094,7 +52182,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+wIy
 uuH
 agV
 vpN
@@ -53098,8 +53186,8 @@ vpN
 vpN
 agV
 uuH
-uuH
-uuH
+bpF
+bpF
 agV
 vpN
 vpN
@@ -53600,7 +53688,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+hox
 uuH
 agV
 vpN
@@ -54102,7 +54190,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+wIy
 uuH
 agV
 vpN
@@ -55607,8 +55695,8 @@ vpN
 vpN
 vpN
 agV
-uuH
-uuH
+bpF
+bpF
 uuH
 agV
 vpN
@@ -56612,7 +56700,7 @@ vpN
 vpN
 agV
 uuH
-uuH
+weJ
 uuH
 agV
 vpN
@@ -57112,9 +57200,9 @@ vpN
 vpN
 vpN
 vpN
-agV
+xlL
 uuH
-uuH
+weJ
 uuH
 agV
 vpN
@@ -57604,6 +57692,7 @@ agV
 agV
 agV
 agV
+xlL
 agV
 agV
 agV
@@ -57614,10 +57703,9 @@ agV
 agV
 agV
 agV
-agV
-uuH
-uuH
-uuH
+uPJ
+psP
+ehk
 agV
 vpN
 vpN
@@ -58104,7 +58192,7 @@ woa
 woa
 wAv
 uuH
-uuH
+wEw
 uuH
 uuH
 uuH
@@ -58606,6 +58694,7 @@ wAv
 wAv
 wAv
 uuH
+vtl
 uuH
 uuH
 uuH
@@ -58613,8 +58702,7 @@ uuH
 uuH
 uuH
 uuH
-uuH
-uuH
+eUz
 uuH
 uuH
 uuH
@@ -59108,20 +59196,20 @@ wAv
 wAv
 wAv
 uuH
+vtl
+uuH
+uuH
+hox
 uuH
 uuH
 uuH
 uuH
 uuH
+wIy
 uuH
 uuH
 uuH
-uuH
-uuH
-uuH
-uuH
-uuH
-uuH
+eUz
 uuH
 uuH
 agV
@@ -59610,8 +59698,8 @@ woa
 woa
 wAv
 uuH
-uuH
-uuH
+wEw
+eUz
 uuH
 uuH
 uuH
