@@ -180,6 +180,47 @@
 	icon_state = "beewarning"
 	density = TRUE
 
+/obj/structure/sign/street
+	icon = 'icons/fallout/structures/signs.dmi'
+	density = TRUE
+	desc = "A rustic street sign from the days of high traffic."
+
+/obj/structure/sign/street/crosswalk
+	name = "crosswalk sign"
+	icon_state = "zebracrossing"
+
+/obj/structure/sign/street/yield
+	name = "yield sign"
+	icon_state = "yeld"
+
+/obj/structure/sign/street/stop
+	name = "stop sign"
+	icon_state = "stop"
+
+/obj/structure/sign/street/noentry
+	name = "no entry sign"
+	icon_state = "donotenter"
+
+/obj/structure/sign/street/parking
+	name = "parking sign"
+	icon_state = "parking"
+
+/obj/structure/sign/street/cafe
+	name = "cafe sign"
+	icon_state = "cafesign"
+
+/obj/structure/sign/street/gasoline
+	name = "gasoline sign"
+	icon_state = "gasolinesign"
+
+/obj/structure/sign/street/human
+	name = "human sign"
+	icon_state = "humansign"
+
+/obj/structure/sign/street/way
+	name = "way sign"
+	icon_state = "waysign"
+
 // Sunset Signs - LARGE
 
 /obj/structure/sign/bighorn_sign

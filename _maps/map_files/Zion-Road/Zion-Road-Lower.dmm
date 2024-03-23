@@ -488,6 +488,18 @@
 "auc" = (
 /turf/open/water,
 /area/f13/caves)
+"auG" = (
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1;
+	name = "generator unit"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "auN" = (
 /obj/structure/simple_door/wood{
 	req_access_txt = "141"
@@ -1211,6 +1223,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
+"bbz" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
 /area/f13/tunnel)
 "bbG" = (
 /obj/structure/table/wood,
@@ -2041,6 +2060,13 @@
 "bIC" = (
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
+	},
+/area/f13/tunnel)
+"bJe" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "bJi" = (
@@ -4144,6 +4170,12 @@
 	name = "dirty floor"
 	},
 /area/f13/tunnel)
+"dBV" = (
+/mob/living/simple_animal/hostile/handy,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "dCk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -4416,6 +4448,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "dark"
+	},
+/area/f13/tunnel)
+"dRV" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "dRW" = (
@@ -5385,6 +5423,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
+	},
+/area/f13/tunnel)
+"eJD" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/under/f13/mechanic,
+/obj/item/clothing/under/f13/mechanic,
+/obj/item/storage/toolbox/mechanical/old,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "eJF" = (
@@ -6672,6 +6719,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"fLV" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/hardhat{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 15
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "fMg" = (
 /obj/item/trash/f13/tin,
 /turf/open/indestructible/ground/inside/mountain,
@@ -7001,6 +7061,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cursed_slot_machine,
 /turf/open/floor/carpet/green,
+/area/f13/tunnel)
+"gbd" = (
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
 /area/f13/tunnel)
 "gby" = (
 /obj/structure/rack,
@@ -8303,6 +8369,14 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/tunnel)
+"heq" = (
+/obj/effect/decal/cleanable/robot_debris{
+	icon_state = "gib3"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "her" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/indestructible/ground/inside/subway,
@@ -8340,6 +8414,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull{
 	icon_state = "reddirtysolid"
+	},
+/area/f13/tunnel)
+"hfm" = (
+/obj/machinery/power/terminal{
+	dir = 8;
+	name = "generator terminal"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/power/terminal{
+	dir = 4;
+	name = "generator terminal"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "hft" = (
@@ -8950,6 +9040,16 @@
 "hHD" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/caves)
+"hHF" = (
+/obj/structure/railing{
+	layer = 3.5;
+	dir = 8;
+	pixel_x = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "hHO" = (
 /obj/structure/barricade/concrete,
 /turf/open/indestructible/ground/inside/subway,
@@ -9097,6 +9197,12 @@
 	icon_state = "greenfull"
 	},
 /area/f13/tunnel)
+"hMg" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "hMz" = (
 /obj/structure/timeddoor,
 /turf/closed/wall/r_wall/rust,
@@ -9235,6 +9341,14 @@
 /obj/item/clothing/glasses/red,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
+	},
+/area/f13/tunnel)
+"hSn" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "hSB" = (
@@ -9484,6 +9598,12 @@
 	name = "cobblestone floor"
 	},
 /area/f13/ncr)
+"icY" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "idb" = (
 /obj/effect/gibspawner/human,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10061,6 +10181,12 @@
 	},
 /turf/open/water,
 /area/f13/caves)
+"iGD" = (
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "iGE" = (
 /obj/structure/spacevine,
 /obj/structure/barricade/wooden,
@@ -11712,6 +11838,12 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"kay" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "kaB" = (
 /obj/structure/wreck/trash/two_barrels,
 /obj/effect/decal/cleanable/dirt,
@@ -11798,6 +11930,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"keF" = (
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "keL" = (
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = -2;
@@ -12322,6 +12460,13 @@
 /obj/structure/cargocrate,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"kBM" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/advcrafting,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "kBR" = (
 /obj/machinery/workbench,
 /turf/open/floor/f13/wood,
@@ -13545,6 +13690,18 @@
 /obj/structure/simple_door/wood,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/caves)
+"lCW" = (
+/obj/machinery/power/terminal{
+	dir = 8;
+	name = "generator terminal"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "lDh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -13556,6 +13713,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#c1ac99";
 	icon_state = "floorrustysolid"
+	},
+/area/f13/tunnel)
+"lDl" = (
+/obj/effect/decal/cleanable/oil/slippery{
+	icon_state = "floor3"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "lDm" = (
@@ -13642,6 +13808,11 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid";
 	color = "#d9c4b9"
+	},
+/area/f13/tunnel)
+"lGL" = (
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "lGR" = (
@@ -14071,6 +14242,14 @@
 	color = "#d9c4b9"
 	},
 /area/f13/tunnel)
+"lZZ" = (
+/obj/machinery/teleport/station{
+	name = "power unit"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "maz" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -14210,6 +14389,15 @@
 	color = "#ffe9de";
 	icon_state = "darkrusty";
 	name = "dirty floor"
+	},
+/area/f13/tunnel)
+"mfG" = (
+/obj/machinery/light/small/broken,
+/obj/effect/decal/cleanable/glass{
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "mgs" = (
@@ -14501,6 +14689,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/caves)
+"mrj" = (
+/mob/living/simple_animal/hostile/handy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "mrA" = (
 /obj/machinery/light{
 	dir = 8;
@@ -15113,6 +15308,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"mMs" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/energy/laser/aer9/recharger,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "mMv" = (
 /obj/machinery/power/port_gen/pacman/mrs,
 /obj/effect/decal/cleanable/dirt,
@@ -16511,6 +16713,13 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13,
 /area/f13/caves)
+"nWp" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/high_tools,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "nWu" = (
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
@@ -17320,6 +17529,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"oDZ" = (
+/obj/structure/closet/crate/solarpanel_small,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "oEa" = (
 /obj/machinery/autolathe,
 /obj/effect/turf_decal/weather/dirt{
@@ -17646,6 +17861,13 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"oSk" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/high_tools,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "oSx" = (
 /obj/machinery/power/smes,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
@@ -17941,6 +18163,10 @@
 /obj/item/key,
 /obj/item/key,
 /turf/open/floor/f13/wood,
+/area/f13/tunnel)
+"phH" = (
+/obj/structure/simple_door/bunker,
+/turf/closed/indestructible/f13vaultrusted,
 /area/f13/tunnel)
 "pig" = (
 /obj/structure/wreck/trash/halftire,
@@ -19875,6 +20101,13 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"qNt" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/medical/rnd/mid,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "qNS" = (
 /mob/living/simple_animal/hostile/giantant,
 /turf/open/indestructible/ground/inside/mountain,
@@ -20664,6 +20897,12 @@
 	},
 /turf/open/floor/circuit/f13_green,
 /area/f13/brotherhood/armory)
+"rBs" = (
+/obj/structure/nest/protectron,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "rBu" = (
 /obj/structure/chair/sofa/right{
 	dir = 1
@@ -20702,6 +20941,15 @@
 "rDl" = (
 /turf/open/indestructible/ground/outside/water/running,
 /area/f13/wasteland)
+"rEl" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/under/f13/mechanic,
+/obj/item/clothing/under/f13/mechanic,
+/obj/item/clothing/glasses/welding,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "rFf" = (
 /obj/structure/nest/securitron,
 /turf/open/floor/f13{
@@ -21059,6 +21307,18 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"rUC" = (
+/obj/machinery/power/terminal{
+	dir = 4;
+	name = "generator terminal"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "rUF" = (
 /obj/structure/junk/small/table,
 /turf/open/indestructible/ground/inside/mountain,
@@ -21121,6 +21381,17 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/caves)
+"rYp" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "rYR" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/wreck/trash/five_tires{
@@ -22626,6 +22897,12 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/tunnel)
+"tin" = (
+/obj/structure/stairs/north,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "tis" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8
@@ -22662,6 +22939,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"tkc" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/medical/vault/equipment{
+	pixel_y = 3
+	},
+/obj/effect/spawner/lootdrop/f13/medical/vault/equipment{
+	pixel_y = 3
+	},
+/obj/effect/spawner/lootdrop/f13/medical/vault/equipment{
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "tkr" = (
 /obj/structure/chair/sofa/left,
 /mob/living/simple_animal/hostile/centaur,
@@ -22795,6 +23087,15 @@
 	icon_state = "savannah4"
 	},
 /area/f13/brotherhood)
+"tpQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "tqx" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -23090,6 +23391,13 @@
 /obj/item/mine/stun,
 /turf/open/floor/f13{
 	icon_state = "yellowdirtyfull"
+	},
+/area/f13/tunnel)
+"tBb" = (
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
 	},
 /area/f13/tunnel)
 "tBh" = (
@@ -23443,6 +23751,14 @@
 /obj/structure/sign/poster/ripped,
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
+"tQy" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "tQU" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -23530,6 +23846,15 @@
 /obj/structure/bed/dogbed/runtime,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"tUk" = (
+/obj/effect/decal/cleanable/oil/streak{
+	icon_state = "floor2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "tUn" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -24785,6 +25110,14 @@
 /obj/structure/flora/junglebush,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"uYh" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "uYS" = (
 /obj/structure/ladder/unbreakable{
 	id = "roboticdung";
@@ -25702,6 +26035,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/tunnel)
+"vST" = (
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "vTh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -26320,6 +26659,13 @@
 	},
 /turf/open/water,
 /area/f13/caves)
+"wrW" = (
+/mob/living/simple_animal/hostile/handy/gutsy,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "wsp" = (
 /obj/effect/spawner/structure/window/hollow/middle,
 /turf/open/floor/plating/tunnel,
@@ -26647,6 +26993,13 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"wBH" = (
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "wBX" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/effect/turf_decal/weather/dirt{
@@ -26823,6 +27176,13 @@
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
 /turf/open/floor/plasteel/dark,
+/area/f13/tunnel)
+"wJD" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/toolsgood,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
 /area/f13/tunnel)
 "wJQ" = (
 /obj/structure/junk/small,
@@ -27214,11 +27574,34 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"xdq" = (
+/obj/effect/decal/cleanable/oil/streak{
+	icon_state = "streak4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "xdO" = (
 /obj/structure/cargocrate{
 	icon_state = "cargocrate4"
 	},
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
+"xez" = (
+/obj/machinery/power/terminal,
+/obj/machinery/power/terminal{
+	dir = 8;
+	name = "generator terminal"
+	},
+/obj/machinery/power/terminal{
+	dir = 4;
+	name = "generator terminal"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
 /area/f13/tunnel)
 "xfu" = (
 /mob/living/simple_animal/hostile/fireant,
@@ -28037,6 +28420,15 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"xOc" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stock_parts/cell/ammo/ultracite,
+/obj/item/stock_parts/cell/ammo/ultracite,
+/obj/item/stock_parts/cell/ammo/ultracite,
+/turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
+	icon_state = "bluerustychess2"
+	},
+/area/f13/tunnel)
 "xOj" = (
 /obj/structure/chair/wood,
 /turf/open/floor/wood/wood_fancy,
@@ -29308,12 +29700,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+jRs
+jRs
+jRs
+jRs
+jRs
 vpN
 vpN
 vpN
@@ -29810,12 +30202,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+tin
+lGL
+keF
+gbd
+jRs
 vpN
 vpN
 vpN
@@ -30312,12 +30704,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+hHF
+hMg
+lGL
+mfG
+jRs
 vpN
 vpN
 vpN
@@ -30814,12 +31206,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+uYh
+iGD
+lGL
+dRV
+agV
 vpN
 vpN
 vpN
@@ -31316,12 +31708,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+keF
+kay
+lGL
+eJD
+agV
 vpN
 vpN
 vpN
@@ -31818,12 +32210,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+rYp
+xdq
+kay
+rEl
+agV
 vpN
 vpN
 vpN
@@ -32317,18 +32709,18 @@ vpN
 uZs
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+jRs
+jRs
+jRs
+jRs
+phH
+jRs
+jRs
+jRs
+jRs
+agV
+agV
 vpN
 vpN
 vpN
@@ -32819,18 +33211,18 @@ vpN
 vpN
 uZs
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+lGL
+tQy
+keF
+lGL
+lGL
+kay
+dBV
+tQy
+lGL
+wJD
+agV
 vpN
 vpN
 vpN
@@ -33321,18 +33713,18 @@ vpN
 vpN
 vpN
 uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+agV
+lZZ
+rUC
+lGL
+heq
+lGL
+kay
+icY
+lGL
+keF
+wJD
+jRs
 vpN
 vpN
 vpN
@@ -33823,18 +34215,18 @@ vpN
 vpN
 vpN
 uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+agV
+lGL
+xez
+auG
+lGL
+tUk
+kay
+fLV
+iGD
+lGL
+oSk
+jRs
 vpN
 vpN
 vpN
@@ -34325,18 +34717,18 @@ vpN
 vpN
 vpN
 uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+lZZ
+hfm
+lGL
+kay
+mrj
+kay
+mMs
+vST
+lGL
+wJD
+agV
 vpN
 vpN
 vpN
@@ -34827,18 +35219,18 @@ vpN
 vpN
 vpN
 vpN
-uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+lGL
+xez
+auG
+wBH
+kay
+kay
+tkc
+lGL
+lGL
+bJe
+agV
 vpN
 vpN
 vpN
@@ -35329,18 +35721,18 @@ vpN
 vpN
 vpN
 vpN
-vpN
-uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+lZZ
+lCW
+lGL
+lDl
+kay
+kay
+kay
+kay
+lGL
+qNt
+jRs
 vpN
 vpN
 vpN
@@ -35831,18 +36223,18 @@ vpN
 vpN
 vpN
 vpN
-vpN
-uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+lGL
+hSn
+dBV
+lGL
+lGL
+lGL
+keF
+tpQ
+kay
+qNt
+jRs
 vpN
 vpN
 vpN
@@ -36333,18 +36725,18 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-uZs
-uZs
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+agV
+jRs
+jRs
+phH
+jRs
+jRs
+jRs
+jRs
+jRs
+jRs
+jRs
 vpN
 vpN
 vpN
@@ -36837,12 +37229,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-uZs
-uZs
-vpN
-vpN
-vpN
+jRs
+oDZ
+iGD
+lGL
+oDZ
+jRs
 vpN
 vpN
 vpN
@@ -37339,12 +37731,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-uZs
-uZs
-uZs
+agV
+dRV
+kay
+lDl
+rBs
+jRs
 uZs
 uZs
 uZs
@@ -37841,12 +38233,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+agV
+bbz
+lGL
+kay
+kBM
+jRs
 vpN
 vpN
 vpN
@@ -38343,12 +38735,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+agV
+xOc
+tBb
+kay
+nWp
+agV
 vpN
 vpN
 vpN
@@ -38845,12 +39237,12 @@ vpN
 vpN
 vpN
 vpN
-vpN
-vpN
-vpN
-vpN
-vpN
-vpN
+jRs
+oDZ
+hSn
+wrW
+oDZ
+agV
 vpN
 vpN
 vpN
@@ -39347,12 +39739,12 @@ uZs
 uZs
 uZs
 uZs
-uZs
-uZs
-uZs
-uZs
-uZs
-uZs
+jRs
+jRs
+jRs
+jRs
+agV
+agV
 uZs
 uZs
 uZs
