@@ -62,6 +62,7 @@
 #define LUSH_PLANT_SPAWN_LIST		list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/joshua = 3, /obj/structure/flora/tree/cactus = 2, /obj/structure/flora/tree/wasteland = 2)
 #define DESOLATE_PLANT_SPAWN_LIST	list(/obj/structure/flora/grass/wasteland = 1)
 #define SNOW_PLANT_SPAWN_LIST		list(/obj/structure/flora/tree/tall = 12, /obj/structure/flora/grass = 10, /obj/structure/flora/grass/brown = 9, /obj/structure/flora/grass/green = 8, /obj/structure/flora/grass/both = 7, /obj/structure/flora/bush = 6, /obj/structure/flora/wasteplant/wild_broc = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5)
+#define FOREST_PLANT_SPAWN_LIST		list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/twig = 9, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5)
 
 /turf/open/indestructible/ground/outside/dirthole
 	name = "Dirt hole"
@@ -161,10 +162,6 @@
 						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
 						)
 
-/turf/open/indestructible/ground/outside/desert/harsh
-	icon_state = "wasteland"
-	icon = 'icons/fallout/turfs/ground_harsh.dmi'
-
 /turf/open/indestructible/ground/outside/desert/Initialize(mapload)
 	. = ..()
 	if(prob(2))
@@ -174,6 +171,21 @@
 	if(icon_state != "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
 
+/turf/open/indestructible/ground/outside/desert/harsh
+	icon_state = "wasteland"
+	icon = 'icons/fallout/turfs/ground_harsh.dmi'
+
+/turf/open/indestructible/ground/outside/desert/harsh/Initialize(mapload)
+	. = ..()
+	icon_state = "wasteland[rand(0,33)]"
+
+/turf/open/indestructible/ground/outside/desert/harsh/forest
+	icon_state = "wasteland"
+	icon = 'icons/fallout/turfs/ground_harsh.dmi'
+
+/turf/open/indestructible/ground/outside/desert/harsh/forest/Initialize(mapload)
+	. = ..()
+	icon_state = "wasteland[rand(0,33)]"
 
 /obj/effect/overlay/desert_side
 	name = "desert"
@@ -226,6 +238,32 @@
 			randPlant = pickweight(LUSH_PLANT_SPAWN_LIST)
 		else
 			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST)
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
+/turf/open/indestructible/ground/outside/desert/harsh/forest/plantGrass(Plantforce = FALSE)
+	var/Weight = 0
+	var/randPlant = null
+
+	//spontaneously spawn grass
+	if(Plantforce || prob(GRASS_SPONTANEOUS))
+		randPlant = pickweight(FOREST_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
+	//loop through neighbouring desert turfs, if they have grass, then increase weight
+	for(var/turf/open/indestructible/ground/outside/desert/harsh/forest/T in RANGE_TURFS(3, src))
+		if(T.turfPlant)
+			Weight += GRASS_WEIGHT
+
+	//use weight to try to spawn grass
+	if(prob(Weight))
+
+		//If surrounded on 5+ sides, pick from lush
+		if(Weight == (5 * GRASS_WEIGHT))
+			randPlant = pickweight(FOREST_PLANT_SPAWN_LIST)
+		else
+			randPlant = pickweight(FOREST_PLANT_SPAWN_LIST)
 		setTurfPlant(new randPlant(src))
 		return TRUE
 
