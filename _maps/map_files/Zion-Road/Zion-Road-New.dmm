@@ -7437,7 +7437,7 @@
 	name = "Secret Exit shutters";
 	desc = "A set of ancient, rusted-over roller shutters. The panelling is badly cracked, and the insulation underneath is starting to flake... Shh!";
 	max_integrity = 1111111111111111111111111111111;
-	id = secret_china
+	id = "secret_china"
 	},
 /turf/open/floor/f13{
 	color = "#d9c4b9";
@@ -17627,7 +17627,7 @@
 "gfW" = (
 /obj/structure/car/rubbish2{
 	name = "Demolished Highwayman";
-	desc = "They used to say "NothingcanstopaHighwayman." Built tough, that's what they were."
+	desc = "They used to say 'Nothing can stop a Highwayman.' Built tough, that's what they were."
 	},
 /obj/structure/wreck/trash/four_barrels,
 /turf/open/indestructible/ground/outside/desert,
@@ -24870,7 +24870,7 @@
 "iBH" = (
 /obj/effect/decal/cleanable/blood/bubblegum{
 	icon_state = "floor2";
-	icon_type_smooth = ddds
+	icon_type_smooth = "ddds"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -29655,8 +29655,7 @@
 	dir = 1;
 	name = "wood post";
 	pixel_x = -10;
-	pixel_y = -1;
-	pixel_z = s
+	pixel_y = -1
 	},
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -44860,15 +44859,13 @@
 	dir = 1;
 	name = "wood post";
 	pixel_x = -10;
-	pixel_y = 25;
-	pixel_z = s
+	pixel_y = 25
 	},
 /obj/structure/fence/wooden{
 	dir = 4;
 	icon_state = "post_wood";
 	pixel_x = 9;
-	pixel_y = 25;
-	pixel_z = null
+	pixel_y = 25
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
@@ -57507,7 +57504,7 @@
 	pixel_x = 6;
 	pixel_y = 5;
 	name = "crumpled note";
-	info = Ifyoufindthis,mynameisOfficerSandersfromVault-Godmyheadhurts.Justgetthemessagebackhomewhathappenedtome.IloveyouAlex.
+	info = "If you find this, my name is Officer Sanders from Vault- God my head hurts. Just get the message back home what happened to me. I love you Alex."
 	},
 /obj/machinery/light{
 	dir = 8;
@@ -62550,7 +62547,7 @@
 "vCR" = (
 /obj/machinery/button/door{
 	name = "Secret Exit button";
-	id = secret_china
+	id = "secret_china"
 	},
 /turf/closed/wall/r_wall/rust,
 /area/f13/building)

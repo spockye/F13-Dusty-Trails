@@ -16462,7 +16462,7 @@
 /area/f13/building)
 "sgH" = (
 /mob/living/simple_animal/hostile/raider/baseball{
-	resize = .8;
+	resize = ".8";
 	name = "Jumblecorn"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -21045,7 +21045,7 @@
 "xro" = (
 /mob/living/simple_animal/hostile/raider/ranged{
 	name = "Jimothy";
-	resize = .8
+	resize = ".8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,

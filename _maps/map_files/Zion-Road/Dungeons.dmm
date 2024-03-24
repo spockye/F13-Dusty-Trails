@@ -3696,10 +3696,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "ml" = (
-/obj/machinery/door/password{
-	door_id = "blackout"
-	},
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/simple_door/metal/iron,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -9557,9 +9555,7 @@
 /turf/open/water,
 /area/f13/tunnel)
 "FU" = (
-/obj/machinery/door/password{
-	door_id = "blacice"
-	},
+/obj/structure/simple_door/metal/iron,
 /turf/open/floor/f13,
 /area/f13/bunker)
 "FV" = (
@@ -10813,14 +10809,6 @@
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/tunnel)
-"Kc" = (
-/obj/machinery/door/password{
-	door_id = "blackwatch"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "Ke" = (
 /obj/structure/table/glass,
 /turf/open/floor/f13,
@@ -12106,16 +12094,6 @@
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/water,
 /area/f13/tunnel)
-"Os" = (
-/obj/machinery/door/password{
-	door_id = "robo_door";
-	password = "Delta Alpha Bravo Bravo Charlie";
-	proj_pass_rate = 45
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/ruin/powered)
 "Ot" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -13587,12 +13565,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"Th" = (
-/obj/machinery/door/password{
-	door_id = "blackstar"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/bunker)
 "Ti" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -28761,7 +28733,7 @@ xk
 xk
 cI
 JW
-FU
+JW
 xk
 MU
 MU
@@ -34896,7 +34868,7 @@ gu
 gu
 gu
 Ae
-Os
+bV
 pb
 gu
 gu
@@ -43660,7 +43632,7 @@ Km
 gx
 kY
 Lp
-Th
+Vh
 ZC
 ZC
 ZC
@@ -48037,7 +48009,7 @@ wX
 wX
 wX
 wX
-Kc
+Fv
 wX
 wX
 wX
