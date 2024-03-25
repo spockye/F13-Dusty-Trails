@@ -422,6 +422,10 @@
 	unload_sound = 'sound/weapons/guns/lrifle_magout.ogg'
 	gun_slide = 'sound/weapons/guns/slide_rifle.ogg'
 
+/obj/item/gun/ballistic/automatic/service/frontier // made as a variant for wastelanders to own without getting instantly murdered by the NCRA for ownership. New sprite incoming.
+	name = "frontier rifle"
+	desc = "An older, wasteland weathered service rifle. It's reliability and low cost have made it a common sight in the Utah as a second-hand rifle. Chambered in 5.56mm."
+
 //Infantry Rifle		Keywords: 5mm, Semi-auto, 30/50 Rounds magazine
 /obj/item/gun/ballistic/automatic/infantry_rifle
 	name = "infantry rifle"
