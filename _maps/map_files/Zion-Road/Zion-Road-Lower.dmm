@@ -247,9 +247,9 @@
 /turf/open/indestructible/binary,
 /area/f13/caves)
 "ahA" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4;
-	light_color = "#f4e3b0"
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#e8eaff"
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
@@ -397,11 +397,7 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "aoL" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	light_color = "#f4e3b0";
-	pixel_y = 24
-	},
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
 "apg" = (
@@ -12075,9 +12071,10 @@
 	},
 /area/f13/caves)
 "jZm" = (
-/obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#e8eaff";
+	pixel_x = -16
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
@@ -12354,6 +12351,7 @@
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/mask/muzzle,
 /obj/structure/table,
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
 "kkB" = (
@@ -12530,8 +12528,10 @@
 	},
 /area/f13/tunnel)
 "ktn" = (
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/floor/plasteel/f13/stone/rugged,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "kuw" = (
 /obj/structure/destructible/tribal_torch/wall{
@@ -13238,6 +13238,10 @@
 /area/f13/tunnel)
 "kXz" = (
 /obj/structure/chair/f13chair1,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#e8eaff"
+	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
 "kXV" = (
@@ -16568,7 +16572,6 @@
 /obj/item/storage/box/matches,
 /obj/item/storage/fancy/cigarettes/cigpack_robust,
 /obj/structure/table,
-/obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
 "nul" = (
@@ -17593,8 +17596,9 @@
 	},
 /area/f13/brotherhood)
 "oqH" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
+/obj/machinery/light{
+	dir = 8;
+	pixel_y = 16
 	},
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
@@ -23078,7 +23082,6 @@
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/structure/table,
-/obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/ncr)
 "sXp" = (
@@ -102743,15 +102746,15 @@ lXj
 lXj
 lXj
 lXj
+lXj
+lXj
+lXj
 iHL
 iHL
-iHL
-iHL
-iHL
-oqH
 cng
 cng
-oqH
+cng
+cng
 iHL
 ttv
 aYy
@@ -103245,11 +103248,11 @@ lXj
 lXj
 lXj
 lXj
+lXj
+lXj
+lXj
 iHL
 uBF
-cng
-cng
-cng
 cng
 cng
 cng
@@ -103747,18 +103750,18 @@ lXj
 lXj
 lXj
 lXj
+lXj
+lXj
+lXj
 iHL
 uww
 cng
 cng
 cng
 cng
-cng
-cng
-cng
 rrg
 cng
-ktn
+cng
 aYy
 lXj
 lXj
@@ -104249,9 +104252,9 @@ lXj
 lXj
 lXj
 lXj
-iHL
-iHL
-iHL
+lXj
+lXj
+lXj
 iHL
 iHL
 cng
@@ -104756,10 +104759,10 @@ aYy
 aYy
 aYy
 iHL
+jZm
 cng
 cng
-cng
-cng
+aoL
 iHL
 hLt
 aYy
@@ -105757,16 +105760,16 @@ lXj
 lXj
 lXj
 aYy
-aoL
-cng
-rrg
-cng
-cng
 cng
 cng
 rrg
 cng
-ktn
+cng
+cng
+cng
+rrg
+cng
+cng
 aYy
 lXj
 lXj
@@ -106764,10 +106767,10 @@ aYy
 ttv
 byG
 iHL
+ahA
 cng
 cng
-cng
-cng
+aoL
 iHL
 byG
 ttv
@@ -107765,16 +107768,16 @@ lXj
 lXj
 lXj
 aYy
-aoL
-cng
-rrg
-cng
-cng
 cng
 cng
 rrg
 cng
-ktn
+cng
+cng
+cng
+rrg
+cng
+cng
 ttv
 lXj
 lXj
@@ -108775,7 +108778,7 @@ iHL
 ahA
 cng
 cng
-ahA
+aoL
 iHL
 ttv
 aYy
@@ -109780,8 +109783,8 @@ kEy
 cng
 cng
 cng
-jZm
 cng
+oqH
 cng
 iHL
 lXj
@@ -115833,7 +115836,7 @@ iHL
 iHL
 fem
 upc
-upc
+ktn
 upc
 vIq
 iHL
