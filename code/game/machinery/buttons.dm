@@ -206,6 +206,11 @@
 			device = new /obj/item/assembly/control(src)
 	..()
 
+/obj/machinery/button/door/secret
+	name = "light switch"
+	icon = 'icons/obj/power.dmi'
+	desc = "Make dark."
+
 /obj/machinery/button/door/incinerator_vent_toxmix
 	name = "combustion chamber vent control"
 	id = INCINERATOR_TOXMIX_VENT

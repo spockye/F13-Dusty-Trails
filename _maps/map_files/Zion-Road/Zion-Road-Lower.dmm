@@ -463,7 +463,7 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/brotherhood)
 "arH" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/offices1st)
 "arL" = (
 /turf/open/floor/wood/wood_common{
@@ -1413,6 +1413,15 @@
 /obj/structure/barricade/bars,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"bhr" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/brotherhood/leisure)
 "bhv" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -3587,7 +3596,7 @@
 /turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
 "cUl" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/rnd)
 "cUD" = (
 /obj/structure/grille/broken,
@@ -7621,7 +7630,7 @@
 	},
 /area/f13/ncr)
 "gnP" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/leisure)
 "goJ" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -7798,6 +7807,15 @@
 	icon_state = "redmark"
 	},
 /area/f13/tunnel)
+"guL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lamp_post{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood)
 "guO" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/indestructible/ground/inside/subway,
@@ -15770,7 +15788,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mKr" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/armory)
 "mKw" = (
 /obj/structure/ladder/unbreakable{
@@ -16254,7 +16272,8 @@
 /area/f13/caves)
 "nbU" = (
 /obj/machinery/door/airlock/hatch{
-	req_access_txt = "120"
+	req_access_txt = "120";
+	name = "Reactor"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -16683,7 +16702,7 @@
 	},
 /area/f13/tunnel)
 "nsH" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/brotherhood/chemistry)
 "nth" = (
 /obj/structure/flora/rock/pile/largejungle{
@@ -17167,13 +17186,8 @@
 	},
 /area/f13/tunnel)
 "nQL" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "neutralrustyfull"
-	},
-/area/f13/brotherhood/leisure)
+/turf/closed/wall/r_wall,
+/area/f13/brotherhood)
 "nQR" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
@@ -17209,6 +17223,9 @@
 	name = "dirty floor"
 	},
 /area/f13/tunnel)
+"nSC" = (
+/turf/closed/wall/r_wall,
+/area/f13/brotherhood/reactor)
 "nSG" = (
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /turf/open/indestructible/ground/inside/mountain,
@@ -22920,6 +22937,9 @@
 /area/f13/brotherhood)
 "sEP" = (
 /obj/machinery/plantgenes,
+/obj/machinery/light{
+	light_color = "#706891"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "neutralrustyfull"
 	},
@@ -22989,6 +23009,13 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"sIc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lamp_post,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood)
 "sJd" = (
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 1
@@ -24259,9 +24286,6 @@
 /area/f13/tunnel)
 "tEk" = (
 /obj/machinery/workbench,
-/obj/machinery/light/small{
-	dir = 4
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "neutralrustyfull"
 	},
@@ -24328,7 +24352,8 @@
 /area/f13/tunnel)
 "tGX" = (
 /obj/machinery/door/airlock/hatch{
-	req_access_txt = "120"
+	req_access_txt = "120";
+	name = "Reactor"
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -25348,6 +25373,24 @@
 	icon_state = "greenfull"
 	},
 /area/f13/tunnel)
+"uAW" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#706891"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	barefootstep = "water";
+	clawfootstep = "water";
+	desc = "Shallow water.";
+	footstep = "water";
+	heavyfootstep = "water";
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "riverwater_motion";
+	name = "water"
+	},
+/area/f13/brotherhood/leisure)
 "uBb" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -44677,7 +44720,7 @@ pQh
 pQh
 pQh
 kyY
-pXO
+sIc
 cuF
 lex
 lex
@@ -44688,7 +44731,7 @@ lex
 lex
 pXO
 lex
-pXO
+guL
 lDt
 pQh
 vpN
@@ -45178,7 +45221,7 @@ nWu
 hFP
 pQh
 pQh
-uja
+bBU
 lex
 lex
 lex
@@ -46185,13 +46228,13 @@ mzM
 bBU
 mJO
 hiM
-hiM
+uAW
 qJC
 ohn
 ohn
-qJC
 hiM
 hiM
+uAW
 hiM
 myj
 bBU
@@ -47687,9 +47730,9 @@ iev
 nWu
 nWu
 ckQ
-ckQ
+nQL
 bBU
-ohn
+bhr
 hiM
 hiM
 hiM
@@ -48690,16 +48733,16 @@ qcv
 qcv
 qcv
 cES
-ckQ
-ckQ
+nQL
+nQL
 bBU
 ohn
 ohn
 ohn
-nQL
 ohn
 ohn
-nQL
+ohn
+ohn
 ohn
 ohn
 ohn
@@ -49192,8 +49235,8 @@ qcv
 qcv
 qcv
 sfX
-ckQ
-ckQ
+nQL
+nQL
 bBU
 jbs
 ueq
@@ -49694,8 +49737,8 @@ qcv
 qcv
 qcv
 uuy
-ckQ
-ckQ
+nQL
+nQL
 bBU
 bBU
 bBU
@@ -50195,15 +50238,15 @@ qcv
 qcv
 iIs
 sXZ
-ckQ
-ckQ
-ckQ
+nQL
+nQL
+nQL
 mKr
-ckQ
+nQL
 nsH
 ckQ
 gnP
-ckQ
+nQL
 vMy
 ckQ
 vpN
@@ -50698,14 +50741,14 @@ qcv
 qBz
 rKc
 nWu
-ckQ
+nQL
 ckQ
 vGd
-ckQ
+nQL
 fnF
 ckQ
 mUJ
-ckQ
+nQL
 sVc
 ckQ
 vpN
@@ -51209,7 +51252,7 @@ wlr
 xQp
 wlr
 dwk
-ckQ
+nQL
 vpN
 vpN
 vpN
@@ -51711,7 +51754,7 @@ iWR
 opQ
 iWR
 lVu
-ckQ
+nQL
 vpN
 vpN
 vpN
@@ -52204,16 +52247,16 @@ goM
 qJR
 nWu
 nWu
-ckQ
+nQL
 hUw
 fhr
 fhr
 eDp
 fhr
 qhl
-ckQ
-ckQ
-ckQ
+nQL
+nQL
+nQL
 vpN
 vpN
 vpN
@@ -52706,7 +52749,7 @@ qcv
 qXh
 mzM
 mzM
-ckQ
+nQL
 fhr
 fhr
 fhr
@@ -53710,7 +53753,7 @@ qcv
 noa
 snW
 snW
-ckQ
+nQL
 fhr
 fhr
 fhr
@@ -54212,7 +54255,7 @@ snW
 nWu
 nWu
 nWu
-ckQ
+nQL
 ccu
 fhr
 fhr
@@ -54220,8 +54263,8 @@ eDp
 jNn
 fhr
 vKl
-ckQ
-ckQ
+nQL
+nQL
 vpN
 vpN
 vpN
@@ -54714,8 +54757,8 @@ nWu
 nWu
 nWu
 hSH
-ckQ
-ckQ
+nQL
+nQL
 iIc
 lDE
 crw
@@ -54723,7 +54766,7 @@ qAD
 iWR
 gAd
 ooy
-ckQ
+nQL
 vpN
 vpN
 vpN
@@ -55215,17 +55258,17 @@ nWu
 nWu
 nWu
 hSH
-ckQ
-ckQ
-ckQ
-ckQ
-ckQ
+nQL
+nQL
+nQL
+nQL
+nQL
 nbU
 ckQ
 ckQ
 ckQ
-ckQ
-ckQ
+nQL
+nQL
 vpN
 vpN
 vpN
@@ -55716,8 +55759,8 @@ nWu
 nWu
 hSH
 hSH
-dJb
-dJb
+nSC
+nSC
 oNc
 iWX
 iWX
@@ -56218,15 +56261,15 @@ hSH
 hSH
 hSH
 vpN
-dJb
-dJb
+nSC
+nSC
 iWX
 iWX
 iWX
 rCl
 eaU
 mcJ
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -56720,15 +56763,15 @@ vpN
 vpN
 vpN
 vpN
-dJb
-dJb
+nSC
+nSC
 iWX
 iWX
 iWX
 dmO
 rKi
 mcJ
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -57222,7 +57265,7 @@ vpN
 vpN
 vpN
 vpN
-dJb
+nSC
 dJb
 pOc
 oNG
@@ -57230,7 +57273,7 @@ cRp
 nfn
 yeg
 mcJ
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -57724,7 +57767,7 @@ vpN
 vpN
 vpN
 vpN
-dJb
+nSC
 dJb
 fXm
 dny
@@ -57732,7 +57775,7 @@ vyF
 aJO
 yeg
 mcJ
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -58226,7 +58269,7 @@ vpN
 vpN
 vpN
 vpN
-dJb
+nSC
 dJb
 jzW
 dny
@@ -58234,7 +58277,7 @@ vEf
 aJO
 mWK
 mcJ
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -58728,15 +58771,15 @@ vpN
 vpN
 vpN
 vpN
-dJb
-dJb
+nSC
+nSC
 jzW
 dny
 rJI
 qlY
 mWK
 lKc
-dJb
+nSC
 vpN
 vpN
 vpN
@@ -59230,12 +59273,12 @@ vpN
 vpN
 vpN
 vpN
-dJb
-dJb
+nSC
+nSC
 mnl
-dJb
-dJb
-dJb
+nSC
+nSC
+nSC
 aZj
 dJb
 dJb
@@ -60236,11 +60279,11 @@ vpN
 vpN
 dJb
 dJb
-dJb
-dJb
-dJb
-dJb
-dJb
+nSC
+nSC
+nSC
+nSC
+nSC
 dJb
 vpN
 vpN
