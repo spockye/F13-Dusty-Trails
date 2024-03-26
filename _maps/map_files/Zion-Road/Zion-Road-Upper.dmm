@@ -4700,10 +4700,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "eUo" = (
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "eUB" = (
@@ -7583,8 +7580,9 @@
 	},
 /area/f13/building)
 "hPR" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
 	},
 /turf/open/floor/wood,
 /area/f13/brotherhood/leisure)
@@ -11334,11 +11332,12 @@
 /turf/open/floor/carpet/arcade,
 /area/f13/city/bighorn)
 "lHY" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/railing{
+	dir = 4
 	},
-/turf/open/floor/wood,
-/area/f13/brotherhood/leisure)
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
 "lJe" = (
 /obj/effect/mob_spawn/human/corpse/legion,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -13787,7 +13786,7 @@
 	},
 /area/f13/building)
 "nZl" = (
-/obj/machinery/light/small,
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -16005,8 +16004,9 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "qbv" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -22182,15 +22182,9 @@
 	},
 /area/f13/building)
 "wjd" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/wasteland)
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/wasteland/ncr)
 "wjz" = (
 /obj/structure/chair/folding{
 	dir = 1
@@ -23904,6 +23898,13 @@
 	icon_state = "fancy-broken2"
 	},
 /area/f13/building)
+"yaX" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/leisure)
 "yaZ" = (
 /obj/machinery/light/floor{
 	flickering = 1;
@@ -40481,7 +40482,7 @@ rGj
 rGj
 rGj
 rGj
-jVy
+yaX
 dNP
 dNP
 bBG
@@ -40985,7 +40986,7 @@ rGj
 rGj
 wST
 dNP
-mWw
+dNP
 bBG
 bRO
 sYC
@@ -43492,7 +43493,7 @@ rGj
 rGj
 rGj
 rGj
-jVy
+yaX
 kbf
 dNP
 dNP
@@ -46505,7 +46506,7 @@ rGj
 rGj
 rGj
 rGj
-jVy
+yaX
 dNP
 dNP
 exz
@@ -48523,8 +48524,8 @@ hPR
 jfL
 jfL
 jfL
-hPR
 jfL
+hPR
 jfL
 jfL
 xXQ
@@ -50031,7 +50032,7 @@ ciT
 ciT
 xVk
 xXQ
-lHY
+jfL
 jfL
 uhv
 ged
@@ -52028,19 +52029,19 @@ vWn
 vWn
 vWn
 vWn
+aYu
 eUo
 aYu
 aYu
-aYu
+kRb
+kRb
+kRb
+lHY
 kRb
 kRb
 kRb
 kRb
-kRb
-kRb
-wjd
-kRb
-kRb
+lHY
 kRb
 vWn
 vWn
@@ -86856,23 +86857,23 @@ giW
 moA
 moA
 moA
+wjd
+moA
+moA
+moA
+moA
+wjd
 moA
 moA
 moA
 moA
 moA
+wjd
 moA
 moA
 moA
 moA
-moA
-moA
-moA
-moA
-moA
-moA
-moA
-moA
+wjd
 moA
 moA
 moA
@@ -89374,7 +89375,7 @@ iIW
 hpU
 fjm
 moA
-moA
+wjd
 moA
 mQM
 dPv
@@ -92406,7 +92407,7 @@ dPv
 dPv
 mQM
 moA
-moA
+wjd
 moA
 mQM
 dPv
@@ -93374,6 +93375,7 @@ dPv
 mQM
 mQM
 moA
+wjd
 moA
 moA
 moA
@@ -93381,6 +93383,7 @@ moA
 moA
 moA
 moA
+wjd
 moA
 moA
 moA
@@ -93388,9 +93391,7 @@ moA
 moA
 moA
 moA
-moA
-moA
-moA
+wjd
 mQM
 mQM
 dPv
@@ -96422,7 +96423,7 @@ dPv
 dPv
 mQM
 moA
-moA
+wjd
 moA
 mQM
 dPv
@@ -105960,7 +105961,7 @@ dPv
 dPv
 mQM
 moA
-moA
+wjd
 moA
 mQM
 dPv
@@ -108972,7 +108973,7 @@ dPv
 dPv
 mQM
 moA
-moA
+wjd
 moA
 mQM
 mQM
@@ -114981,12 +114982,12 @@ ecZ
 ecZ
 giW
 moA
+wjd
 moA
 moA
 moA
 moA
-moA
-moA
+wjd
 moA
 giW
 ecZ
