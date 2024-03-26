@@ -614,7 +614,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/tunnel)
 "aMC" = (
-/obj/structure/junk/small/bed,
+/obj/structure/bed/wooden,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aMN" = (
@@ -2433,6 +2433,11 @@
 	name = "air"
 	},
 /area/f13/building)
+"cya" = (
+/obj/structure/table/wood,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "cys" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -2759,11 +2764,15 @@
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "cPH" = (
-/obj/machinery/workbench/advanced,
-/turf/open/transparent/openspace{
-	name = "air"
+/obj/structure/closet/wardrobe{
+	anchored = 1
 	},
-/area/f13/wasteland)
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_x = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "cQb" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -2806,6 +2815,11 @@
 /obj/item/melee/classic_baton/police,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building/mall)
+"cSt" = (
+/obj/structure/table/wood,
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "cSw" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -3112,6 +3126,15 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/building/mall)
+"djH" = (
+/obj/structure/closet/locker/fridge,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "dkz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4900,6 +4923,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
+"fjt" = (
+/obj/structure/closet/wardrobe{
+	anchored = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "fjG" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -7706,6 +7735,15 @@
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
+"iju" = (
+/obj/structure/closet/locker/fridge,
+/obj/item/storage/box/ingredients,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "ijI" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/belt/fannypack/pink,
@@ -9279,7 +9317,7 @@
 	icon_state = "post_wood"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/f13/wasteland)
 "jMR" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
@@ -10619,7 +10657,9 @@
 	},
 /area/f13/building/mall)
 "lfk" = (
-/obj/structure/barricade/wooden,
+/obj/structure/chair/sofa{
+	dir = 1
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "lgd" = (
@@ -14647,6 +14687,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
+"oVt" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/wasteland)
 "oVx" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -15076,7 +15122,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "prB" = (
-/obj/structure/junk/small,
+/obj/structure/table/wood/club,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "prZ" = (
@@ -15781,8 +15827,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "pZA" = (
-/obj/structure/junk/drawer{
-	pixel_y = 13
+/obj/structure/dresser{
+	pixel_y = 17
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -16627,9 +16673,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qME" = (
-/obj/structure/junk/locker,
+/obj/structure/fence/wooden,
 /turf/open/floor/f13/wood,
-/area/f13/building)
+/area/f13/wasteland)
 "qMP" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom3";
@@ -16689,6 +16735,21 @@
 "qOS" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland)
+"qPz" = (
+/obj/structure/simple_door/metal/barred{
+	name = "Holding Cell";
+	req_access_txt = "120"
+	},
+/turf/open/transparent/openspace{
+	name = "air"
+	},
+/area/f13/brotherhood)
+"qQo" = (
+/obj/structure/chair/folding{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "qQu" = (
 /obj/structure/railing/corner{
@@ -17158,13 +17219,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rtZ" = (
-/obj/structure/railing{
-	dir = 1
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = 30
 	},
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/leisure)
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "rui" = (
 /obj/machinery/light{
 	dir = 8;
@@ -17651,6 +17711,12 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building/mall)
+"rQe" = (
+/obj/structure/chair/folding{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "rRh" = (
 /turf/open/floor/wood/wood_common/wood_common_light,
 /area/f13/ncr)
@@ -18078,6 +18144,12 @@
 	name = "air"
 	},
 /area/f13/building)
+"sqC" = (
+/obj/structure/table/wood/club{
+	pixel_y = -5
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "sqG" = (
 /obj/structure/chair/booth,
 /obj/item/trash/can,
@@ -18309,6 +18381,7 @@
 /area/f13/building)
 "sER" = (
 /obj/structure/simple_door/interior,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
 	},
@@ -18735,6 +18808,16 @@
 "tin" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/medical,
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"tit" = (
+/obj/structure/closet/wardrobe{
+	anchored = 1
+	},
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tiL" = (
@@ -19921,6 +20004,12 @@
 "ubg" = (
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building/mall)
+"ucb" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "uce" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -20010,6 +20099,7 @@
 /area/f13/ncr)
 "ufc" = (
 /obj/structure/simple_door/room,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -20122,6 +20212,14 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/building/mall)
+"unZ" = (
+/obj/structure/bed/wooden,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_x = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "uov" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/f13{
@@ -20171,6 +20269,12 @@
 	icon_state = "redmark"
 	},
 /area/f13/building/mall)
+"upf" = (
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "ups" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -20447,6 +20551,12 @@
 /area/f13/caves)
 "uDn" = (
 /obj/structure/simple_door/dirtyglass,
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"uDX" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "uEi" = (
@@ -39102,7 +39212,7 @@ rGj
 rGj
 rGj
 rGj
-rGj
+qPz
 rGj
 rGj
 rGj
@@ -42629,7 +42739,7 @@ rGj
 rGj
 rGj
 rGj
-wST
+jVy
 qwE
 dNP
 dNP
@@ -43131,7 +43241,7 @@ rGj
 rGj
 rGj
 rGj
-rtZ
+jVy
 kbf
 dNP
 dNP
@@ -43633,7 +43743,7 @@ rGj
 rGj
 rGj
 rGj
-shL
+jVy
 sNO
 dNP
 dNP
@@ -80012,13 +80122,13 @@ kGD
 kGD
 kGD
 rqI
+oVt
 iTI
 iTI
 iTI
 iTI
 iTI
-iTI
-iTI
+oVt
 uFm
 kGD
 kGD
@@ -81016,13 +81126,13 @@ kGD
 kGD
 kGD
 rqI
+qQo
 iTI
 iTI
 iTI
 iTI
 iTI
-iTI
-iTI
+qQo
 uFm
 kGD
 kGD
@@ -82523,11 +82633,11 @@ kGD
 mxL
 mxL
 jme
-sSU
+jme
 dXD
 sSU
 dXD
-sSU
+hXW
 jme
 cMh
 mxL
@@ -83023,9 +83133,9 @@ kGD
 kGD
 kGD
 cMh
-cCY
+djH
 dXD
-dXD
+jme
 dXD
 dXD
 dXD
@@ -83525,9 +83635,9 @@ kGD
 kGD
 kGD
 qmO
+iju
+dXD
 jme
-dXD
-dXD
 dXD
 dXD
 dXD
@@ -84027,13 +84137,13 @@ kGD
 kGD
 kGD
 nlz
-ior
+cya
 dXD
+jme
 dXD
 ccN
 ccN
 ccN
-dXD
 dXD
 ior
 nlz
@@ -84529,13 +84639,13 @@ kGD
 kGD
 kGD
 qmO
-sSU
+cSt
 dXD
+jme
 dXD
 jme
 jme
 jme
-dXD
 dXD
 sSU
 qmO
@@ -85031,13 +85141,13 @@ kGD
 kGD
 kGD
 kTJ
-cCY
+jme
 dXD
+jme
 dXD
 ior
 ior
 ior
-dXD
 dXD
 cCY
 nlz
@@ -85533,7 +85643,7 @@ kGD
 kGD
 kGD
 dXD
-jme
+gnA
 dXD
 dXD
 dXD
@@ -85691,7 +85801,7 @@ kGD
 kGD
 kGD
 mST
-kGD
+wPZ
 wPZ
 wPZ
 wPZ
@@ -86035,7 +86145,7 @@ kGD
 kGD
 kGD
 cMh
-ior
+gnA
 dXD
 dXD
 ccN
@@ -95071,9 +95181,9 @@ kGD
 kGD
 kGD
 gVj
-kGD
-kGD
-kGD
+qME
+sgP
+sgP
 mxL
 cMh
 mxL
@@ -95183,7 +95293,7 @@ kGD
 kGD
 kGD
 kGD
-cPH
+kGD
 kGD
 kGD
 kGD
@@ -95572,10 +95682,10 @@ kGD
 kGD
 kGD
 kGD
+jML
 iTI
-kGD
-kGD
-gVj
+dXD
+ucb
 mxL
 dXD
 dXD
@@ -96074,12 +96184,12 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
+jML
 iTI
 dXD
+lfk
 msZ
-dXD
+rtZ
 waf
 whn
 teZ
@@ -96576,10 +96686,10 @@ kGD
 kGD
 kGD
 kGD
-iTI
+jML
 iTI
 dXD
-dXD
+upf
 cMh
 dXD
 dXD
@@ -97079,15 +97189,15 @@ kGD
 kGD
 kGD
 gVj
+iTI
 dXD
 dXD
 dXD
+rtZ
 dXD
 dXD
 dXD
-dXD
-dXD
-dXD
+aeg
 nlz
 kGD
 kGD
@@ -97580,16 +97690,16 @@ kGD
 kGD
 kGD
 kGD
+jML
 iTI
-dXD
-dXD
+uDX
 dXD
 mxL
+pZA
 dXD
 dXD
 dXD
-dXD
-dXD
+tit
 qmO
 kGD
 kGD
@@ -98082,16 +98192,16 @@ kGD
 kGD
 kGD
 kGD
-dXD
-dXD
-dXD
-dXD
+jML
+iTI
+sqC
+qTr
 qmO
+rtZ
 dXD
 dXD
 dXD
-dXD
-dXD
+aeg
 kTJ
 kGD
 kGD
@@ -98584,16 +98694,16 @@ kGD
 kGD
 kGD
 kGD
-dXD
-dXD
-dXD
+jML
+iTI
+rQe
 dXD
 cMh
-dXD
-dXD
-dXD
-dXD
-dXD
+aMC
+cPH
+unZ
+cPH
+aMC
 cMh
 kGD
 kGD
@@ -99086,10 +99196,10 @@ kGD
 kGD
 kGD
 kGD
-lfk
-dXD
-dXD
-dXD
+gVj
+qME
+sgP
+sgP
 mxL
 mxL
 eqX
@@ -103107,8 +103217,8 @@ kGD
 kGD
 kGD
 jML
-dXD
-dXD
+iTI
+qTr
 mxL
 pZA
 aMC
@@ -103609,10 +103719,10 @@ kGD
 kGD
 kGD
 jML
-dXD
+iTI
 dXD
 uQP
-dXD
+rtZ
 dXD
 cMh
 kGD
@@ -104111,10 +104221,10 @@ kGD
 kGD
 kGD
 jML
-dXD
+iTI
 dXD
 cMh
-dXD
+fjt
 dXD
 mxL
 kGD
@@ -104613,10 +104723,10 @@ kGD
 kGD
 kGD
 jML
-dXD
+iTI
 qTr
 mxL
-qME
+jme
 dXD
 mxL
 kGD
@@ -105115,7 +105225,7 @@ kGD
 kGD
 kGD
 jML
-dXD
+iTI
 qTr
 mxL
 teZ
@@ -105617,7 +105727,7 @@ kGD
 kGD
 kGD
 cMh
-sgP
+qME
 sgP
 mxL
 mxL
@@ -106615,7 +106725,7 @@ kGD
 kGD
 kGD
 kGD
-kGD
+teZ
 kGD
 kGD
 kGD
