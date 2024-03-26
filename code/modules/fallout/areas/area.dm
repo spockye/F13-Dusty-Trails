@@ -108,6 +108,10 @@
 	name = "Legion Fortress Exterior"
 	icon_state = "legionex"
 
+/area/f13/wasteland/brotherhood
+	name = "Brotherhood Exterior"
+	icon_state = "brotherhoodwaste"
+
 /area/f13/wasteland/rocksprings
 	name = "Rock Springs"
 
