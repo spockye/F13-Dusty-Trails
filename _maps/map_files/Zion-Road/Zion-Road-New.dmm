@@ -15246,6 +15246,13 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building)
+"eTI" = (
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "eTM" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -28764,6 +28771,15 @@
 /obj/structure/junk/small/bed2,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"jdG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -16;
+	pixel_y = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "jdO" = (
 /obj/structure/spacevine,
 /obj/effect/turf_decal/weather/dirt{
@@ -32091,7 +32107,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building/mall)
 "kaY" = (
-/obj/structure/closet/jcloset,
+/obj/structure/janitorialcart,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "kaZ" = (
@@ -63615,6 +63632,20 @@
 	color = "#d9c4b9"
 	},
 /area/f13/building)
+"tOb" = (
+/obj/structure/closet,
+/obj/item/broom,
+/obj/item/mop,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/soap/homemade,
+/obj/item/storage/bag/trash,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/machinery/light{
+	dir = 8;
+	pixel_y = -16
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "tOc" = (
 /obj/structure/lamp_post/doubles/bent{
 	dir = 8
@@ -167226,8 +167257,8 @@ byq
 byq
 lyn
 oPm
-ndc
-byq
+tOb
+eTI
 oPm
 mcS
 mcS
@@ -167729,7 +167760,7 @@ byq
 oPm
 oPm
 byq
-byq
+iex
 oPm
 yeK
 yeK
@@ -168230,7 +168261,7 @@ usE
 byq
 oPm
 kaY
-byq
+jdG
 byq
 oxu
 yeK
