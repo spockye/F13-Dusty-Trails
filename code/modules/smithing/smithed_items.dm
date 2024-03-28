@@ -314,15 +314,8 @@
 /obj/item/smithing/knifeblade/startfinish()
 	var/obj/item/smithing/knifeblade/finalforreal = new /obj/item/smithing/knifeblade(src)
 	finalitem = new /obj/item/kitchen/knife(src)
-	// This was originally set to quality*3 to increase the butchering bonus and butchering speed as it scales off force.
-	// However, this resulted in a kitchen knife with 50 damage when made of saturnite.
-	// That gave it phenominal butchering qualities and made it over powered as hell.
-	// For now I have removed the bonus for sake of balance, I would have tried adding var/butchering_speed and var/butchering_bonus
-	// to kitchen knives and then have the quality determine butchering stats without adjusting force but after 2 hours of failed compiles
-	// due to this shit code I gave up. This blade is objectively worse than the dagger now.
-	// Someone else should fix this and delete these notes.
-	// Hours wasted trying to fix butcher scaling: 2
-	finalforreal.force += quality
+	finalforreal.force += quality*3 // Despite what you may think math wise, this has a damage reduction when used as a weapon.
+	// Despite being mathimatically 50.4 at saturnite masterwork 8, it only deals 30ish damage on testing.
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/objects/crafting/blacksmith.dmi'
 	finalitem.icon_state = "knife_smith"
