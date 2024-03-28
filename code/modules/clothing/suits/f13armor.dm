@@ -1207,7 +1207,7 @@
 // duster until plated and even once plated has worse bomb armor and slows you x3 as much.
 // Other materials barely beat out equal category armor, but have more rounded protection.
 // In particular, faction armor (khan, legion, and BoS in particular) are much stronger either on round start or after -
-// being plated even when compared to the highest tier armor available for smithing. -Possum
+// being plated even when compared to the highest tier armor available for smithing using rare materials and lots of crafting. -Possum
 /obj/item/clothing/suit/armored/light/smith_armor_light
 	name = "light armor" // Name gains quality and material as a prefix.
 	desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
