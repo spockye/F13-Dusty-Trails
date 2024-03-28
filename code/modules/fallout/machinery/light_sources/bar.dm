@@ -99,3 +99,11 @@
 	icon = 'icons/fallout/objects/structures/shed.dmi'
 	brightness = 3
 	light_color = LIGHT_COLOR_YELLOW
+
+/obj/machinery/light/sign/casino
+	name = "Casino"
+	desc = "A large neon sign advertising a den of vice."
+	icon = 'icons/fallout/structures/sign_casino.dmi'
+	icon_state = "casino"
+	density = 1
+	light_color = LIGHT_COLOR_YELLOW
