@@ -163,3 +163,15 @@
 	density = 1
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/debris/vertibird
+	name = "crashed vertibird"
+	desc = "The rusting wreckage of a vertibird. Looks like it's been here a long time."
+	icon = 'icons/fallout/objects/structures/rubish2.dmi'
+	icon_state = "vertibird"
+	anchored = 1
+	density = 1
+	bound_width = 288
+	bound_height = 192
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
