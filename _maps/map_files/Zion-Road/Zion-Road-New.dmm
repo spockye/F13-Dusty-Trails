@@ -4774,7 +4774,7 @@
 /area/f13/building)
 "bga" = (
 /obj/structure/stairs/west,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
@@ -10275,13 +10275,6 @@
 	name = "dirty floor"
 	},
 /area/f13/building)
-"cOS" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	icon_state = "railing_corner"
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "cPe" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/dirt/dark,
@@ -18301,12 +18294,6 @@
 	},
 /turf/closed/indestructible/rock,
 /area/f13/caves)
-"fjv" = (
-/obj/structure/fluff/railing{
-	dir = 1
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "fjJ" = (
 /obj/structure/table/wood{
 	pixel_y = 3
@@ -38792,10 +38779,6 @@
 /obj/structure/flora/junglebush/b,
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland/legion)
-"leB" = (
-/obj/structure/fluff/railing,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "leC" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
@@ -40493,17 +40476,6 @@
 	icon_state = "outerborder"
 	},
 /area/f13/wasteland)
-"lGy" = (
-/obj/structure/window/fulltile/house{
-	icon_state = "storewindowright";
-	layer = 2
-	},
-/obj/structure/barricade/wooden/strong,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/building)
 "lGJ" = (
 /obj/item/storage/trash_stack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -58419,13 +58391,6 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
-"qQD" = (
-/obj/structure/fluff/railing{
-	icon_state = "railing_corner";
-	layer = 2
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "qQE" = (
 /obj/structure/flora/grass/wasteland{
 	pixel_y = 7
@@ -62330,11 +62295,6 @@
 	icon_state = "cafeteria"
 	},
 /area/f13/building)
-"rYR" = (
-/obj/structure/stairs/west,
-/obj/structure/fluff/railing,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "rYU" = (
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/dirt{
@@ -73940,12 +73900,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"vzK" = (
-/obj/structure/fluff/railing{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "vzU" = (
 /obj/structure/decoration/rag{
 	icon_state = "skin";
@@ -79597,14 +79551,6 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city/bighorn)
-"xhz" = (
-/obj/structure/fluff/railing{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2"
-	},
-/area/f13/wasteland)
 "xhB" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -83438,15 +83384,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"ylV" = (
-/obj/structure/window/fulltile/house{
-	icon_state = "storewindowhorizontal"
-	},
-/obj/structure/barricade/wooden/strong,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/building)
 "yma" = (
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road{
@@ -168445,19 +168382,19 @@ rEO
 bYz
 bYz
 eVx
-qQD
-vzK
-vzK
-vzK
+qlt
+qlt
+qlt
+qlt
 jFX
 jFX
 qlt
 qlt
 qlt
-xhz
-xhz
-xhz
-cOS
+jFX
+jFX
+jFX
+qlt
 jfl
 vdz
 uRI
@@ -168947,7 +168884,7 @@ rEO
 bYz
 bYz
 pgQ
-leB
+qlt
 ejG
 gNl
 gNl
@@ -168959,7 +168896,7 @@ gNl
 gNl
 gNl
 cCO
-fjv
+qlt
 jfl
 szF
 fyr
@@ -169449,7 +169386,7 @@ bTu
 bYz
 bYz
 pgQ
-leB
+qlt
 wkg
 frN
 dHw
@@ -169461,7 +169398,7 @@ pXU
 dHw
 hhS
 tAG
-fjv
+qlt
 jfl
 twG
 uRI
@@ -169950,8 +169887,8 @@ kqG
 xON
 wgY
 uzv
-ylV
-vzK
+jfl
+jfl
 wkg
 jWx
 xmZ
@@ -169963,7 +169900,7 @@ xmZ
 xmZ
 xmZ
 tAG
-vzK
+jfl
 jfl
 nkb
 ygE
@@ -170452,9 +170389,9 @@ pZA
 esJ
 bYz
 csD
-lGy
-rYR
-wkg
+jfl
+fVY
+lbQ
 frN
 gut
 vgQ
