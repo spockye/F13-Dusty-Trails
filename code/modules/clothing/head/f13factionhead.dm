@@ -688,6 +688,11 @@
 					playsound(src.loc, "[active_sound]", 100, 0, 4)
 					sleep(15)
 
+/obj/item/clothing/head/helmet/f13/ncr/heavygunner/trenchraider //Sunburst my beloved
+	name = "\improper NCR Trench Raid Leader helmet"
+	desc = "A heavily reinforced NCR steel-pot helmet. It comes complete with extra leather padding and armored layering. This one seems seems to have been designed to be in use with a gas-mask.."
+	icon = 'icons/fallout/clothing/helmets.dmi'
+
 //LEADERSHIP ROLES
 /obj/item/clothing/head/helmet/f13/ncr/officer						//NCR Lieutenant beret
 	name = "\improper NCR officer beret"
@@ -813,11 +818,16 @@
 //Brotherhood of Steel (PA in f13head.dm)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
-	name = "brotherhood helmet"
+	name = "brotherhood knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of the Knights."
 	icon_state = "brotherhood_helmet_knight"
 	item_state = "brotherhood_helmet_knight"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
+
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/squire
+	name = "brotherhood squire helmet"
+	desc = "An improved combat helmet, bearing the symbol of the Squires."
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight helmet"

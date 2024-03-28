@@ -161,8 +161,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_requirements = 1440
 
 	loadout_options = list(
-		/datum/outfit/loadout/ncrcptmelee,	// Peacekeeper
-		/datum/outfit/loadout/ncrcptshotgun, // Pancor
+		/datum/outfit/loadout/ncrcptmojave,
+		/datum/outfit/loadout/ncrcptranger,
+		/datum/outfit/loadout/ncrcptpawn,
 		)
 
 /datum/outfit/job/ncr/f13captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -203,16 +204,23 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m45 = 2,
 		)
 
-/datum/outfit/loadout/ncrcptmelee
-	name = "Backline Support"
+/datum/outfit/loadout/ncrcptmojave
+	name = "Veteran of the Mojave Campaign"
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 3,
 	)
 
-/datum/outfit/loadout/ncrcptshotgun
-	name = "Frontliner"
-	suit_store = /obj/item/gun/ballistic/automatic/shotgun/pancor
+/datum/outfit/loadout/ncrcptranger
+	name = "Friend of the Rangers"
+	suit_store = /obj/item/gun/ballistic/revolver/hunting/sequoia/rangercaptain
+	backpack_contents = list(
+		/obj/item/ammo_box/c4570box = 1,
+	)
+
+/datum/outfit/loadout/ncrcptpawn
+	name = "Political Pawn"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/d12g = 3,
 	)
@@ -262,14 +270,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/ncrltsniper
-	name = "Backline Support"
+	name = "Frontier Sharpshooter"
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308 = 2,
 		)
 
 /datum/outfit/loadout/ncrltshotgun
-	name = "Frontliner"
+	name = "Battle-Hardened"
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -334,13 +342,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/loadout/sergeantrifleman
-	name = "Lead Rifleman"
+	name = "One of the Men"
 	head = /obj/item/clothing/head/helmet/f13/ncr/sergeant
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant
 	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/ak112
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/flashlight/seclite = 1,
 	)
@@ -349,22 +356,22 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Recon Squad Leader"
 	head = /obj/item/clothing/head/helmet/f13/ncr/sergeant
 	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant
-	suit_store = /obj/item/gun/ballistic/automatic/marksman
+	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/ammo_box/a762mmbox = 2,
+
 	)
 
 /datum/outfit/loadout/sergeantcqc
-	name = "Trench Raider"
-	head = /obj/item/clothing/head/helmet/f13/ncr/sergeant/trenchraider
+	name = "Trench Raid Leader"
+	head = /obj/item/clothing/head/helmet/f13/ncr/heavygunner/trenchraider
 	mask = /obj/item/clothing/mask/gas
-	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant/trenchraider
+	suit = /obj/item/clothing/suit/armor/f13/ncr/heavygunner/trenchraider
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/grenade/smokebomb = 2,
-		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/grenade/f13/frag = 2,
+		/obj/item/grenade/f13/he_grenade = 1,
 		/obj/item/shovel/trench = 1,
 	)
 
@@ -633,12 +640,15 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/loadout/opperssorht
-	name = "Frontline Support Heavy Gunner"
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/lmg/r84
+	name = "Trench-Raider"
+	head = /obj/item/clothing/head/helmet/f13/ncr/heavygunner/trenchraider
+	mask = /obj/item/clothing/mask/gas
+	suit = /obj/item/clothing/suit/armor/f13/ncr/heavygunner/trenchraider
+	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/lmg = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/grenade/f13/frag = 2,
+		/obj/item/shovel/trench = 1,
 	)
 
 //COMBAT ENGINEER
@@ -695,20 +705,21 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Combat Sapper"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/grenade/plastic/c4 = 2,
+		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
+		/obj/item/grenade/f13/frag = 2,
 		)
 
 /datum/outfit/loadout/combatengineerbuilder
 	name = "Construction Specialist"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg10mm = 2,
+		/obj/item/ammo_box/magazine/m556mm = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/stack/sheet/plasteel/fifty = 1,
 		/obj/item/stack/sheet/rglass = 50,
-		/obj/item/stack/sheet/mineral/concrete = 25
+		/obj/item/stack/sheet/mineral/concrete = 50
 	)
 
 //COMBAT MEDIC
@@ -759,8 +770,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/seeds/poppy/broc = 2,
-		/obj/item/seeds/xander = 2
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 	)
 
 /datum/outfit/job/ncr/f13combatmedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -807,19 +817,18 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/grenade/f13/frag = 2,
-		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/clothing/accessory/ncr/MCPL = 1
 		)
 
 /datum/outfit/loadout/corporalsmg
-	name = "Squad Close Range Support"
+	name = "Squad Suppressor"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
 	)
 
 /datum/outfit/loadout/corporalrifleman
-	name = "Squad Spotter"
+	name = "Squad Sharpshooter"
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
@@ -827,7 +836,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/loadout/corporalcqc
-	name = "Squad Second-Liner"
+	name = "Squad Pointman"
 	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -871,35 +880,36 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/loadout/trooperrifleman
-	name = "Trail Trooper"
+	name = "Veteran Trooper"
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556mm = 2,
+		/obj/item/ammo_box/magazine/m556mm = 3,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 	)
 
 /datum/outfit/loadout/trooperfiresupport
-	name = "Shotgun Trooper"
+	name = "Asst. Pointman"
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/shovel/trench = 1,
-		/obj/item/stack/sheet/mineral/sandbags = 10,
+		/obj/item/grenade/f13/frag = 1,
 	)
 
 /datum/outfit/loadout/trooperhunter
-	name = "Hunting Trooper"
+	name = "Marksman Qualified"
 	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/a308 = 2,
+		/obj/item/ammo_box/a308 = 1,
+		/obj/item/shovel/trench = 1,
+		/obj/item/stack/sheet/mineral/sandbags = 5,
 	)
 
 //CONSCRIPT
 /datum/job/ncr/f13conscript
 	title = "NCR Conscript"
 	flag = F13CONSCRIPT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 5
+	spawn_positions = 5
 	description = "You are the recent bulk of the NCR Army. You have been recently conscripted, given little to no training and were issued a gun. Obey your the NCOs and officers, no matter what you are expected to follow military discipline."
 	supervisors = "The Drill Sergeant, Corporals and Above"
 	selection_color = "#fff5cc"
@@ -907,8 +917,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13conscript
 
 	loadout_options = list(
-		/datum/outfit/loadout/conscriptvarmint,		// Varmint rifle, Trench tool, Sandbags
-		/datum/outfit/loadout/conscripthalal,		// M1911, Machete, Big Leagues
+		/datum/outfit/loadout/conscriptvarmint,		// Varmint rifle
+		/datum/outfit/loadout/conscriptshotgun,		// Shotgun
 	)
 
 /datum/outfit/job/ncr/f13conscript
@@ -922,27 +932,21 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/loadout/conscriptvarmint
-	name = "Reservist"
+	name = "Draft Dog"
 	head = /obj/item/clothing/head/helmet/f13/ncr/conscript
 	suit = /obj/item/clothing/suit/armor/f13/ncr/conscript
 	suit_store = /obj/item/gun/ballistic/rifle/mag/varmint
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556mm = 2,
-		/obj/item/shovel/trench = 1,
-		/obj/item/stack/sheet/mineral/sandbags = 7,
-		/obj/item/storage/box/ration/menu_eight = 1,
 	)
 
-/datum/outfit/loadout/conscripthalal
-	name = "Desert Warrior"
-	head = /obj/item/clothing/head/helmet/f13/ncr/conscript/ncrwarrior
-	suit = /obj/item/clothing/suit/armor/f13/ncr/conscript/ncrwarrior
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+/datum/outfit/loadout/conscriptshotgun
+	name = "Frontier Recruit"
+	head = /obj/item/clothing/head/helmet/f13/ncr/conscript
+	suit = /obj/item/clothing/suit/armor/f13/ncr/conscript
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45 = 3,
-		/obj/item/melee/onehanded/machete = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/ammo_box/shotgun/buck = 1,
 	)
 
 ////////////////////////
@@ -997,7 +1001,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
-		/obj/item/storage/box/ration/menu_two = 1
 		)
 
 /datum/outfit/loadout/repambassador
@@ -1006,7 +1009,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
-		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/clothing/accessory/waistcoat = 1,
 		/obj/item/clothing/suit/toggle/lawyer/black = 1,
 		/obj/item/storage/briefcase = 1,
@@ -1019,7 +1021,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/helmet/f13/rustedcowboyhat
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
-		/obj/item/storage/box/ration/menu_two = 1
 		)
 
 // MEDICAL OFFICER

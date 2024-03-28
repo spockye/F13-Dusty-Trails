@@ -333,7 +333,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/melee/f13powerfist/goliath = 1,
 		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/ammo_box/magazine/msmg9mm/drum = 1,
+		/obj/item/ammo_box/magazine/msmg9mm/drum = 2,
 	)
 
 /datum/outfit/loadout/berserkercenturion
@@ -407,18 +407,17 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	suit_store = /obj/item/gun/ballistic/automatic/lmg/type88
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/type88 = 1,
-		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
 	)
 
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
 	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
-	suit_store = /obj/item/twohanded/thermic_lance
+	suit_store = /obj/item/twohanded/fireaxe/bmprsword
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 3,
 	)
 
 /datum/outfit/loadout/decvetsnake
@@ -566,7 +565,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Frontier Decanus"
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
-		/obj/item/grenade/smokebomb = 1,
+		/obj/item/grenade/smokebomb = 2,
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/warpaint_bowl = 1,
@@ -641,9 +640,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 /datum/outfit/loadout/vexbear
 	name = "Mountain Bear"
 	head = /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius/bear
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2,
 		/obj/item/melee/powered/ripper = 1,
 		/obj/item/book/granter/martial/berserker = 1,
@@ -705,9 +704,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/expambusher
 	name = "Ambusher"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	suit_store = /obj/item/gun/ballistic/shotgun/police
 	backpack_contents = list(
-		/obj/item/restraints/legcuffs/bola/tactical = 1,
+		/obj/item/restraints/legcuffs/bola/tactical = 2,
 		/obj/item/ammo_box/shotgun/buck = 2,
 	)
 
@@ -726,8 +725,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/attachments/scope = 1,
 		/obj/item/ammo_box/a762mm = 4,
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
-		/obj/item/ammo_box/c45rev = 1,
 	)
 
 ///////////////////
@@ -789,11 +786,12 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 2,
+		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 1,
 	)
 
 /datum/outfit/loadout/vetshot
 	name = "Flanker"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	suit_store = /obj/item/gun/ballistic/shotgun/police
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/melee/onehanded/machete/gladius = 1,
@@ -806,7 +804,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44/ = 2,
 		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/machete/gladius = 1,
+		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 	)
 
 // PRIME

@@ -448,6 +448,12 @@
 	recoil = 1
 	slowdown = 0.65 //added so it's not just a straight upgrade sort of unique. total of 0.8 slowdown when used with S.E armor
 
+/obj/item/gun/ballistic/automatic/shotgun/riot/ncr
+	name = "NCR Anti-Riot shotgun"
+	desc = "A compact riot shotgun designed originally for firing non-lethal projectiles into rioting prisoners. It has 'Compliance Notices' etched into the side with several lines underneath it."
+	fire_delay = 5
+	recoil = 1.3
+
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"
 	desc = "The Jackhammer, despite its name, is an easy to control shotgun, even when fired on full automatic. The popular bullpup design, which places the magazine behind the trigger, makes the weapon well balanced & easy to control." //Nod to Fallout 2 in the description :)
