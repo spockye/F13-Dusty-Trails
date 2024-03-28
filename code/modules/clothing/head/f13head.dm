@@ -443,7 +443,7 @@
 	icon_state = "midwestgrey_helm"
 	item_state = "midwestgrey_helm"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 30, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 72)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 65, "energy" = 40, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/midwest
 
 /obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened

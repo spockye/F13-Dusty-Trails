@@ -445,7 +445,7 @@
 	slowdown = 0.12
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 6)
 
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant/trenchraider		//NCR Sergeant armor, Trench Raider loadout
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/sergeant/trenchraider		//NCR Sergeant armor. Old, unused.
 	name = "\improper NCR reinforced trench mantle vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle. A portion of its ceramics was replaced with shock-resistant plates."
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 35)
@@ -471,6 +471,17 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.18		//0.22 with helmet
+
+/obj/item/clothing/suit/armor/f13/ncr/heavygunner/trenchraider //NCR Trench-Raider kit
+	name = "\improper NCR trench-raider plate vest"
+	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins. This one is designed for Trench-Raiders, featuring less constricting adjustments at the cost of overall protection alongside a massive shoulder-pad."
+	icon = 'icons/fallout/clothing/armored_medium.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	icon_state = "steel_bib_trench"
+	item_state = "steel_bib_trench"
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 40)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	slowdown = 0.15		//0.19 with helmet
 
 //OFFICER ROLES
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer						//NCR Lieutenant armor
@@ -620,12 +631,17 @@
 	allowed = list(/obj/item/gun)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood
-	name = "brotherhood armor"
+	name = "brotherhood knight armor"
 	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 20, "bomb" = 20, "bio" = 15, "rad" = 15, "fire" = 20, "acid" = 0, "wound" = 20)
 	mutantrace_variation = NONE
+
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/squire
+	name = "brotherhood squire armor"
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Squires. It bears a white stripe. Made of cheaper and more easily replaced steel-plates rather than composites."
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 15, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"

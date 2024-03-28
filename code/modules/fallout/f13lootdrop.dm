@@ -970,7 +970,7 @@
 // Civilized T1 - Piss-tols and quality revolvers. Rare chance of a decent pistol.
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t1
 	name = "T1 civilized weapons"
-	icon_state = "gunverylow_loot"
+	icon_state = "gunmid_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/n99 = 40,
 				/obj/effect/spawner/bundle/f13/beretta/select = 25,
 				/obj/effect/spawner/bundle/f13/pistol22 = 15, // RN-Jesus says 'Fuck you'
@@ -980,7 +980,7 @@
 // Civilized T2 - Piss-tols and quality revolvers. Rare chance of a decent pistol.
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t2
 	name = "T2 civilized weapons"
-	icon_state = "gunverylow_loot"
+	icon_state = "gunmid_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/mk23 = 15,
 				/obj/effect/spawner/bundle/f13/thatgun = 15,
 				/obj/effect/spawner/bundle/f13/smg10mm = 20,
@@ -1022,7 +1022,7 @@
 // Advanced T1 - Near top of the line equipment.
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t1
 	name = "T1 advanced weapons"
-	icon_state = "gunverylow_loot"
+	icon_state = "gunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/infantry_rifle = 50,
 				/obj/effect/spawner/bundle/f13/marksman = 35,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
@@ -1031,7 +1031,7 @@
 // Advanced T2 - VIOLENCE
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t2
 	name = "T2 advanced weapons"
-	icon_state = "gunverylow_loot"
+	icon_state = "gunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/calico = 20,
 				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 15,
 				/obj/effect/spawner/bundle/f13/p90 = 20,
@@ -1041,7 +1041,7 @@
 // Advanced T3 - It physically doesnt get much better for RNG tables. Everything else can be spawned individually.
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t2
 	name = "T2 advanced weapons"
-	icon_state = "gunverylow_loot"
+	icon_state = "gunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/smg14mm = 25,
 				/obj/effect/spawner/bundle/f13/amr = 5,
 				/obj/effect/spawner/bundle/f13/bozar = 5,
