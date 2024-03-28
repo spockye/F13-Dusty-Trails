@@ -421,8 +421,8 @@ Paladin
 /datum/job/bos/f13paladin
 	title = "Paladin"
 	flag = F13PALADIN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer to the Paladin Commander, and by extension - the Head Scribe for issues regarding technology aquisition. Be the chapter's shock infantry, and utilize your armour to its fullest capacity. Highly trained from experience as a knight - you are to take field command in the absence of a Senior Paladin. You may also finalize trade and diplomatic decisions in the absence of a superior."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -680,8 +680,8 @@ Scribe
 /datum/job/bos/f13seniorknight // Is now knight. Yep.
 	title = "Knight"
 	flag = F13SENIORKNIGHT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "You are one of the senior members of the Brotherhood of Steel. Experienced in the fields of combat, reconnaissance and defense; you must lead your caste to victory. Assist Paladins, prepare defense. You are also able to train and lead squires into combat."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -772,7 +772,7 @@ Knight
 /datum/job/bos/f13knight // Replacing Knight (as it is the defacto.)
 	title = "Squire"
 	flag = F13KNIGHT
-	total_positions = 3
+	total_positions = 4
 	spawn_positions = 4
 	description = "You are the veritable lifeblood of your chapter. Versatile, adaptable and hopefully, dangerous to the chapter's enemies. Your prime duty is solely combat operations. You are entrusted enough to be provided equipment and maintain it. "
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
