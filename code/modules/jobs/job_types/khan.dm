@@ -147,7 +147,7 @@
 /datum/outfit/loadout/soldier
 	name = "Heavy Enforcer"
 	belt = /obj/item/storage/backpack/spearquiver
-	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	r_hand = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever/khan
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored
 	head = /obj/item/clothing/head/helmet/f13/khan
 	backpack_contents = list(
@@ -160,11 +160,11 @@
 	name = "Grunt Enforcer"
 	belt = /obj/item/storage/belt/bandolier
 	l_hand = /obj/item/melee/onehanded/machete/scrapsabre/khan
-	r_hand = /obj/item/gun/ballistic/automatic/smg/uzi
+	r_hand = /obj/item/gun/ballistic/automatic/smg/thompson
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg9mm = 2,
+		/obj/item/ammo_box/magazine/mthompson = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
@@ -195,7 +195,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3)
 
 /datum/outfit/loadout/quack
-	name = "Quack Chemist"
+	name = "Quack"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -212,9 +212,9 @@
 	name = "Teachings of Regis"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/leader
 	head = /obj/item/clothing/head/helmet/f13/khan/leader
-	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt/khan
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/d12g = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		)
 
 /datum/outfit/loadout/seniorb
@@ -265,7 +265,7 @@
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever/khan = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/stack/sheet/metal/twenty = 2,
 		/obj/item/stack/sheet/mineral/wood/twenty = 1,

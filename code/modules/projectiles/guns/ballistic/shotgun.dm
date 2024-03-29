@@ -340,6 +340,13 @@
 	knife_x_offset = 23
 	knife_y_offset = 23
 
+/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever/khan
+	name = "Eighties-Khan supershorty"
+	desc = "A pistol grip lever action shotgun shortened for ease of use on vehicles. A weapon taken in spades during the Khans encounter with the Eighties. It holds 3+1"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
+	slowdown = 0.20
+
+
 
 //Neostead 2000							Keywords: BOS, Shotgun, Semi-auto, 12 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
