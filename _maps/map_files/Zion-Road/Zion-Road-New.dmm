@@ -1655,9 +1655,11 @@
 	},
 /area/f13/building/mall)
 "akR" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/glass,
+/obj/structure/railing{
+	color = "#A47449"
+	},
 /turf/open/floor/wood,
 /area/f13/utah/badlands)
 "akU" = (
@@ -6565,9 +6567,6 @@
 	},
 /area/f13/building)
 "bGN" = (
-/obj/structure/railing{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel{
@@ -9890,7 +9889,7 @@
 	},
 /area/f13/wasteland)
 "cEV" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 9
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -19153,13 +19152,6 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
-"fiZ" = (
-/obj/structure/fluff/railing,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
-/area/f13/building)
 "fji" = (
 /obj/structure/fluff/rails{
 	dir = 4
@@ -22605,6 +22597,13 @@
 	icon_state = "verticaloutermain3"
 	},
 /area/f13/wasteland)
+"ggw" = (
+/obj/structure/stairs/north,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/closed/mineral/indestructible/harsh,
+/area/f13/building)
 "ggH" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -25484,7 +25483,8 @@
 /area/f13/wasteland/legion)
 "gUk" = (
 /obj/structure/railing/wood/post,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
+	color = "#A47449";
 	dir = 6
 	},
 /turf/open/floor/wood,
@@ -25727,18 +25727,8 @@
 /area/f13/building)
 "gXM" = (
 /obj/structure/stairs/east,
-/obj/structure/fluff/railing{
-	dir = 4;
-	density = 0;
-	layer = 2.91;
-	pixel_x = 5
-	},
-/obj/structure/fluff/railing{
-	dir = 5;
-	pixel_y = 3;
-	pixel_x = 5;
-	density = 0;
-	layer = 2.92
+/obj/structure/railing{
+	dir = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -27557,8 +27547,10 @@
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/caves)
 "hyd" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/railing{
+	color = "#A47449"
+	},
 /turf/open/floor/wood,
 /area/f13/utah/badlands)
 "hye" = (
@@ -27903,6 +27895,12 @@
 	icon_state = "horizontalbottomborderbottom2right"
 	},
 /area/f13/wasteland)
+"hDj" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/f13/building)
 "hDu" = (
 /obj/structure/barricade/tentleathercorner,
 /turf/open/indestructible/ground/outside/dirt{
@@ -29161,11 +29159,11 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "hUB" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/mall)
 "hUL" = (
@@ -29395,6 +29393,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"hYv" = (
+/obj/structure/stairs/north{
+	color = "#A47449"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/ncr)
 "hYA" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -33363,9 +33370,6 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
 "jgK" = (
-/obj/structure/musician/piano{
-	desc = "What a wierd piano.."
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -37616,7 +37620,9 @@
 /turf/closed/wall/f13/supermart,
 /area/f13/city/bighorn)
 "kmW" = (
-/obj/structure/fluff/railing,
+/obj/structure/railing{
+	color = "#A47449"
+	},
 /turf/open/floor/wood,
 /area/f13/utah/badlands)
 "kmX" = (
@@ -38132,6 +38138,14 @@
 	color = "#d9c4b9"
 	},
 /area/f13/building)
+"kuQ" = (
+/obj/effect/decal/marking{
+	icon_state = "doubleverticaltop"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "kuS" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -38954,7 +38968,7 @@
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "kFO" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 5
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -41707,6 +41721,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"lva" = (
+/obj/structure/stairs/north,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/closed/mineral/indestructible/harsh,
+/area/f13/building)
 "lvg" = (
 /obj/structure/grille/broken,
 /turf/open/indestructible/ground/inside/mountain,
@@ -43371,6 +43392,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
+"lVk" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/transparent/openspace,
+/area/f13/building)
 "lVr" = (
 /obj/effect/overlay/turfs/sidewalk{
 	dir = 8
@@ -43600,7 +43627,8 @@
 /area/f13/utah/badlands/valley)
 "lYd" = (
 /obj/structure/railing/wood/post,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
+	color = "#A47449";
 	dir = 10
 	},
 /turf/open/floor/wood,
@@ -44697,7 +44725,7 @@
 /turf/open/floor/wood/wood_wide,
 /area/f13/utah/badlands/interior)
 "mmW" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 10
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -48337,17 +48365,6 @@
 /obj/structure/car/rubbish7,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"nkz" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/building)
 "nkF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden,
@@ -49416,14 +49433,6 @@
 	color = "#d9c4b9"
 	},
 /area/f13/building)
-"nAQ" = (
-/obj/effect/decal/marking{
-	icon_state = "doubleverticaltop"
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/tunnel)
 "nAR" = (
 /obj/structure/chair/folding,
 /mob/living/simple_animal/hostile/chinese/ranged,
@@ -51393,15 +51402,6 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"oeC" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	density = 0;
-	layer = 2.91;
-	pixel_x = 5
-	},
-/turf/open/floor/plasteel/f13/stone/rugged,
-/area/f13/ncr)
 "oeE" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
@@ -55504,8 +55504,10 @@
 	},
 /area/f13/wasteland)
 "pog" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/glass,
+/obj/structure/railing{
+	color = "#A47449"
+	},
 /turf/open/floor/wood,
 /area/f13/utah/badlands)
 "poF" = (
@@ -60101,8 +60103,8 @@
 /turf/open/indestructible/ground/outside/desertharsh,
 /area/f13/utah/badlands/valley)
 "qzZ" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/mall)
 "qAc" = (
@@ -62440,6 +62442,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/musician/piano{
+	desc = "What a wierd piano.."
+	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -63426,6 +63431,10 @@
 /obj/item/clothing/accessory/pocketprotector/full,
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
+"rwy" = (
+/obj/structure/railing,
+/turf/open/transparent/openspace,
+/area/f13/building)
 "rwC" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -63796,19 +63805,6 @@
 /obj/item/clothing/head/cueball,
 /turf/open/floor/carpet,
 /area/f13/building/mall)
-"rAE" = (
-/obj/structure/fluff/railing{
-	dir = 4;
-	density = 0;
-	layer = 2.91;
-	pixel_x = 5
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/building)
 "rAF" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
@@ -66586,7 +66582,7 @@
 /area/f13/building)
 "sqk" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/skeleton/alive,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
 	icon_state = "bluerustychess2"
 	},
@@ -79785,7 +79781,7 @@
 	},
 /area/f13/building)
 "wdW" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 6
 	},
 /turf/open/indestructible/ground/outside/water,
@@ -80273,6 +80269,12 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"wlf" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/transparent/openspace,
+/area/f13/building)
 "wli" = (
 /obj/effect/decal/remains/human,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive,
@@ -81664,7 +81666,7 @@
 	},
 /area/f13/building/mall)
 "wFJ" = (
-/obj/effect/mob_spawn/human/skeleton/alive,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13/vault_floor/blue/bluechess{
 	icon_state = "bluerustychess2"
 	},
@@ -83142,6 +83144,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building/mall)
+"xcx" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/f13/building)
 "xcL" = (
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontal"
@@ -83605,16 +83613,6 @@
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/legion)
-"xix" = (
-/obj/structure/fluff/railing{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	color = "#d9c4b9";
-	icon_state = "darkrusty";
-	name = "dirty floor"
-	},
-/area/f13/building)
 "xiP" = (
 /obj/structure/fence/wooden{
 	dir = 8
@@ -84868,6 +84866,9 @@
 	color = "#A47449"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/building)
 "xAE" = (
@@ -92279,8 +92280,8 @@ fTS
 cDp
 uir
 tRT
-rAE
-rAE
+uir
+uir
 uir
 vVJ
 fTS
@@ -92780,10 +92781,10 @@ jqZ
 fTS
 uir
 tRT
-srz
-mTs
-mTs
-xix
+lva
+hDj
+lVk
+uir
 uir
 uir
 uir
@@ -93284,8 +93285,8 @@ uir
 tRT
 srz
 mTs
-mTs
-xix
+rwy
+uir
 kWT
 uir
 nkh
@@ -93784,10 +93785,10 @@ jqZ
 fTS
 uir
 tRT
-srz
-mTs
-mTs
-xix
+ggw
+xcx
+wlf
+uir
 uir
 uir
 uir
@@ -94287,8 +94288,8 @@ fTS
 cDp
 uir
 tRT
-nkz
-nkz
+uir
+uir
 uir
 vVJ
 fTS
@@ -94333,8 +94334,8 @@ hHm
 tQz
 tQz
 qIJ
-wFJ
 nmP
+wFJ
 nmP
 tQz
 tQz
@@ -131551,7 +131552,7 @@ giy
 wWG
 mIi
 eYO
-nAQ
+kuQ
 sBq
 ePl
 ePl
@@ -138579,7 +138580,7 @@ giy
 wWG
 mIi
 eYO
-nAQ
+kuQ
 sBq
 ePl
 ePl
@@ -142688,8 +142689,8 @@ pWr
 jEw
 pQH
 kmW
-sbu
 smf
+sbu
 smf
 smf
 smf
@@ -150279,7 +150280,7 @@ jqZ
 jqZ
 oPm
 oPm
-oeC
+yeK
 yeK
 yeK
 yeK
@@ -150781,7 +150782,7 @@ jqZ
 jqZ
 oPm
 oPm
-eOL
+hYv
 cTv
 yeK
 yeK
@@ -199205,7 +199206,7 @@ kdb
 qNZ
 mKz
 vYe
-fiZ
+jgA
 xAw
 vYe
 jIr

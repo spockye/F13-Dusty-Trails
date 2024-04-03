@@ -3,7 +3,6 @@
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
 "ab" = (
-/turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/underground/cave)
 "Aw" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
