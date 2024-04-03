@@ -169,24 +169,50 @@
 		salvage = pickweight(loots)
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
 		plantGrass()
-	if(icon_state != "wasteland")
+	if(icon_state == "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
 
-/turf/open/indestructible/ground/outside/desert/harsh
+/turf/open/indestructible/ground/outside/desertharsh
+//	step_sounds = list("human" = "dirtfootsteps")
+//	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
+//	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
+	slowdown = 0.4
+	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
+	var/pit_sand = 1
+	// TODO: REWRITE PITS ENTIRELY
+	var/storedindex = 0			//amount of stored items
+	var/mob/living/gravebody	//is there a body in the pit?
+	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
+	var/obj/salvage //or salvage
+	var/pitcontents // Lazylist of pit contents. TODO: Replace with mypit.contents?
+	var/obj/dugpit/mypit
+	var/unburylevel = 0
+	var/static/list/loots = list(
+						/obj/item/stack/crafting/metalparts/five = 30,
+						/obj/item/stack/crafting/goodparts/five = 30,
+						/obj/item/stack/ore/blackpowder/twenty = 10,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
+						)
 	icon_state = "wasteland"
 	icon = 'icons/fallout/turfs/ground_harsh.dmi'
 
-/turf/open/indestructible/ground/outside/desert/harsh/Initialize(mapload)
+/turf/open/indestructible/ground/outside/desertharsh/Initialize(mapload)
 	. = ..()
-	icon_state = "wasteland[rand(0,33)]"
+	if(prob(2))
+		salvage = pickweight(loots)
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		plantGrass()
+	if(icon_state == "wasteland")
+		icon_state = "wasteland[rand(1,31)]"
 
-/turf/open/indestructible/ground/outside/desert/harsh/forest
+/turf/open/indestructible/ground/outside/desertharsh/forest
 	icon_state = "wasteland"
 	icon = 'icons/fallout/turfs/ground_harsh.dmi'
-
-/turf/open/indestructible/ground/outside/desert/harsh/forest/Initialize(mapload)
-	. = ..()
-	icon_state = "wasteland[rand(0,33)]"
 
 /obj/effect/overlay/desert_side
 	name = "desert"
@@ -242,7 +268,15 @@
 		setTurfPlant(new randPlant(src))
 		return TRUE
 
-/turf/open/indestructible/ground/outside/desert/harsh/plantGrass(Plantforce = FALSE)
+/turf/open/indestructible/ground/outside/desertharsh/proc/setTurfPlant(newTurfPlant)
+	turfPlant = newTurfPlant
+	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, .proc/clear_turfplant)
+
+/turf/open/indestructible/ground/outside/desertharsh/proc/clear_turfplant()
+	UnregisterSignal(turfPlant, COMSIG_PARENT_QDELETING)
+	turfPlant = null
+
+/turf/open/indestructible/ground/outside/desertharsh/proc/plantGrass(Plantforce = FALSE)
 	var/Weight = 0
 	var/randPlant = null
 
@@ -253,7 +287,7 @@
 		return TRUE
 
 	//loop through neighbouring desert turfs, if they have grass, then increase weight
-	for(var/turf/open/indestructible/ground/outside/desert/harsh/T in RANGE_TURFS(3, src))
+	for(var/turf/open/indestructible/ground/outside/desertharsh/T in RANGE_TURFS(3, src))
 		if(T.turfPlant)
 			Weight += GRASS_WEIGHT
 
@@ -268,7 +302,7 @@
 		setTurfPlant(new randPlant(src))
 		return TRUE
 
-/turf/open/indestructible/ground/outside/desert/harsh/forest/plantGrass(Plantforce = FALSE)
+/turf/open/indestructible/ground/outside/desertharsh/forest/plantGrass(Plantforce = FALSE)
 	var/Weight = 0
 	var/randPlant = null
 
@@ -279,7 +313,7 @@
 		return TRUE
 
 	//loop through neighbouring desert turfs, if they have grass, then increase weight
-	for(var/turf/open/indestructible/ground/outside/desert/harsh/forest/T in RANGE_TURFS(3, src))
+	for(var/turf/open/indestructible/ground/outside/desertharsh/forest/T in RANGE_TURFS(3, src))
 		if(T.turfPlant)
 			Weight += GRASS_WEIGHT
 
@@ -352,6 +386,23 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
 
+/turf/open/indestructible/ground/outside/road/Initialize(mapload)
+	. = ..()
+	if(prob(33))
+		new /obj/effect/decal/rubble(src)
+	if(prob(8))
+		new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/oil(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/glass(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/generic(src)
+	if(prob(1))
+		new /obj/item/storage/trash_stack(src)
+	if(prob(1))
+		new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+
 /turf/open/indestructible/ground/outside/road_s
 	name = "\proper road"
 	icon_state = "innermiddle"
@@ -365,6 +416,23 @@
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/sidewalk/Initialize(mapload)
+	. = ..()
+	if(prob(33))
+		new /obj/effect/decal/rubble(src)
+	if(prob(8))
+		new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/oil(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/glass(src)
+	if(prob(1))
+		new /obj/effect/decal/cleanable/generic(src)
+	if(prob(1))
+		new /obj/item/storage/trash_stack(src)
+	if(prob(1))
+		new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/sidewalk_s
 	name = "\proper sidewalk"

@@ -2125,6 +2125,29 @@
 				/obj/item/poster/random_official
 				)
 
+/obj/effect/spawner/lootdrop/f13/wreckspawner //for mapgen only, really
+	name = "wreck spawner"
+	icon_state = "junk_loot"
+	lootcount = 1
+	fan_out_items = TRUE
+
+	loot = list(
+			/obj/structure/wreck/trash/five_tires,
+			/obj/structure/wreck/trash/two_tire,
+			/obj/structure/wreck/trash/one_tire,
+			/obj/structure/wreck/trash/halftire,
+			/obj/structure/wreck/trash/four_barrels,
+			/obj/structure/wreck/trash/three_barrels,
+			/obj/structure/wreck/trash/two_barrels,
+			/obj/structure/wreck/trash/one_barrel,
+			/obj/structure/wreck/trash/engine,
+			/obj/structure/wreck/trash/autoshaft,
+			/obj/structure/wreck/trash/bus_door,
+			/obj/structure/wreck/trash/secway,
+			/obj/structure/wreck/trash/brokenvendor
+				)
+
+
 /obj/effect/spawner/lootdrop/f13/seedspawner
 	name = "seed spawner"
 	icon_state = "seed_loot"

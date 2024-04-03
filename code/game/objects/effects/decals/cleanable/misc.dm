@@ -43,8 +43,23 @@
 	. = ..()
 	setDir(pick(GLOB.cardinals))
 
+/obj/effect/decal/cleanable/glass/Initialize(mapload)
+	. = ..()
+	setDir(pick(GLOB.cardinals))
+
 /obj/effect/decal/cleanable/glass/ex_act()
 	qdel(src)
+
+/obj/effect/decal/rubble
+	name = "rubble"
+	desc = "Dirt, debris, loose stones and residue."
+	icon = 'icons/obj/shards.dmi'
+	icon_state = "asteroid0"
+
+/obj/effect/decal/rubble/Initialize(mapload)
+	. = ..()
+	icon_state = "asteroid[rand(0,8)]"
+	setDir(pick(GLOB.cardinals))
 
 /obj/effect/decal/cleanable/glass/plasma
 	icon_state = "plasmatiny"

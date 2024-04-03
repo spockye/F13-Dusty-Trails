@@ -112,6 +112,66 @@
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
+/obj/structure/car/rubbish5
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish5"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/car/rubbish6
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish6"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/car/rubbish7
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish7"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/car/rubbish8
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish8"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/car/rubbish9
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish9"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/car/rubbish10
+	name = "pre-War rubbish"
+	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
+	icon = 'icons/fallout/objects/structures/rubish.dmi'
+	icon_state = "car_rubish10"
+	anchored = 1
+	density = 1
+	layer = ABOVE_MOB_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
 
 /obj/structure/debris/v1
 	name = "pre-War building debris"
