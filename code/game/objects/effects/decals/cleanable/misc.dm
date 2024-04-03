@@ -87,6 +87,18 @@
 	queue_smooth_neighbors(src)
 	return ..()
 
+/obj/effect/decal/cleanable/dirtstain
+	name = "dirt"
+	desc = "Someone should clean that up."
+	icon = 'icons/effects/dirtstain.dmi'
+	icon_state = "dirt-flat-0"
+	beauty = -75
+
+/obj/effect/decal/cleanable/dirtstain/Initialize(mapload)
+	. = ..()
+	icon_state = "dirt-flat-[rand(0,3)]"
+	setDir(pick(GLOB.cardinals))
+
 /obj/effect/decal/cleanable/flour
 	name = "flour"
 	desc = "It's still good. Four second rule!"

@@ -54,6 +54,9 @@
 	/// For space, the asteroid, lavaland, etc. Used with blueprints to determine if we are adding a new area (vs editing a station room)
 	var/outdoors = FALSE
 
+	// Terrain generation var. TRUE if derelict place that should look terrible!
+	var/ruin = FALSE
+
 	/// Size of the area in open turfs, only calculated for indoors areas.
 	var/areasize = 0
 

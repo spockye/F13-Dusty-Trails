@@ -171,6 +171,11 @@
 		plantGrass()
 	if(icon_state == "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src))) //no doublestacking on the plantgrass /structure/flora
+		if(prob(20))
+			new /obj/structure/flora/grass/wasteland(src)
+		if(prob(3))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/desertharsh
 //	step_sounds = list("human" = "dirtfootsteps")
@@ -209,6 +214,8 @@
 		plantGrass()
 	if(icon_state == "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
+
+
 
 /turf/open/indestructible/ground/outside/desertharsh/forest
 	icon_state = "wasteland"
@@ -350,6 +357,14 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 
+/turf/open/indestructible/ground/outside/dirt/Initialize(mapload)
+	. = ..()
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(20))
+			new /obj/structure/flora/grass/wasteland(src)
+		if(prob(3))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+
 /turf/open/indestructible/ground/outside/dirt/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //same thing here, dirt absorbs the liquid... :(
 
@@ -388,22 +403,20 @@
 
 /turf/open/indestructible/ground/outside/road/Initialize(mapload)
 	. = ..()
-	if(prob(33)) //decals
-		new /obj/effect/decal/rubble(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/oil(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/glass(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/generic(src)
-	if(prob(8)) //solid items, so needs checks to avoid multiple structures on top of each other
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(33)) //decals
+			new /obj/effect/decal/rubble(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/oil(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/glass(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/generic(src)
+		if(prob(8))
 			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
-	if(prob(1))
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(1))
 			new /obj/item/storage/trash_stack(src)
-	if(prob(1))
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(1))
 			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/road_s
@@ -422,22 +435,20 @@
 
 /turf/open/indestructible/ground/outside/sidewalk/Initialize(mapload)
 	. = ..()
-	if(prob(33)) //decals
-		new /obj/effect/decal/rubble(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/oil(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/glass(src)
-	if(prob(1))
-		new /obj/effect/decal/cleanable/generic(src)
-	if(prob(8)) //solid items, so needs checks to avoid multiple structures on top of each other
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(33)) //decals
+			new /obj/effect/decal/rubble(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/oil(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/glass(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/generic(src)
+		if(prob(8))
 			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
-	if(prob(1))
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(1))
 			new /obj/item/storage/trash_stack(src)
-	if(prob(1))
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(1))
 			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/sidewalk_s

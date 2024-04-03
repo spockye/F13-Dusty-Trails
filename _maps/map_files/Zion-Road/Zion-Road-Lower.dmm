@@ -3281,6 +3281,24 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/caves)
+"chg" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish6,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
+"cid" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "cie" = (
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/f13/wood,
@@ -4655,6 +4673,16 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"doa" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/structure/car/rubbish9,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/tunnel)
 "doR" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -4778,6 +4806,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"dwF" = (
+/obj/structure/car/rubbish1{
+	layer = 6.0
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "dwQ" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/processor/chopping_block,
@@ -5270,6 +5306,12 @@
 "dWb" = (
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/caves)
+"dWg" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/tunnel)
 "dWz" = (
 /obj/structure/mirror,
 /turf/closed/wall/mineral/wood,
@@ -5535,6 +5577,13 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
+"ejB" = (
+/obj/structure/car/rubbish1,
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
 /area/f13/tunnel)
 "ejC" = (
 /obj/structure/bed/mattress,
@@ -6429,6 +6478,15 @@
 /obj/effect/spawner/lootdrop/f13/traitbooks/low,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"eRd" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish10,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/tunnel)
 "eRI" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib5-old"
@@ -7040,6 +7098,16 @@
 /obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/circuit/f13_green,
 /area/f13/brotherhood/chemistry)
+"fot" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish2,
+/obj/effect/decal/cleanable/generic,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/tunnel)
 "fov" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant,
 /turf/open/indestructible/ground/inside/mountain,
@@ -10290,6 +10358,12 @@
 /obj/item/gun/energy/gammagun,
 /turf/open/floor/carpet/green,
 /area/f13/caves)
+"hNB" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "hNH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/f13vaultrusted{
@@ -12326,6 +12400,12 @@
 	icon_state = "bluerustyfull"
 	},
 /area/f13/brotherhood)
+"jzf" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/tunnel)
 "jzl" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/wreck/trash/two_barrels,
@@ -15735,6 +15815,12 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/tunnel)
+"mlu" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "mlJ" = (
 /obj/structure/table,
 /obj/item/candle/infinite{
@@ -18223,7 +18309,9 @@
 /turf/open/floor/carpet/red,
 /area/f13/tunnel)
 "oep" = (
-/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot,
+/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
+	faction = list("wastebot")
+	},
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -18551,6 +18639,12 @@
 /obj/structure/closet/radiation,
 /turf/open/floor/plating/rust,
 /area/f13/caves)
+"ooQ" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/tunnel)
 "ooS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -19214,7 +19308,9 @@
 	},
 /area/f13/tunnel)
 "oQt" = (
-/obj/structure/car/rubbish3,
+/obj/structure/car/rubbish3{
+	layer = 3.0
+	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -19876,6 +19972,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
+	},
+/area/f13/tunnel)
+"pvS" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish9,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
 "pvT" = (
@@ -20699,6 +20804,12 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"qgT" = (
+/obj/structure/car/rubbish8,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/tunnel)
 "qha" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
@@ -21212,6 +21323,15 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier5,
 /turf/open/floor/f13{
 	icon_state = "reddirtysolid"
+	},
+/area/f13/tunnel)
+"qzU" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
 	},
 /area/f13/tunnel)
 "qzW" = (
@@ -22379,6 +22499,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/raiders)
+"rvw" = (
+/obj/structure/car/rubbish8,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "rvG" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/high_tools,
@@ -22554,6 +22680,15 @@
 /obj/structure/table,
 /turf/open/floor/plating/rust,
 /area/f13/caves)
+"rGu" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/tunnel)
 "rGT" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
@@ -22699,6 +22834,12 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"rLf" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/tunnel)
 "rLr" = (
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/window/reinforced{
@@ -23582,6 +23723,12 @@
 	icon_state = "bar"
 	},
 /area/f13/tunnel)
+"stp" = (
+/obj/structure/car/rubbish7,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/tunnel)
 "stB" = (
 /obj/structure/lattice,
 /obj/structure/table,
@@ -24415,6 +24562,8 @@
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontal"
 	},
+/obj/structure/car/rubbish1,
+/obj/effect/decal/cleanable/glass,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2"
 	},
@@ -24480,6 +24629,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "greenfull"
+	},
+/area/f13/tunnel)
+"tfL" = (
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
+	},
+/obj/structure/car/rubbish3{
+	layer = 5.6;
+	pixel_x = -33
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
 	},
 /area/f13/tunnel)
 "tfV" = (
@@ -27064,12 +27225,15 @@
 	},
 /area/f13/tunnel)
 "uYS" = (
-/obj/structure/ladder/unbreakable{
-	id = "roboticdung";
-	icon_state = "manhole_open";
-	height = 2
+/obj/effect/decal/marking{
+	icon_state = "doublehorizontal"
 	},
-/turf/open/floor/plating/rust,
+/obj/structure/car/rubbish3{
+	icon_state = "car_rubish2"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
 /area/f13/tunnel)
 "uYW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -94876,7 +95040,7 @@ iBY
 xPV
 xPV
 xPV
-uYS
+xPV
 xPV
 xPV
 iBY
@@ -126391,7 +126555,7 @@ lLc
 fDv
 lLc
 oQt
-lLc
+chg
 pOF
 mCh
 lfO
@@ -126881,7 +127045,7 @@ bOP
 sLy
 jiC
 eiJ
-lLc
+cid
 pOF
 lLc
 pOF
@@ -126893,7 +127057,7 @@ lLc
 pOF
 lLc
 fDv
-lLc
+uYS
 fDv
 lLc
 tfr
@@ -127383,8 +127547,8 @@ jPR
 gWd
 sDS
 eiJ
-pOF
-tfr
+ooQ
+qgT
 tfr
 tfr
 fDv
@@ -127394,7 +127558,7 @@ fDv
 tfr
 tfr
 tfr
-tfr
+rLf
 fDv
 tfr
 fDv
@@ -128395,7 +128559,7 @@ fDv
 tfr
 fDv
 fDv
-fDv
+stp
 tfr
 tfr
 tfr
@@ -128890,20 +129054,20 @@ mFM
 uMV
 eiJ
 lLc
-tfr
+dWg
 env
 fDv
 jiC
 pOF
-tcp
+qzU
 fDv
 lLc
 tfr
 jiC
 fDv
-tcp
+eRd
 pOF
-tcp
+rGu
 fDv
 tfr
 fDv
@@ -129393,12 +129557,12 @@ gmW
 eiJ
 thQ
 tfr
-env
+doa
 fDv
 jiC
 tfr
-tcp
-fDv
+fot
+mlu
 thQ
 tfr
 jiC
@@ -131912,10 +132076,10 @@ fDv
 lLc
 fDv
 jiC
-pOF
+jzf
 mCh
 tfr
-lLc
+pvS
 fDv
 fDv
 tfr
@@ -132409,14 +132573,14 @@ lLc
 fDv
 jiC
 fDv
-lLc
+cid
 fDv
 lLc
 fDv
 jiC
 fDv
-lLc
-pOF
+cid
+ejB
 lLc
 fDv
 tfr
@@ -132916,7 +133080,7 @@ fDv
 fDv
 fDv
 fDv
-fDv
+rvw
 fDv
 fDv
 fDv
@@ -134414,7 +134578,7 @@ eiJ
 env
 tfr
 lLc
-fDv
+dwF
 lLc
 fDv
 lLc
@@ -134914,11 +135078,11 @@ jiC
 jiC
 eiJ
 lLc
-tfr
-lLc
+rLf
+tfL
 gMf
 lLc
-fDv
+hNB
 lLc
 fDv
 lLc

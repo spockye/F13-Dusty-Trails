@@ -11220,6 +11220,15 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
+"cTN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/gravel,
+/area/f13/wasteland)
 "cTX" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -12277,6 +12286,14 @@
 	},
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"dkv" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/savannah/bottomcenter{
+	icon_state = "savannah6"
+	},
 /area/f13/wasteland)
 "dkP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14515,12 +14532,13 @@
 /turf/open/indestructible/ground/outside/savannah/bottomleft,
 /area/f13/wasteland)
 "dTp" = (
-/obj/structure/car/rubbish2{
+/obj/structure/sign/trade_sign{
 	pixel_y = 12;
-	pixel_x = -8
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	dir = 8;
+	icon_state = "horizontalinnermain2right"
 	},
 /area/f13/wasteland)
 "dTv" = (
@@ -16603,6 +16621,13 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
+"ezy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "ezD" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -23614,6 +23639,12 @@
 	dir = 1
 	},
 /area/f13/wasteland)
+"gsO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "gsP" = (
 /obj/structure/debris/v1,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -27067,6 +27098,15 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/building)
+"hou" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "hox" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -28557,6 +28597,15 @@
 /area/f13/utah/badlands/valley)
 "hJm" = (
 /obj/dugpit,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"hJA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "hJR" = (
@@ -32797,6 +32846,12 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood,
 /area/f13/utah/badlands)
+"iUu" = (
+/obj/structure/sign/trade_sign{
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "iUv" = (
 /obj/structure/closet/secure_closet/medical1,
 /turf/open/floor/f13{
@@ -33767,6 +33822,10 @@
 	icon_state = "blueyellowfull"
 	},
 /area/f13/building/mall)
+"jip" = (
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/indestructible/ground/outside/desertharsh,
+/area/f13/utah/badlands/valley)
 "jiG" = (
 /obj/item/clothing/gloves/f13/blacksmith{
 	pixel_x = -5
@@ -42674,6 +42733,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
+"lGa" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "lGd" = (
 /obj/structure/destructible/tribal_torch/lit,
 /obj/effect/turf_decal/weather/dirt{
@@ -46577,6 +46645,13 @@
 /obj/effect/mob_spawn/human/corpse/raider,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"mIL" = (
+/obj/structure/sign/trade_sign{
+	pixel_y = 12;
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "mIO" = (
 /obj/structure/debris/v3{
 	pixel_x = -18
@@ -49853,6 +49928,15 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
+"nDy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "nDC" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -52381,7 +52465,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/white/side,
 /area/f13/building/mall)
 "ooe" = (
-/obj/structure/bus_door,
+/obj/structure/bus_door{
+	pixel_y = -11
+	},
+/obj/structure/sign/trade_sign{
+	pixel_y = 12;
+	dir = 4
+	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -54581,6 +54671,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/mall)
+"oUN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "oUP" = (
 /obj/structure/lamp_post{
 	dir = 8
@@ -55134,9 +55233,6 @@
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gib1"
 	},
-/obj/effect/mob_spawn/human/corpse/ncr{
-	buckled_mobs = obj/effect/mob_spawn/human/corpse/ncr
-	},
 /obj/item/throwing_star/tomahawk{
 	pixel_y = 2;
 	pixel_x = 6
@@ -55217,6 +55313,15 @@
 	},
 /turf/open/indestructible/ground/outside/dirt/dark,
 /area/f13/building)
+"peT" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/savannah/bottomcenter{
+	icon_state = "savannah14";
+	dir = 10
+	},
+/area/f13/wasteland)
 "pfe" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt{
@@ -58622,6 +58727,13 @@
 /obj/structure/chair/office/dark,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"pYB" = (
+/obj/structure/sign/trade_sign{
+	pixel_y = 12;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "pYF" = (
 /obj/effect/turf_decal/trimline/neutral/corner{
 	dir = 1
@@ -60520,6 +60632,15 @@
 	icon_state = "whitedirtysolid"
 	},
 /area/f13/city/bighorn)
+"qBe" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "qBq" = (
 /obj/item/trash/f13/dog,
 /turf/open/indestructible/ground/outside/desertharsh{
@@ -62434,9 +62555,6 @@
 /area/f13/building)
 "rcC" = (
 /obj/structure/bonfire/prelit,
-/obj/structure/cross/tribal{
-	pixel_y = 19
-	},
 /turf/open/indestructible/ground/outside/desertharsh{
 	dir = 9;
 	icon_state = "dirtfull"
@@ -64344,6 +64462,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc,
 /area/f13/city/bighorn)
+"rDa" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "rDf" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/lattice,
@@ -69396,6 +69523,15 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/building)
+"sYh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/savannah/bottomcenter{
+	icon_state = "savannah14";
+	dir = 10
+	},
+/area/f13/wasteland)
 "sYp" = (
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -71727,6 +71863,9 @@
 /area/f13/wasteland/legion)
 "tFQ" = (
 /obj/item/storage/trash_stack,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland)
 "tGi" = (
@@ -75133,6 +75272,15 @@
 	},
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
+"uGh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "uGj" = (
 /obj/structure/wreck/trash/five_tires{
 	pixel_y = -14;
@@ -76162,6 +76310,15 @@
 	},
 /turf/open/indestructible/ground/outside/desertharsh,
 /area/f13/utah/badlands/valley)
+"uWa" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "uWf" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 10;
@@ -76558,6 +76715,9 @@
 /area/f13/building)
 "vdc" = (
 /obj/structure/closet/crate/bin/trashbin,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/wasteland)
 "vdf" = (
@@ -81851,6 +82011,15 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/ncr)
+"wBJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "wBL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb,
@@ -87371,6 +87540,13 @@
 /obj/structure/lattice,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
+"yda" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "ydc" = (
 /obj/machinery/light{
 	dir = 8
@@ -99029,7 +99205,7 @@ ePl
 deP
 rZO
 sPF
-fhu
+jip
 fhu
 fhu
 fhu
@@ -129885,7 +130061,7 @@ dHw
 dHw
 qiV
 qiV
-dTp
+dHw
 abc
 efP
 dHw
@@ -140929,7 +141105,7 @@ omN
 qiV
 oYO
 qiV
-pIU
+dTp
 pIU
 pIU
 qiV
@@ -142012,7 +142188,7 @@ ilc
 ilc
 ilc
 dCY
-qlt
+ejG
 oLF
 oLF
 oLF
@@ -142514,7 +142690,7 @@ ilc
 ilc
 ilc
 dCY
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -143016,7 +143192,7 @@ lpc
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -143518,7 +143694,7 @@ ksF
 ppJ
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -144020,7 +144196,7 @@ edM
 bvQ
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -144044,11 +144220,11 @@ kUv
 dKq
 dKq
 dKq
-dKq
-dKq
-dKq
-dKq
-hdA
+nVo
+nVo
+nVo
+nVo
+sYh
 gsF
 eUg
 eUg
@@ -144522,7 +144698,7 @@ vJb
 aIF
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -144532,46 +144708,46 @@ dKq
 dKq
 hTS
 qva
-iIl
-iIl
-iIl
+pmS
+pmS
+pmS
 xoF
+eAT
+nVo
+nVo
+nVo
 dKq
 dKq
 dKq
 dKq
 dKq
-dKq
-dKq
-dKq
-dKq
-dKq
+hTS
 qva
 iIl
 fST
 iIl
 xoF
-hdA
+peT
 eUg
 eUg
 pxT
 dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
+nVo
 dKq
 dKq
 dKq
@@ -145024,7 +145200,7 @@ ulA
 eDT
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -145037,44 +145213,44 @@ yjD
 oOQ
 ubs
 vEF
-aRN
-iIl
-iIl
-iIl
+fUJ
+pmS
+pmS
+pmS
 xoF
+eAT
+nVo
 dKq
 dKq
-dKq
-dKq
-dKq
+xoK
 qva
 gCS
 aPk
 aPk
 aPk
 cPk
-dKq
+eAT
 ezp
 ezp
 kUv
-dKq
-aRN
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-iQI
-aRN
-aRN
-dKq
+hTS
+qva
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+csY
+pmS
+xoF
+ouX
 dKq
 dKq
 dKq
@@ -145526,7 +145702,7 @@ ulA
 rbY
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -145536,19 +145712,19 @@ hTS
 qva
 yjD
 ubQ
-eUg
-eUg
-eUg
-aaa
+cuL
+cuL
+cuL
+wBJ
 aaa
 ubs
 vEF
-aRN
-iIl
+fUJ
+pmS
 xoF
-dKq
-dKq
-dKq
+eAT
+nVo
+xoK
 dTv
 gCS
 aPk
@@ -145556,11 +145732,11 @@ eaY
 vTO
 gCS
 xoF
+ouX
 dKq
-dKq
-dKq
-aRN
-aRN
+hTS
+qva
+yjD
 oOQ
 ubs
 ubs
@@ -145574,9 +145750,9 @@ ubs
 ubs
 ubs
 ubs
-dKq
-aRN
-dKq
+vEF
+dFY
+eAT
 dKq
 qTp
 dKq
@@ -146028,7 +146204,7 @@ ulA
 rbY
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -146037,20 +146213,20 @@ xoK
 qva
 bLh
 ubQ
-eUg
+tYG
 yha
 yha
 yha
 yha
-eUg
-eUg
-eUg
+pwQ
+cuL
+cuL
 aaa
 vEF
-aRN
-iIl
+fUJ
+pmS
 xoF
-dKq
+uGh
 dTv
 gCS
 aPk
@@ -146058,29 +146234,29 @@ aPk
 aPk
 gCS
 bLh
-dKq
-dKq
-aRN
-aRN
+ouX
+hTS
+qva
+yjD
 oOQ
 dKq
 dKq
 dud
 dKq
 eUg
+cuL
+cuL
+cuL
+cuL
+cuL
+cuL
+cuL
 eUg
-eUg
-eUg
-eUg
-eUg
-eUg
-eUg
-eUg
-dKq
-aRN
-aRN
-dKq
-dKq
+xoK
+fUJ
+xoF
+eAT
+nVo
 dKq
 dKq
 dKq
@@ -146530,7 +146706,7 @@ mlJ
 sZX
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -146538,7 +146714,7 @@ pxT
 xoK
 dTv
 bcX
-kfm
+ezy
 yha
 yha
 lhu
@@ -146547,11 +146723,11 @@ yha
 yha
 yha
 yha
-eUg
+pwQ
 eUg
 ubs
 vEF
-aRN
+fUJ
 iIl
 aRN
 aRN
@@ -146559,31 +146735,31 @@ aPk
 aPk
 aPk
 aRN
+bLh
+uGh
+qva
 yjD
-dKq
-aRN
-aRN
 oOQ
 dKq
 dKq
 dKq
 dKq
 eUg
+tYG
+yha
+yha
+yha
+yha
+yha
+yha
+yha
+pwQ
 eUg
-yha
-yha
-yha
-yha
-yha
-yha
-yha
-eUg
-eUg
-dKq
-aRN
-aRN
-aRN
-dKq
+vEF
+fUJ
+csY
+xoF
+eAT
 dKq
 dKq
 iMl
@@ -147032,7 +147208,7 @@ ksF
 pwn
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -147040,7 +147216,7 @@ pxT
 xoK
 dTv
 xBG
-kfm
+ezy
 yha
 lhu
 edT
@@ -147050,27 +147226,27 @@ wom
 bBT
 yha
 yha
-eUg
+pwQ
 eUg
 dKq
 vEF
+fUJ
 aRN
 aRN
 aRN
 aRN
 aRN
 aRN
-bLh
-dKq
 aRN
-aRN
+iIl
+yjD
 oOQ
 dKq
 dKq
 dKq
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -147080,13 +147256,13 @@ wom
 bBT
 yha
 yha
+pwQ
 eUg
-eUg
-dKq
-dKq
-aRN
-aRN
-dKq
+ubs
+vEF
+fUJ
+xoF
+eAT
 uaA
 oiV
 eUg
@@ -147534,7 +147710,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -147542,7 +147718,7 @@ pxT
 xoK
 dTv
 tUH
-kfm
+ezy
 yha
 pnP
 edT
@@ -147553,25 +147729,25 @@ edT
 bBT
 yha
 yha
-eUg
+kfm
 dKq
 dKq
 vEF
+dTv
 aRN
 aRN
 aRN
 aRN
 aRN
 aRN
-aRN
-aRN
+bLh
 oOQ
 dKq
 dKq
 dKq
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -147583,12 +147759,12 @@ edT
 bBT
 yha
 yha
-eUg
+pwQ
 eUg
 dKq
-dKq
-aRN
-aRN
+vEF
+fUJ
+xoF
 hdA
 eUg
 eUg
@@ -148036,7 +148212,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -148044,7 +148220,7 @@ pxT
 xoK
 dTv
 aym
-kfm
+ezy
 yha
 eGM
 edT
@@ -148055,24 +148231,24 @@ edT
 edT
 bBT
 yha
-eUg
+kfm
 dKq
 dud
 xoK
-aRN
+dTv
 qVE
 vev
 aRN
 aRN
 qVE
 vev
-aRN
+bLh
 ouX
 dKq
 dKq
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -148086,12 +148262,12 @@ bbW
 bBT
 yha
 yha
+pwQ
 eUg
-eUg
 dKq
-dKq
-aRN
-dKq
+vEF
+nky
+eAT
 iMl
 eUg
 tAG
@@ -148538,7 +148714,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -148546,7 +148722,7 @@ pxT
 xoK
 dTv
 iwj
-kfm
+ezy
 yha
 yha
 pnP
@@ -148557,23 +148733,23 @@ edT
 edT
 jXX
 yha
-eUg
+kfm
 dKq
 dKq
 xoK
-aRN
+dTv
 lPy
 rro
 aRN
 aRN
 lPy
 lPy
-aRN
+bLh
 ouX
 dKq
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -148581,7 +148757,7 @@ edT
 xTL
 yha
 yha
-eUg
+hJA
 yha
 yha
 yha
@@ -148589,11 +148765,11 @@ pnP
 bBT
 yha
 yha
-eUg
-eUg
-eUg
-aRN
-aRN
+pwQ
+cuL
+kpZ
+fUJ
+xoF
 hdA
 tzl
 tAG
@@ -149040,7 +149216,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -149049,7 +149225,7 @@ xoK
 dFY
 oOQ
 eUg
-eUg
+gsO
 yha
 eGM
 edT
@@ -149059,22 +149235,22 @@ edT
 edT
 xTL
 yha
-eUg
+kfm
 dKq
 dKq
 xoK
-aRN
+fUJ
 qVE
 vev
 aRN
 aRN
 qVE
 vev
-aRN
+yjD
 ouX
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -149082,10 +149258,10 @@ edT
 xTL
 yha
 yha
+ubQ
 eUg
-eUg
-eUg
-eUg
+aaa
+gsO
 yha
 eGM
 edT
@@ -149093,9 +149269,9 @@ bBT
 yha
 yha
 yha
-eUg
-eUg
-aRN
+pwQ
+gsO
+nky
 dKq
 iMl
 tAG
@@ -149542,7 +149718,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -149551,7 +149727,7 @@ xoK
 dFY
 eAT
 dKq
-eUg
+kpZ
 yha
 yha
 eGM
@@ -149561,21 +149737,21 @@ edT
 jXX
 yha
 yha
-eUg
+kfm
 dKq
 dKq
 dKq
 vEF
 vdc
-aRN
-aRN
+iQI
+iQI
 aRN
 tFQ
-aRN
+yjD
 oOQ
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -149583,11 +149759,11 @@ edT
 xTL
 yha
 yha
-eUg
+ubQ
 eUg
 dKq
 dKq
-eUg
+kpZ
 yha
 yha
 eGM
@@ -149596,9 +149772,9 @@ wom
 bBT
 yha
 yha
-eUg
-aRN
-dKq
+ezy
+nky
+eAT
 iMl
 tAG
 wkg
@@ -150044,7 +150220,7 @@ frN
 kfA
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -150054,7 +150230,7 @@ fUJ
 xoF
 ouX
 eUg
-eUg
+gsO
 yha
 sAL
 eGM
@@ -150063,8 +150239,8 @@ edT
 jXX
 yha
 yha
-eUg
-eUg
+pwQ
+cuL
 eUg
 dKq
 dKq
@@ -150076,7 +150252,7 @@ oOQ
 ubs
 dKq
 eUg
-eUg
+tYG
 yha
 yha
 lhu
@@ -150084,13 +150260,13 @@ edT
 xTL
 yha
 yha
-eUg
+ubQ
 eUg
 dKq
 dKq
 dKq
 eUg
-eUg
+gsO
 yha
 yha
 pnP
@@ -150098,10 +150274,10 @@ edT
 edT
 eQx
 yha
-eUg
-aRN
-aRN
-iMl
+ezy
+dTv
+xoF
+dkv
 tAG
 wkg
 frN
@@ -150546,7 +150722,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -150557,7 +150733,7 @@ nky
 eAT
 dKq
 eUg
-eUg
+gsO
 yha
 yha
 eGM
@@ -150567,7 +150743,7 @@ bBT
 yha
 yha
 yha
-eUg
+pwQ
 eUg
 dKq
 dKq
@@ -150576,8 +150752,8 @@ xoK
 nky
 ouX
 eUg
-eUg
-eUg
+cuL
+tYG
 yha
 yha
 lhu
@@ -150585,14 +150761,14 @@ edT
 xTL
 yha
 yha
+ubQ
 eUg
-eUg
 dKq
 dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 yha
 pnP
@@ -150600,10 +150776,10 @@ edT
 edT
 lPt
 yha
-eUg
-aRN
-aRN
-iMl
+ezy
+dTv
+bLh
+dkv
 tAG
 wkg
 frN
@@ -151048,7 +151224,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -151060,7 +151236,7 @@ xoF
 eAT
 dKq
 eUg
-eUg
+gsO
 yha
 yha
 yha
@@ -151070,14 +151246,14 @@ wom
 bBT
 yha
 yha
-eUg
-eUg
-eUg
-eUg
+pwQ
+cuL
+cuL
+cuL
 kpZ
 nky
 kfm
-eUg
+tYG
 yha
 yha
 yha
@@ -151086,15 +151262,15 @@ edT
 xTL
 yha
 yha
+ubQ
 eUg
-eUg
 dKq
 dKq
 dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 lhu
 edT
@@ -151104,8 +151280,8 @@ jty
 fIo
 ksh
 aRN
-aRN
-iMl
+bLh
+dkv
 tAG
 wkg
 frN
@@ -151550,7 +151726,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -151563,8 +151739,8 @@ xoF
 eAT
 nVo
 eUg
-eUg
-eUg
+aaa
+gsO
 yha
 yha
 eGM
@@ -151576,9 +151752,9 @@ yha
 yha
 yha
 yha
-tYG
+hou
 nky
-pwQ
+yda
 yha
 yha
 yha
@@ -151587,8 +151763,8 @@ edT
 xTL
 yha
 yha
+ubQ
 eUg
-eUg
 dKq
 dKq
 dKq
@@ -151596,7 +151772,7 @@ dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 pnP
 edT
@@ -151606,8 +151782,8 @@ teE
 nEP
 uOp
 aRN
-aRN
-iMl
+bLh
+dkv
 tAG
 wkg
 frN
@@ -152052,7 +152228,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -152067,7 +152243,7 @@ xoF
 ouX
 dKq
 eUg
-eUg
+gsO
 yha
 yha
 yha
@@ -152088,8 +152264,8 @@ edT
 xTL
 yha
 yha
+ubQ
 eUg
-eUg
 dKq
 dKq
 dKq
@@ -152098,7 +152274,7 @@ dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 pnP
 edT
@@ -152108,8 +152284,8 @@ lwD
 uti
 oFL
 aRN
-aRN
-iMl
+bLh
+dkv
 tAG
 wkg
 frN
@@ -152554,7 +152730,7 @@ frN
 kfA
 kfA
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -152570,9 +152746,9 @@ eAT
 nVo
 nVo
 cuL
-eUg
-eUg
-eUg
+aaa
+aaa
+gsO
 yha
 yha
 eGM
@@ -152589,7 +152765,7 @@ xTL
 yha
 yha
 yha
-eUg
+ubQ
 eUg
 dKq
 qTp
@@ -152600,7 +152776,7 @@ dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 pnP
 edT
@@ -152610,8 +152786,8 @@ teE
 bGT
 bLt
 aRN
-aRN
-iMl
+bLh
+dkv
 tAG
 wkg
 frN
@@ -153056,7 +153232,7 @@ frN
 qiV
 kfA
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -153075,7 +153251,7 @@ xoF
 eAT
 nVo
 eUg
-eUg
+gsO
 yha
 yha
 yha
@@ -153087,11 +153263,11 @@ lYJ
 bbW
 xTL
 yha
+oUN
 yha
-yha
+ubQ
+aaa
 eUg
-eUg
-eUg
 dKq
 dKq
 dKq
@@ -153102,7 +153278,7 @@ dKq
 dKq
 dKq
 dKq
-eUg
+kpZ
 yha
 pnP
 edT
@@ -153112,8 +153288,8 @@ jty
 oar
 ksh
 aRN
-aRN
-iMl
+yjD
+dkv
 tAG
 wkg
 frN
@@ -153553,12 +153729,12 @@ jfl
 qlt
 eHk
 eHk
-wkg
+dAC
 frN
-qiV
+kfA
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -153578,20 +153754,20 @@ pmS
 xoF
 eAT
 cuL
+aaa
+aaa
+gsO
+yha
+yha
+yha
+yha
+yha
+yha
+yha
+yha
+ubQ
+aaa
 eUg
-eUg
-eUg
-yha
-yha
-yha
-yha
-yha
-yha
-yha
-yha
-eUg
-eUg
-eUg
 dKq
 dKq
 dKq
@@ -153604,17 +153780,17 @@ dKq
 dKq
 dKq
 dKq
-eUg
-yha
+kpZ
+lGa
 pnP
 edT
 edT
 edT
 xTL
 yha
-eUg
-aRN
-dKq
+ezy
+nky
+oOQ
 iMl
 tAG
 wkg
@@ -154055,12 +154231,12 @@ jfl
 qlt
 qlt
 qlt
-wkg
+dAC
 frN
 qiV
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -154083,16 +154259,16 @@ xoF
 eAT
 nVo
 cuL
+rDa
+rDa
+rDa
+uWa
+cTN
+nDy
+rDa
+rDa
 cuL
-cuL
-cuL
-tYG
-aRN
-pwQ
-cuL
-cuL
-cuL
-nVo
+qBe
 nVo
 nVo
 nVo
@@ -154106,7 +154282,7 @@ dKq
 dKq
 dud
 dKq
-eUg
+kpZ
 yha
 eGM
 edT
@@ -154114,9 +154290,9 @@ edT
 xTL
 yha
 yha
-eUg
-aRN
-dKq
+ezy
+nky
+ouX
 iMl
 tAG
 wkg
@@ -154562,7 +154738,7 @@ frN
 qiV
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -154590,35 +154766,35 @@ pmS
 pmS
 pmS
 aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-dKq
-dKq
-dKq
-dKq
-eUg
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+pmS
+xoF
+eAT
+nVo
+nVo
+nVo
+kpZ
 yha
 yha
 eGM
 xTL
 yha
 yha
-eUg
-eUg
-aRN
-dKq
+ubQ
+tYG
+nky
+ouX
 iMl
 tAG
 wkg
@@ -155061,10 +155237,10 @@ jFX
 jFX
 yjA
 frN
-qiV
+dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -155105,22 +155281,22 @@ ubs
 ubs
 ubs
 vEF
-aRN
-aRN
-aRN
-aRN
-aRN
-eUg
-eUg
+fUJ
+csY
+csY
+csY
+xoF
+pwQ
+gsO
 yha
 yha
 yha
 yha
-eUg
-eUg
-aRN
-aRN
-dKq
+ubQ
+tYG
+qva
+yjD
+ouX
 iMl
 tAG
 wkg
@@ -155566,7 +155742,7 @@ frN
 qiV
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -155611,17 +155787,17 @@ wJM
 wJM
 wJM
 eTa
-aRN
-aRN
-eUg
-eUg
-eUg
-eUg
-eUg
-eUg
-aRN
-aRN
-dKq
+fUJ
+xoF
+pwQ
+wBJ
+wBJ
+wBJ
+wBJ
+tYG
+qva
+yjD
+oOQ
 dKq
 iMl
 tAG
@@ -156068,7 +156244,7 @@ frN
 qiV
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -156113,16 +156289,16 @@ oLF
 oLF
 cCO
 wkg
-dKq
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-aRN
-qTp
+vEF
+iQI
+csY
+csY
+csY
+csY
+csY
+csY
+yjD
+oOQ
 dKq
 dKq
 iMl
@@ -156570,7 +156746,7 @@ frN
 qiV
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -156616,15 +156792,15 @@ dHw
 tAG
 wkg
 dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
-dKq
+ubs
+ubs
+ubs
+ubs
+ubs
+ubs
+ubs
+ubs
+qTp
 dKq
 uaA
 oiV
@@ -157072,7 +157248,7 @@ frN
 qiV
 kKP
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -157574,7 +157750,7 @@ frN
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -158076,7 +158252,7 @@ jGZ
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -158578,7 +158754,7 @@ dHw
 dHw
 omN
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -159073,14 +159249,14 @@ dHw
 dHw
 dHw
 dHw
-dHw
+olS
 olS
 dHw
 dHw
 dHw
 azJ
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -159575,14 +159751,14 @@ dHw
 dHw
 dHw
 gut
-dHw
+qdb
 qdb
 dHw
 dHw
 dHw
 dHw
 tAG
-qlt
+wkg
 eUg
 eUg
 eUg
@@ -160077,14 +160253,14 @@ wJM
 wJM
 wJM
 wJM
-wJM
+tbO
 tbO
 kdK
 fer
 dHw
 dHw
 tAG
-qlt
+oIh
 wJM
 wJM
 wJM
@@ -160471,7 +160647,7 @@ dHw
 dHw
 tAG
 qlt
-qlt
+iUu
 qlt
 jFX
 jFX
@@ -160535,7 +160711,7 @@ iZt
 iZt
 lao
 qlt
-qlt
+mIL
 qlt
 wkg
 frN
@@ -160973,9 +161149,9 @@ dHw
 dHw
 tAG
 qlt
-whX
-whX
-whX
+qlt
+qlt
+qlt
 whX
 whX
 whX
@@ -170621,11 +170797,11 @@ viq
 viq
 viq
 tAG
-wkg
-frN
-dHw
-dHw
-tAG
+mHx
+ilc
+ilc
+ilc
+dCY
 qlt
 geE
 vRw
@@ -171123,11 +171299,11 @@ fjn
 qiV
 viq
 tAG
-wkg
-frN
-dHw
-dHw
-tAG
+mHx
+ilc
+ilc
+ilc
+dCY
 qlt
 qfs
 aTP
@@ -194607,7 +194783,7 @@ dHw
 dHw
 auL
 qlt
-qlt
+pYB
 qlt
 qlt
 qlt
@@ -194671,7 +194847,7 @@ qlt
 qlt
 qlt
 qlt
-qlt
+pYB
 qlt
 oFY
 frN

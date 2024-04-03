@@ -163,6 +163,7 @@
 	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
 	environment = 2
 	grow_chance = 5
+	ruin = TRUE
 
 /area/f13/building/massfusion
 	name = "Mass Fusion Plant"
@@ -382,6 +383,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
 	environment = 21
 	grow_chance = 25
+	ruin = TRUE
 
 /area/f13/tunnel/northeast
 	name = "North-Eastern Tunnel"

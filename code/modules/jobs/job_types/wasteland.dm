@@ -9,7 +9,7 @@
 	spawn_positions = -1
 	description = "You are a denizen of La Verkin, or have arrived here for purposes known only to you. \
 	If you're new, the settlement of Waypoint within the central urban ruins may prove a valuable first stop. \
-	Simply head south from the northern tunnel until you see directional signs for the city. \
+	Simply head along the highway from the tunnel you spawned in until you see directional signs for the city. \
 	Try to make a living for yourself - or simply survive - and craft your own unique story."
 	supervisors = "fate"
 	selection_color = "#dddddd"

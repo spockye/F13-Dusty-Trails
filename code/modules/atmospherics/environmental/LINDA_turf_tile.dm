@@ -33,6 +33,19 @@
 	var/list/atmos_overlay_types //gas IDs of current active gas overlays
 
 /turf/open/Initialize(mapload)
+	var/area/area = get_area(src)
+	if(area.ruin)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)  || (locate(/turf/open/transparent/openspace) in src)))
+			if(prob(50))
+				new /obj/effect/decal/cleanable/dirtstain(src)
+			if(prob(5))
+				new /obj/effect/decal/cleanable/glass(src)
+			if(prob(5))
+				new /obj/effect/decal/cleanable/generic(src)
+			if(prob(3))
+				new /obj/effect/decal/cleanable/blood(src)
+			if(prob(1))
+				new /obj/effect/gibspawner/human/bodypartless(src)
 	if(!blocks_air)
 
 		air = new(2500,src)
@@ -271,4 +284,3 @@
 	move_prob += pressure_resistance_prob_delta
 	if (move_prob > PROBABILITY_OFFSET && prob(move_prob) && (move_resist != INFINITY) && (!anchored && (max_force >= (move_resist * MOVE_FORCE_PUSH_RATIO))) || (anchored && (max_force >= (move_resist * MOVE_FORCE_FORCEPUSH_RATIO))))
 		step(src, direction)
-
