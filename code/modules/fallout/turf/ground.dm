@@ -388,20 +388,23 @@
 
 /turf/open/indestructible/ground/outside/road/Initialize(mapload)
 	. = ..()
-	if(prob(33))
+	if(prob(33)) //decals
 		new /obj/effect/decal/rubble(src)
-	if(prob(8))
-		new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/oil(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/glass(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/generic(src)
+	if(prob(8)) //solid items, so needs checks to avoid multiple structures on top of each other
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
 	if(prob(1))
-		new /obj/item/storage/trash_stack(src)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/item/storage/trash_stack(src)
 	if(prob(1))
-		new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/road_s
 	name = "\proper road"
@@ -419,20 +422,23 @@
 
 /turf/open/indestructible/ground/outside/sidewalk/Initialize(mapload)
 	. = ..()
-	if(prob(33))
+	if(prob(33)) //decals
 		new /obj/effect/decal/rubble(src)
-	if(prob(8))
-		new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/oil(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/glass(src)
 	if(prob(1))
 		new /obj/effect/decal/cleanable/generic(src)
+	if(prob(8)) //solid items, so needs checks to avoid multiple structures on top of each other
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
 	if(prob(1))
-		new /obj/item/storage/trash_stack(src)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/item/storage/trash_stack(src)
 	if(prob(1))
-		new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/sidewalk_s
 	name = "\proper sidewalk"
