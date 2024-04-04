@@ -1536,11 +1536,9 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "aGi" = (
-/obj/structure/window/fulltile/ruins{
-	icon_state = "ruinswindowbroken"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/tcoms)
 "aGR" = (
 /obj/structure/closet/crate/bin/trashbin,
 /obj/machinery/light{
@@ -1714,7 +1712,7 @@
 "aMC" = (
 /obj/structure/bed/wooden,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "aMN" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -3615,7 +3613,7 @@
 	dir = 4
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "ccR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
@@ -4250,14 +4248,11 @@
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "cyj" = (
-/obj/structure/curtain{
-	color = "#845f58";
-	pixel_y = -32
-	},
+/obj/machinery/light/small,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "cys" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -4362,8 +4357,11 @@
 	dir = 4;
 	layer = 1
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "cDB" = (
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gib3"
@@ -4703,7 +4701,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "cQb" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -4766,7 +4764,7 @@
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "cSw" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -5177,8 +5175,11 @@
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "djI" = (
 /obj/effect/overlay/junk/oldpipes,
 /turf/closed/wall/rust,
@@ -6576,11 +6577,12 @@
 	},
 /area/f13/caves)
 "eqX" = (
-/obj/structure/window/fulltile/ruins{
-	icon_state = "ruinswindowvertical"
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "eqY" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/carpet/green,
@@ -7686,7 +7688,7 @@
 	anchored = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "fjG" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -8822,11 +8824,6 @@
 /obj/item/instrument/harmonica,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"gcB" = (
-/turf/open/transparent/openspace{
-	name = "air"
-	},
-/area/f13/utah/badlands/caves)
 "gcL" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -11196,15 +11193,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt/dark,
 /area/f13/wasteland)
-"hJr" = (
-/obj/machinery/light/small{
-	brightness = 7;
-	dir = 4
-	},
-/turf/open/transparent/openspace{
-	name = "air"
-	},
-/area/f13/wasteland/ncr)
 "hKk" = (
 /obj/structure/chair/office,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -11535,7 +11523,7 @@
 "hXW" = (
 /obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "hYy" = (
 /obj/structure/anvil/obtainable/legion,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -11822,7 +11810,7 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "ijI" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/belt/fannypack/pink,
@@ -11936,7 +11924,7 @@
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "iot" = (
 /turf/open/floor/f13{
 	dir = 1;
@@ -12006,8 +11994,8 @@
 /turf/open/floor/carpet/blue,
 /area/f13/building)
 "iqa" = (
-/turf/closed/wall/f13/wood/house/broken,
-/area/f13/ncr)
+/turf/open/indestructible,
+/area/f13/tcoms)
 "iqK" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -14143,8 +14131,12 @@
 	color = "#A47449";
 	dir = 8
 	},
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "jLK" = (
 /turf/open/transparent/openspace{
 	name = "air"
@@ -14512,7 +14504,7 @@
 	dir = 1
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "kcD" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -15737,12 +15729,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"kTJ" = (
-/obj/structure/window/fulltile/ruins{
-	icon_state = "ruinswindowdestroyed"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "kTM" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/f13{
@@ -15856,9 +15842,8 @@
 /turf/open/indestructible/ground/outside/desertharsh,
 /area/f13/utah/badlands/valley)
 "kYQ" = (
-/obj/structure/window/fulltile/ruins,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
+/turf/closed/indestructible/riveted,
+/area/f13/tcoms)
 "kZg" = (
 /obj/structure/table,
 /obj/structure/barricade/bars,
@@ -17937,7 +17922,7 @@
 	},
 /obj/structure/barricade/wooden,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "mtz" = (
 /obj/structure/stalkeregg,
 /turf/open/floor/plating/dirt,
@@ -23172,7 +23157,7 @@
 	pixel_y = 17
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "pZP" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -24192,16 +24177,12 @@
 	},
 /area/f13/building)
 "qGC" = (
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "121";
-	name = "NCR Outpost"
+/obj/structure/chair/wood{
+	dir = 4;
+	layer = 1
 	},
-/obj/machinery/door/unpowered/securedoor{
-	req_access_txt = "121";
-	name = "NCR Outpost"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/ncr)
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "qGF" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor2";
@@ -24442,8 +24423,11 @@
 /area/f13/city/bighorn)
 "qQo" = (
 /obj/machinery/microwave/stove,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "qQr" = (
 /obj/structure/simple_door/metal/dirtystore{
 	name = "Vacant Unit"
@@ -25129,7 +25113,7 @@
 	pixel_y = 30
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "rui" = (
 /obj/machinery/light{
 	dir = 8;
@@ -26153,9 +26137,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
-"sgP" = (
-/turf/closed/wall/f13/wood/house,
-/area/f13/ncr)
 "sgZ" = (
 /obj/structure/simple_door/metal/barred,
 /obj/effect/decal/cleanable/blood/gibs{
@@ -27583,15 +27564,9 @@
 /turf/open/floor/wood,
 /area/f13/ncr)
 "tit" = (
-/obj/structure/closet/wardrobe{
-	anchored = 1
-	},
-/obj/structure/curtain{
-	color = "#845f58";
-	pixel_y = -32
-	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "tiL" = (
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -28069,14 +28044,11 @@
 	},
 /area/f13/building)
 "tvE" = (
-/obj/structure/railing{
-	color = "#A47449";
-	dir = 8
+/obj/machinery/light/small{
+	dir = 1
 	},
-/turf/open/transparent/openspace{
-	name = "air"
-	},
-/area/f13/ncr)
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "tvH" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
@@ -29117,11 +29089,14 @@
 	},
 /area/f13/building)
 "uap" = (
-/obj/machinery/light/small,
-/turf/open/transparent/openspace{
-	name = "air"
+/obj/structure/chair/wood{
+	dir = 8
 	},
-/area/f13/wasteland/ncr)
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "uaH" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -29478,7 +29453,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "uof" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -29788,10 +29763,6 @@
 	name = "air"
 	},
 /area/f13/wasteland)
-"uyM" = (
-/obj/structure/table/wood,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "uyO" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -29992,7 +29963,7 @@
 "uDn" = (
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "uDX" = (
 /obj/structure/railing{
 	color = "#A47449"
@@ -30297,7 +30268,7 @@
 "uQP" = (
 /obj/structure/simple_door/brokenglass,
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "uQZ" = (
 /mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/indestructible/ground/outside/dirt/harsh,
@@ -31812,7 +31783,7 @@
 	dir = 8
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "waj" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/rollingpin,
@@ -31994,7 +31965,7 @@
 	dir = 10
 	},
 /turf/open/floor/f13/wood,
-/area/f13/ncr)
+/area/f13/building)
 "whH" = (
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
@@ -34336,15 +34307,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/city/bighorn)
-"xWu" = (
-/obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
-	},
-/turf/open/transparent/openspace{
-	name = "air"
-	},
-/area/f13/wasteland/ncr)
 "xWw" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -34726,11 +34688,11 @@
 /area/f13/building/mall)
 
 (1,1,1) = {"
-vWn
-vWn
-vWn
-vWn
-vWn
+kYQ
+kYQ
+kYQ
+kYQ
+kYQ
 vWn
 vWn
 vWn
@@ -35228,11 +35190,11 @@ fMa
 fMa
 "}
 (2,1,1) = {"
-vWn
-vWn
-vWn
-vWn
-vWn
+kYQ
+iqa
+iqa
+iqa
+kYQ
 vWn
 vWn
 vWn
@@ -35730,11 +35692,11 @@ fMa
 fMa
 "}
 (3,1,1) = {"
-vWn
-vWn
-vWn
-vWn
-vWn
+kYQ
+iqa
+aGi
+iqa
+kYQ
 vWn
 vWn
 vWn
@@ -36232,11 +36194,11 @@ fMa
 fMa
 "}
 (4,1,1) = {"
-vWn
-vWn
-vWn
-vWn
-vWn
+kYQ
+iqa
+iqa
+iqa
+kYQ
 vWn
 vWn
 vWn
@@ -36734,11 +36696,11 @@ fMa
 fMa
 "}
 (5,1,1) = {"
-vWn
-vWn
-vWn
-vWn
-vWn
+kYQ
+kYQ
+kYQ
+kYQ
+kYQ
 vWn
 vWn
 vWn
@@ -71196,8 +71158,8 @@ vWn
 vWn
 vWn
 vWn
-kGD
-kGD
+vWn
+vWn
 kGD
 kGD
 kGD
@@ -71698,8 +71660,8 @@ vWn
 vWn
 vWn
 vWn
-kGD
-kGD
+vWn
+vWn
 kGD
 kGD
 kGD
@@ -72201,7 +72163,7 @@ vWn
 vWn
 vWn
 vWn
-kGD
+vWn
 kGD
 kGD
 kGD
@@ -93027,15 +92989,15 @@ dPv
 dPv
 dPv
 dPv
-sgP
-eqX
-eqX
+mxL
+rFz
+rFz
 uDn
-eqX
+rFz
 uDn
-eqX
-eqX
-sgP
+rFz
+rFz
+mxL
 dPv
 dPv
 dPv
@@ -93528,17 +93490,17 @@ dPv
 dPv
 dPv
 dPv
-sgP
-sgP
-uyM
-uyM
-nmR
-mZB
-nmR
+mxL
+mxL
+jme
+jme
+dXD
+tit
+dXD
 hXW
-uyM
-iqa
-sgP
+jme
+cMh
+mxL
 dPv
 dPv
 dPv
@@ -94030,17 +93992,17 @@ dPv
 dPv
 dPv
 dPv
-iqa
+cMh
 djH
-nmR
-uyM
-nmR
-nmR
-nmR
-nmR
-nmR
+dXD
+jme
+dXD
+dXD
+dXD
+dXD
+dXD
 cCY
-sgP
+mxL
 dPv
 dPv
 dPv
@@ -94532,17 +94494,17 @@ dPv
 dPv
 dPv
 dPv
-aGi
+qmO
 iju
-nmR
-uyM
-nmR
-nmR
-nmR
-nmR
-nmR
-uyM
-aGi
+dXD
+jme
+dXD
+dXD
+dXD
+dXD
+dXD
+jme
+qmO
 dPv
 dPv
 dPv
@@ -95034,17 +94996,17 @@ dPv
 dPv
 dPv
 dPv
-kYQ
+nlz
 cya
-nmR
-uyM
-nmR
+dXD
+jme
+dXD
 ccN
 ccN
 ccN
-nmR
+dXD
 ior
-kYQ
+nlz
 dPv
 dPv
 dPv
@@ -95536,17 +95498,17 @@ dPv
 dPv
 dPv
 dPv
-aGi
+qmO
 cSt
-nmR
-uyM
-nmR
-uyM
-uyM
-uyM
-nmR
-mZB
-aGi
+dXD
+jme
+dXD
+jme
+jme
+jme
+dXD
+tit
+qmO
 dPv
 dPv
 dPv
@@ -96038,17 +96000,17 @@ dPv
 dPv
 dPv
 dPv
-kTJ
-uyM
-nmR
-uyM
-nmR
+shD
+jme
+dXD
+jme
+dXD
 ior
 ior
 ior
-nmR
-cCY
-kYQ
+dXD
+qGC
+nlz
 dPv
 dPv
 dPv
@@ -96540,17 +96502,17 @@ dPv
 dPv
 dPv
 dPv
-nmR
-qQo
-nmR
-nmR
-nmR
-nmR
-nmR
-nmR
-nmR
-uyM
-kTJ
+dXD
+gnA
+dXD
+dXD
+dXD
+dXD
+dXD
+dXD
+dXD
+jme
+shD
 dPv
 dPv
 dPv
@@ -97042,17 +97004,17 @@ dPv
 dPv
 dPv
 dPv
-iqa
+cMh
 qQo
-nmR
-nmR
+dXD
+dXD
 ccN
 ccN
 ccN
-nmR
-nmR
-ior
-sgP
+dXD
+dXD
+uap
+mxL
 dPv
 dPv
 dPv
@@ -97544,17 +97506,17 @@ dPv
 dPv
 dPv
 dPv
-sgP
-sgP
-mZB
+mxL
+mxL
+tit
 hXW
-uyM
-uyM
-uyM
+jme
+jme
+jme
 kbZ
-mZB
-sgP
-sgP
+tit
+mxL
+mxL
 dPv
 dPv
 dPv
@@ -98047,15 +98009,15 @@ dPv
 dPv
 dPv
 dPv
-sgP
-sgP
-eqX
-eqX
-eqX
-eqX
-eqX
-iqa
-sgP
+mxL
+mxL
+rFz
+rFz
+rFz
+rFz
+rFz
+cMh
+mxL
 dPv
 dPv
 dPv
@@ -101547,7 +101509,7 @@ jnh
 seN
 seN
 giW
-qGC
+giW
 seN
 seN
 seN
@@ -106082,13 +106044,13 @@ gVj
 qME
 qME
 qME
-sgP
-iqa
-sgP
-sgP
-eqX
-sgP
-sgP
+mxL
+cMh
+mxL
+mxL
+rFz
+mxL
+mxL
 dPv
 dPv
 dPv
@@ -106584,13 +106546,13 @@ jML
 mqW
 mqW
 ucb
-sgP
-nmR
-nmR
-bMT
-bMT
-bMT
-sgP
+mxL
+dXD
+dXD
+teZ
+teZ
+teZ
+mxL
 dPv
 dPv
 dPv
@@ -107090,9 +107052,9 @@ msZ
 rtZ
 waf
 whn
-bMT
-bMT
-sgP
+teZ
+teZ
+mxL
 dPv
 dPv
 dPv
@@ -107588,13 +107550,13 @@ jML
 mqW
 mqW
 upf
-iqa
-nmR
-nmR
+cMh
+tvE
+dXD
 waf
+eqX
 jLn
-jLn
-sgP
+nlz
 dPv
 dPv
 dPv
@@ -108090,13 +108052,13 @@ gVj
 mqW
 mqW
 mqW
-nmR
+dXD
 rtZ
-nmR
-nmR
-nmR
-cyj
-kYQ
+dXD
+dXD
+dXD
+aeg
+qmO
 dPv
 dPv
 dPv
@@ -108592,13 +108554,13 @@ jML
 mqW
 oVt
 mqW
-sgP
+mxL
 pZA
-nmR
-nmR
-nmR
-tit
-aGi
+dXD
+dXD
+dXD
+aeg
+shD
 dPv
 dPv
 dPv
@@ -109094,13 +109056,13 @@ jML
 mqW
 sqC
 qTr
-aGi
+qmO
 rtZ
-nmR
-nmR
-nmR
+dXD
+dXD
+dXD
 cyj
-kTJ
+mxL
 dPv
 dPv
 dPv
@@ -109596,13 +109558,13 @@ jML
 mqW
 rQe
 mqW
-iqa
+cMh
 aMC
 cPH
 unZ
 cPH
 aMC
-iqa
+cMh
 dPv
 dPv
 dPv
@@ -110098,13 +110060,13 @@ gVj
 qME
 qME
 qME
-sgP
-sgP
-eqX
-eqX
-eqX
-sgP
-sgP
+mxL
+mxL
+rFz
+rFz
+rFz
+mxL
+mxL
 dPv
 dPv
 dPv
@@ -113111,12 +113073,12 @@ dPv
 dPv
 dPv
 dPv
-sgP
-iqa
-sgP
-sgP
-sgP
-sgP
+mxL
+cMh
+mxL
+mxL
+mxL
+mxL
 dPv
 dPv
 dPv
@@ -113385,11 +113347,11 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -113612,13 +113574,13 @@ dPv
 dPv
 dPv
 dPv
-sgP
-sgP
+mxL
+mxL
 prB
-sgP
+mxL
 pZA
 aMC
-sgP
+mxL
 dPv
 dPv
 dPv
@@ -113887,11 +113849,11 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -114117,10 +114079,10 @@ dPv
 jML
 mqW
 qTr
-sgP
+mxL
 rtZ
-nmR
-sgP
+dXD
+mxL
 dPv
 dPv
 dPv
@@ -114389,11 +114351,11 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -114621,8 +114583,8 @@ mqW
 mqW
 uQP
 rtZ
-nmR
-iqa
+dXD
+cMh
 dPv
 dPv
 dPv
@@ -114891,11 +114853,11 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -115121,10 +115083,10 @@ dPv
 jML
 mqW
 mqW
-iqa
+cMh
 fjt
-nmR
-sgP
+dXD
+mxL
 dPv
 dPv
 vWn
@@ -115393,11 +115355,11 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -115623,10 +115585,10 @@ dPv
 jML
 mqW
 qTr
-sgP
-uyM
-nmR
-sgP
+mxL
+jme
+dXD
+mxL
 dPv
 vWn
 vWn
@@ -116125,10 +116087,10 @@ dPv
 jML
 mqW
 qTr
-sgP
-tvE
-nmR
-sgP
+mxL
+iBl
+dXD
+mxL
 vWn
 vWn
 vWn
@@ -116405,10 +116367,10 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -116624,13 +116586,13 @@ dPv
 dPv
 dPv
 dPv
-iqa
+cMh
 qME
 qME
-sgP
-sgP
-sgP
-sgP
+mxL
+mxL
+mxL
+mxL
 vWn
 vWn
 vWn
@@ -116907,10 +116869,10 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -117409,10 +117371,10 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -117900,21 +117862,21 @@ kGD
 kGD
 kGD
 kGD
+iTI
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -118402,21 +118364,21 @@ kGD
 kGD
 kGD
 kGD
+iTI
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -118904,12 +118866,12 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -119406,12 +119368,12 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -119631,14 +119593,14 @@ dPv
 dPv
 dPv
 dPv
-hJr
 dPv
 dPv
 dPv
-hJr
 dPv
 dPv
-hJr
+dPv
+dPv
+dPv
 dPv
 vWn
 vWn
@@ -119908,12 +119870,12 @@ kGD
 kGD
 kGD
 kGD
-kGD
-kGD
-kGD
-kGD
-kGD
-kGD
+iTI
+iTI
+iTI
+iTI
+iTI
+iTI
 kGD
 kGD
 kGD
@@ -120633,7 +120595,7 @@ dPv
 dPv
 dPv
 dPv
-uap
+dPv
 fMv
 nmR
 nmR
@@ -121637,7 +121599,7 @@ dPv
 dPv
 dPv
 dPv
-uap
+dPv
 fMv
 lOt
 vvF
@@ -123145,7 +123107,7 @@ dPv
 dPv
 dPv
 dPv
-uap
+dPv
 fMv
 cdc
 nmR
@@ -125153,7 +125115,7 @@ dPv
 dPv
 dPv
 dPv
-uap
+dPv
 fMv
 lFN
 kJp
@@ -126660,7 +126622,7 @@ dPv
 dPv
 dPv
 dPv
-xWu
+dPv
 dPv
 dPv
 dPv
@@ -129438,7 +129400,7 @@ kGD
 kGD
 kGD
 kGD
-cBI
+vWn
 kGD
 kGD
 kGD
@@ -129940,7 +129902,7 @@ kGD
 kGD
 kGD
 kGD
-cBI
+vWn
 kGD
 kGD
 kGD
@@ -130442,7 +130404,7 @@ kGD
 kGD
 kGD
 kGD
-cBI
+vWn
 kGD
 kGD
 kGD
@@ -130944,8 +130906,8 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -131445,9 +131407,9 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
+vWn
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -131947,9 +131909,9 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
+vWn
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -132449,9 +132411,9 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
+vWn
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -132951,9 +132913,9 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
+vWn
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -133453,9 +133415,9 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
+vWn
+vWn
+vWn
 vWn
 fMa
 fMa
@@ -133954,10 +133916,10 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
-gcB
+vWn
+vWn
+vWn
+fMa
 fMa
 fMa
 fMa
@@ -134454,12 +134416,12 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
-cBI
-cBI
-gcB
+vWn
+vWn
+vWn
+vWn
+vWn
+fMa
 fMa
 fMa
 fMa
@@ -134956,12 +134918,12 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
-gcB
-gcB
-gcB
+vWn
+vWn
+vWn
+fMa
+fMa
+fMa
 fMa
 fMa
 mIZ
@@ -135455,15 +135417,15 @@ kGD
 kGD
 kGD
 kGD
-cBI
-cBI
-cBI
-cBI
-gcB
-gcB
-gcB
-gcB
-gcB
+vWn
+vWn
+vWn
+vWn
+fMa
+fMa
+fMa
+fMa
+fMa
 fMa
 mIZ
 mIZ
@@ -135956,16 +135918,16 @@ kGD
 iFl
 kGD
 kGD
-cBI
-cBI
-cBI
-cBI
-cBI
-gcB
-gcB
-gcB
-gcB
-gcB
+kGD
+vWn
+vWn
+vWn
+vWn
+fMa
+fMa
+fMa
+fMa
+fMa
 fMa
 mIZ
 mIZ
@@ -136456,9 +136418,9 @@ rXx
 qbH
 wPZ
 fZU
-vWn
-vWn
-vWn
+kGD
+kGD
+kGD
 vWn
 fMa
 fMa
@@ -136957,10 +136919,10 @@ lXc
 lXc
 lXc
 lXc
-vWn
-vWn
-vWn
-vWn
+kGD
+kGD
+kGD
+kGD
 fMa
 fMa
 fMa
@@ -137459,8 +137421,8 @@ lXc
 mLu
 smu
 lXc
-vWn
-vWn
+kGD
+kGD
 fMa
 fMa
 fMa
@@ -137961,7 +137923,7 @@ ePY
 eWZ
 niJ
 lXc
-vWn
+kGD
 fMa
 fMa
 fMa
@@ -144817,8 +144779,8 @@ kGD
 kGD
 kGD
 kGD
-vWn
-vWn
+kGD
+kGD
 kGD
 kGD
 kGD
@@ -145318,7 +145280,7 @@ kGD
 kGD
 kGD
 kGD
-vWn
+kGD
 vWn
 vWn
 kGD
@@ -146325,13 +146287,13 @@ vWn
 vWn
 vWn
 vWn
-vWn
-vWn
 kGD
 kGD
 kGD
-vWn
-vWn
+kGD
+kGD
+kGD
+kGD
 kGD
 kGD
 kGD
@@ -146827,13 +146789,13 @@ vWn
 vWn
 vWn
 vWn
-vWn
-vWn
-vWn
-vWn
-vWn
-vWn
-vWn
+kGD
+kGD
+kGD
+kGD
+kGD
+kGD
+kGD
 kGD
 kGD
 kGD
@@ -147330,11 +147292,11 @@ vWn
 vWn
 vWn
 vWn
-vWn
-vWn
-vWn
-vWn
-vWn
+kGD
+kGD
+kGD
+kGD
+kGD
 vWn
 kGD
 kGD
@@ -147833,9 +147795,9 @@ vWn
 vWn
 vWn
 vWn
-vWn
-vWn
-vWn
+kGD
+kGD
+kGD
 vWn
 vWn
 kGD

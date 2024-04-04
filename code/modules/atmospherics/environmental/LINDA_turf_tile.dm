@@ -35,7 +35,7 @@
 /turf/open/Initialize(mapload)
 	var/area/area = get_area(src)
 	if(area.ruin)
-		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)  || (locate(/turf/open/transparent/openspace) in src)))
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)  || (locate(/turf/open/water) in src) || (locate(/turf/open/transparent/openspace) in src)))
 			if(prob(50))
 				new /obj/effect/decal/cleanable/dirtstain(src)
 			if(prob(5))
