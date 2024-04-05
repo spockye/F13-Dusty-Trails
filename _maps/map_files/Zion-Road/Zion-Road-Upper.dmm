@@ -4955,7 +4955,7 @@
 "cVs" = (
 /obj/machinery/door/airlock/security{
 	name = "Hospital Security";
-	req_access_txt = "281"
+	req_access_txt = "62"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -5097,7 +5097,7 @@
 "dco" = (
 /obj/machinery/door/airlock/security{
 	name = "Waypoint Police Department";
-	req_access_txt = "281"
+	req_access_txt = "62"
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -11000,15 +11000,6 @@
 /mob/living/simple_animal/hostile/raider/ranged/biker,
 /turf/open/floor/carpet/green,
 /area/f13/wasteland)
-"htJ" = (
-/obj/machinery/door/airlock/security{
-	name = "Hospital Security";
-	req_access_txt = "281"
-	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/city/bighorn)
 "htN" = (
 /obj/item/bedsheet/brown,
 /obj/structure/bed/wooden,
@@ -11060,7 +11051,7 @@
 "huF" = (
 /obj/machinery/door/airlock/security{
 	name = "Waypoint Police Department";
-	req_access_txt = "281"
+	req_access_txt = "62"
 	},
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -14135,7 +14126,7 @@
 /area/f13/wasteland)
 "jEM" = (
 /obj/machinery/door/airlock/centcom{
-	req_access_txt = "282"
+	req_access_txt = "62"
 	},
 /turf/open/floor/carpet/red,
 /area/f13/city/bighorn)
@@ -16286,7 +16277,7 @@
 "leF" = (
 /obj/machinery/door/airlock/grunge{
 	name = "shop airlock";
-	req_access_txt = "277"
+	req_access_txt = "139"
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -17179,14 +17170,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/building)
-"lMe" = (
-/obj/machinery/door/unpowered/securedoor{
-	max_integrity = 300;
-	obj_integrity = 300;
-	req_access_txt = "275"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/city/bighorn)
 "lMj" = (
 /turf/open/floor/carpet/purple,
 /area/f13/city/bighorn)
@@ -18819,7 +18802,10 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "mTD" = (
-/obj/structure/simple_door/interior,
+/obj/machinery/door/unpowered/securedoor/sheriff_door{
+	req_access_txt = "136";
+	name = "Preacher's Quarters"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "oakfloor1"
 	},
@@ -20099,7 +20085,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	max_integrity = 300;
 	obj_integrity = 300;
-	req_access_txt = "275"
+	req_access_txt = "137"
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "oakfloor1"
@@ -24804,7 +24790,7 @@
 /area/f13/city/bighorn)
 "qRQ" = (
 /obj/machinery/door/airlock/centcom{
-	req_access_txt = "283"
+	req_access_txt = "4"
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/city/bighorn)
@@ -26090,7 +26076,7 @@
 "rNS" = (
 /obj/machinery/door/airlock/grunge{
 	name = "shop airlock";
-	req_access_txt = "277"
+	req_access_txt = "139"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
@@ -33580,7 +33566,7 @@
 /obj/structure/lattice/catwalk,
 /obj/machinery/door/airlock/security{
 	name = "Waypoint Police Department";
-	req_access_txt = "281"
+	req_access_txt = "62"
 	},
 /turf/open/floor/plating,
 /area/f13/city/bighorn)
@@ -113660,7 +113646,7 @@ kGD
 vIn
 nyL
 vIn
-htJ
+huF
 vIn
 vIn
 vIn
@@ -116653,7 +116639,7 @@ aRr
 aRr
 aRr
 aRr
-lMe
+nLK
 aRr
 aRr
 lMA
