@@ -252,11 +252,11 @@
 	icon_state = "Lawyer"
 
 /obj/effect/landmark/start/f13/sheriff
-	name = "Sheriff"
+	name = "Lieutenant"
 	icon_state = "Chief of Police"
 
 /obj/effect/landmark/start/f13/deputy
-	name = "Deputy"
+	name = "Mercenary"
 	icon_state = "Officer"
 
 /obj/effect/landmark/start/f13/farmer
@@ -266,7 +266,7 @@
 	name = "Prospector"
 
 /obj/effect/landmark/start/f13/settler
-	name = "La Verkin Citizen"
+	name = "Citizen"
 	icon_state = "Settler"
 
 /obj/effect/landmark/start/f13/dendoc

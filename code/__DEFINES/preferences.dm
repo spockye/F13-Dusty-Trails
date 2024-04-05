@@ -75,7 +75,7 @@
 #define EXP_TYPE_VAULT			"Vault"
 #define EXP_TYPE_BROTHERHOOD	"BoS"
 #define EXP_TYPE_NCR			"NCR"
-#define EXP_TYPE_BIGHORN		"Bighorn"
+#define EXP_TYPE_BIGHORN		"Waypoint"
 #define EXP_TYPE_LEGION			"Legion"
 #define EXP_TYPE_WASTELAND		"Wasteland"
 #define EXP_TYPE_ENCLAVE		"Enclave"

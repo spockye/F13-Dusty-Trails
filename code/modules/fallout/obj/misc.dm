@@ -267,7 +267,7 @@
 
 /obj/item/flag/waypoint
 	name = "Waypoint flag"
-	desc = "A blue flag adorned with a train symbolising the independent city of Waypoint."
+	desc = "A blue flag adorned with a train symbolising the company town of Waypoint."
 	icon_state = "waypointflag"
 	item_state = "waypointflag"
 	faction = "Town"
@@ -340,7 +340,7 @@
 						anchored = 1
 					if("Waypoint")
 						name = "Waypoint flag"
-						desc = "A blue flag adorned with a train symbolising the independent city of Waypoint."
+						desc = "A blue flag adorned with a train symbolising the company town of Waypoint."
 						icon_state = "waypointflag"
 						item_state = "waypointflag"
 						faction = "Town"

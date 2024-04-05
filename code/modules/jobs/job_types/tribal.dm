@@ -11,7 +11,7 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	access = list(ACCESS_TRIBE)
 	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"
-	description = "You are a tribal belonging to one of the ancient communities or faiths that exist in La Verkin. \
+	description = "You are a tribal belonging to one of the ancient communities or faiths that exist in the La Verkin region. \
 	The Badlands have long been your peaceful home, but the escalating conflict between the factions bears a threat to all. \
 	Navigate a harsh and increasingly complicated world - the Temple may be of use, but remember other tribals may not align with you."
 	supervisors = "the stars above"

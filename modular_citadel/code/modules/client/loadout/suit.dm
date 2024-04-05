@@ -183,13 +183,13 @@
 	path = /obj/item/clothing/suit/armor/f13/town
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
 	cost = 4
-	restricted_desc = "Oasis"
+	restricted_desc = "Waypoint"
 	restricted_roles = list("Mayor",
 							"Secretary",
-							"Sheriff",
+							"Lieutenant",
 							"Doctor",
-							"La Verkin Citizen",
-							"Deputy",
+							"Citizen",
+							"Mercenary",
 							"Shopkeeper",
 							"Farmer",
 							"Prospector",
@@ -202,9 +202,9 @@
 	path = /obj/item/clothing/suit/armor/vest/oasis
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
 	cost = 4
-	restricted_desc = "Bighorn Police, Bighorn Officials"
-	restricted_roles = list("Sheriff",
-							"Deputy",
+	restricted_desc = "Waypoint Mercs & Contractors"
+	restricted_roles = list("Lieutenant",
+							"Mercenary",
 							"Mayor",
 							"Detective",
 							"Secretary",
@@ -216,9 +216,6 @@
 	path = /obj/item/clothing/suit/hazardvest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
 	cost = 2
-	restricted_roles = list("Citizen",
-							"Prospector",
-							)
 
 //These should be left commented out until the holidays or special events.
 /*

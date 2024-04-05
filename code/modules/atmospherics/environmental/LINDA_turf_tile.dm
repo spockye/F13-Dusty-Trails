@@ -46,6 +46,12 @@
 				new /obj/effect/decal/cleanable/blood(src)
 			if(prob(1))
 				new /obj/effect/gibspawner/human/bodypartless(src)
+	else if (area.dirt)
+		if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)  || (locate(/turf/open/water) in src) || (locate(/turf/open/transparent/openspace) in src)))
+			if(prob(20))
+				new /obj/effect/decal/cleanable/dirtstain(src)
+			if(prob(3))
+				new /obj/effect/decal/cleanable/generic(src)
 	if(!blocks_air)
 
 		air = new(2500,src)

@@ -35,8 +35,11 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself"
-	description = "You are the benevolent tyrant of La Verkin, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
+	supervisors = "Dusty Trails Caravan Company"
+	description = "You are the overseer of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to protect citizens, distribute funds, and make beneficial deals with the regional powers. \
+	 The mercenaries defending Waypoint are under your control, though matters are often left to your subordinate the Lieutenant. \
+	 There is great flexibility for personal gain and to run things as you see fit, but always remember your true benefactors."
 	selection_color = "#d7b088"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 1440
@@ -75,13 +78,17 @@ Mayor
 		)
 /*--------------------------------------------------------------*/
 /datum/job/bighorn/f13sheriff
-	title = "Sheriff"
+	title = "Lieutenant"
 	flag = F13SHERIFF
 	department_flag = DEP_BIGHORN
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the mayor"
-	description = "As the chief law enforcer of the Town, your job is to keep the peace, settle local disputes, and keep your townsfolk safe and alive. Unfortunately, with the NCR and Legion closing in on the region, the Town is caught between a rock and a hard place, as with the war brings with it unsavory elements like the Khans and Outlaws. Sometimes the people you handle inside the town will be alive in cuffs, or dead on the street. Other times, they'll escape the limits of the town, to which you can put a bounty on their head for their capture, or have your deputies capture them. However, you must remember these three critical things: never leave the town undefended, keep the townsfolk alive and safe, and most importantly - keep your hand on your gun and don't you trust anyone."
+	supervisors = "the Mayor and Dusty Trails Caravan Company"
+	description = "You are the chief law enforcer of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to keep the peace, settle local disputes, and keep townsfolk safe and alive. \
+	 The mercenaries defending Waypoint are under your management, though ultimately answer to the Mayor. \
+	 Never leave the town undefended, utilising bounties or trusty mercenaries on missions far beyond the walls."
+
 	selection_color = "#d7b088"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 1200
@@ -90,7 +97,7 @@ Mayor
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 
 /datum/outfit/job/bighorn/f13sheriff
-	name = "Sheriff"
+	name = "Lieutenant"
 	jobtype = /datum/job/bighorn/f13sheriff
 	id = /obj/item/card/id/dogtag/sheriff
 	belt = null
@@ -129,13 +136,16 @@ Mayor
 
 /*--------------------------------------------------------------*/
 /datum/job/bighorn/f13deputy
-	title = "Deputy"
+	title = "Mercenary"
 	flag = F13DEPUTY
 	department_flag = DEP_BIGHORN
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the sheriff and the mayor"
-	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a hired law enforcer of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to keep the peace, settle local disputes, and keep townsfolk safe and alive. \
+	 Patrol town, the perimeter of the walls, and follow the orders of the Lieutenant, and their superior the Mayor. \
+	 Never leave the town undefended, yet orders may send you further afield on bounties or doomed diplomatic missions."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 600
@@ -144,7 +154,7 @@ Mayor
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 
 /datum/outfit/job/bighorn/f13deputy
-	name = "Deputy"
+	name = "Mercenary"
 	jobtype = /datum/job/bighorn/f13deputy
 	ears = 			/obj/item/radio/headset/headset_sheriff
 	id =            /obj/item/card/id/dogtag/deputy
@@ -181,9 +191,10 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the free market and La Verkin laws"
-	description = "As a proprietor of the Blue Oyster, you are responsible for ensuring both citizens and travellers in La Verkin can get some food, drink and rest. This town is usually run by the Great Khans, and the farm within their compound could provide fresh supplies for your business, so try negotiating with them if they are present."
-	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to run a place of food, drink, and rest for the populace. \
+	 While you have full domain over the running of your business, remember to work in the interests of your superiors."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 90
@@ -261,9 +272,11 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the free market, Sierra Trading Company, and La Verkin laws"
-	description = "You are one of the many workers who live in the city of La Verkin. Working with the town council you have rented out a space in the shop for you to make your living."
-	enforces = "While you have dominion over your private business, your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town."
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to run a store and have been given a generous initial stock. \
+	 Trade carefully and work with the Prospectors to turn a handsome profit. \
+	 While you have full domain over the running of your business, remember to work in the interests of your superiors."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 400
@@ -318,14 +331,15 @@ Mayor
 /*--------------------------------------------------------------*/
 
 /datum/job/bighorn/f13settler
-	title = "La Verkin Citizen"
+	title = "Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_BIGHORN
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "La Verkin laws"
-	description = "You are a citizen living in La Verkin. Treat your town with respect and make sure to follow the laws in place, as your premium status may be revoked if you are considered a danger to the populace. One of the local businesses may have work if you require funds."
-	enforces = "Your premium status as a citizen may be revoked if you are considered a danger to the populace or anger those in control of the town"
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a citizen of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	In return for their protection you are expected to help maintain the streets and set an example as a law-abiding townsperson. \
+	You may occasionally be contracted out to the Sheriff or their superior the Mayor, for some dark task or another."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/bighorn/f13settler
@@ -349,9 +363,10 @@ Mayor
 	faction = FACTION_WASTELAND
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "your faith and the Five Laws"
-	description = "You are a New Canaanite serving as a missionary to Bighorn, and a connection to other Mormons. While the town has no shortage of skepticism or biting remarks about Faith, you do what you can for the people of Bighorn, for God has love, even for the Gentiles. Sometimes this also means advocating on behalf of criminals, if the evidence against them is weak enough."
-	enforces = "Your premium status as a citizen may be revoked if you break the Five Laws too often or too severely. Khan justice is harsh, but typically also fair. However, your chapel is sacred ground, and you and your clergy have the right to protect it from bloodshed."
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a citizen of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	In return for their protection you are expected to help maintain the spirits of the townsfolk and manage ceremonies. \
+	Of course, you are no contractor to the Company like the Barkeep or Merchant. Following your faith may take you on a divergent path."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 90
@@ -636,8 +651,10 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the mayor"
-	description = "Working alongside the Mayor, you've known them for a while. Your duties mainly consist of handling appointments and managing mundane tasks."
+	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
+	 You have been entrusted by the Company to handle paperwork and the menial tasks of the Lieutenant and their superior the Mayor. \
+	 More quietly, you are expected to keep an eye on these two individuals and make sure they are aligned with Company goals."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
 	exp_requirements = 200
