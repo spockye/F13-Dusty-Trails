@@ -19244,6 +19244,16 @@
 	dir = 4
 	},
 /area/f13/wasteland/warren)
+"qWy" = (
+/obj/machinery/button/door{
+	name = "bunker override 2";
+	id = "renegadewest";
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "catwalk"
+	},
+/area/f13/building)
 "qWU" = (
 /obj/structure/decoration/warning{
 	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
@@ -65788,7 +65798,7 @@ bTw
 wdj
 wEL
 slt
-slt
+qWy
 slt
 anJ
 ehT
