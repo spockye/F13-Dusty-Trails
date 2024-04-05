@@ -605,8 +605,9 @@
 /area/f13/building)
 "dS" = (
 /obj/structure/table/wood,
-/obj/item/radio/tribal{
-	pixel_y = 6
+/obj/machinery/button/door{
+	name = "bunker override 1";
+	id = "renegadeeast"
 	},
 /turf/open/floor/wood/wood_wide,
 /area/f13/building)
@@ -5328,6 +5329,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"MM" = (
+/obj/structure/window/fulltile/wood,
+/obj/machinery/button/door,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "MN" = (
@@ -60088,7 +60094,7 @@ wv
 wv
 wv
 jO
-dL
+MM
 wv
 wv
 wv

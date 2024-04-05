@@ -1475,17 +1475,13 @@
 	},
 /area/f13/building)
 "afE" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "North_Ground";
-	name = "Ground";
-	roundstart_template = /datum/map_template/shuttle/northbunker/elevator;
-	width = 4
+/turf/closed/indestructible/f13vaultrusted{
+	icon_state = "supermart";
+	icon_type_smooth = "supermart";
+	icon = 'icons/turf/walls/f13superstore.dmi';
+	name = "supermart wall"
 	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/building)
+/area/f13/building/mall)
 "afF" = (
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
@@ -1670,11 +1666,8 @@
 /turf/closed/wall/f13/store,
 /area/f13/building)
 "ago" = (
-/obj/machinery/computer/shuttle/northbunkerelevator,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop0"
-	},
-/area/f13/wasteland/west)
+/turf/closed/indestructible/opshuttle,
+/area/f13/building/mall)
 "agp" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -27547,6 +27540,15 @@
 /obj/structure/lattice/catwalk,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building/hospital)
+"dTB" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 28;
+	doc_title_1 = "Notice To All Troops";
+	doc_content_1 = "Due to the ongoing operation, access to the base is now strictly prohibited. In an emergency, access can be granted via BOTH unique override switches at our Rock Springs and Warren outposts.";
+	density = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building/mall)
 "dTG" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -31608,6 +31610,17 @@
 "fIh" = (
 /turf/closed/indestructible/fakeglass,
 /area/f13/building/bighornbunker)
+"fIH" = (
+/obj/machinery/door/poddoor/shutters/old{
+	id = "renegadeeast";
+	max_integrity = 9999
+	},
+/obj/machinery/door/poddoor/shutters/old{
+	id = "renegadewest";
+	max_integrity = 9999
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/building/mall)
 "fIZ" = (
 /obj/structure/simple_door/metal/dirtystore{
 	name = "Instrumental"
@@ -41910,6 +41923,12 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/brotherhood/chemistry)
+"kkO" = (
+/obj/machinery/computer/shuttle/northbunkerelevator{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/building/mall)
 "kkU" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertopright"
@@ -49133,6 +49152,17 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building/massfusion)
+"ncP" = (
+/obj/machinery/door/poddoor/shutters/old{
+	id = "renegadewest";
+	max_integrity = 9999
+	},
+/obj/machinery/door/poddoor/shutters/old{
+	id = "renegadeeast";
+	max_integrity = 9999
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/building/mall)
 "ncV" = (
 /obj/structure/fence{
 	dir = 8;
@@ -53991,6 +54021,18 @@
 	icon_state = "darkredfull"
 	},
 /area/f13/city/bighorn)
+"peH" = (
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dwidth = 1;
+	height = 3;
+	id = "North_Ground";
+	name = "Ground";
+	roundstart_template = /datum/map_template/shuttle/northbunker/elevator;
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building/mall)
 "peL" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "hole"
@@ -60073,6 +60115,9 @@
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/museum)
+"rFa" = (
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building/mall)
 "rFe" = (
 /obj/structure/simple_door/interior,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -74220,6 +74265,12 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building/museum)
+"xzz" = (
+/obj/item/clothing/head/cone,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/wasteland/west)
 "xzB" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/indestructible/ground/outside/gravel,
@@ -81629,8 +81680,8 @@ aae
 aae
 aae
 aae
-jMI
-jMI
+afE
+afE
 jMI
 jMI
 kZS
@@ -81886,7 +81937,7 @@ aae
 aae
 aae
 aae
-jMI
+afE
 tzm
 tzm
 bOz
@@ -82138,12 +82189,12 @@ aJN
 aaa
 "}
 (25,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+afE
+afE
+afE
+afE
+afE
+afE
 ptP
 bNa
 xwI
@@ -82395,12 +82446,12 @@ aJN
 aaa
 "}
 (26,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+ago
+ago
+ago
+ago
+ago
+afE
 ukP
 bSO
 xwI
@@ -82652,13 +82703,13 @@ aJN
 aaa
 "}
 (27,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
-rMu
+ago
+rFa
+rFa
+rFa
+tzm
+afE
+dTB
 tzm
 rMu
 xwI
@@ -82909,12 +82960,12 @@ eCn
 aaa
 "}
 (28,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+ago
+rFa
+rFa
+peH
+tzm
+fIH
 tzm
 rMu
 djc
@@ -83166,12 +83217,12 @@ bQa
 aaa
 "}
 (29,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+ago
+rFa
+rFa
+rFa
+tzm
+ncP
 xwI
 xUS
 rMu
@@ -83423,12 +83474,12 @@ pwp
 aaa
 "}
 (30,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+ago
+rFa
+rFa
+rFa
+kkO
+afE
 tzm
 tzm
 xwI
@@ -83680,12 +83731,12 @@ aYw
 aaa
 "}
 (31,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+ago
+ago
+ago
+ago
+ago
+afE
 xIO
 gWs
 xwI
@@ -83937,12 +83988,12 @@ cyk
 aaa
 "}
 (32,1,1) = {"
-aaa
-aae
-aae
-aae
-aae
-jMI
+afE
+afE
+afE
+afE
+afE
+afE
 rMU
 rMu
 xwI
@@ -84199,7 +84250,7 @@ aae
 aae
 aae
 aae
-jMI
+afE
 tzm
 tzm
 wLc
@@ -84456,9 +84507,9 @@ aae
 aae
 aae
 aae
-jMI
-jMI
-jMI
+afE
+afE
+afE
 jMI
 kZS
 wDH
@@ -101181,7 +101232,7 @@ aeZ
 aeZ
 aeZ
 afX
-rma
+xzz
 dcT
 lVn
 kYj
@@ -101436,9 +101487,9 @@ aae
 aeD
 aeZ
 aeZ
-afE
+aeZ
 afY
-rma
+xzz
 dcT
 bOA
 bOA
@@ -101695,7 +101746,7 @@ aeZ
 aeZ
 aeZ
 afY
-rma
+xzz
 dcT
 fml
 ahp
@@ -101952,7 +102003,7 @@ aeZ
 aeZ
 aeZ
 afX
-rma
+xzz
 dcT
 bOA
 kYj
@@ -102209,7 +102260,7 @@ aeD
 aeD
 aeD
 aeD
-ago
+rma
 dcT
 ifg
 bOA
