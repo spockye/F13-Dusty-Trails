@@ -265,13 +265,21 @@
 	item_state = "renegade_flag"
 	faction = "Renegade"
 
+/obj/item/flag/waypoint
+	name = "Waypoint flag"
+	desc = "A blue flag adorned with a train symbolising the independent city of Waypoint."
+	icon_state = "waypointflag"
+	item_state = "waypointflag"
+	faction = "Town"
+	anchored = 1
+
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
 		visible_message("<span class='notice'>[user] begins to make a flag.</span>")
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/list/choices = list("NCR", "Legion", "Bighorn", "BOS", "Enclave", "America", "Followers", "Great Khans", "Raiders", "Renegade")
+				var/list/choices = list("NCR", "Legion", "Waypoint", "BOS", "America", "Followers", "Great Khans", "Raiders", "Renegade")
 				var/flag = input("Please choose which faction flag you wish to create.") in choices
 				switch(flag)
 					if(FACTION_NCR)
@@ -287,13 +295,6 @@
 						icon_state = "legionflag"
 						item_state = "legionflag"
 						faction = FACTION_LEGION
-						anchored = 1
-					if(FACTION_BIGHORN)
-						name = "La Verkin flag"
-						desc = "A flag depicting the head of a bighorner. It's a symbol of the town of La Verkin."
-						icon_state = "bighornflag"
-						item_state = "bighornflag"
-						faction = FACTION_BIGHORN
 						anchored = 1
 					if(FACTION_BROTHERHOOD)
 						name = "BOS flag"
@@ -316,13 +317,6 @@
 						item_state = "khanflag"
 						faction = "Great Khans"
 						anchored = 1
-					if(FACTION_ENCLAVE)
-						name = "Enclave flag"
-						desc = "A flag worn and weathered from the Casper's Snow."
-						icon_state = "enclaveflag"
-						item_state = "enclaveflag"
-						faction = FACTION_ENCLAVE
-						anchored = 1
 					if("America")
 						name = "America flag"
 						desc = "A flag reminding us of the Old World. It fills you with an odd sense of pride as you stand at attention to it."
@@ -343,6 +337,13 @@
 						icon_state = "renegade_flag"
 						item_state = "renegade_flag"
 						faction = "Renegade"
+						anchored = 1
+					if("Waypoint")
+						name = "Waypoint flag"
+						desc = "A blue flag adorned with a train symbolising the independent city of Waypoint."
+						icon_state = "waypointflag"
+						item_state = "waypointflag"
+						faction = "Town"
 						anchored = 1
 				update_icon()
 	else

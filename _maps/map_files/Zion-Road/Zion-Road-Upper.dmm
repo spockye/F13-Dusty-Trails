@@ -5738,7 +5738,7 @@
 	obj_integrity = 600;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/wood_mosaic,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "dIV" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
@@ -12163,7 +12163,7 @@
 	obj_integrity = 600;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/wood_mosaic,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "iwC" = (
 /obj/structure/table/wood,
@@ -17526,14 +17526,11 @@
 /turf/open/floor/wood/wood_mosaic/wood_mosaic_dark,
 /area/f13/building)
 "mgh" = (
-/obj/machinery/door/unpowered/securedoor{
-	damage_deflection = 28;
-	max_integrity = 600;
-	name = "Dorm";
-	obj_integrity = 600;
-	req_access_txt = "123"
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 4
 	},
-/turf/open/floor/wood/wood_common,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "mgi" = (
 /obj/structure/table/reinforced,
@@ -23392,7 +23389,7 @@
 	obj_integrity = 600;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/wood_mosaic,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "qiW" = (
 /obj/structure/table,
@@ -26338,7 +26335,7 @@
 	obj_integrity = 600;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/wood_mosaic,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "snS" = (
 /obj/structure/closet/crate/bin/trashbin,
@@ -31067,12 +31064,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/building/mall)
 "vyq" = (
-/obj/item/flag/ncr{
-	density = 0;
-	pixel_y = 16
+/obj/machinery/door/unpowered/securedoor{
+	damage_deflection = 28;
+	max_integrity = 600;
+	name = "Venator's Quarters";
+	obj_integrity = 600;
+	req_access_txt = "123"
 	},
-/turf/closed/mineral/indestructible/harsh,
-/area/f13/caves)
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "vyB" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/dirt,
@@ -31995,7 +31995,7 @@
 	obj_integrity = 600;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/wood_mosaic,
+/turf/open/floor/plasteel/f13/stone/rugged,
 /area/f13/legion)
 "wiP" = (
 /obj/structure/railing{
@@ -114517,7 +114517,7 @@ vWn
 vWn
 vWn
 vWn
-vyq
+vWn
 seN
 myr
 eZp
@@ -152609,7 +152609,7 @@ fMa
 fMa
 gFX
 gFX
-ldB
+vyq
 gFX
 gFX
 gFX
@@ -152621,11 +152621,11 @@ qiK
 gFX
 gFX
 gFX
-mgh
+qiK
 gFX
 gFX
 gFX
-mgh
+qiK
 gFX
 gFX
 fMa
@@ -156625,7 +156625,7 @@ gBG
 gBG
 gFX
 gFX
-ldB
+vyq
 gFX
 gFX
 gFX
@@ -157134,8 +157134,8 @@ jXd
 okj
 kxu
 gFX
-gBG
-gBG
+mgh
+mgh
 gBG
 gFX
 gBG
@@ -157636,8 +157636,8 @@ iXE
 tyq
 cEH
 gFX
-utE
-gBG
+bFc
+wNL
 gBG
 gFX
 bFc
@@ -158139,7 +158139,7 @@ pHD
 nrS
 gFX
 wNL
-gBG
+wNL
 gBG
 gFX
 wNL

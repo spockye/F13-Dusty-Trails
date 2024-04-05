@@ -1103,6 +1103,16 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/rnd)
+"ade" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	light_color = "#f4e3b0";
+	light_range = 10;
+	pixel_y = 24
+	},
+/obj/machinery/manned_turret/m2/unanchored,
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "adf" = (
 /obj/machinery/light{
 	dir = 4;
@@ -30664,6 +30674,13 @@
 	icon_state = "dirt"
 	},
 /area/f13/utah/badlands/valley)
+"ihV" = (
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "ihX" = (
 /obj/structure/closet/crate/medical,
 /obj/item/reagent_containers/blood/OMinus,
@@ -55965,7 +55982,7 @@
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	icon_state = "manhole_open";
-	id = "rangerceller";
+	id = "plantright";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -57594,6 +57611,12 @@
 	},
 /turf/closed/mineral/indestructible/harsh,
 /area/f13/caves)
+"pyp" = (
+/obj/structure/stairs/south{
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/stone/rugged,
+/area/f13/legion)
 "pys" = (
 /obj/structure/window/fulltile/house,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -73060,7 +73083,7 @@
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	icon_state = "manhole_open";
-	id = "rangerceller";
+	id = "plantleft";
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -84339,6 +84362,13 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/ncr)
+"wQZ" = (
+/obj/machinery/manned_turret/m2/unanchored,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood/armory)
 "wRc" = (
 /obj/effect/decal/waste{
 	icon_state = "goo12"
@@ -89247,6 +89277,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/wood_common,
 /area/f13/utah/badlands/interior)
+"ygS" = (
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood/armory)
 "ygV" = (
 /obj/structure/obstacle/barbedwire{
 	icon_state = "barbed_end";
@@ -102010,7 +102046,7 @@ rfj
 rSF
 aNG
 dsO
-rfj
+ygS
 gxJ
 jqZ
 jqZ
@@ -102512,7 +102548,7 @@ rfj
 qSS
 acm
 yfg
-rfj
+wQZ
 gxJ
 jqZ
 jqZ
@@ -103014,7 +103050,7 @@ rfj
 biK
 hXM
 pYF
-rfj
+ygS
 gxJ
 jqZ
 jqZ
@@ -212056,7 +212092,7 @@ qhA
 dPZ
 mDT
 mDT
-rjN
+ihV
 rjN
 rjN
 fXE
@@ -212558,9 +212594,9 @@ ith
 dPZ
 dPZ
 mDT
-ith
+pyp
 rjN
-hgU
+rjN
 hgU
 sTY
 rjN
@@ -213056,11 +213092,11 @@ vqr
 vqr
 vqr
 rjN
-nXK
-tTD
-tTD
-tTD
-vYg
+ith
+dPZ
+dPZ
+dPZ
+pyp
 rjN
 mDT
 mDT
@@ -214066,7 +214102,7 @@ ePl
 ePl
 ePl
 rjN
-phC
+ade
 mDT
 mDT
 jEx
