@@ -2528,6 +2528,10 @@
 "bBU" = (
 /turf/closed/wall/f13/store,
 /area/f13/brotherhood/leisure)
+"bCp" = (
+/obj/structure/junk/small/disco,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "bCu" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -4164,6 +4168,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
+"cVF" = (
+/obj/structure/bed/oldalt,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "cVO" = (
 /obj/structure/table/reinforced,
 /obj/machinery/reagentgrinder,
@@ -4862,6 +4870,10 @@
 	icon_state = "reddirtysolid"
 	},
 /area/f13/tunnel)
+"dyG" = (
+/obj/machinery/light/small/broken,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "dyU" = (
 /obj/effect/landmark/start/f13/raider,
 /obj/effect/overlay/junk/oldpipes,
@@ -5044,7 +5056,7 @@
 	},
 /obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/circuit/f13_red,
-/area/f13/city/bighorn)
+/area/f13/wasteland/bighorn)
 "dKu" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/water,
@@ -7640,6 +7652,14 @@
 /obj/effect/spawner/lootdrop/f13/blueprintLow,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"fOt" = (
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 8
+	},
+/obj/structure/junk/drawer,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "fPc" = (
 /obj/structure/tires/five,
 /obj/effect/decal/cleanable/dirt,
@@ -9111,6 +9131,9 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"gTg" = (
+/turf/closed/wall/f13/wood,
+/area/f13/city/bighorn)
 "gTq" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plating/tunnel,
@@ -11732,6 +11755,10 @@
 /obj/item/am_shielding_container,
 /turf/open/floor/engine,
 /area/f13/brotherhood/reactor)
+"iXm" = (
+/obj/structure/chair/stool,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "iXq" = (
 /obj/effect/decal/waste{
 	icon_state = "goo10"
@@ -11814,6 +11841,9 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"jbn" = (
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "jbs" = (
 /obj/structure/flora/rock/jungle{
 	density = 1
@@ -12285,6 +12315,10 @@
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plating/tunnel,
 /area/f13/raiders)
+"jwF" = (
+/obj/structure/junk/small/table,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "jwX" = (
 /obj/machinery/chem_dispenser/drinks/beer,
 /obj/structure/table/reinforced,
@@ -15088,6 +15122,10 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"lFf" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "lFh" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -20307,6 +20345,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/tunnel)
+"pMS" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "pMU" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/ausbushes/stalkybush,
@@ -22135,6 +22179,11 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/tunnel)
+"rhu" = (
+/obj/structure/table/wood,
+/obj/item/paper/crumpled,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "ria" = (
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
@@ -22620,6 +22669,10 @@
 "rFL" = (
 /turf/closed/wall/f13/wood,
 /area/f13/brotherhood/leisure)
+"rFP" = (
+/obj/structure/junk/small/bed2,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "rFV" = (
 /obj/structure/table,
 /turf/open/floor/plating/rust,
@@ -24222,6 +24275,12 @@
 	icon_state = "purplefull"
 	},
 /area/f13/tunnel)
+"sPQ" = (
+/obj/structure/stairs/north{
+	color = "#A47449"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "sPU" = (
 /obj/structure/wreck/trash/machinepile,
 /obj/effect/decal/waste{
@@ -25850,6 +25909,10 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/tunnel)
+"tUr" = (
+/obj/structure/junk/locker,
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "tUA" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13{
@@ -27369,7 +27432,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/east,
-/turf/open/floor/circuit/f13_blue/off,
+/turf/open/floor/circuit/off,
 /area/f13/city/bighorn)
 "vfJ" = (
 /obj/structure/lattice,
@@ -30882,6 +30945,13 @@
 /obj/structure/girder,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
+"yfZ" = (
+/obj/structure/table/wood,
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "ygu" = (
 /obj/structure/spider/stickyweb,
 /obj/structure/disposalpipe/segment,
@@ -107979,12 +108049,12 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+gTg
+gTg
+gTg
+gTg
+gTg
 lXj
 lXj
 lXj
@@ -108481,13 +108551,13 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+sPQ
+jbn
+pMS
+jwF
+gTg
+gTg
 lXj
 lXj
 lXj
@@ -108983,13 +109053,13 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+fOt
+jbn
+jbn
+jbn
+rFP
+gTg
 lXj
 lXj
 lXj
@@ -109485,13 +109555,13 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-uZs
-lXj
-lXj
+gTg
+cVF
+jbn
+jbn
+jbn
+dyG
+gTg
 lXj
 uZs
 lXj
@@ -109987,13 +110057,13 @@ uZs
 uZs
 uZs
 lXj
-uZs
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+gTg
+jbn
+jbn
+jbn
+tUr
+gTg
 lXj
 lXj
 lXj
@@ -110490,12 +110560,12 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+jbn
+jbn
+iXm
+lFf
+gTg
 lXj
 lXj
 lXj
@@ -110992,12 +111062,12 @@ lXj
 lXj
 lXj
 uZs
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+bCp
+yfZ
+rhu
+lFf
+gTg
 lXj
 lXj
 lXj
@@ -111494,12 +111564,12 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+gTg
+gTg
+gTg
+gTg
+gTg
+gTg
 lXj
 lXj
 lXj
