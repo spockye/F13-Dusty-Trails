@@ -56,7 +56,7 @@
 
 	// Terrain generation var. TRUE if derelict place that should look terrible!
 	var/ruin = FALSE
-	var/dirt = TRUE
+	var/dirt = FALSE
 
 	/// Size of the area in open turfs, only calculated for indoors areas.
 	var/areasize = 0

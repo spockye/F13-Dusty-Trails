@@ -83,7 +83,7 @@
 	icon_state = "nanoex"
 
 /area/f13/wasteland/bighorn
-	name = "Bighorn Exterior"
+	name = "Waypoint Exterior"
 	icon_state = "bighornex"
 	requires_power = TRUE
 
@@ -102,7 +102,6 @@
 /area/f13/wasteland/ncr
 	name = "NCR Outpost Exterior"
 	icon_state = "ncrex"
-	ambientmusic = list('sound/ambience/ncrtheme.ogg')
 
 /area/f13/wasteland/legion
 	name = "Legion Fortress Exterior"
@@ -280,11 +279,12 @@
 	outdoors = FALSE
 
 /area/f13/city/bighorn
-	name = "Bighorn"
+	name = "Waypoint"
 	icon_state = "bighorn"
 	requires_power = TRUE
 	outdoors = 0
 	open_space = 0
+	dirt = TRUE
 
 /area/f13/city/temple
 	name = "Temple"
@@ -430,6 +430,11 @@
 	icon_state = "tunnel"
 	requires_power = TRUE
 
+/area/f13/tunnel/upper
+	name = "Upper"
+	icon_state = "subway"
+	ruin = FALSE
+
 /area/f13/trainstation
 	name = "Tunnel"
 	icon_state = "tunnel"
@@ -456,6 +461,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/ambigen_17.ogg','sound/f13ambience/ambigen_18.ogg','sound/f13ambience/ambigen_19.ogg')
 	environment = 8
 	grow_chance = 75
+	dirt = TRUE
 
 /area/f13/subway
 	name = "Subway"
@@ -499,6 +505,7 @@
 	blob_allowed = 0
 	environment = 6
 	grow_chance = 5
+	dirt = TRUE
 
 /area/f13/vault
 	name = "Vault"
@@ -619,6 +626,7 @@
 	environment = 6
 	grow_chance = 5
 	requires_power = TRUE
+	dirt = TRUE
 
 /area/f13/brotherhood/rnd
 	name = "Brotherhood of Steel RnD Department"//Brother Hood
@@ -755,13 +763,13 @@
 	name = "NCR Outpost"
 	icon_state = "ncr"
 //	ambience_area =  list('sound/f13ambience/warehouse.ogg')
-	ambientmusic = list('sound/ambience/ncrtheme.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg','sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg', \
 	'sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg')
 	blob_allowed = 0
 	environment = 4
 	grow_chance = 5
 	requires_power = FALSE
+	dirt = TRUE
 
 /area/f13/legion
 	name = "Legion Fortress"
@@ -773,6 +781,7 @@
 	blob_allowed = 0
 	environment = 4
 	grow_chance = 5
+	dirt = TRUE
 
 /area/f13/followers
 	name = "Followers of the Apocalypse Clinic"
@@ -785,6 +794,7 @@
 	environment = 5
 	grow_chance = 5
 	requires_power = TRUE
+	dirt = TRUE
 
 /area/f13/wasteland/khans
 	name = "Great Khan Encampment"
