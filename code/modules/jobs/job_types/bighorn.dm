@@ -141,7 +141,7 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a hired law enforcer of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	 You have been entrusted by the Company to keep the peace, settle local disputes, and keep townsfolk safe and alive. \
 	 Patrol town, the perimeter of the walls, and follow the orders of the Lieutenant, and their superior the Mayor. \
@@ -191,7 +191,7 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	 You have been entrusted by the Company to run a place of food, drink, and rest for the populace. \
 	 While you have full domain over the running of your business, remember to work in the interests of your superiors."
@@ -272,7 +272,7 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	 You have been entrusted by the Company to run a store and have been given a generous initial stock. \
 	 Trade carefully and work with the Prospectors to turn a handsome profit. \
@@ -336,10 +336,10 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a citizen of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	In return for their protection you are expected to help maintain the streets and set an example as a law-abiding townsperson. \
-	You may occasionally be contracted out to the Sheriff or their superior the Mayor, for some dark task or another."
+	You may occasionally be contracted out to the Lieutenant or their superior the Mayor, for some dark task or another."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/bighorn/f13settler
@@ -363,7 +363,7 @@ Mayor
 	faction = FACTION_WASTELAND
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a citizen of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	In return for their protection you are expected to help maintain the spirits of the townsfolk and manage ceremonies. \
 	Of course, you are no contractor to the Company like the Barkeep or Merchant. Following your faith may take you on a divergent path."
@@ -651,7 +651,7 @@ Mayor
 	department_flag = DEP_BIGHORN
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Sheriff, Mayor and Dusty Trails Caravan Company"
+	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	 You have been entrusted by the Company to handle paperwork and the menial tasks of the Lieutenant and their superior the Mayor. \
 	 More quietly, you are expected to keep an eye on these two individuals and make sure they are aligned with Company goals."
