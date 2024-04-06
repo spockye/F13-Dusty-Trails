@@ -283,6 +283,14 @@
 	name = "Bighorn"
 	icon_state = "bighorn"
 	requires_power = TRUE
+	outdoors = 0
+	open_space = 0
+
+/area/f13/city/temple
+	name = "Temple"
+	icon_state = "bighorn"
+	outdoors = 0
+	open_space = 0
 
 /area/f13/citycaves
 	name = "City Caves"

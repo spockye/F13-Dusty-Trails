@@ -544,17 +544,17 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	if(!(L.client && (L.client.prefs.toggles & SOUND_AMBIENCE)))
 		return //General ambience check is below the ship ambience so one can play without the other
 	var/sound //fortuna edit. lets make this its own variable for convenience
-	var/sound2
-	if(prob(75))
+	if(prob(35))
 		sound = pick(ambientsounds)
 
-		if(!L.client.played)
-			SEND_SOUND(L, sound(sound, repeat = 0, wait = 0, volume = 30, channel = CHANNEL_AMBIENCE))
-			L.client.played = TRUE
-			addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 45 SECONDS)
+	if(prob(35)) //fortuna add. re-implements ambient music
+		sound = pick(ambientmusic)
 
-	sound2 = pick(ambientmusic)
-	SEND_SOUND(L, sound(sound2, repeat = 1, wait = 0, volume = 35, channel = CHANNEL_AMBIENCEMUSIC))
+		if(!L.client.played)
+			SEND_SOUND(L, sound(sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_AMBIENCE))
+			L.client.played = TRUE
+			addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 600)
+
 ///Divides total beauty in the room by roomsize to allow us to get an average beauty per tile.
 /area/proc/update_beauty()
 	if(!areasize)
