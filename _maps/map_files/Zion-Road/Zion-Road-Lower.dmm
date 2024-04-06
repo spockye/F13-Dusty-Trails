@@ -5056,7 +5056,7 @@
 	},
 /obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/circuit/f13_red,
-/area/f13/city/bighorn)
+/area/f13/wasteland/bighorn)
 "dKu" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/water,
