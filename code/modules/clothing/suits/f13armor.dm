@@ -637,11 +637,11 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/midwest
 	name = "Midwestern T-51b power armor"
-	desc = "This set of power armor belongs to the Midwestern branch of the Brotherhood of Steel."
+	desc = "The pinnacle of pre-war power-armor technology. This suit of power armor provides substantial protection to the wearer. This model appears to be of Midwestern design."
 	icon_state = "midwestgrey_pa"
 	item_state = "midwestgrey_pa"
 	slowdown = 0.25 //+0.05 from helmet = total 0.255
-	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 35, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 35, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 50)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/midwest
 
 /obj/item/clothing/suit/armor/f13/power_armor/midwest/hardened

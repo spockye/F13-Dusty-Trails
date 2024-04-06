@@ -226,20 +226,44 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier1 //TIER 1 ARMOR
 	name = "tier 1 armor"
 	icon_state = "armort1_loot"
-	loot = list(
-				/obj/item/clothing/suit/armor/f13/leather_jacket,
+	loot = list(/obj/item/clothing/suit/armor/f13/leather_jacket,
 				/obj/item/clothing/suit/armor/f13/leatherarmor,
+				/obj/item/clothing/suit/f13/duster,
+				/obj/item/clothing/suit/armor/f13/plates,
+				/obj/effect/spawner/bundle/f13/armor/goner/green,
 				/obj/effect/spawner/bundle/f13/armor/supafly,
 				/obj/effect/spawner/bundle/f13/armor/sadist,
 				/obj/effect/spawner/bundle/f13/armor/blastmaster,
 				/obj/effect/spawner/bundle/f13/armor/yankee,
 				/obj/effect/spawner/bundle/f13/armor/badlands,
 				/obj/effect/spawner/bundle/f13/armor/psycho,
-				/obj/item/clothing/suit/f13/duster,
-				/obj/effect/spawner/bundle/f13/armor/combatduster,
 				/obj/item/clothing/suit/armor/f13/raider/iconoclast,
+	)
+
+
+/obj/effect/spawner/lootdrop/f13/armor/tier1/civilized //Civilized specific
+	name = "tier 1 armor (CIVILIZED)"
+	icon_state = "armort1_loot"
+	loot = list(
+				/obj/item/clothing/suit/armor/f13/leather_jacket,
+				/obj/item/clothing/suit/armor/f13/leatherarmor,
+				/obj/item/clothing/suit/f13/duster,
 				/obj/item/clothing/suit/armor/f13/plates,
 				/obj/effect/spawner/bundle/f13/armor/goner/green
+	)
+
+
+/obj/effect/spawner/lootdrop/f13/armor/tier1/raider //Raider specific
+	name = "tier 1 armor (RAIDER)"
+	icon_state = "armort1_loot"
+	loot = list(
+				/obj/effect/spawner/bundle/f13/armor/supafly,
+				/obj/effect/spawner/bundle/f13/armor/sadist,
+				/obj/effect/spawner/bundle/f13/armor/blastmaster,
+				/obj/effect/spawner/bundle/f13/armor/yankee,
+				/obj/effect/spawner/bundle/f13/armor/badlands,
+				/obj/effect/spawner/bundle/f13/armor/psycho,
+				/obj/item/clothing/suit/armor/f13/raider/iconoclast,
 	)
 
 /obj/effect/spawner/bundle/f13/armor/supafly
@@ -300,8 +324,6 @@
 				/obj/effect/spawner/bundle/f13/armor/laserproofmetal,
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat,
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat,
-				/obj/item/clothing/suit/armor/vest,
-				/obj/item/clothing/suit/armor/vest/alt,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/knight
@@ -332,10 +354,31 @@
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/metal/reinforced,
 				/obj/effect/spawner/bundle/f13/armor/swat,
+				/obj/effect/spawner/bundle/f13/armor/combatduster,
 				/obj/effect/spawner/bundle/f13/armor/combat,
 				/obj/effect/spawner/bundle/f13/armor/bulletproof,
 				/obj/effect/spawner/bundle/f13/armor/sulphite,
 				/obj/effect/spawner/bundle/f13/armor/vault,
+				)
+
+
+/obj/effect/spawner/lootdrop/f13/armor/tier3/advanced //Advanced/Modern Gear T3
+	name = "tier 3 armor (advanced)"
+	icon_state = "armort3_loot"
+	loot = list(
+				/obj/effect/spawner/bundle/f13/armor/swat,
+				/obj/effect/spawner/bundle/f13/armor/combat,
+				/obj/effect/spawner/bundle/f13/armor/bulletproof,
+				/obj/effect/spawner/bundle/f13/armor/vault,
+				)
+
+/obj/effect/spawner/lootdrop/f13/armor/tier3/primitive // Primitive T3
+	name = "tier 3 armor (primitive)"
+	icon_state = "armort3_loot"
+	loot = list(
+				/obj/effect/spawner/bundle/f13/armor/metal/reinforced,
+				/obj/effect/spawner/bundle/f13/armor/combatduster,
+				/obj/effect/spawner/bundle/f13/armor/sulphite,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/metal/reinforced
@@ -428,11 +471,18 @@
 		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
 	)
 
+/obj/effect/spawner/bundle/f13/armor/raider_salvaged
+	name = "raider power armor spawner"
+	items = list(
+		/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d/raider,
+		/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider
+	)
+
 /obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
 	name = "tier 4 armor"
 	icon_state = "armort4_loot"
 	loot = list(
-		/obj/effect/spawner/bundle/f13/armor/t45d_salvaged,
+		/obj/effect/spawner/bundle/f13/armor/raider_salvaged,
 		/obj/effect/spawner/bundle/f13/armor/riot,
 		/obj/effect/spawner/bundle/f13/armor/combat/mk2,
 		/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
@@ -467,12 +517,12 @@
 		/obj/item/clothing/suit/armor/f13/power_armor/excavator,
 	)
 
-/obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR
+/obj/effect/spawner/lootdrop/f13/armor/tier5 //TIER 5 ARMOR - **BE VERY GOD DAMN CAREFUL SPAWNING THIS**
 	name = "tier 5 armor"
 	icon_state = "armort5_loot"
 	loot = list(
-		/obj/effect/spawner/bundle/f13/armor/t45d,
-		/obj/effect/spawner/bundle/f13/armor/t51b,
+		/obj/effect/spawner/bundle/f13/armor/t45d = 95,
+		/obj/effect/spawner/bundle/f13/armor/t51b = 5,
 	)
 
 /obj/effect/spawner/lootdrop/f13/armor/random
@@ -481,9 +531,9 @@
 	lootcount = 1
 
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/armor/tier1 = 90,
-			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 9,
-			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 1,
+			/obj/effect/spawner/lootdrop/f13/armor/tier1 = 70,
+			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 20,
+			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 10,
 			)
 
 /obj/effect/spawner/lootdrop/f13/armor/random_high
@@ -493,9 +543,8 @@
 
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 70,
-			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 35,
-			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 10,
-			/obj/item/traumapack = 1
+			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 30,
+			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 15,
 			)
 
 /*	------------------------------------------------
@@ -568,14 +617,10 @@
 	icon_state = "medicine_loot"
 	lootcount = 1
 
-	loot = list(/obj/item/reagent_containers/pill/patch/healingpowder,
-				/obj/item/storage/pill_bottle/chem_tin/radx,
+	loot = list(/obj/item/storage/pill_bottle/chem_tin/radx,
 				/obj/item/reagent_containers/blood/radaway,
 				/obj/item/storage/pill_bottle/chem_tin/mentats,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak,
-				/obj/item/reagent_containers/medspray/styptic,
-				/obj/item/reagent_containers/medspray/silver_sulf,
-				/obj/item/reagent_containers/medspray/sterilizine
 				)
 
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug //remove equipment, has nothing on it
@@ -586,8 +631,6 @@
 	loot = list(
 				/obj/item/reagent_containers/pill/patch/jet,
 				/obj/item/reagent_containers/pill/patch/turbo,
-				/obj/item/reagent_containers/pill/patch/healingpowder,
-				/obj/item/reagent_containers/pill/stimulant,
 				/obj/item/reagent_containers/hypospray/medipen/medx,
 				/obj/item/storage/pill_bottle/chem_tin/buffout
 				)
@@ -620,13 +663,11 @@
 		/obj/item/scalpel/advanced = 5,
 		/obj/item/surgical_drapes/advanced = 5,
 		/obj/effect/spawner/bundle/f13/needler = 5,
-		/obj/item/clothing/glasses/night = 5,
+		/obj/item/clothing/glasses/night = 15,
 		/obj/item/circuitboard/machine/chem_dispenser/apothecary = 5,
 		/obj/item/storage/box/stockparts/deluxe = 2,
 		/obj/item/storage/box/emps = 5,
 		/obj/item/organ/cyberimp/arm/janitor = 4,
-		/obj/item/reagent_containers/glass/bottle/fentanyl = 5,
-		/obj/item/reagent_containers/glass/bottle/frostoil = 5,
 		/obj/item/book/granter/trait/midsurgery = 5,
 		/obj/item/reagent_containers/glass/bottle/FEV_solution = 30,
 		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 20,
@@ -731,6 +772,7 @@
 	loot = list(/obj/item/twohanded/fireaxe,
 				/obj/item/twohanded/sledgehammer/simple,
 				/obj/item/twohanded/fireaxe/bmprsword,
+				/obj/item/shishkebabpack,
 				/obj/item/melee/unarmed/lacerator,
 				/obj/item/melee/unarmed/maceglove,
 				/obj/item/melee/unarmed/punchdagger,
@@ -750,7 +792,6 @@
 				/obj/item/melee/transforming/energy/axe/protonaxe,
 				/obj/item/gun/ballistic/revolver/ballisticfist,
 				/obj/item/twohanded/sledgehammer/supersledge,
-				/obj/item/shishkebabpack,
 				/obj/item/melee/unarmed/deathclawgauntlet,
 				/obj/item/melee/f13powerfist/moleminer
 				)
@@ -795,21 +836,21 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low
 	icon_state = "egunlow_loot"
 	name = "low tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/wattz = 40,
-				/obj/effect/spawner/bundle/f13/wattzm = 5,
-				/obj/effect/spawner/bundle/f13/laserpistol = 20,
+	loot = list(/obj/effect/spawner/bundle/f13/wattz = 75,
+				/obj/effect/spawner/bundle/f13/wattzm = 20,
+				/obj/effect/spawner/bundle/f13/laserpistol = 5,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
 	icon_state = "egunmid_loot"
 	name = "mid tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 40,
+	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 20,
 				/obj/effect/spawner/bundle/f13/plasmapistol = 20,
-				/obj/effect/spawner/bundle/f13/wattz2k = 5,
+				/obj/effect/spawner/bundle/f13/laserpistol = 60,
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier
-	name = "mid-high tier energy gun"
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh // This only exists for the sake of conflicts/old map shit. Will be removed later.
+	name = "mid-high tier energy gun (DO NOT USE)"
 	icon_state = "egunmidhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 40,
 				/obj/effect/spawner/bundle/f13/ionrifle = 5,
@@ -818,14 +859,15 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
 	icon_state = "egunhigh_loot"
-	loot = list(/obj/effect/spawner/bundle/f13/tribeam = 20,
+	loot = list(/obj/effect/spawner/bundle/f13/tribeam = 5,
 				/obj/effect/spawner/bundle/f13/rcw = 20,
-				/obj/effect/spawner/bundle/f13/aer14 = 10,
-				/obj/effect/spawner/bundle/f13/plasmarifle = 20,
+				/obj/effect/spawner/bundle/f13/ionrifle = 15,
+				/obj/effect/spawner/bundle/f13/aer14 = 15,
+				/obj/effect/spawner/bundle/f13/plasmarifle = 25,
 				/obj/effect/spawner/bundle/f13/wattz2kext = 20,
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh // Only exists for now for the sake of conflicts/old map shit. The MULTI-PLAS shouldnt compete with the AP.
 	name = "superhigh tier energy gun"
 	icon_state = "egunsuperhigh_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/multiplas,
@@ -840,8 +882,178 @@
 				)
 
 //Ballistic Weapon Spawners
+
+// NEW BALLISTICS
+
+// Primitive Tech - Pipes that shoot and sometimes explode. For the raider in all of us!
+
+// Primitive T1 - Crackhead Weaponry for a Crackhead World
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/primitive/t1
+	name = "T1 primitive weapons"
+	icon_state = "gunhobo_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/pepperbox,
+				/obj/effect/spawner/bundle/weapon/piperifle,
+				/obj/effect/spawner/bundle/f13/zipgun,
+				/obj/item/gun/ballistic/revolver/hobo/knifegun,
+				/obj/item/gun/ballistic/revolver/hobo/knucklegun,
+				/obj/item/gun/ballistic/revolver/winchesterrebored
+				)
+
+// Primitive T2 - Fancier shit.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/primitive/t2
+	name = "T2 primitive weapons"
+	icon_state = "gunhobo_loot"
+	loot = list(/obj/effect/spawner/bundle/weapon/piperifle = 50,
+				/obj/item/gun/ballistic/revolver/winchesterrebored = 25,
+				/obj/effect/spawner/bundle/f13/autopipe = 25
+				)
+
+
+
+// Wastelander Tech - Rugged and reliable. Classics for a reason!
+
+// Wastelander T1
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/wastelander/t1
+	name = "T1 wastelander weapons"
+	icon_state = "gunverylow_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
+				/obj/effect/spawner/bundle/f13/caravan_shotgun,
+				/obj/effect/spawner/bundle/f13/widowmaker,
+				/obj/effect/spawner/bundle/f13/m1911,
+				/obj/effect/spawner/bundle/f13/colt6520, // Technically, it's pre-war/civilized. But it's apart of police weaponry, which would be everywhere.
+				/obj/effect/spawner/bundle/f13/colt357,
+				/obj/effect/spawner/bundle/f13/police_pistol,
+				)
+// Wasteland T2 - Hunting toys and the chance at a cowboy lever.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/wastelander/t2
+	name = "T2 wastelander weapons"
+	icon_state = "gunverylow_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/huntingshotgun,
+				/obj/effect/spawner/bundle/f13/hunting,
+				/obj/effect/spawner/bundle/f13/mosin,
+				/obj/effect/spawner/bundle/f13/varmint,
+				/obj/effect/spawner/bundle/f13/cowboy,
+				)
+// Wasteland T3
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/wastelander/t3
+	name = "T3 wastelander weapons"
+	icon_state = "gunverylow_loot"
+	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants = 20,
+				/obj/effect/spawner/bundle/f13/trenchshotgun = 20,
+				/obj/effect/spawner/bundle/f13/remington = 20,
+				/obj/effect/spawner/bundle/f13/revolver45 = 20,
+				/obj/effect/spawner/bundle/f13/greasegun = 20,
+				)
+// Wasteland T4 - The sort of toys a real desert ranger uses.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/wastelander/t4
+	name = "T4 wastelander weapons"
+	icon_state = "gunverylow_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/trail = 30,
+				/obj/effect/spawner/bundle/f13/m1garand = 30,
+				/obj/effect/spawner/bundle/f13/auto5 = 10,
+				/obj/effect/spawner/bundle/f13/frontierservice = 30,
+				)
+// Wasteland T5 - RATSLAYER MY BELOVED. Assault rifles n' hard hitters.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/wastelander/t5
+	name = "T5 wastelander weapons"
+	icon_state = "gunhigh_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/r91 = 45,
+				/obj/effect/spawner/bundle/f13/brushgun = 15,
+				/obj/effect/spawner/bundle/f13/shotgunlever = 15,
+				/obj/effect/spawner/bundle/f13/uzi = 10, // Only here because it is THAT good right now. Oh this will change...
+				/obj/item/gun/ballistic/rifle/mag/varmint/verminkiller = 10,
+				/obj/item/gun/ballistic/rifle/mag/varmint/ratslayer = 5,
+				)
+
+// Civilized Tech - Fancy Schmancy shit from people who have enough dignity to not wear skulls on their shoulder pads.
+
+// Civilized T1 - Piss-tols and quality revolvers. Rare chance of a decent pistol.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t1
+	name = "T1 civilized weapons"
+	icon_state = "gunmid_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/n99 = 40,
+				/obj/effect/spawner/bundle/f13/beretta/select = 25,
+				/obj/effect/spawner/bundle/f13/pistol22 = 15, // RN-Jesus says 'Fuck you'
+				/obj/effect/spawner/bundle/f13/mk23 = 10,
+				/obj/effect/spawner/bundle/f13/thatgun = 10,
+				)
+// Civilized T2 - Piss-tols and quality revolvers. Rare chance of a decent pistol.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t2
+	name = "T2 civilized weapons"
+	icon_state = "gunmid_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/mk23 = 15,
+				/obj/effect/spawner/bundle/f13/thatgun = 15,
+				/obj/effect/spawner/bundle/f13/smg10mm = 20,
+				/obj/effect/spawner/bundle/f13/smg22 = 20,
+				/obj/effect/spawner/bundle/f13/thompson = 20,
+				/obj/effect/spawner/bundle/f13/automag = 10,
+				)
+// Civilized T3 - Jack of all Trades
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t3
+	name = "T3 civilized weapons"
+	icon_state = "gunmid_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/mp5 = 30,
+				/obj/effect/spawner/bundle/f13/remington = 30,
+				/obj/effect/spawner/bundle/f13/frontierservice = 30,
+				/obj/effect/spawner/bundle/f13/r91 = 10,
+				)
+// Civilized T4 - Jack of all Trades
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t4
+	name = "T4 civilized weapons"
+	icon_state = "gunmid_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/rangemaster = 30,
+				/obj/effect/spawner/bundle/f13/type93 = 20,
+				/obj/effect/spawner/bundle/f13/r84 = 10,
+				/obj/effect/spawner/bundle/f13/r91 = 50,
+				)
+// Civilized T5 - Fancy pewpewpewpewpew
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/civilized/t5
+	name = "T5 civilized weapons"
+	icon_state = "gunmid_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/infantry_rifle = 35,
+				/obj/effect/spawner/bundle/f13/type93 = 20,
+				/obj/effect/spawner/bundle/f13/fal = 20,
+				/obj/effect/spawner/bundle/f13/riotshotgun = 10,
+				/obj/effect/spawner/bundle/f13/type88 = 15,
+				)
+
+// Advanced Tech - Weapons of the atomic era, now at your fingertips! Some high-rank Civilized weapons are placed in here as filler
+
+// Advanced T1 - Near top of the line equipment.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t1
+	name = "T1 advanced weapons"
+	icon_state = "gunsuperhigh_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/infantry_rifle = 50,
+				/obj/effect/spawner/bundle/f13/marksman = 35,
+				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
+				/obj/effect/spawner/bundle/f13/calico = 35,
+				)
+// Advanced T2 - VIOLENCE
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t2
+	name = "T2 advanced weapons"
+	icon_state = "gunsuperhigh_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/calico = 20,
+				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 15,
+				/obj/effect/spawner/bundle/f13/p90 = 20,
+				/obj/effect/spawner/bundle/f13/assault_carbine = 30,
+				/obj/effect/spawner/bundle/f13/ak112 = 15,
+				)
+// Advanced T3 - It physically doesnt get much better for RNG tables. Everything else can be spawned individually.
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/dustytrails/advanced/t2
+	name = "T2 advanced weapons"
+	icon_state = "gunsuperhigh_loot"
+	loot = list(/obj/effect/spawner/bundle/f13/smg14mm = 25,
+				/obj/effect/spawner/bundle/f13/amr = 5,
+				/obj/effect/spawner/bundle/f13/bozar = 5,
+				/obj/effect/spawner/bundle/f13/dkssniper = 20,
+				/obj/effect/spawner/bundle/f13/g11 = 30,
+				/obj/item/gun/ballistic/rocketlauncher = 5,
+				/obj/effect/spawner/bundle/f13/infiltrator = 10,
+				)
+
+// OLD SYSTEM - Kept for now for compariative reasons
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo
-	name = "hobo tier ballistic gun"
+	name = "primitive ballistic gun"
 	icon_state = "gunhobo_loot"
 	loot = list(/obj/effect/spawner/bundle/f13/pepperbox,
 				/obj/effect/spawner/bundle/weapon/piperifle,
@@ -1141,6 +1353,13 @@
 	name = "service rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/service,
+				/obj/item/ammo_box/magazine/m556mm
+	)
+
+/obj/effect/spawner/bundle/f13/frontierservice
+	name = "frontier rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/service/frontier,
 				/obj/item/ammo_box/magazine/m556mm
 	)
 
@@ -1905,6 +2124,29 @@
 				/obj/item/poster/random_contraband,
 				/obj/item/poster/random_official
 				)
+
+/obj/effect/spawner/lootdrop/f13/wreckspawner //for mapgen only, really
+	name = "wreck spawner"
+	icon_state = "junk_loot"
+	lootcount = 1
+	fan_out_items = TRUE
+
+	loot = list(
+			/obj/structure/wreck/trash/five_tires,
+			/obj/structure/wreck/trash/two_tire,
+			/obj/structure/wreck/trash/one_tire,
+			/obj/structure/wreck/trash/halftire,
+			/obj/structure/wreck/trash/four_barrels,
+			/obj/structure/wreck/trash/three_barrels,
+			/obj/structure/wreck/trash/two_barrels,
+			/obj/structure/wreck/trash/one_barrel,
+			/obj/structure/wreck/trash/engine,
+			/obj/structure/wreck/trash/autoshaft,
+			/obj/structure/wreck/trash/bus_door,
+			/obj/structure/wreck/trash/secway,
+			/obj/structure/wreck/trash/brokenvendor
+				)
+
 
 /obj/effect/spawner/lootdrop/f13/seedspawner
 	name = "seed spawner"

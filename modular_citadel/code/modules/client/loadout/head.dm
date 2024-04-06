@@ -458,7 +458,7 @@
 	path = /obj/item/clothing/head/helmet/f13/khan/bandana
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
-	restricted_desc = "KHAN"
+	restricted_desc = "Great Khans"
 	restricted_roles = list("Khan Senior Enforcer",
 							"Khan Armorer",
 							"Khan Chemist",
@@ -470,7 +470,7 @@
 	path = /obj/item/clothing/head/helmet/f13/khan/pelt
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
-	restricted_desc = "KHAN"
+	restricted_desc = "Great Khans"
 	restricted_roles = list("Khan Senior Enforcer",
 							"Khan Armorer",
 							"Khan Chemist",
@@ -482,9 +482,9 @@
 	path = /obj/item/clothing/head/helmet/blueshirt
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 3
-	restricted_desc = "Bighorn PD, Bighorn officials"
-	restricted_roles = list("Sheriff",
-							"Deputy",
+	restricted_desc = "Waypoint Mercs & Contractors"
+	restricted_roles = list("Lieutenant",
+							"Mercenary",
 							"Mayor",
 							"Detective",
 							"Secretary",

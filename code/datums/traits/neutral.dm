@@ -142,9 +142,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = /obj/item/gun/ballistic/automatic/toy/pistol
 		if("BoS Off-Duty")
 			heirloom_type = /obj/item/toy/figure/borg
-		if("Sheriff")
+		if("Lieutenant")
 			heirloom_type = /obj/item/clothing/accessory/medal/silver
-		if("Deputy")
+		if("Mercenary")
 			heirloom_type = /obj/item/clothing/accessory/medal/bronze_heart
 		if("Shopkeeper")
 			heirloom_type = /obj/item/coin/plasma
@@ -447,7 +447,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/heirloom_type  ///DONT CHANGE HERILOOM STUFF FOR SOME REASON DONT WORK IF YOU REMOVE IT AAAAA.
 	switch(quirk_holder.mind.assigned_role)
-		if("Baron", "Centurion", "Sheriff", "NCR Captain")
+		if("Baron", "Centurion", "Lieutenant", "NCR Captain")
 			heirloom_type = pick(/obj/item/soapstone)
 		else
 			heirloom_type = pick(

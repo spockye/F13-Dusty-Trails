@@ -62,6 +62,8 @@
 #define LUSH_PLANT_SPAWN_LIST		list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/joshua = 3, /obj/structure/flora/tree/cactus = 2, /obj/structure/flora/tree/wasteland = 2)
 #define DESOLATE_PLANT_SPAWN_LIST	list(/obj/structure/flora/grass/wasteland = 1)
 #define SNOW_PLANT_SPAWN_LIST		list(/obj/structure/flora/tree/tall = 12, /obj/structure/flora/grass = 10, /obj/structure/flora/grass/brown = 9, /obj/structure/flora/grass/green = 8, /obj/structure/flora/grass/both = 7, /obj/structure/flora/bush = 6, /obj/structure/flora/wasteplant/wild_broc = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5)
+#define BADLANDS_PLANT_SPAWN_LIST	list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 3, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5)
+#define FOREST_PLANT_SPAWN_LIST		list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/twig = 9, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 3, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5)
 
 /turf/open/indestructible/ground/outside/dirthole
 	name = "Dirt hole"
@@ -161,19 +163,63 @@
 						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
 						)
 
-/turf/open/indestructible/ground/outside/desert/harsh
-	icon_state = "wasteland"
-	icon = 'icons/fallout/turfs/ground_harsh.dmi'
-
 /turf/open/indestructible/ground/outside/desert/Initialize(mapload)
 	. = ..()
 	if(prob(2))
 		salvage = pickweight(loots)
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
 		plantGrass()
-	if(icon_state != "wasteland")
+	if(icon_state == "wasteland")
+		icon_state = "wasteland[rand(1,31)]"
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src))) //no doublestacking on the plantgrass /structure/flora
+		if(prob(20))
+			new /obj/structure/flora/grass/wasteland(src)
+		if(prob(3))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+
+/turf/open/indestructible/ground/outside/desertharsh
+//	step_sounds = list("human" = "dirtfootsteps")
+//	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
+//	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
+	slowdown = 0.4
+	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
+	var/pit_sand = 1
+	// TODO: REWRITE PITS ENTIRELY
+	var/storedindex = 0			//amount of stored items
+	var/mob/living/gravebody	//is there a body in the pit?
+	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
+	var/obj/salvage //or salvage
+	var/pitcontents // Lazylist of pit contents. TODO: Replace with mypit.contents?
+	var/obj/dugpit/mypit
+	var/unburylevel = 0
+	var/static/list/loots = list(
+						/obj/item/stack/crafting/metalparts/five = 30,
+						/obj/item/stack/crafting/goodparts/five = 30,
+						/obj/item/stack/ore/blackpowder/twenty = 10,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
+						)
+	icon_state = "wasteland"
+	icon = 'icons/fallout/turfs/ground_harsh.dmi'
+
+/turf/open/indestructible/ground/outside/desertharsh/Initialize(mapload)
+	. = ..()
+	if(prob(2))
+		salvage = pickweight(loots)
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		plantGrass()
+	if(icon_state == "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
 
+
+
+/turf/open/indestructible/ground/outside/desertharsh/forest
+	icon_state = "wasteland"
+	icon = 'icons/fallout/turfs/ground_harsh.dmi'
 
 /obj/effect/overlay/desert_side
 	name = "desert"
@@ -229,6 +275,66 @@
 		setTurfPlant(new randPlant(src))
 		return TRUE
 
+/turf/open/indestructible/ground/outside/desertharsh/proc/setTurfPlant(newTurfPlant)
+	turfPlant = newTurfPlant
+	RegisterSignal(turfPlant, COMSIG_PARENT_QDELETING, .proc/clear_turfplant)
+
+/turf/open/indestructible/ground/outside/desertharsh/proc/clear_turfplant()
+	UnregisterSignal(turfPlant, COMSIG_PARENT_QDELETING)
+	turfPlant = null
+
+/turf/open/indestructible/ground/outside/desertharsh/proc/plantGrass(Plantforce = FALSE)
+	var/Weight = 0
+	var/randPlant = null
+
+	//spontaneously spawn grass
+	if(Plantforce || prob(GRASS_SPONTANEOUS))
+		randPlant = pickweight(BADLANDS_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
+	//loop through neighbouring desert turfs, if they have grass, then increase weight
+	for(var/turf/open/indestructible/ground/outside/desertharsh/T in RANGE_TURFS(3, src))
+		if(T.turfPlant)
+			Weight += GRASS_WEIGHT
+
+	//use weight to try to spawn grass
+	if(prob(Weight))
+
+		//If surrounded on 5+ sides, pick from lush
+		if(Weight == (5 * GRASS_WEIGHT))
+			randPlant = pickweight(BADLANDS_PLANT_SPAWN_LIST)
+		else
+			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST)
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
+/turf/open/indestructible/ground/outside/desertharsh/forest/plantGrass(Plantforce = FALSE)
+	var/Weight = 0
+	var/randPlant = null
+
+	//spontaneously spawn grass
+	if(Plantforce || prob(GRASS_SPONTANEOUS))
+		randPlant = pickweight(FOREST_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
+	//loop through neighbouring desert turfs, if they have grass, then increase weight
+	for(var/turf/open/indestructible/ground/outside/desertharsh/forest/T in RANGE_TURFS(3, src))
+		if(T.turfPlant)
+			Weight += GRASS_WEIGHT
+
+	//use weight to try to spawn grass
+	if(prob(Weight))
+
+		//If surrounded on 5+ sides, pick from lush
+		if(Weight == (5 * GRASS_WEIGHT))
+			randPlant = pickweight(FOREST_PLANT_SPAWN_LIST)
+		else
+			randPlant = pickweight(FOREST_PLANT_SPAWN_LIST)
+		setTurfPlant(new randPlant(src))
+		return TRUE
+
 /turf/open/indestructible/ground/outside/desert/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //I mean, it makes sense that deserts don't get slippery, I guess... :(
 
@@ -250,6 +356,14 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+
+/turf/open/indestructible/ground/outside/dirt/Initialize(mapload)
+	. = ..()
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(20))
+			new /obj/structure/flora/grass/wasteland(src)
+		if(prob(3))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/dirt/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //same thing here, dirt absorbs the liquid... :(
@@ -287,6 +401,24 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
 
+/turf/open/indestructible/ground/outside/road/Initialize(mapload)
+	. = ..()
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(33)) //decals
+			new /obj/effect/decal/rubble(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/oil(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/glass(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/generic(src)
+		if(prob(8))
+			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
+		if(prob(1))
+			new /obj/item/storage/trash_stack(src)
+		if(prob(1))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
+
 /turf/open/indestructible/ground/outside/road_s
 	name = "\proper road"
 	icon_state = "innermiddle"
@@ -300,6 +432,24 @@
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/sidewalk/Initialize(mapload)
+	. = ..()
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		if(prob(33)) //decals
+			new /obj/effect/decal/rubble(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/oil(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/glass(src)
+		if(prob(1))
+			new /obj/effect/decal/cleanable/generic(src)
+		if(prob(8))
+			new /obj/effect/spawner/lootdrop/f13/junkspawners(src)
+		if(prob(1))
+			new /obj/item/storage/trash_stack(src)
+		if(prob(1))
+			new /obj/effect/spawner/lootdrop/f13/wreckspawner(src)
 
 /turf/open/indestructible/ground/outside/sidewalk_s
 	name = "\proper sidewalk"

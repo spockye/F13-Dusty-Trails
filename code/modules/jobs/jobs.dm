@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"Legion Centurion",
 
-	"Sheriff",
+	"Lieutenant",
 	"Mayor",
 
 	"Enclave Lieutenant",
@@ -81,13 +81,13 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Elder",
-"Head Paladin",
+"Paladin Commander",
 "Head Knight",
 "Head Scribe",
 "Senior Paladin",
 "Paladin",
-"Senior Knight",
 "Knight",
+"Squire",
 "Senior Scribe",
 "Scribe",
 "Initiate",
@@ -109,14 +109,14 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 "Mayor",
 "Secretary",
-"Sheriff",
-"Deputy",
+"Lieutenant",
+"Mercenary",
 "Sierra Representative",
 "Shopkeeper",
 "Mercenary",
 "Barkeep",
 "Preacher",
-"La Verkin Citizen",
+"Citizen",
 
 "Enclave Captain",
 "Enclave Lieutenant",
@@ -146,30 +146,30 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"Elder",
-	"Head Paladin",
+	"Paladin Commander",
 	"Head Knight",
 	"Head Scribe",
 	"Senior Paladin",
 	"Paladin",
-	"Senior Knight",
 	"Knight",
+	"Squire",
 	"Senior Scribe",
 	"Scribe",
 	"Initiate",
-	"BoS Off-Duty"
+	"BoS Off-Duty",
 ))
 
 GLOBAL_LIST_INIT(bighorn_positions, list(
 	"Mayor",
 	"Secretary",
-	"Sheriff",
-	"Deputy",
+	"Lieutenant",
+	"Mercenary",
 	"Sierra Representative",
 	"Shopkeeper",
 	"Mercenary",
 	"Barkeep",
 	"Preacher",
-	"La Verkin Citizen",
+	"Citizen",
 
 ))
 

@@ -284,6 +284,8 @@
 		else if(istype(A, /obj/item) && prob(20))
 			var/obj/item/O = A
 			O.microwave_act()
+		else if(istype(A, /obj/structure/cross))
+			return //just allows crosses to be built on top of bonfires for nice cinematic effect
 		else if(istype(A, /obj/item/grown/log))
 			qdel(A)
 			new /obj/item/stack/sheet/mineral/coal(loc, 1)

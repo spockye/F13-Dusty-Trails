@@ -2093,6 +2093,7 @@
 #include "code\modules\fallout\start_landmarks.dm"
 #include "code\modules\fallout\themed_loot_tables.dm"
 #include "code\modules\fallout\areas\area.dm"
+#include "code\modules\fallout\areas\area_laverkin.dm"
 #include "code\modules\fallout\defenses\mortar.dm"
 #include "code\modules\fallout\equipment\headsets.dm"
 #include "code\modules\fallout\equipment\stealthboy.dm"

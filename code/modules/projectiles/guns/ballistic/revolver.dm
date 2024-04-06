@@ -353,6 +353,13 @@
 	force = 35
 	sharpness = SHARP_POINTY
 
+/obj/item/gun/ballistic/revolver/hunting/sequoia/rangercaptain
+	name = "honorary sequoia"
+	desc = "This customized Magnum BFR revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon, this one however featuring symbolism of the Ranger-NCR treaty. Unlike its purpose built brethren: this one was not made for the weathering conditions of the wasteland. "
+	icon_state = "sequoia"
+	fire_delay = 4
+	extra_damage = -5
+
 /////////////////////
 // WEIRD REVOLVERS //
 /////////////////////

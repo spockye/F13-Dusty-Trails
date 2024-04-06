@@ -2,6 +2,8 @@
 "aa" = (
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
+"ab" = (
+/area/f13/underground/cave)
 "Aw" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
 /turf/open/indestructible,
@@ -23567,9 +23569,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+ab
+ab
+ab
 aa
 aa
 aa
@@ -23824,9 +23826,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+ab
+ab
+ab
 aa
 aa
 aa

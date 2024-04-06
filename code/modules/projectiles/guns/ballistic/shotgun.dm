@@ -340,6 +340,13 @@
 	knife_x_offset = 23
 	knife_y_offset = 23
 
+/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever/khan
+	name = "Eighties-Khan supershorty"
+	desc = "A pistol grip lever action shotgun shortened for ease of use on vehicles. A weapon taken in spades during the Khans encounter with the Eighties. It holds 3+1"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
+	slowdown = 0.20
+
+
 
 //Neostead 2000							Keywords: BOS, Shotgun, Semi-auto, 12 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
@@ -447,6 +454,12 @@
 	fire_delay = 3
 	recoil = 1
 	slowdown = 0.65 //added so it's not just a straight upgrade sort of unique. total of 0.8 slowdown when used with S.E armor
+
+/obj/item/gun/ballistic/automatic/shotgun/riot/ncr
+	name = "NCR Anti-Riot shotgun"
+	desc = "A compact riot shotgun designed originally for firing non-lethal projectiles into rioting prisoners. It has 'Compliance Notices' etched into the side with several lines underneath it."
+	fire_delay = 5
+	recoil = 1.3
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"

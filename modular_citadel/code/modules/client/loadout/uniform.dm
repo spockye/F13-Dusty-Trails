@@ -731,13 +731,13 @@
 	path = /obj/item/clothing/under/rank/security/officer/blueshirt
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "Oasis"
+	restricted_desc = "Waypoint"
 	restricted_roles = list("Mayor",
 							"Secretary",
-							"Sheriff",
+							"Lieutenant",
 							"Doctor",
-							"La Verkin Citizen",
-							"Deputy",
+							"Citizen",
+							"Mercenary",
 							"Shopkeeper",
 							"Farmer",
 							"Prospector",
@@ -751,7 +751,7 @@
 	name = "great khans jorts"
 	path = /obj/item/clothing/under/f13/khan/shorts
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "KHAN"
+	restricted_desc = "Great Khans"
 	restricted_roles = list("Khan Senior Enforcer",
 							"Khan Armorer",
 							"Khan Chemist",
@@ -762,7 +762,7 @@
 	name = "great khans booty shorts"
 	path = /obj/item/clothing/under/f13/khan/booty
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "KHAN"
+	restricted_desc = "Great Khans"
 	restricted_roles = list("Khan Senior Enforcer",
 							"Khan Armorer",
 							"Khan Chemist",

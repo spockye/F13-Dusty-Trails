@@ -470,6 +470,10 @@
 	desc = "A reinfoed set of combat armor set made by the Brotherhood of Steel, standard issue for all senior knights. This one has had its extra protective padding removed, making it lighter yet less durable."
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 40, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 10)
 
+/obj/item/clothing/suit/armored/light/bos_scout/squire
+	name = "brotherhood squire scout armour"
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all squires. It is made of cheaper materials such as steel instead of composites."
+	slowdown = 0.07
 ///////////
 // MISC. //
 ///////////

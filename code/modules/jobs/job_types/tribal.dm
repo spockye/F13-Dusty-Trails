@@ -11,9 +11,9 @@ Within this file is the material to turn the previous odd-inclusion into a prope
 	access = list(ACCESS_TRIBE)
 	blacklisted_quirks = list(/datum/quirk/herbal_affinity)
 	social_faction = "Tribal"
-	description = "You're a member of one of many tribes, all brought together in a singular goal after the arrival of the Legion and NCR. Survival. \
-	Who you were no longer matters. What you do is prime. Especially so in the newfound faith, that of the machine spirits. Should you follow it. They surround you. \
-	Are you worthy of their attention?"
+	description = "You are a tribal belonging to one of the ancient communities or faiths that exist in the La Verkin region. \
+	The Badlands have long been your peaceful home, but the escalating conflict between the factions bears a threat to all. \
+	Navigate a harsh and increasingly complicated world - the Temple may be of use, but remember other tribals may not align with you."
 	supervisors = "the stars above"
 
 /datum/outfit/job/tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

@@ -43,8 +43,23 @@
 	. = ..()
 	setDir(pick(GLOB.cardinals))
 
+/obj/effect/decal/cleanable/glass/Initialize(mapload)
+	. = ..()
+	setDir(pick(GLOB.cardinals))
+
 /obj/effect/decal/cleanable/glass/ex_act()
 	qdel(src)
+
+/obj/effect/decal/rubble
+	name = "rubble"
+	desc = "Dirt, debris, loose stones and residue."
+	icon = 'icons/obj/shards.dmi'
+	icon_state = "asteroid0"
+
+/obj/effect/decal/rubble/Initialize(mapload)
+	. = ..()
+	icon_state = "asteroid[rand(0,8)]"
+	setDir(pick(GLOB.cardinals))
 
 /obj/effect/decal/cleanable/glass/plasma
 	icon_state = "plasmatiny"
@@ -71,6 +86,18 @@
 /obj/effect/decal/cleanable/dirt/Destroy()
 	queue_smooth_neighbors(src)
 	return ..()
+
+/obj/effect/decal/cleanable/dirtstain
+	name = "dirt"
+	desc = "Someone should clean that up."
+	icon = 'icons/effects/dirtstain.dmi'
+	icon_state = "dirt-flat-0"
+	beauty = -75
+
+/obj/effect/decal/cleanable/dirtstain/Initialize(mapload)
+	. = ..()
+	icon_state = "dirt-flat-[rand(0,3)]"
+	setDir(pick(GLOB.cardinals))
 
 /obj/effect/decal/cleanable/flour
 	name = "flour"

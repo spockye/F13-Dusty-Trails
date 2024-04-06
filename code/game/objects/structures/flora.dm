@@ -197,6 +197,17 @@
 	icon_state = "snowbush[rand(1, 6)]"
 	. = ..()
 
+/obj/structure/flora/twig
+	name = "twigs"
+	desc = "The remains of branches and shrubbery."
+	icon = 'icons/obj/flora/ausflora.dmi'
+	icon_state = "twig1"
+
+/obj/structure/flora/twig/Initialize(mapload)
+	. = ..()
+	if(icon_state == "twig1")
+		icon_state = "twig[rand(1, 4)]"
+
 //newbushes
 
 /obj/structure/flora/ausbushes

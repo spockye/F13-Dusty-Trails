@@ -77,3 +77,8 @@
 /obj/machinery/door/poddoor/shutters/window/preopen
 	icon_state = "open"
 	density = FALSE
+
+/obj/machinery/door/poddoor/shutters/secret
+	name = "rusted reinforced wall"
+	desc = "A huge chunk of rusted reinforced metal."
+	icon = 'icons/obj/doors/hidden.dmi'

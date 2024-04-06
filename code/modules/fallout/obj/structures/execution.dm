@@ -204,4 +204,10 @@
 			untie_mob(L)
 	return ..()
 
+/obj/structure/cross/tribal
+	name = "tribal totem"
+	icon = 'icons/obj/cross.dmi'
+	icon_state = "tribal"
+	desc = "A grisly tribal totem fashioned from wood."
+
 #undef VIABLE_MOB_CHECK
