@@ -55269,10 +55269,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
-"oAg" = (
-/obj/machinery/vending/games,
-/turf/closed/mineral/indestructible/harsh,
-/area/f13/caves)
 "oAl" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -82088,6 +82084,8 @@
 /area/f13/legion)
 "vLi" = (
 /obj/structure/rack,
+/obj/item/clothing/suit/toggle/labcoat/fieldscribe,
+/obj/item/clothing/suit/toggle/labcoat/fieldscribe,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -115620,7 +115618,7 @@ mYC
 bIa
 uyC
 fTS
-oAg
+jqZ
 jqZ
 jqZ
 jqZ
