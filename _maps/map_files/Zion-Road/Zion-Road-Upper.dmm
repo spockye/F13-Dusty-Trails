@@ -8184,11 +8184,13 @@
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark,
 /area/f13/building)
 "fhN" = (
-/obj/machinery/door/unpowered/secure_bos{
-	name = "Roof Access"
+/obj/structure/railing{
+	dir = 1
 	},
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/offices)
+/area/f13/wasteland)
 "fig" = (
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "floor6"
@@ -9022,6 +9024,9 @@
 	name = "dirty floor"
 	},
 /area/f13/building)
+"fJn" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/brotherhood/offices)
 "fJw" = (
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid"
@@ -9547,14 +9552,6 @@
 	color = "#d9c4b9"
 	},
 /area/f13/building)
-"ged" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/alcoholspawner,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/wasteland)
 "ges" = (
 /obj/structure/flora/rock/jungle,
 /obj/effect/turf_decal/weather/dirt{
@@ -11774,6 +11771,12 @@
 /obj/effect/overlay/rockfloor_side,
 /turf/open/water,
 /area/f13/caves)
+"hxv" = (
+/obj/effect/turf_decal/delivery/white,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood/offices)
 "hxW" = (
 /mob/living/simple_animal/hostile/mirelurk/baby,
 /turf/open/indestructible/ground/inside/dirt,
@@ -15424,11 +15427,14 @@
 	},
 /area/f13/building/mall)
 "jVy" = (
-/obj/effect/turf_decal/delivery/white,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
+/obj/structure/railing{
+	dir = 1
 	},
-/area/f13/brotherhood/offices)
+/obj/structure/chair/wood/fancy{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/wasteland)
 "jVN" = (
 /obj/structure/flora/rock/pile/largejungle{
 	pixel_x = -9;
@@ -17231,9 +17237,6 @@
 	icon_state = "housewood1-broken"
 	},
 /area/f13/city/bighorn)
-"ldX" = (
-/turf/closed/wall/r_wall/rust,
-/area/f13/brotherhood/offices)
 "lek" = (
 /obj/structure/chair/f13foldupchair,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
@@ -27991,15 +27994,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"shL" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/structure/chair/wood/fancy{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/wasteland)
 "shM" = (
 /obj/machinery/light{
 	dir = 1;
@@ -29428,6 +29422,11 @@
 	name = "air"
 	},
 /area/f13/building)
+"tfj" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/offices)
 "tgm" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -30573,6 +30572,12 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/building)
+"tKP" = (
+/obj/machinery/door/unpowered/secure_bos{
+	name = "Roof Access"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/brotherhood/offices)
 "tKS" = (
 /turf/open/indestructible/ground/outside/desertharsh/forest{
 	icon_state = "dirt";
@@ -32237,11 +32242,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
-"uMX" = (
-/obj/structure/window/reinforced/fulltile,
-/obj/structure/grille,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/offices)
 "uNg" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/grass{
@@ -49107,8 +49107,8 @@ vWn
 vWn
 vWn
 vWn
-ldX
-ldX
+fJn
+fJn
 xXQ
 xXQ
 xXQ
@@ -49609,7 +49609,7 @@ vWn
 vWn
 vWn
 vWn
-ldX
+fJn
 gOk
 uXM
 wJo
@@ -51622,8 +51622,8 @@ suW
 xXQ
 xXQ
 xXQ
-ldX
-ldX
+fJn
+fJn
 vWn
 vWn
 vWn
@@ -52125,7 +52125,7 @@ qKt
 cTE
 qKt
 pae
-ldX
+fJn
 vWn
 vWn
 vWn
@@ -55126,11 +55126,11 @@ kGD
 kGD
 kGD
 kGD
-shL
+jVy
 aYu
 aYu
-ldX
-ldX
+fJn
+fJn
 xXQ
 olV
 olV
@@ -55631,7 +55631,7 @@ mps
 aYu
 aYu
 aYu
-ldX
+fJn
 qbv
 fRP
 fRP
@@ -55644,7 +55644,7 @@ xXQ
 xXQ
 xXQ
 xXQ
-ldX
+fJn
 vWn
 vWn
 vWn
@@ -56133,7 +56133,7 @@ wST
 qwE
 aYu
 aYu
-fhN
+tKP
 fRP
 fRP
 gDa
@@ -56146,14 +56146,14 @@ oIl
 tsa
 aGR
 wRB
-ldX
-ldX
+fJn
+fJn
 xXQ
 xXQ
 xXQ
 xXQ
-ldX
-ldX
+fJn
+fJn
 vWn
 vWn
 vWn
@@ -56631,7 +56631,7 @@ kGD
 kGD
 kGD
 kGD
-ged
+fhN
 kbf
 aYu
 aYu
@@ -56655,7 +56655,7 @@ fAK
 qKt
 cTE
 luV
-ldX
+fJn
 vWn
 vWn
 vWn
@@ -57133,11 +57133,11 @@ kGD
 kGD
 kGD
 kGD
-shL
+jVy
 sNO
 aYu
 aYu
-uMX
+tfj
 fRP
 fRP
 dqW
@@ -57639,7 +57639,7 @@ uMM
 aYu
 aYu
 aYu
-uMX
+tfj
 fRP
 fRP
 dqW
@@ -58145,8 +58145,8 @@ xXQ
 fRP
 fRP
 fRP
-jVy
-jVy
+hxv
+hxv
 fRP
 fRP
 fRP
@@ -58643,7 +58643,7 @@ kGD
 akn
 aYu
 aYu
-fhN
+tKP
 fRP
 fRP
 fRP
@@ -59142,7 +59142,7 @@ kGD
 kGD
 kGD
 kGD
-shL
+jVy
 aYu
 mWw
 xXQ
@@ -59657,8 +59657,8 @@ exz
 xdd
 xdd
 kjU
-ldX
-ldX
+fJn
+fJn
 xXQ
 xXQ
 xXQ
@@ -60146,9 +60146,9 @@ kGD
 kGD
 kGD
 kGD
-ldX
-ldX
-ldX
+fJn
+fJn
+fJn
 xXQ
 qKt
 qKt
@@ -60649,7 +60649,7 @@ kGD
 kGD
 kGD
 rcA
-ldX
+fJn
 qcc
 qKt
 qKt
@@ -61164,7 +61164,7 @@ qKt
 qKt
 qKt
 qKt
-uMX
+tfj
 uxr
 vGY
 vGY
@@ -62157,13 +62157,13 @@ rcA
 vWn
 xXQ
 xXQ
-uMX
+tfj
 okS
-ldX
-ldX
+fJn
+fJn
 xXQ
 okS
-uMX
+tfj
 xXQ
 xXQ
 qKt
@@ -62171,8 +62171,8 @@ qKt
 xXQ
 xXQ
 xXQ
-ldX
-ldX
+fJn
+fJn
 vWn
 vWn
 vWn
@@ -62674,7 +62674,7 @@ xXQ
 oXI
 fIC
 lAA
-ldX
+fJn
 vWn
 vWn
 vWn
@@ -64173,9 +64173,9 @@ ats
 vGY
 vGY
 oKU
-ldX
-ldX
-fhN
+fJn
+fJn
+tKP
 xXQ
 xXQ
 xXQ
@@ -64675,7 +64675,7 @@ tYP
 tYP
 tYP
 tYP
-ldX
+fJn
 aYu
 aYu
 aYu
@@ -70600,7 +70600,7 @@ iTI
 iTI
 iTI
 iTI
-iTI
+vWn
 vWn
 vWn
 vWn
@@ -71102,7 +71102,7 @@ iTI
 iTI
 iTI
 iTI
-iTI
+vWn
 vWn
 vWn
 vWn
@@ -71604,7 +71604,7 @@ iTI
 iTI
 iTI
 iTI
-iTI
+vWn
 vWn
 vWn
 vWn
@@ -72106,7 +72106,7 @@ iTI
 iTI
 iTI
 iTI
-iTI
+vWn
 vWn
 vWn
 vWn
@@ -72603,11 +72603,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
@@ -73105,11 +73105,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
@@ -73607,11 +73607,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
@@ -74109,11 +74109,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
@@ -74611,11 +74611,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
@@ -75113,11 +75113,11 @@ iTI
 iTI
 iTI
 iTI
-vWn
-vWn
-vWn
-vWn
-vWn
+iTI
+iTI
+iTI
+iTI
+iTI
 vWn
 vWn
 vWn
