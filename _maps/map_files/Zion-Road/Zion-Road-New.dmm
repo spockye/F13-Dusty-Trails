@@ -1280,7 +1280,9 @@
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowright"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13{
+	icon_state = "reddirtysolid"
+	},
 /area/f13/city/bighorn)
 "afK" = (
 /obj/structure/table/wood/junk,
@@ -10265,6 +10267,11 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "cEb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/suit/bomb_suit/white,
+/obj/item/clothing/suit/bomb_suit/white,
+/obj/item/clothing/head/bomb_hood/white,
+/obj/item/clothing/head/bomb_hood/white,
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/f13{
 	dir = 10;
@@ -12360,6 +12367,14 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland)
+"der" = (
+/obj/machinery/button/door{
+	id = "mus1";
+	name = "garage shutters";
+	pixel_x = 6
+	},
+/turf/closed/wall/f13/supermart,
+/area/f13/city/bighorn)
 "deF" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
@@ -16811,7 +16826,7 @@
 	},
 /area/f13/building)
 "esK" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/east,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -16911,6 +16926,17 @@
 	icon_state = "cafeteria"
 	},
 /area/f13/building)
+"euJ" = (
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/bomb/tier2,
+/obj/effect/spawner/lootdrop/f13/bomb/tier2,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/city/bighorn)
 "euM" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt{
@@ -17888,6 +17914,9 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
+"eIT" = (
+/turf/open/transparent/openspace,
+/area/f13/city/bighorn)
 "eIV" = (
 /obj/effect/overlay/turfs/sidewalk{
 	dir = 4
@@ -23285,7 +23314,7 @@
 	color = "#d9b51c"
 	},
 /turf/open/floor/grass,
-/area/f13/wasteland)
+/area/f13/wasteland/bighorn)
 "gbV" = (
 /obj/effect/landmark/poster_spawner/prewar{
 	pixel_y = -32
@@ -31033,6 +31062,17 @@
 	icon_state = "verticalinnermain3"
 	},
 /area/f13/wasteland)
+"idT" = (
+/obj/structure/table/wood,
+/obj/machinery/button/door{
+	id = "barouter";
+	name = "kitchen shutters";
+	req_access_txt = "137";
+	pixel_y = -4;
+	pixel_x = -6
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/f13/city/bighorn)
 "ieq" = (
 /obj/structure/obstacle/barbedwire{
 	icon_state = "barbed_end";
@@ -40560,6 +40600,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"kEN" = (
+/obj/structure/table/wood,
+/obj/machinery/door/poddoor/shutters{
+	id = s;
+	name = "counter shutters";
+	req_one_access_txt = null
+	},
+/turf/open/floor/f13/wood,
+/area/f13/city/bighorn)
 "kET" = (
 /obj/structure/fence{
 	dir = 8
@@ -40894,7 +40943,7 @@
 	desc = "Deep, poorly filtered gardening water.";
 	name = "stagnant water"
 	},
-/area/f13/wasteland)
+/area/f13/wasteland/bighorn)
 "kIZ" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light,
@@ -47823,7 +47872,7 @@
 /obj/structure/simple_door/room{
 	name = "Cafeteria"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13/wood,
 /area/f13/city/bighorn)
 "mCH" = (
 /obj/structure/nest/molerat{
@@ -48474,6 +48523,7 @@
 	dir = 4
 	},
 /obj/machinery/workbench,
+/obj/item/stack/sheet/prewar/five,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
@@ -50144,6 +50194,12 @@
 /mob/living/simple_animal/hostile/stalker,
 /turf/open/indestructible/ground/outside/desertharsh/forest,
 /area/f13/wasteland/badlands)
+"ngJ" = (
+/obj/effect/landmark/start/f13/deputy,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/city/bighorn)
 "ngO" = (
 /obj/structure/campfire/barrel,
 /obj/effect/decal/cleanable/dirt,
@@ -56119,6 +56175,12 @@
 	icon_state = "tunnelchess"
 	},
 /area/f13/building)
+"oLP" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/city/bighorn)
 "oLV" = (
 /obj/structure/railing{
 	dir = 4
@@ -69222,7 +69284,9 @@
 /obj/structure/simple_door/metal/store{
 	name = "Eastwood Police Department"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/floor/f13{
+	icon_state = "reddirtysolid"
+	},
 /area/f13/city/bighorn)
 "slB" = (
 /obj/effect/landmark/start/f13/legionary,
@@ -82681,6 +82745,33 @@
 	icon_state = "redmark"
 	},
 /area/f13/brotherhood/facility)
+"vSp" = (
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/city/bighorn)
 "vSr" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowbottom"
@@ -84534,6 +84625,7 @@
 /area/f13/wasteland)
 "wtw" = (
 /obj/structure/lattice/catwalk,
+/obj/effect/landmark/start/f13/deputy,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/city/bighorn)
 "wtF" = (
@@ -85715,7 +85807,7 @@
 /obj/item/clothing/head/helmet/f13/deathskull,
 /obj/item/clothing/suit/armored/medium/combat/cloak_armored{
 	pixel_y = -10;
-	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
+	armor = list("melee"=45,"bullet"=30,"laser"=30,"energy"=5,"bomb"=15,"bio"=0,"rad"=0,"fire"=15,"acid"=0,"wound"=15)
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -146038,7 +146130,7 @@ qlt
 qlt
 qlt
 qlt
-qlt
+dDj
 qlt
 vzb
 qlt
@@ -169154,7 +169246,7 @@ mCD
 pbx
 dux
 pbx
-pKl
+eIT
 coK
 vEL
 coK
@@ -174678,7 +174770,7 @@ sfl
 sfl
 sfl
 sfl
-gYg
+kEN
 fnN
 pbx
 pbx
@@ -175178,7 +175270,7 @@ uKr
 sfl
 sfl
 xnt
-cpK
+idT
 fPo
 gYg
 mJe
@@ -175680,7 +175772,7 @@ coK
 nUK
 sfl
 xnt
-xnt
+cpK
 jNJ
 coK
 coK
@@ -183224,8 +183316,8 @@ snn
 qml
 tEV
 tEV
-snn
-snn
+der
+der
 qml
 tEV
 tEV
@@ -186741,7 +186833,7 @@ hVc
 eTb
 eTb
 hVc
-oUs
+oLP
 snn
 snn
 fuY
@@ -187235,7 +187327,7 @@ exF
 snn
 hJV
 eTb
-cEb
+vSp
 eTb
 oUs
 snn
@@ -187747,7 +187839,7 @@ eTb
 hVc
 snn
 oUs
-hVc
+ngJ
 hVc
 hVc
 snn
@@ -188239,7 +188331,7 @@ exF
 snn
 jlN
 eTb
-cEb
+euJ
 eTb
 hVc
 nmx

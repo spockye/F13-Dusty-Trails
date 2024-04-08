@@ -4659,9 +4659,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /turf/open/floor/f13{
 	icon_state = "rampdowntop"
 	},
@@ -8678,14 +8675,14 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "gsy" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/power/terminal{
+	dir = 1
 	},
 /obj/structure/cable{
-	icon_state = "1-8"
+	icon_state = "0-8"
 	},
 /turf/open/floor/f13{
-	icon_state = "rampdowntop"
+	icon_state = "darkrusty"
 	},
 /area/f13/city/bighorn)
 "gsE" = (
@@ -19874,6 +19871,11 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/tunnel)
+"pho" = (
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/city/bighorn)
 "phT" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -22822,6 +22824,18 @@
 	},
 /turf/open/water,
 /area/f13/caves)
+"rtP" = (
+/obj/machinery/computer/monitor{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/city/bighorn)
 "rtU" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
@@ -24473,6 +24487,15 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -24956,6 +24979,11 @@
 /obj/structure/stairs/north,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"tfe" = (
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/city/bighorn)
 "tfr" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain1"
@@ -135082,8 +135110,8 @@ lXj
 olh
 jMk
 pxA
-tQQ
-tQQ
+hNQ
+tfe
 dkw
 cvW
 cvW
@@ -135586,7 +135614,7 @@ jMk
 pmS
 sKl
 tQQ
-gsy
+pSh
 cvW
 cvW
 cvW
@@ -135594,7 +135622,7 @@ xmU
 osv
 tQQ
 aUM
-ppz
+rtP
 sOs
 tQQ
 aUM
@@ -136086,9 +136114,9 @@ lXj
 olh
 jMk
 uPY
-sKl
-tQQ
-pSh
+gsy
+tfe
+pho
 cvW
 cvW
 cvW
