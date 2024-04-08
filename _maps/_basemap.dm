@@ -4,7 +4,6 @@
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
-		#include "map_files\Zion-Road\Dungeons.dmm"
 		#include "map_files\Zion-Road\Zion-Road-Lower.dmm"
 		#include "map_files\Zion-Road\Zion-Road-New.dmm"
 		#include "map_files\Zion-Road\Zion-Road-Upper.dmm"

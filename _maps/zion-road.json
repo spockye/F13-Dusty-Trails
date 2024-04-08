@@ -2,7 +2,6 @@
 	"map_name": "La Verkin, Utah",
 	"map_path": "map_files/Zion-Road",
 	"map_file": [
-		"Dungeons.dmm",
 		"Zion-Road-Lower.dmm",
 		"Zion-Road-New.dmm",
 		"Zion-Road-Upper.dmm"
@@ -16,14 +15,6 @@
 		"ferry": "ferry_fancy"
 	},
 	"traits": [
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Up": 1,
-			"No Parallax": true,
-			"Linkage": null,
-			"Name": "Dungeons"
-		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
