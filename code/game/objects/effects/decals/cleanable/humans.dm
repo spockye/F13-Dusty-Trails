@@ -48,7 +48,7 @@
 	random_icon_states = null
 	beauty = -50
 
-/obj/effect/decal/cleanable/trail_holder //not a child of blood on purpose
+/obj/effect/decal/cleanable/blood/trail_holder
 	name = "blood"
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "ltrails_1"
@@ -57,21 +57,21 @@
 	beauty = -50
 	var/list/existing_dirs = list()
 
-/obj/effect/decal/cleanable/trail_holder/update_icon()
+/obj/effect/decal/cleanable/blood/trail_holder/update_icon()
 	color = blood_DNA_to_color()
 
-/obj/effect/cleanable/trail_holder/Initialize(mapload)
+/obj/effect/cleanable/blood/trail_holder/Initialize(mapload)
 	. = ..()
 	update_icon()
 
-/obj/effect/decal/cleanable/trail_holder/can_bloodcrawl_in()
+/obj/effect/decal/cleanable/blood/trail_holder/can_bloodcrawl_in()
 	return TRUE
 
-/obj/effect/decal/cleanable/trail_holder/transfer_blood_dna()
+/obj/effect/decal/cleanable/blood/trail_holder/transfer_blood_dna()
 	..()
 	update_icon()
 
-/obj/effect/decal/cleanable/trail_holder/transfer_mob_blood_dna()
+/obj/effect/decal/cleanable/blood/trail_holder/transfer_mob_blood_dna()
 	. = ..()
 	update_icon()
 

@@ -6,6 +6,7 @@
 	var/bloodiness = 0 //0-100, amount of blood in this decal, used for making footprints and affecting the alpha of bloody footprints
 	var/mergeable_decal = TRUE //when two of these are on a same tile or do we need to merge them into just one?
 	var/beauty = 0
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /obj/effect/decal/cleanable/Initialize(mapload, list/datum/disease/diseases)
 	. = ..()
@@ -19,6 +20,7 @@
 				if (replace_decal(C))
 					return INITIALIZE_HINT_QDEL
 
+/*
 	if(LAZYLEN(diseases))
 		var/list/datum/disease/diseases_to_add = list()
 		for(var/datum/disease/D in diseases)
@@ -26,14 +28,6 @@
 				diseases_to_add += D
 		if(LAZYLEN(diseases_to_add))
 			AddComponent(/datum/component/infective, diseases_to_add)
-
-	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
-	)
-	AddElement(/datum/element/connect_loc, loc_connections)
-	RegisterSignal(SSdcs, COMSIG_WEATHER_START(/datum/weather/rain), .proc/on_rain_start) // for cleaning
-	RegisterSignal(SSdcs, COMSIG_WEATHER_END(/datum/weather/rain), .proc/on_rain_end)
-	return INITIALIZE_HINT_LATELOAD
 
 /obj/effect/decal/cleanable/LateInitialize()
 	. = ..()
@@ -56,6 +50,7 @@
 /obj/effect/decal/cleanable/Destroy(force)
 	STOP_PROCESSING(SSobj, src)
 	return ..()
+*/
 
 /obj/effect/decal/cleanable/proc/replace_decal(obj/effect/decal/cleanable/C) // Returns true if we should give up in favor of the pre-existing decal
 	if(mergeable_decal)
@@ -100,7 +95,7 @@
 
 //Add "bloodiness" of this blood's type, to the human's shoes
 //This is on /cleanable because fuck this ancient mess
-/obj/effect/decal/cleanable/proc/on_entered(datum/source, atom/movable/O)
+/obj/effect/decal/cleanable/blood/proc/on_entered(datum/source, atom/movable/O)
 	SIGNAL_HANDLER
 	if(ishuman(O))
 		var/mob/living/carbon/human/H = O
@@ -120,7 +115,7 @@
 			update_icon()
 			H.update_inv_shoes()
 
-/obj/effect/decal/cleanable/proc/can_bloodcrawl_in()
+/obj/effect/decal/cleanable/blood/proc/can_bloodcrawl_in()
 	if((blood_state != BLOOD_STATE_OIL) && (blood_state != BLOOD_STATE_NOT_BLOODY))
 		return bloodiness
 	else

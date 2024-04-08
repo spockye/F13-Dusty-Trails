@@ -50,13 +50,13 @@
 /obj/effect/decal/cleanable/glass/ex_act()
 	qdel(src)
 
-/obj/effect/decal/rubble
+/obj/effect/decal/cleanable/rubble
 	name = "rubble"
 	desc = "Dirt, debris, loose stones and residue."
 	icon = 'icons/obj/shards.dmi'
 	icon_state = "asteroid0"
 
-/obj/effect/decal/rubble/Initialize(mapload)
+/obj/effect/decal/cleanable/rubble/Initialize(mapload)
 	. = ..()
 	icon_state = "asteroid[rand(0,8)]"
 	setDir(pick(GLOB.cardinals))
@@ -70,7 +70,6 @@
 	icon_state = "dirt"
 	canSmoothWith = list(/obj/effect/decal/cleanable/dirt, /turf/closed/wall, /obj/structure/falsewall)
 	smooth = SMOOTH_FALSE
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	beauty = -75
 
 /obj/effect/decal/cleanable/dirt/Initialize(mapload)
@@ -138,8 +137,6 @@
 	beauty = -450
 	var/range = 2
 	var/intensity = 20
-
-
 
 /obj/effect/decal/cleanable/greenglow/radioactive/Initialize(mapload)
 	. = ..()
