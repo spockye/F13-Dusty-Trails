@@ -8,8 +8,6 @@
 //Making the station dirty, one tile at a time. Called by master controller's setup_objects
 
 /turf/open/floor/proc/MakeDirty()
-	if(prob(66))	//fastest possible exit 2/3 of the time
-		return
 
 	if(!(flags_1 & CAN_BE_DIRTY_1))
 		return
@@ -25,20 +23,32 @@
 	//The code below here isn't exactly optimal, but because of the individual decals that each area uses it's still applicable.
 
 				//high dirt - 1/3 chance.
-	var/static/list/high_dirt_areas = typecacheof(list(/area/science/test_area,
-														/area/mine/production,
-														/area/mine/living_quarters,
-														/area/ruin/space))
+	var/static/list/high_dirt_areas = typecacheof(list(/area/f13/tunnel,
+														/area/f13/building))
 	if(is_type_in_typecache(A, high_dirt_areas))
-		new /obj/effect/decal/cleanable/dirt(src)	//vanilla, but it works
+		if(prob(50))
+			new /obj/effect/decal/cleanable/dirtstain(src)
+		if(prob(5))
+			pick(new /obj/effect/decal/cleanable/generic(src), new /obj/effect/decal/cleanable/glass, new /obj/effect/decal/cleanable/blood)
+		if(prob(1))
+			new /obj/effect/gibspawner/human/bodypartless(src)
 		return
 
 
-	if(prob(80))	//mid dirt  - 1/15
+	var/static/list/low_dirt_areas = typecacheof(list(/area/f13/ncr,
+														/area/f13/legion,
+														/area/f13/brotherhood,
+														/area/f13/casino,
+														/area/f13/city))
+	if(is_type_in_typecache(A, low_dirt_areas))
+		if(prob(20))
+			new /obj/effect/decal/cleanable/dirtstain(src)
+		if(prob(2))
+			pick(new /obj/effect/decal/cleanable/generic(src), new /obj/effect/decal/cleanable/glass)
 		return
 
 		//Construction zones. Blood, sweat, and oil.  Oh, and dirt.
-	var/static/list/engine_dirt_areas = typecacheof(list(/area/engine,			
+	var/static/list/engine_dirt_areas = typecacheof(list(/area/engine,
 														/area/crew_quarters/heads/chief,
 														/area/ruin/space/derelict/assembly_line,
 														/area/science/robotics,

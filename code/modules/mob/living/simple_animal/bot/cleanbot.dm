@@ -324,7 +324,6 @@
 
 	if(blood)
 		target_types += /obj/effect/decal/cleanable/blood
-		target_types += /obj/effect/decal/cleanable/trail_holder
 		target_types += /obj/effect/decal/cleanable/insectguts
 		target_types += /obj/effect/decal/cleanable/robot_debris
 		target_types += /obj/effect/decal/cleanable/oil
