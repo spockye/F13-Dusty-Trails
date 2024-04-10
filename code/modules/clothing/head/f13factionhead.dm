@@ -289,6 +289,7 @@
 	desc = "A laurel wreath is made of branches and leaves of the laurel, a type of evergreen shrub or small tree. This one appears to be out of metal,however. In Ancient Rome, it was worn on the head as a symbol of triumph."
 	icon_state = "legion-orator"
 	item_state = "legion-orator"
+	dynamic_hair_suffix = "null"
 
 //COMBAT ROLES
 /obj/item/clothing/head/helmet/f13/legion
