@@ -165,6 +165,8 @@
 
 /turf/open/indestructible/ground/outside/desert/Initialize(mapload)
 	. = ..()
+	if (z > 4)
+		return
 	if(prob(2))
 		salvage = pickweight(loots)
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
