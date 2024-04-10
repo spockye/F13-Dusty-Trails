@@ -1197,7 +1197,7 @@
 	},
 /area/f13/tunnel)
 "aFE" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
 	icon_state = "reddirtysolid"
 	},
@@ -2578,6 +2578,12 @@
 /turf/open/floor/f13{
 	icon_state = "darkrustysolid";
 	color = "#d9c4b9"
+	},
+/area/f13/tunnel)
+"bGN" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
+/turf/open/floor/f13{
+	icon_state = "reddirtysolid"
 	},
 /area/f13/tunnel)
 "bHN" = (
@@ -4684,7 +4690,7 @@
 	},
 /area/f13/tunnel)
 "dCn" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -5244,7 +5250,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/tunnel)
 "egY" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -6420,7 +6426,9 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "eZP" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh{
+	loot = list(/obj/effect/spawner/bundle/f13/multiplas,/obj/effect/spawner/bundle/f13/plasmaglock,/obj/effect/spawner/bundle/f13/aer14)
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "fad" = (
@@ -7363,12 +7371,9 @@
 	},
 /area/f13/tunnel)
 "fPn" = (
-/obj/effect/landmark/poster_spawner/prewar{
-	pixel_y = -32
-	},
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
-	icon_state = "reddirtysolid"
+	icon_state = "darkrusty"
 	},
 /area/f13/tunnel)
 "fPO" = (
@@ -11903,11 +11908,9 @@
 	},
 /area/f13/tunnel)
 "jBO" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess"
-	},
-/area/f13/tunnel)
+/obj/effect/decal/remains/human,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "jCa" = (
 /obj/structure/fence/wooden{
 	dir = 1;
@@ -16036,6 +16039,13 @@
 /obj/item/blueprint/research,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"mOZ" = (
+/obj/effect/decal/cleanable/greenglow/radioactive,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "reddirtysolid"
+	},
+/area/f13/tunnel)
 "mPm" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/punching_bag,
@@ -19275,7 +19285,7 @@
 	},
 /area/f13/tunnel)
 "pHc" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /turf/open/floor/f13{
 	icon_state = "reddirtysolid"
 	},
@@ -28096,7 +28106,6 @@
 /area/f13/tunnel)
 "xcJ" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/mob/living/simple_animal/hostile/supermutant/nightkin/rain,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "xcL" = (
@@ -28998,7 +29007,7 @@
 /area/f13/tunnel)
 "xQr" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/mob/living/simple_animal/hostile/supermutant/nightkin/rain,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/f13{
 	icon_state = "reddirtysolid"
 	},
@@ -52380,7 +52389,7 @@ hGO
 hGO
 hGO
 hGO
-lXj
+hGO
 hGO
 hGO
 hGO
@@ -52880,12 +52889,12 @@ hGO
 hGO
 hGO
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-lXj
+hGO
+hGO
+hGO
+hGO
+hGO
+hGO
 lXj
 hGO
 hGO
@@ -53383,12 +53392,12 @@ lXj
 lXj
 lXj
 lXj
-lXj
-lXj
-lXj
-lXj
-lXj
-uZs
+hGO
+hGO
+hGO
+hGO
+hGO
+hGO
 lXj
 lXj
 lXj
@@ -53885,12 +53894,12 @@ uZs
 uZs
 uZs
 uZs
-uZs
-uZs
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
+hGO
+hGO
 uZs
 uZs
 uZs
@@ -54387,11 +54396,11 @@ lXj
 lXj
 lXj
 lXj
-uZs
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
+hGO
 uZs
 uZs
 uZs
@@ -54890,10 +54899,10 @@ sDY
 jOt
 lXj
 uZs
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
 uZs
 uZs
 uZs
@@ -55393,8 +55402,8 @@ jOt
 lXj
 uZs
 uZs
-uZs
-uZs
+hGO
+hGO
 lXj
 lXj
 lXj
@@ -55894,8 +55903,8 @@ jOt
 jOt
 lXj
 lXj
-uZs
-uZs
+hGO
+hGO
 lXj
 lXj
 wsw
@@ -56396,8 +56405,8 @@ jOt
 fDK
 jOt
 lXj
-uZs
-uZs
+hGO
+hGO
 lXj
 fDK
 jOt
@@ -56898,8 +56907,8 @@ slr
 jOt
 jOt
 lXj
-uZs
-uZs
+hGO
+hGO
 lXj
 jOt
 jOt
@@ -57400,8 +57409,8 @@ jOt
 jOt
 jOt
 lXj
-uZs
-uZs
+hGO
+hGO
 lXj
 lXj
 gGz
@@ -57902,8 +57911,8 @@ jOt
 jOt
 jOt
 lXj
-uZs
-uZs
+hGO
+hGO
 uZs
 lXj
 jOt
@@ -58404,7 +58413,7 @@ oIm
 lXj
 lXj
 lXj
-uZs
+hGO
 uZs
 uZs
 lXj
@@ -58905,9 +58914,9 @@ lXj
 lXj
 lXj
 uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 uZs
 uZs
 lXj
@@ -59408,8 +59417,8 @@ lXj
 uZs
 uZs
 uZs
-uZs
-uZs
+hGO
+hGO
 uZs
 uZs
 lXj
@@ -59909,9 +59918,9 @@ jOt
 lXj
 uZs
 uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 uZs
 uZs
 lXj
@@ -60410,11 +60419,11 @@ jOt
 jOt
 lXj
 lXj
-uZs
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
+hGO
 uZs
 uZs
 lXj
@@ -60912,11 +60921,11 @@ lXj
 jOt
 jOt
 lXj
-uZs
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
+hGO
 uZs
 uZs
 lXj
@@ -61404,7 +61413,7 @@ lXj
 lXj
 hGO
 hGO
-uZs
+hGO
 uZs
 uZs
 uZs
@@ -61415,9 +61424,9 @@ jOt
 jOt
 lXj
 lXj
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 uZs
 uZs
 uZs
@@ -61906,8 +61915,8 @@ lXj
 lXj
 hGO
 hGO
-uZs
-uZs
+hGO
+hGO
 uZs
 uZs
 uZs
@@ -61917,9 +61926,9 @@ lXj
 jOt
 jOt
 lXj
-uZs
-uZs
-uZs
+hGO
+jOt
+hGO
 uZs
 uZs
 uZs
@@ -62408,10 +62417,10 @@ uZs
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
 uZs
 lXj
 lXj
@@ -62420,8 +62429,8 @@ jOt
 bjq
 lXj
 lXj
-uZs
-lXj
+jOt
+jOt
 lXj
 lXj
 lXj
@@ -62910,10 +62919,10 @@ lXj
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
+hGO
 lXj
 lXj
 fOs
@@ -62923,9 +62932,9 @@ jOt
 fDK
 lXj
 lXj
-lXj
-fDK
 jOt
+fDK
+lXj
 jOt
 fDK
 jOt
@@ -63412,9 +63421,9 @@ lXj
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 lXj
 lXj
 jOt
@@ -63424,10 +63433,10 @@ jOt
 bxw
 jOt
 lXj
+jOt
+jOt
 lXj
-jOt
-jOt
-jOt
+lXj
 aIT
 jOt
 jOt
@@ -63914,9 +63923,9 @@ lXj
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 lXj
 jOt
 jOt
@@ -63928,7 +63937,7 @@ jOt
 oIm
 lXj
 jOt
-jOt
+lXj
 jOt
 bjq
 jOt
@@ -64416,9 +64425,9 @@ lXj
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 lXj
 lXj
 jOt
@@ -64429,8 +64438,8 @@ fDK
 jOt
 oIm
 ehG
-nSG
-jOt
+lXj
+lXj
 fDK
 jOt
 jOt
@@ -64918,9 +64927,9 @@ lXj
 hGO
 hGO
 hGO
-uZs
-uZs
-uZs
+hGO
+hGO
+hGO
 uZs
 lXj
 lXj
@@ -64931,8 +64940,8 @@ vVb
 jOt
 ehG
 lXj
-fDK
-jOt
+jBO
+nSG
 bxw
 jOt
 jOt
@@ -65420,7 +65429,7 @@ hGO
 hGO
 hGO
 hGO
-uZs
+hGO
 uZs
 uZs
 uZs
@@ -75884,7 +75893,7 @@ aFE
 lAB
 xcJ
 xEy
-oUh
+bGN
 mwg
 eTy
 lXj
@@ -76379,8 +76388,8 @@ eTy
 xbh
 tqT
 gWO
-gWO
-aFE
+fPn
+oUh
 eTy
 oUh
 fhR
@@ -77380,15 +77389,15 @@ nsi
 aaM
 rbc
 eTy
-oUh
-egY
+pHc
+gWO
 gWO
 iWS
 bQW
 eTy
 xQr
 oFG
-dCn
+ruw
 ruw
 hwh
 eSJ
@@ -78886,8 +78895,8 @@ hKn
 tPZ
 wmN
 cLc
-pdl
-pHc
+mOZ
+oUh
 gWO
 oUh
 oUh
@@ -79390,7 +79399,7 @@ kyw
 myh
 wmN
 xEy
-gWO
+egY
 gWO
 ede
 vnt
@@ -80396,7 +80405,7 @@ bYN
 fcf
 xEy
 pJy
-fPn
+bCD
 eTy
 eTy
 eTy
@@ -80894,11 +80903,11 @@ eER
 oUh
 pdl
 sMR
-aFE
+oUh
 dEN
 tmp
 dEN
-oUh
+aFE
 qux
 kLR
 sSy
@@ -81898,7 +81907,7 @@ aaS
 oUh
 oUh
 uFS
-oUh
+pHc
 ruw
 ruw
 oUh
@@ -82901,7 +82910,7 @@ eTy
 oUh
 oUh
 hlD
-aFE
+oUh
 oUh
 oUh
 wmN
@@ -83403,7 +83412,7 @@ eTy
 oUh
 gWO
 nLI
-gWO
+fPn
 gWO
 ruw
 ruw
@@ -83907,7 +83916,7 @@ gWO
 nLI
 fhR
 wmN
-jBO
+wmN
 uiX
 lXj
 lXj
