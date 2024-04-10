@@ -78,7 +78,7 @@
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 0, "wound" = 15)
 	icon_state = "arclight"
 	item_state = "arclight"
-	dynamic_hair_suffix = "+generic"
+	dynamic_hair_suffix = "null"
 	flash_protect = 2
 	tint = 0.5
 
@@ -453,6 +453,7 @@
 	desc = "A simple cloth garrison cap to be worn when a helmet isn't necessary."
 	icon_state = "ncr_cap"
 	item_state = "ncr_cap"
+	dynamic_hair_suffix = "null"
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ncr/slouch			//NCR slouch hat
@@ -467,6 +468,7 @@
 	desc = "A brown beret, worn by members of the NCRA."
 	icon_state = "scoutberet"
 	item_state = "scoutberet"
+	dynamic_hair_suffix = "null"
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 10)
 
 /obj/item/clothing/head/f13/ncr/beret/medic		//NCR Medical Officer beret
@@ -482,6 +484,7 @@
 	desc = "You're not supposed to see this."
 	icon_state = "ncr_steelpot"
 	item_state = "ncr_steelpot"
+	dynamic_hair_suffix = "null"
 	flags_inv = HIDEEARS
 	armor = list("melee" = 15, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0, "wound" = 25)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
@@ -659,7 +662,7 @@
 	alt_toggle_message = "You push the visor up on the"
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	dynamic_hair_suffix = ""
+	dynamic_hair_suffix = "null"
 	visor_flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	visor_flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDESNOUT
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
@@ -862,6 +865,7 @@
 	desc = "A cap typically worn with the formal uniform for the local Brotherhood of Steel Chapter."
 	icon_state = "boscap"
 	item_state = "boscap"
+	dynamic_hair_suffix = "null"
 
 /obj/item/clothing/head/f13/boscap/beret
 	name = "brotherhood beret"
@@ -962,7 +966,7 @@
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30, "wound" = 25)
 	strip_delay = 10
 	flags_inv = null
-	dynamic_hair_suffix = "+generic"
+	dynamic_hair_suffix = "null"
 	var/helmettoggled = FALSE
 
 /obj/item/clothing/head/helmet/f13/khan/bandana/AltClick(mob/user)
@@ -1163,6 +1167,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "army_officer"
 	item_state = "army_officer"
+	dynamic_hair_suffix = "null"
 
 /obj/item/clothing/head/f13/army/general
 	name = "US Army general's cap"
@@ -1171,6 +1176,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "army_general"
 	item_state = "army_general"
+	dynamic_hair_suffix = "null"
 
 /obj/item/clothing/head/f13/army/beret
 	name = "US Army beret"
@@ -1179,6 +1185,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "army_beret"
 	item_state = "army_beret"
+	dynamic_hair_suffix = "null"
 
 /obj/item/clothing/head/f13/army/beret/airborne
 	name = "US Army airborne beret"
