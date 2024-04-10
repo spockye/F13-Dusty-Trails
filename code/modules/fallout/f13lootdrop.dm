@@ -2046,7 +2046,7 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners //TIER 4 GARBAGE
 	name = "garbage spawner"
 	icon_state = "junk_loot"
-	lootcount = 2
+	lootcount = 1
 	fan_out_items = TRUE
 
 	loot = list(

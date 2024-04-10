@@ -132,23 +132,23 @@ window "infowindow"
 		type = BUTTON
 		pos = 220,5
 		size = 100x20
-		anchor1 = 34,0
-		anchor2 = 50,0
+		anchor1 = 49,0
+		anchor2 = 65,0
 		saved-params = "is-checked"
-		text = "Wiki"
+		text = "TG Wiki"
 		command = "wiki"
 	elem "github"
 		type = BUTTON
-		pos = 420,5
+		pos = 320,5
 		size = 100x20
-		anchor1 = 66,0
+		anchor1 = 65,0
 		anchor2 = 81,0
 		saved-params = "is-checked"
 		text = "Github"
 		command = "github"
 	elem "discord"
 		type = BUTTON
-		pos = 520,5
+		pos = 420,5
 		size = 100x20
 		anchor1 = 81,0
 		anchor2 = 97,0
