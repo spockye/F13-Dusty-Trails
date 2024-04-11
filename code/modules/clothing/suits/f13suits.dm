@@ -249,7 +249,9 @@
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/holosign_creator,
-		/obj/item/assembly/signaler
+		/obj/item/assembly/signaler,
+		/obj/item/gun,
+		/obj/item/melee
 	) //robust storage options!! -superballs
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 

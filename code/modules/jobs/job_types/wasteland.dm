@@ -74,9 +74,8 @@
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	suit = /obj/item/clothing/suit/f13/blacksmith_apron
-	belt = /obj/item/storage/belt/utility
-	head = /obj/item/clothing/head/welding
-	r_hand = /obj/item/weldingtool/largetank
+	belt = /obj/item/storage/belt/utility/artisan/full
+	glasses = /obj/item/clothing/glasses/welding
 	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911=1)
 
 /datum/outfit/loadout/scavenger
