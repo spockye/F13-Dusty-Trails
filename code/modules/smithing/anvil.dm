@@ -29,15 +29,15 @@
 #define RECIPE_THROWING "dbd" //draw bend draw
 
 //Tablevil specific
-#define RECIPE_MACHREFORG "fdf" //fold draw fold
-#define RECIPE_SCRAP "udsp" //upset draw shrink punch
-#define RECIPE_UNITOOL "bbb"  //bend bend bend
+#define RECIPE_MACHREFORG "fdu" //fold draw upset
+#define RECIPE_SCRAP "udsu" //upset draw shrink upset
+#define RECIPE_UNITOOL "bbu"  //bend bend upset
 
 //Legion specific
-#define RECIPE_LANCE "ddbf" //draw draw bend fold
-#define RECIPE_GLADIUS "fdf" //fold draw fold
-#define RECIPE_SPATHA "ffdf" // fold fold draw fold
-#define RECIPE_WARHONED "udsp" //upset draw shrink punch
+#define RECIPE_LANCE "ddbs" //draw draw bend shrink
+#define RECIPE_GLADIUS "ddp" //draw draw punch
+#define RECIPE_SPATHA "fduf" // fold draw upset fold
+#define RECIPE_WARHONED "udsb" //upset draw shrink bend
 
 // Armor
 #define RECIPE_ARMOR_LIGHT "uffdp" //upset fold fold draw punch
@@ -94,7 +94,14 @@
 	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
 	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
 	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
-	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy,
+	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
+	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
+	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade
 )
 
 /obj/structure/anvil/Initialize(mapload)
@@ -322,20 +329,27 @@
 	RECIPE_RING = /obj/item/smithing/special/jewelry/ring,
 	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
 	RECIPE_DAGGER = /obj/item/smithing/daggerblade,
-	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
-	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_MACHETE = /obj/item/smithing/macheteblade,
+	RECIPE_SWORD = /obj/item/smithing/swordblade,
 	RECIPE_SABRE = /obj/item/smithing/sabreblade,
 	RECIPE_WAKI = /obj/item/smithing/wakiblade,
 	RECIPE_KATANA = /obj/item/smithing/katanablade,
 	RECIPE_MACE = /obj/item/smithing/macehead,
-	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
-	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_AXE = /obj/item/smithing/axehead,
+	RECIPE_SPEAR = /obj/item/smithing/spearhead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
 	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
 	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
 	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
-	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy,
+	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
+	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
+	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade
 )
 
 

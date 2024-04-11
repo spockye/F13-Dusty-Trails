@@ -25,7 +25,7 @@
 				<body>
 				<h3>The basics of farming in the wasteland of today</h3>
 
-				Slowly starving to death? Stop worrying and start working, the earth will provide, even now. First, you need to understand the basics. 
+				Slowly starving to death? Stop worrying and start working, the earth will provide, even now. First, you need to understand the basics.
 				<p>
 				<ol>
 				<li>To grow plants reliably you need at minimum, a plot of soil, a rake or cultivator to whack weeds, and a bucket for water and fertilizer. </li>
@@ -46,7 +46,7 @@
 				<li>From sandstone: drying racks, soil plots, gardening pots. </li>
 				<li>From cloth: plant bags. </li>
 				<li>From leather: gardeners belt, farmers gloves.</li>
-				<li>From hay: wicker baskets.</li>				
+				<li>From hay: wicker baskets.</li>
 				</ol>
 				<p>
 				From here, you know enough to get started, keep on trying things out and learn from old hands, and soon you will be as fat and content as me.
@@ -60,14 +60,14 @@
 // ADVICE FOR BLACKSMITH ROOKIES //
 ///////////////////////////////////
 
-// Blacksmith is kinda crap but keeping the workings obfuscated seems pointless.
+// Blacksmithing is not that great unless you really minmax/grind. All recipes are listed here because "secret coder meta knowledge is stupid". -Possum
 /obj/item/book/manual/advice_blacksmith
 	name = "The Forgemasters Primer"
-	desc = "A thin book with some basic advice on how to use a hammer and anvil, copied by hand."
+	desc = "A thin book with some basic and advanced advice on how to use a hammer and anvil, copied by hand."
 	icon = 'icons/fallout/objects/books.dmi'
 	icon_state = "advice_smithing"
-	author = "Forgemaster Gallius"
-	title = "Advice on Blacksmithing - For hotheaded whelps"
+	author = "Forgemaster Hiroko"
+	title = "Advice on Blacksmithing - For the fledgling smith"
 	dat = {"<html>
 				<head>
 				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
@@ -89,10 +89,11 @@
 				<li>Gloves: Not all gloves can handle red hot metal, Forgemaster gloves, or most others with fingers, or handwraps, are preferable. If you can move the hot metal from the furnace the gloves are good enough.</li>
 				<li>Metal ingots: Take the metal stack you want to work in your hand and fashion ingots from it. (inhand crafting) </li>
 				<li>Furnace: Needs fuel, welding fuel most commonly. Five measures of fuel burns fast but is enough to heat a couple ingots if you are fast.</li>
-				<li>Wooden bits: Cut down planks to rods with something sharp. Then cut leather to strips and wrap it around the rod for making a sword handle, or directly on the metal for some tools. </li>
+				<li>Wooden Rods: Cut down planks to rods with something sharp. These can be made into sword handles with leather strips or added directly to tools and weapons.</li>
+				<li>Leather strips: Cut leather to strips and then either wrap it around certain tools and weapons or make sword handles by wrapping it around wooden rods.</li>
 				<li>Metal bits: On occasion you might need some chain to complete your work, if so, take a metal sheet in your hand and make a length of chain from it. (inhand crafting) </li>
-				<li>Anvil: The iron ones are most dependable, but you can use an anvil made from sandstone or a sturdy table in a pinch.(crafting menu forging & blacksmithing)</li>
-				<li>Hammer: Most commonly a sledgehammer is used for the first work, which is making a better hammer. Craft one to get going. (crafting menu forging & blacksmithing) </li>
+				<li>Anvil: The iron and titanium ones are the most dependable, but you can use an anvil made from sandstone or a sturdy table in a pinch.(crafting menu forging & blacksmithing)</li>
+				<li>Hammer: Most commonly a sledgehammer is used for the first work, which is making a better hammer. Craft one to get started. (crafting menu forging & blacksmithing) </li>
 				</ol>
 				<p>
 
@@ -101,36 +102,61 @@
 				<p>
 				<ol>
 				<li>Heat the ingot, move it to the anvil.</li>
-				<li>Prepare the metal, weak, strong and heavy hits enhance the quality but overworking the metal will produce slag and you have to start over. Try a couple hits then move on to making the item if you have no other ideas. </li>
-				<li>Follow the secret smithing recipe for the item you want to make, the end result will depend on how much experience you have smithing, and the quality of your tools and preparations. </li>
+				<li>Prepare the metal, weak, strong and heavy hits enhance the quality but overworking the metal will produce slag and you have to start over. Try to balance getting better quality without slagging the metal. </li>
+				<li>Follow the smithing recipe for the item you want to make, the end result will depend on how much experience you have smithing, the quality of your tools, and preparations. </li>
 				<li>The first item you make should be a good hammer, you might need to repeat the process and replace the previous hammer with a new one in steps. Try to have at least a masterworked iron hammer before moving on to other items to save you headache. </li>
 				</ol>
 				<p>
 
-	
-				<h3>Some secret smithing recipes.</h3>
 
-				These are some of the items that can be made with hot iron and a steady hand. Results are not always the same depending on the anvil used.
+				<h3>Some smithing recipes.</h3>
+
+				These are some of the items that can be made with hot iron and a steady hand. Results are not always the same depending on the anvil, hammer, and skill used.
 				<p>
 				<ol>
-				<li>Hammer: (BPP) Bend the metal, then punch it like you would a profligates face until the hammerhead is done. Add a rod.</li>
-				<li>Crowbar: (BBB) Bend the metal until you got the crowbar done, then wrap it in leather strips. Better than the usual crowbars folks use nowadays.</li>
+				<li>Tools</li>
+				<li>Hammer: (BPP) Bend the metal, then punch it like you would a wasters face until the hammerhead is done. Add a rod.</li>
+				<li>Crowbar: (BBB) Bend the metal until you got the crowbar done, then wrap it in leather strips. Better than the usual crowbars found or produced at a workshop.</li>
 				<li>Pickaxe: (BFF) Bend the metal, then fold it into shape twice, then add a wooden rod.</li>
-				<li>Kitchen knife: (BSD) Bend the metal, shrink and draw it, then add a knife handle. A perfect gift for women.</li>
-				<li>Rings: (SSS) Tiny things, my fingers hurt when I try to work it, but if you youngsters want to make one just shrink the metal to shape. Might cheer you up.</li>
+				<li>Kitchen knife: (BSD) Bend the metal, shrink and draw it, then add a knife handle. A perfect gift for your mother.</li>
+				<li>Shovel: (BUU) Bend the metal, then upset it twice and add a wooden rod. A better shovel than anything produced by a workshop.</li>
+				<li>Prospector Pickaxe: (BFS) Bend the metal, then fold it, then shrink it. Finish with adding a wooden rod.</li>
+				<li>Unitool: (BBU) Bend the metal twice until you got the crowbar then upset it to make it universal, then wrap it in leather strips. Even better than a crowbar!</li>
+
+				<li>Weapons</li>
 				<li>Dagger: (DFS) Draw, fold and shrink it, add a sword handle and you got a tiny little weapon. </li>
 				<li>Sabre: (FFDD) Like all swords, you must fold the metal some, then draw it into a proper thin shape. Add a handle and you got a fine blade! </li>
 				<li>Sword: (FFDF) Fold, fold, draw, then FOLD SOME MORE. Done right, you get a proper sharp sword, after adding a sword handle.</li>
 				<li>Machete: (FDF) Fold the metal, draw it and ugh..yeah, fold it more. Add handle.</li>
 				<li>Heavy axe: (UDSP) Upset the hot metal, draw it, then shrink it and give it a solid punch. Add a wooden rod, then go chop down some wood or enemies. Easy. </li>
+				<li>Spear: (DDBF) Draw the metal twice, bend it and fold it. Add a rod, and enjoy a simple but effective weapon.</li>
+				<li>Mace: (UPU) Upset, punch, upset. Now you have a properly blunt swinging stick.</li>
+				<li>Reforged Machete: (FDU) Fold it, draw it, and upset the metal. Some lesser anvils such as table anvils should make these instead of swords.</li>
+				<li>Scrap Blade: (UDSU) Upset, draw, shrink, upset. Lesser anvils such as table anvils should produce these in a proper axe.</li>
+
+				<li>Throwing Weapons</li>
 				<li>Javelin: (DBF) Draw the metal, bend it and fold it, then add a wooden rod and throw it in someones face.</li>
 				<li>Throwing knife: (DBD) Draw the metal, bend it and draw it again, then add leather strips and there you go.</li>
-				<li>Spear: (DDBF) Draw the metal twice, bend it and fold it. Add a rod, and enjoy a simple but effective weapon.</li>
-				<li>Ball and chain: (PBU) Punch the metal, bend and upset it. Add a chain and then snap it on the slaves leg, and laugh while they hobble about. Silly slave.</li>
+
+				<li>Exotic Weapons</li>
+				<li>Wakizashi: (FFFD) Fold, fold, fp;d, then draw. Done right, you get a proper exotic sword, after adding a sword handle.</li>
+				<li>Katana: (FFFFFFFFFF) Fold fold fold and keep folding until you are done. Add a sword handle and become a wasteland samurai.</li>
+				<li>Kanobo: (UFDP) Upset, fold, draw, and punch it into shape. Differs from a baseball with nails in it by better and more even balance. Attach rings to a rod. </li>
+				<li>Lance: (DDBS) Draw, draw, bend, shrink and add a rod. Get a motorcycle to become wasteland cavalry. </li>
+				<li>Gladius: (DDP) Draw, draw, punch. Because regular swords are too small and not broad enough. Add a handle to finish.</li>
+				<li>Spatha: (FDUF) Fold, draw, upset, fold. You were too good for a gladius. Add a handle to finish.</li>
+				<li>Warhoned: (UDSB) Upset, draw, shrink, bend. You want to the biggest and best.</li>
+
+				<li>Armor and Clothing</li>
+				<li>Rings: (SSS) Tiny things, perhaps not of much use, but some will pay well for a ring made from the right material. Perhaps wearing it might just cheer you up.</li>
+				<li>Ball and chain: (PBU) Punch the metal, bend and upset it. Add a chain and then snap it on the prisoner's leg. Useful when dealing with malcontents.</li>
+				<li>Light Armor: (UFFDP) Upset, fold, fold, draw, punch. Finish with a chain for a lightly protective suit.</li>
+				<li>Medium Armor: (UFFDFDP) Upset, fold, fold, draw, fold, draw, punch. Finish with a chain for a moderately protective suit.</li>
+				<li>Heavy Armor: (UFFDDFBFFP) Upset, fold, fold, draw, draw, fold, bend, fold, fold, punch. Finish with a chain for a heavily protective suit.</li>
 				</ol>
 				<p>
 
-				Know that there are more things to learn, but this is enough to get you started.
+				Everything you can make is in this book, after all, its a primer!
 
 				</body>
 				</html>
