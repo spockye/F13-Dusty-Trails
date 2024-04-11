@@ -1213,6 +1213,8 @@
 	desc = "A set of newly forged light-weight plates padded with leather to be more comfortable."
 	icon_state = "smithed_armor_light"
 	item_state = "smithed_armor_light"
+	// Armor qualities are entirely arbitrary as smithing code resets affected values to 0 during the crafting process.
+	// This is set here as to mirror the base armor values added in smithed_items.dm
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 30, "fire" = 0, "acid" = 5, "wound" = 10)
 	// Slowdown = 0.05 | Light armor standard.
 	mutantrace_variation = STYLE_DIGITIGRADE

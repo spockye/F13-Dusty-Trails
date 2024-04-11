@@ -425,12 +425,20 @@
 /obj/item/smithing/smith_armor_light/startfinish()
 	var/obj/item/smithing/smith_armor_light/finalforreal = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
 	finalitem = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
-	finalforreal.force += quality
-	finalforreal.armor.melee += quality
-	finalforreal.armor.bullet += quality
-	finalforreal.armor.laser += quality
-	finalforreal.armor.energy += quality
-	finalforreal.armor.bomb += quality
+
+	finalitem.armor.melee = initial(finalitem.force)
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 5
+	finalforreal.armor.bullet += quality + 5
+	finalforreal.armor.laser += quality + 5
+	finalforreal.armor.energy += quality + 5
+	finalforreal.armor.bomb += quality + 5
+
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	finalitem.icon_state = "smithed_armor_light"
@@ -450,12 +458,19 @@
 /obj/item/smithing/smith_armor_medium/startfinish()
 	var/obj/item/smithing/smith_armor_medium/finalforreal = new /obj/item/clothing/suit/armored/medium/smith_armor_medium(src)
 	finalitem = new /obj/item/clothing/suit/armored/medium/smith_armor_medium(src)
-	finalforreal.force += quality
-	finalforreal.armor.melee += quality
-	finalforreal.armor.bullet += quality
-	finalforreal.armor.laser += quality
-	finalforreal.armor.energy += quality
-	finalforreal.armor.bomb += quality
+
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 15
+	finalforreal.armor.bullet += quality + 15
+	finalforreal.armor.laser += quality + 15
+	finalforreal.armor.energy += quality + 15
+	finalforreal.armor.bomb += quality + 15
+
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	finalitem.icon_state = "smithed_armor_medium"
@@ -475,12 +490,19 @@
 /obj/item/smithing/smith_armor_heavy/startfinish()
 	var/obj/item/smithing/smith_armor_heavy/finalforreal = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
 	finalitem = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
-	finalforreal.force += quality
-	finalforreal.armor.melee += quality
-	finalforreal.armor.bullet += quality
-	finalforreal.armor.laser += quality
-	finalforreal.armor.energy += quality
-	finalforreal.armor.bomb += quality
+
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 20
+	finalforreal.armor.bullet += quality + 20
+	finalforreal.armor.laser += quality + 20
+	finalforreal.armor.energy += quality + 20
+	finalforreal.armor.bomb += quality + 20
+
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	finalitem.icon_state = "smithed_armor_heavy"

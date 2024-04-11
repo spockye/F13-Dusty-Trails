@@ -1,4 +1,3 @@
-
 /obj/item/melee/smith
 	name = "base class obj/item/melee/smith" //tin. handles overlay and quality and shit.
 	desc = "cringe"

@@ -73,7 +73,7 @@
 	uniform = /obj/item/clothing/under/f13/machinist
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
-	suit = /obj/item/clothing/suit/f13/blacksmith_apron
+	neck = /obj/item/clothing/neck/apron/labor/forge/khan
 	belt = /obj/item/storage/belt/utility/artisan/full
 	glasses = /obj/item/clothing/glasses/welding
 	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911=1)
