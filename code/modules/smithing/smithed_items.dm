@@ -627,7 +627,7 @@
 /obj/item/smithing/daggerblade/startfinish()
 	finalitem = new /obj/item/melee/smith/dagger(src)
 	finalitem.force += quality*1.5
-	finalitem.armour_penetration += quality
+	finalitem.armour_penetration += quality/2
 	..()
 
 

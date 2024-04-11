@@ -71,7 +71,7 @@
 	var/rng = FALSE
 	var/debug = FALSE //vv this if you want an artifact
 	var/artifactrolled = FALSE
-	var/itemqualitymax = 10
+	var/itemqualitymax = 8
 	var/list/smithrecipes = list(RECIPE_HAMMER = /obj/item/smithing/hammerhead,
 	RECIPE_SHOVEL = /obj/item/smithing/shovelhead,
 	RECIPE_PICKAXE = /obj/item/smithing/pickaxehead,
@@ -310,7 +310,7 @@
 	name = "anvil"
 	desc = "Made from solid steel, you wont be moving this around any time soon."
 	anvilquality = 1
-	itemqualitymax = 10
+	itemqualitymax = 8
 
 // Don't make this craftable.
 /obj/structure/anvil/obtainable/legion
@@ -318,7 +318,7 @@
 	desc = "A solid steel anvil with a stamped bull on it."
 	icon_state = "legvil"
 	anvilquality = 1
-	itemqualitymax = 10
+	itemqualitymax = 8
 	anchored = TRUE
 	smithrecipes = list(RECIPE_HAMMER = /obj/item/smithing/hammerhead,
 	RECIPE_SHOVEL = /obj/item/smithing/shovelhead,
@@ -411,7 +411,7 @@
 	name = "super ultra epic anvil of debugging."
 	desc = "WOW. A DEBUG <del>ITEM</DEL> STRUCTURE. EPIC."
 	icon_state = "anvil"
-	anvilquality = 10
+	anvilquality = 8
 	itemqualitymax = 9001
 	outrightfailchance = 0
 

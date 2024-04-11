@@ -362,7 +362,7 @@
 	icon_state = "katana_smith"
 	icon_prefix = "katana_smith"
 	overlay_state = "hilt_katana"
-	force = 20
+	force = 15
 	wielded_mult = 1.4
 	item_flags = ITEM_CAN_PARRY | NEEDS_PERMIT
 	block_parry_data = /datum/block_parry_data/smithkatana
@@ -424,8 +424,8 @@
 	icon_prefix = "kanobo_smith"
 	overlay_state = "shaft_kanobo"
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
-	force = 16
-	wielded_mult = 1.8
+	force = 12
+	wielded_mult = 1.6
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	layer = MOB_UPPER_LAYER
