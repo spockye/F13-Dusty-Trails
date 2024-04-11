@@ -35,7 +35,7 @@
 	sharpness = SHARP_EDGED
 	material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	force = 10
-	wielded_mult = 1.8
+	wielded_mult = 2
 	w_class = WEIGHT_CLASS_BULKY
 	var/icon_prefix = null
 	var/wielded = FALSE
@@ -362,8 +362,7 @@
 	icon_state = "katana_smith"
 	icon_prefix = "katana_smith"
 	overlay_state = "hilt_katana"
-	force = 15
-	wielded_mult = 1.4
+	force = 12
 	item_flags = ITEM_CAN_PARRY | NEEDS_PERMIT
 	block_parry_data = /datum/block_parry_data/smithkatana
 	hitsound = 'sound/weapons/rapierhit.ogg'
@@ -398,13 +397,11 @@
 	overlay_state = "shaft_axe"
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
 	force = 18
-	wielded_mult = 1.8
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	layer = MOB_UPPER_LAYER
 	wound_bonus = 10
 	bare_wound_bonus = 10
-	block_parry_data = /datum/block_parry_data/smith_generic
 
 /obj/item/melee/smith/twohand/axe/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
@@ -425,14 +422,10 @@
 	overlay_state = "shaft_kanobo"
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 2
 	force = 12
-	wielded_mult = 1.6
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	layer = MOB_UPPER_LAYER
-	wound_bonus = 10
-	bare_wound_bonus = 10
 	attack_speed = CLICK_CD_MELEE * 1.2
-	block_parry_data = /datum/block_parry_data/smith_generic
 	sharpness = SHARP_NONE
 
 /obj/item/melee/smith/twohand/kanobo/attack(mob/living/M, mob/living/user)
@@ -465,8 +458,7 @@
 	icon_state = "scrap_smith"
 	icon_prefix = "scrap_smith"
 	overlay_state = "hilt_scrap"
-	force = 21
-	wielded_mult = 1.5
+	force = 12
 
 /obj/item/melee/smith/twohand/axe/scrapblade/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
