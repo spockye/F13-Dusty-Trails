@@ -188,7 +188,6 @@ GLOBAL_LIST_INIT(storage_crafter_can_hold, typecacheof(list(
 GLOBAL_LIST_INIT(storage_shoes_can_hold, typecacheof(list(
 	/obj/item/melee/onehanded/knife,
 	/obj/item/melee/smith/dagger,
-	/obj/item/kitchen/knife,
 	/obj/item/melee/smith/throwingknife,
 	/obj/item/smithing/daggerblade,
 	/obj/item/smithing/throwingknife,
@@ -260,7 +259,6 @@ GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
 	/obj/item/binoculars,
 	/obj/item/lipstick,
 	/obj/item/pen,
-	/obj/item/kitchen/knife,
 	/obj/item/melee/smith/dagger,
 	)))
 
