@@ -18,6 +18,7 @@
 #define RECIPE_SWORD "ffdf" // fold fold draw fold
 #define RECIPE_WAKI "fffd" //fold fold fold draw
 #define RECIPE_KATANA "ffffffffff" //fold fold fold fold fold fold fold fold fold fold (seriously)
+#define RECIPE_KANOBO "ufdp" //upset fold draw punch
 
 #define RECIPE_MACE "upu"  //upset punch upset
 #define RECIPE_AXE "udsp" //upset draw shrink punch
@@ -28,15 +29,21 @@
 #define RECIPE_THROWING "dbd" //draw bend draw
 
 //Tablevil specific
-#define RECIPE_MACHREFORG "fdf" //fold draw fold
-#define RECIPE_SCRAP "udsp" //upset draw shrink punch
-#define RECIPE_UNITOOL "bbb"  //bend bend bend
+#define RECIPE_MACHREFORG "fdu" //fold draw upset
+#define RECIPE_SCRAP "udsu" //upset draw shrink upset
+#define RECIPE_UNITOOL "bbu"  //bend bend upset
 
 //Legion specific
-#define RECIPE_LANCE "ddbf" //draw draw bend fold
-#define RECIPE_GLADIUS "fdf" //fold draw fold
-#define RECIPE_SPATHA "ffdf" // fold fold draw fold
-#define RECIPE_WARHONED "udsp" //upset draw shrink punch
+#define RECIPE_LANCE "ddbs" //draw draw bend shrink
+#define RECIPE_GLADIUS "ddp" //draw draw punch
+#define RECIPE_SPATHA "fduf" // fold draw upset fold
+#define RECIPE_WARHONED "udsb" //upset draw shrink bend
+
+// Armor
+#define RECIPE_ARMOR_LIGHT "uffdp" //upset fold fold draw punch
+#define RECIPE_ARMOR_MEDIUM "uffdfdp" //upset fold fold draw fold draw punch
+#define RECIPE_ARMOR_HEAVY "uffddfbffp" //upset fold fold draw draw fold bend fold fold punch
+
 
 // Logic of smithing recipes: Tools start with bend and have 3 steps. 1h weapons have 3-4 steps. 2h weapons have 4-5 steps. Bigger bladed stuff start with a fold. Pointy stuff generally start with a draw. Unusual stuff migth start with upset.
 // Point of having a structure is obviously to help remember, not just keeping every recipe as pure rote memory with no internal logic. If you add more stuff and fuck this up and don't read comments I hope you get a prolapse. - Pebbles
@@ -84,6 +91,17 @@
 	RECIPE_SPEAR = /obj/item/smithing/spearhead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
+	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
+	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy,
+	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
+	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
+	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade
 )
 
 /obj/structure/anvil/Initialize(mapload)
@@ -205,7 +223,7 @@
 	user.visible_message("<span class='notice'>[user] works the metal on the anvil with their hammer with a loud clang!</span>", \
 						"<span class='notice'>You [stepdone] the metal with a loud clang!</span>")
 	playsound(src, 'sound/effects/clang2.ogg',40, 2)
-	do_smithing_sparks(1, TRUE, src) 
+	do_smithing_sparks(1, TRUE, src)
 	addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/effects/clang2.ogg', 40, 2), 15)
 	if(length(stepsdone) >= 3)
 		tryfinish(user)
@@ -311,20 +329,32 @@
 	RECIPE_RING = /obj/item/smithing/special/jewelry/ring,
 	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
 	RECIPE_DAGGER = /obj/item/smithing/daggerblade,
-	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
-	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_MACHETE = /obj/item/smithing/macheteblade,
+	RECIPE_SWORD = /obj/item/smithing/swordblade,
 	RECIPE_SABRE = /obj/item/smithing/sabreblade,
 	RECIPE_WAKI = /obj/item/smithing/wakiblade,
 	RECIPE_KATANA = /obj/item/smithing/katanablade,
 	RECIPE_MACE = /obj/item/smithing/macehead,
-	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
-	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_AXE = /obj/item/smithing/axehead,
+	RECIPE_SPEAR = /obj/item/smithing/spearhead,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
+	RECIPE_KANOBO = /obj/item/smithing/kanobostuds,
+	RECIPE_ARMOR_LIGHT = /obj/item/smithing/smith_armor_light,
+	RECIPE_ARMOR_MEDIUM = /obj/item/smithing/smith_armor_medium,
+	RECIPE_ARMOR_HEAVY = /obj/item/smithing/smith_armor_heavy,
+	RECIPE_GLADIUS =  /obj/item/smithing/gladiusblade,
+	RECIPE_SPATHA = /obj/item/smithing/spathablade,
+	RECIPE_WARHONED = /obj/item/smithing/warhonedhead,
+	RECIPE_LANCE = /obj/item/smithing/lancehead,
+	RECIPE_UNITOOL = /obj/item/smithing/unitool,
+	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
+	RECIPE_SCRAP = /obj/item/smithing/scrapblade
 )
 
 
 // Decent makeshift anvil, can break, mobile. Gets the exclusive scrap version of the machete and 2h chopper, as well as the universal tool instead of a crowbar
+// Cannot make armor.
 /obj/structure/anvil/obtainable/table
 	name = "table anvil"
 	desc = "A reinforced table. Usable as an anvil, favored by mad wastelanders and the dregs of the wasteland. Can be loosened from its bolts and moved."
@@ -350,6 +380,7 @@
 	RECIPE_SCRAP = /obj/item/smithing/scrapblade,
 	RECIPE_JAVELIN = /obj/item/smithing/javelinhead,
 	RECIPE_THROWING = /obj/item/smithing/throwingknife,
+	RECIPE_KANOBO = /obj/item/smithing/kanobostuds
 )
 
 /obj/structure/anvil/obtainable/table/wrench_act(mob/living/user, obj/item/I)
@@ -380,7 +411,7 @@
 	name = "super ultra epic anvil of debugging."
 	desc = "WOW. A DEBUG <del>ITEM</DEL> STRUCTURE. EPIC."
 	icon_state = "anvil"
-	anvilquality = 10
+	anvilquality = 8
 	itemqualitymax = 9001
 	outrightfailchance = 0
 
@@ -401,7 +432,7 @@
 	custom_materials = list(/datum/material/bronze=8000)
 	icon_state = "ratvaranvil"
 	anvilquality = 1
-	itemqualitymax = 8
+	itemqualitymax = 15
 /obj/structure/anvil/obtainable/ratvar/attackby(obj/item/I, mob/user)
 	if(is_servant_of_ratvar(user))
 		return ..()
@@ -415,7 +446,7 @@
 	icon = 'icons/obj/smith.dmi'
 	icon_state = "evil"
 	anvilquality = 1
-	itemqualitymax = 8
+	itemqualitymax = 15
 
 /obj/structure/anvil/obtainable/narsie/attackby(obj/item/I, mob/user)
 	if(iscultist(user))

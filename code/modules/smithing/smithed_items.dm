@@ -314,7 +314,8 @@
 /obj/item/smithing/knifeblade/startfinish()
 	var/obj/item/smithing/knifeblade/finalforreal = new /obj/item/smithing/knifeblade(src)
 	finalitem = new /obj/item/kitchen/knife(src)
-	finalforreal.force += quality*3
+	finalforreal.force += quality*3 // Despite what you may think math wise, this has a damage reduction when used as a weapon.
+	// Despite being mathimatically 50.4 at saturnite masterwork 8, it only deals 30ish damage on testing.
 	finalitem = finalforreal
 	finalitem.icon = 'icons/fallout/objects/crafting/blacksmith.dmi'
 	finalitem.icon_state = "knife_smith"
@@ -408,6 +409,106 @@
 	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 	..()
 
+
+///////////////////
+// SMITHED ARMOR //
+///////////////////
+// Light Armor
+/obj/item/smithing/smith_armor_light
+	name = "light weight plates"
+	desc = "Finish by strapping it together with a chain."
+	icon_state = "plates"
+	finishingitem = /obj/item/blacksmith/chain
+	finalitem = /obj/item/clothing/suit/armored/light/smith_armor_light
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
+
+/obj/item/smithing/smith_armor_light/startfinish()
+	var/obj/item/smithing/smith_armor_light/finalforreal = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
+	finalitem = new /obj/item/clothing/suit/armored/light/smith_armor_light(src)
+
+	finalitem.armor.melee = initial(finalitem.force)
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 5
+	finalforreal.armor.bullet += quality + 5
+	finalforreal.armor.laser += quality + 5
+	finalforreal.armor.energy += quality + 5
+	finalforreal.armor.bomb += quality + 5
+
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	finalitem.icon_state = "smithed_armor_light"
+	finalitem.name = "light armor"
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
+
+// Medium Armor
+/obj/item/smithing/smith_armor_medium
+	name = "medium plates"
+	desc = "Finish by strapping it together with a chain."
+	icon_state = "plates"
+	finishingitem = /obj/item/blacksmith/chain
+	finalitem = /obj/item/clothing/suit/armored/medium/smith_armor_medium
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
+
+/obj/item/smithing/smith_armor_medium/startfinish()
+	var/obj/item/smithing/smith_armor_medium/finalforreal = new /obj/item/clothing/suit/armored/medium/smith_armor_medium(src)
+	finalitem = new /obj/item/clothing/suit/armored/medium/smith_armor_medium(src)
+
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 15
+	finalforreal.armor.bullet += quality + 15
+	finalforreal.armor.laser += quality + 15
+	finalforreal.armor.energy += quality + 15
+	finalforreal.armor.bomb += quality + 15
+
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	finalitem.icon_state = "smithed_armor_medium"
+	finalitem.name = "medium armor"
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
+
+// Heavy Armor
+/obj/item/smithing/smith_armor_heavy
+	name = "heavy plates"
+	desc = "Finish by strapping it together with a chain."
+	icon_state = "plates"
+	finishingitem = /obj/item/blacksmith/chain
+	finalitem = /obj/item/clothing/suit/armored/heavy/smith_armor_heavy
+	material_flags = MATERIAL_COLOR | MATERIAL_ADD_PREFIX
+
+/obj/item/smithing/smith_armor_heavy/startfinish()
+	var/obj/item/smithing/smith_armor_heavy/finalforreal = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
+	finalitem = new /obj/item/clothing/suit/armored/heavy/smith_armor_heavy(src)
+
+	finalitem.armor.melee = initial(finalitem.armor.melee)
+	finalitem.armor.bullet = initial(finalitem.armor.bullet)
+	finalitem.armor.laser = initial(finalitem.armor.laser)
+	finalitem.armor.energy = initial(finalitem.armor.energy)
+	finalitem.armor.bomb = initial(finalitem.armor.bomb)
+
+	finalforreal.armor.melee += quality + 20
+	finalforreal.armor.bullet += quality + 20
+	finalforreal.armor.laser += quality + 20
+	finalforreal.armor.energy += quality + 20
+	finalforreal.armor.bomb += quality + 20
+
+	finalitem = finalforreal
+	finalitem.icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
+	finalitem.icon_state = "smithed_armor_heavy"
+	finalitem.name = "heavy armor"
+	finalitem.material_flags = MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
+	..()
 
 ///////////////
 // NEW STUFF //
@@ -526,7 +627,7 @@
 /obj/item/smithing/daggerblade/startfinish()
 	finalitem = new /obj/item/melee/smith/dagger(src)
 	finalitem.force += quality*1.5
-	finalitem.armour_penetration += quality*0.0375
+	finalitem.armour_penetration += quality*0.04
 	..()
 
 
@@ -577,7 +678,18 @@
 	finalitem.armour_penetration += quality*0.05
 	..()
 
+/obj/item/smithing/kanobostuds
+	name = "smithed kanobo studs"
+	icon_state = "kanobo_smith"
+	finalitem = /obj/item/melee/smith/twohand/kanobo
 
+/obj/item/smithing/kanobostuds/startfinish()
+	var/obj/item/melee/smith/twohand/kanobo/finalforreal = new /obj/item/melee/smith/twohand/kanobo(src)
+	finalforreal.force += quality*1.5
+	finalforreal.wield_force = finalforreal.force*finalforreal.wielded_mult
+	finalforreal.AddComponent(/datum/component/two_handed, force_unwielded=finalforreal.force, force_wielded=finalforreal.wield_force, icon_wielded="[icon_state]2")
+	finalitem = finalforreal
+	..()
 
 /obj/item/smithing/wakiblade
 	name = "smithed wakizashi blade"

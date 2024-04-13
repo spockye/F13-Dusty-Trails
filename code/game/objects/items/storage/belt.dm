@@ -48,6 +48,23 @@
 	custom_premium_price = 300
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE //because this is easier than trying to have showers wash all contents.
 
+/obj/item/storage/belt/utility/artisan
+	name = "artisan toolbelt" //Carn: utility belt is nicer, but it bamboozles the text parsing.
+	desc = "A toolbelt made for an artisan, capable of holding extra tools fit for a wasteland smith."
+	icon_state = "utilitybelt"
+	item_state = "utility"
+
+// Basically a normal engi belt with the multitool replaced by a smithing hammer and the improved welder from the salvager kit added.
+/obj/item/storage/belt/utility/artisan/full/PopulateContents()
+	new /obj/item/screwdriver(src)
+	new /obj/item/wrench(src)
+	new /obj/item/weldingtool(src)
+	new /obj/item/crowbar(src)
+	new /obj/item/wirecutters(src)
+	new /obj/item/stack/cable_coil(src,30,pick("red"))
+	new /obj/item/weldingtool/largetank(src)
+	new /obj/item/melee/smith/hammer/premade(src)
+
 /obj/item/storage/belt/utility/durathread
 	name = "durathread toolbelt"
 	desc = "A toolbelt made out of durathread, it seems robust enough to hold bigger tools like RCDs or RPDs, with enough pouches to hold more gear than a normal belt."
