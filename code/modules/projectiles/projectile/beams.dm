@@ -291,8 +291,8 @@
 //musket
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser beam"
-	damage = 25
-	armour_penetration = 0.1//It's a concentrated beam of light.
+	damage = 34
+	armour_penetration = 0.15//It's a concentrated beam of light.
 	bare_wound_bonus = 18//As above.
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser

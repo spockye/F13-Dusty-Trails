@@ -407,7 +407,7 @@
 //Laser musket
 /obj/item/gun/energy/lasmusket
 	name = "laser musket"
-	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
+	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts,a microfusion cell, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "lasmusket"
 	item_state = "lasmusket"
@@ -434,10 +434,41 @@
 	var/stop_cranking_because_we_fired = FALSE //originally called 'firing' but apparently parent already has a var called firing. whoops
 	var/crank_time = 5 //time per crank in ds
 	var/pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
+	var/conductor = FALSE
+	var/focused_lense = FALSE
 	automatic_charge_overlays = FALSE
-	extra_damage = -10
-	extra_penetration = -0.1
+	extra_damage = -20
+	extra_penetration = -0.15
 	slowdown = 0.2 //you can't actually fire it yet
+
+/obj/item/gun/energy/lasmusket/examine(mob/user)
+	..()
+	if(!conductor)
+		. += "It has an connector for a <b>super conductor</b> on it's capacitor."
+	if(conductor)
+		. += "It has a super conductor installed on it's capacitor."
+	if(!focused_lense)
+		. += "It has an exposed slot for a <b>focused crystal lense</b> on it's refractor."
+	if(focused_lense)
+		. += "It has a focus crystal lense installed in it's refractor."
+
+/obj/item/gun/energy/lasmusket/attackby(obj/item/A, mob/user, params)
+	..()
+	if(istype(A, /obj/item/advanced_crafting_components/lenses))
+		if(!focused_lense)
+			focused_lense = TRUE
+			to_chat(user, "<span class = 'notice'>You fit the focused lense into the [src], sharpening it's power!</span>")
+			qdel(A)
+		else
+			to_chat(user, "<span class = 'notice'>There is already a focused lense slotted in the [src]</span>")
+			return
+	if(istype(A, /obj/item/advanced_crafting_components/conductors))
+		if(!conductor)
+			conductor = TRUE
+			to_chat(user, "<span class = 'notice'>You attach the super conductor the micro fusion cell within the [src], increasing it's capacity!</span>")
+			qdel(A)
+		else
+			to_chat(user, "<span class = 'notice'>There is no room for additional capacitors in the [src]</span>")
 
 /obj/item/gun/energy/lasmusket/attack_self(mob/living/user)
 	if(cranking)
@@ -458,20 +489,26 @@
 				extra_penetration = 0
 			if(3)
 				extra_damage = 5
-				extra_penetration = 0.05
+				extra_penetration = 0
 			if(4)
 				to_chat(user, "<span class='nicegreen'>[src] is fully charged!</span>")
 				extra_damage = 10
-				extra_penetration = 0.1
+				extra_penetration = 0.05
+			if(5)
+				if(conductor == TRUE)
+					to_chat(user, "<span class='nicegreen'>[src] glows brightly as it is over-charged!</span>")
+					extra_damage = 15
+					extra_penetration = 0.10
+			if(6)
+				if(focused_lense == TRUE && conductor == TRUE)
+					to_chat(user, "<span class='nicegreen'>[src] strains it's over-charged microfusion capacitor!</span>")
+					extra_damage = 20
+					extra_penetration = 0.15
 		update_icon()
-
-	to_chat(user, "<span class = 'notice'>You stop cranking [src]. You cranked it for a total of [cranks/2] seconds!</span>")
-	cranks = 0
-	cell.use(1)
-	extra_damage = initial(extra_damage)
-	extra_penetration = initial(extra_penetration)
-	slowdown = initial(slowdown)
 	update_icon()
+	slowdown = initial(slowdown)
+	if(!stop_cranking_because_we_fired)
+		to_chat(user, "<span class = 'notice'>You stop cranking [src]. You cranked it for a total of [cranks/2] seconds!</span>")
 	cranking = FALSE
 	stop_cranking_because_we_fired = FALSE
 
@@ -490,10 +527,13 @@
 /obj/item/gun/energy/lasmusket/do_fire(atom/target, mob/living/user, message = TRUE, params, zone_override = "", bonus_spread = 0, stam_cost = 0)
 	stop_cranking_because_we_fired = TRUE
 	..()
+	to_chat(user, "<span class = 'notice'>You stop cranking [src]. You cranked it for a total of [cranks/2] seconds!</span>")
+	cell.use(1)
+	cranks = 0
 	slowdown = initial(slowdown)
 	extra_damage = initial(extra_damage)
 	extra_penetration = initial(extra_penetration)
-
+	update_icon()
 
 //Laser musket, logarithmic
 //It can be cranked forever and will stack damage increases. Logarithmically, of course, so it doesn't get too out of hand.

@@ -115,6 +115,12 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
+/datum/gear/suit/horn
+	name = "tan duster"
+	path = /obj/item/clothing/suit/armored/light/duster/horner
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+	cost = 3
+
 /datum/gear/suit/ncrcfjacket
 	name = "NCRCF jacket"
 	path = /obj/item/clothing/suit/f13/ncr/ncrcfjacket
