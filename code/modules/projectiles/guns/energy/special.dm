@@ -407,7 +407,7 @@
 //Laser musket
 /obj/item/gun/energy/lasmusket
 	name = "laser musket"
-	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts,a microfusion cell, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
+	desc = "In the wasteland, one must make do, and this weapon's wielder certainly does. Made from metal scraps, electronic parts, a microfusion cell, an old rifle stock and a bottle full of dreams, the Laser Musket is sure to stop anything in its tracks and make those raiders think twice."
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "lasmusket"
 	item_state = "lasmusket"
@@ -432,7 +432,7 @@
 	var/cranks = 0
 	var/cranking = FALSE
 	var/stop_cranking_because_we_fired = FALSE //originally called 'firing' but apparently parent already has a var called firing. whoops
-	var/crank_time = 5 //time per crank in ds
+	var/crank_time = 7 //time per crank in ds
 	var/pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
 	var/conductor = FALSE
 	var/focused_lense = FALSE
@@ -442,7 +442,7 @@
 	slowdown = 0.2 //you can't actually fire it yet
 
 /obj/item/gun/energy/lasmusket/examine(mob/user)
-	..()
+	. = ..()
 	if(!conductor)
 		. += "It has an connector for a <b>super conductor</b> on it's capacitor."
 	if(conductor)
