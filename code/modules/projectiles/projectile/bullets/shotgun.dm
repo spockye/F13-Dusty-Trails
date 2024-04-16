@@ -9,7 +9,7 @@
 	spread = 2
 	wound_falloff_tile = -7.5
 	supereffective_damage = 35
-	supereffective_faction = list("supermutant", "deathclaw", "raider", "wastebot", "radscorpion")
+	supereffective_faction = list("hostile", "ant", "supermutant", "cazador", "raider", "gecko", "radscorpion")
 
 /obj/item/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
