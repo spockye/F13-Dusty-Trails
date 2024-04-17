@@ -228,7 +228,7 @@
 
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot/dusty
 	name = "Dusty Trails riot helmet"
-	desc = "A custom helmet owned by a Mercenary Lieutenant, in the colors of the Dusty Trails Caravan Company."
+	desc = "A custom helmet owned by a mercenary Lieutenant, in the colors of the Dusty Trails Caravan Company."
 	icon_state = "dusty_lieutenant"
 	item_state = "dusty_lieutenant"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 30)
