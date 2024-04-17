@@ -100,18 +100,18 @@ Mayor
 	name = "Lieutenant"
 	jobtype = /datum/job/bighorn/f13sheriff
 	id = /obj/item/card/id/dogtag/sheriff
-	belt = null
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-
-	ears = 			/obj/item/radio/headset/headset_sheriff
-	uniform =  		/obj/item/clothing/under/f13/sheriff
-	neck =			/obj/item/storage/belt/holster/sheriff
-	shoes = 		/obj/item/clothing/shoes/f13/cowboy
-	r_hand = 		/obj/item/clothing/suit/armor/f13/power_armor/town
-	l_hand = 		/obj/item/clothing/head/helmet/f13/power_armor/town
-	glasses =		/obj/item/clothing/glasses/sunglasses
-	l_pocket =		/obj/item/storage/bag/money/small/bighorn
+	backpack = /obj/item/storage/backpack/enclave
+	satchel = /obj/item/storage/backpack/satchel/enclave
+	ears = /obj/item/radio/headset/headset_sheriff
+	uniform = /obj/item/clothing/under/syndicate/mercpadded
+	belt = /obj/item/storage/belt/military/army
+	neck = /obj/item/storage/belt/holster/legholster
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/f13/military
+	suit = /obj/item/clothing/suit/armor/f13/usmcriot/dusty
+	head = /obj/item/clothing/head/helmet/f13/enclave/usmcriot/dusty
+	l_pocket = /obj/item/storage/bag/money/small/bighorn
+	r_pocket = /obj/item/flashlight/flare
 
 	backpack_contents = list(
 		/obj/item/storage/box/deputy_badges=1, \
@@ -119,7 +119,6 @@ Mayor
 		/obj/item/melee/classic_baton=1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/book/granter/crafting_recipe/ODF = 1)
-	r_pocket = /obj/item/flashlight/flare
 
 /datum/outfit/job/bighorn/f13sheriff/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -131,7 +130,6 @@ Mayor
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, REF(src))
 	ADD_TRAIT(H, TRAIT_SELF_AWARE,REF(src))
 	ADD_TRAIT(H, TRAIT_IRONFIST, REF(src))
-	ADD_TRAIT(H, TRAIT_PA_WEAR, REF(src))
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 
 /*--------------------------------------------------------------*/
@@ -153,27 +151,49 @@ Mayor
 	access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY, ACCESS_FUSION, ACCESS_TOWN)
 
+	loadout_options = list(
+		/datum/outfit/loadout/waypointmerca,
+		/datum/outfit/loadout/waypointmercb,
+		)
+
 /datum/outfit/job/bighorn/f13deputy
 	name = "Mercenary"
 	jobtype = /datum/job/bighorn/f13deputy
-	ears = 			/obj/item/radio/headset/headset_sheriff
-	id =            /obj/item/card/id/dogtag/deputy
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
+	ears = /obj/item/radio/headset/headset_sheriff
+	id = /obj/item/card/id/dogtag/deputy
+	backpack = /obj/item/storage/backpack/enclave
+	satchel = /obj/item/storage/backpack/satchel/enclave
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/flare
-	r_hand = /obj/item/gun/ballistic/rifle/repeater/trail
-	suit = 	/obj/item/clothing/suit/armor/vest/oasis
-	head =	/obj/item/clothing/head/f13/town/deputy
-	belt = /obj/item/gun/ballistic/revolver/colt357
-	shoes = 		/obj/item/clothing/shoes/f13/explorer
-	uniform = /obj/item/clothing/under/f13/cowboyb
+	belt = /obj/item/storage/belt/military/army
+	neck = /obj/item/storage/belt/holster/townlt
+	shoes = /obj/item/clothing/shoes/jackboots
+	uniform = /obj/item/clothing/under/syndicate/mercpadded
 	backpack_contents = list(
-		/obj/item/ammo_box/a357=2, \
-		/obj/item/ammo_box/tube/m44=2, \
-		/obj/item/restraints/handcuffs=1,
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 2,
+		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/book/granter/crafting_recipe/ODF = 1)
+		/obj/item/book/granter/crafting_recipe/ODF = 1,
+		)
+
+/datum/outfit/loadout/waypointmerca
+	name = "Militarised Officer"
+	head = /obj/item/clothing/head/helmet/f13/combat/swat/dusty
+	suit = /obj/item/clothing/suit/armor/f13/combat/dusty
+	suit_store = /obj/item/gun/ballistic/automatic/infantry_rifle
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m5mm = 1,
+		)
+
+/datum/outfit/loadout/waypointmercb
+	name = "Frontier Justicier"
+	head = /obj/item/clothing/head/cowboyhat/black/dusty
+	suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/dusty
+	suit_store = /obj/item/gun/ballistic/shotgun/police
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		)
 
 /datum/outfit/job/bighorn/f13deputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

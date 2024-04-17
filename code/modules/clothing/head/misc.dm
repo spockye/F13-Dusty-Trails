@@ -410,9 +410,16 @@
 
 /obj/item/clothing/head/cowboyhat/black
 	name = "black cowboy hat"
-	desc = "A a black cowboy hat, perfect for any outlaw"
+	desc = "A black cowboy hat, perfect for any outlaw"
 	icon_state = "cowboyhat_black"
 	item_state= "cowboyhat_black"
+
+/obj/item/clothing/head/cowboyhat/black/dusty
+	name = "Dusty Trails cowboy hat"
+	desc = "A rough, tough, no-nonsense black cowboy hat used by some mercs hired by the Dusty Trails Caravan Company."
+	icon_state = "cowboyhat_black"
+	item_state= "cowboyhat_black"
+	armor = list("melee" = 30, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/head/cowboyhat/white
 	name = "white cowboy hat"
@@ -547,4 +554,3 @@
 	icon_state = "lily_crown"
 	dynamic_hair_suffix = ""
 	attack_verb = list("crowned")
-

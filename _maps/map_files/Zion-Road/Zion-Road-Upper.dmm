@@ -18640,6 +18640,12 @@
 	name = "air"
 	},
 /area/f13/building)
+"nNB" = (
+/obj/effect/landmark/start/f13/squire,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood/offices)
 "nND" = (
 /obj/structure/bookcase{
 	icon_state = "book-1"
@@ -53971,7 +53977,7 @@ fRP
 fRP
 fRP
 fRP
-fRP
+nNB
 xXQ
 xSV
 sYC

@@ -226,6 +226,13 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/head/helmet/f13/enclave/usmcriot/dusty
+	name = "Dusty Trails riot helmet"
+	desc = "A custom helmet owned by a Mercenary Lieutenant, in the colors of the Dusty Trails Caravan Company."
+	icon_state = "dusty_lieutenant"
+	item_state = "dusty_lieutenant"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 30)
+
 /obj/item/clothing/head/helmet/f13/enclave/usmcriot/armypilot
 	name = "enclave officer pilot helmet"
 	desc = "A pre-war riot helmet, repurposed for duty aboard aircraft."
@@ -694,8 +701,10 @@
 
 /obj/item/clothing/head/helmet/f13/ncr/heavygunner/trenchraider //Sunburst my beloved
 	name = "\improper NCR Trench Raid Leader helmet"
-	desc = "A heavily reinforced NCR steel-pot helmet. It comes complete with extra leather padding and armored layering. This one seems seems to have been designed to be in use with a gas-mask.."
+	desc = "A heavily reinforced NCR steel-pot helmet. It comes complete with extra leather padding and armored layering. This one seems seems to have been designed to be in use with a gas-mask."
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 40)
+	slowdown = 0.03		//0.18 with chestpiece
 
 //LEADERSHIP ROLES
 /obj/item/clothing/head/helmet/f13/ncr/officer						//NCR Lieutenant beret

@@ -180,7 +180,7 @@
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/seniorknight
-	name = "Knight"
+	name = "Senior Knight"
 	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/seniorpaladin
@@ -196,8 +196,12 @@
 	icon_state = "Scribe"
 
 /obj/effect/landmark/start/f13/Knight
-	name = "Squire"
+	name = "Knight"
 	icon_state = "Knight"
+
+/obj/effect/landmark/start/f13/squire
+	name = "Squire"
+	icon_state = "Initiate"
 
 /obj/effect/landmark/start/f13/initiate
 	name = "Initiate"
