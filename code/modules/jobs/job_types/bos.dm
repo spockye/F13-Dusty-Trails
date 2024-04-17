@@ -876,6 +876,7 @@ Squire
 	backpack = /obj/item/storage/backpack/explorer
 	ears = /obj/item/radio/headset/headset_bos
 	uniform = /obj/item/clothing/under/syndicate/brotherhood
+	accessory = /obj/item/clothing/accessory/bos/squire
 	shoes = /obj/item/clothing/shoes/combat/swat
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/helmet/f13/combat/brotherhood/squire
