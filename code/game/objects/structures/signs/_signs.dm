@@ -180,6 +180,20 @@
 	icon_state = "beewarning"
 	density = TRUE
 
+/obj/structure/sign/sheriff
+	name = "sheriff sign"
+	desc = "A sign indicating the law."
+	icon = 'icons/fallout/structures/signs.dmi'
+	icon_state = "sheriff"
+	density = FALSE
+
+/obj/structure/sign/justice
+	name = "justice plaque"
+	desc = "An icon of the scales of justice."
+	icon = 'icons/fallout/structures/signs.dmi'
+	icon_state = "justice"
+	density = FALSE
+
 /obj/structure/sign/street
 	icon = 'icons/fallout/structures/signs.dmi'
 	density = TRUE
