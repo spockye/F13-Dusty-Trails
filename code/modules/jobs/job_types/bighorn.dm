@@ -275,7 +275,6 @@ Mayor
 	supervisors = "the Mayor, Lieutenant and Dusty Trails Caravan Company"
 	description = "You are a hired contractor of the company town of Waypoint, owned by the Dusty Trails Caravan Company. \
 	 You have been entrusted by the Company to run a store and have been given a generous initial stock. \
-	 Trade carefully and work with the Prospectors to turn a handsome profit. \
 	 While you have full domain over the running of your business, remember to work in the interests of your superiors."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_BIGHORN
