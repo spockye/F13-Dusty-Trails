@@ -105,7 +105,7 @@ Mayor
 	ears = /obj/item/radio/headset/headset_sheriff
 	uniform = /obj/item/clothing/under/syndicate/mercpadded
 	belt = /obj/item/storage/belt/military/army
-	neck = /obj/item/storage/belt/holster/legholster
+	neck = /obj/item/storage/belt/holster/townlt
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/usmcriot/dusty
@@ -166,7 +166,7 @@ Mayor
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/flare
 	belt = /obj/item/storage/belt/military/army
-	neck = /obj/item/storage/belt/holster/townlt
+	neck = /obj/item/storage/belt/holster/legholster
 	shoes = /obj/item/clothing/shoes/jackboots
 	uniform = /obj/item/clothing/under/syndicate/mercpadded
 	backpack_contents = list(
