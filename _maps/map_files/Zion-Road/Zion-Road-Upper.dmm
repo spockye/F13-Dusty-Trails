@@ -2754,6 +2754,12 @@
 	icon_state = "rampdowntop"
 	},
 /area/f13/building)
+"bGd" = (
+/obj/machinery/computer/card/ncr{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_fancy,
+/area/f13/ncr)
 "bGr" = (
 /obj/structure/table,
 /turf/open/floor/f13{
@@ -5352,6 +5358,12 @@
 	icon_state = "housewood4-broken"
 	},
 /area/f13/city/bighorn)
+"dGB" = (
+/obj/machinery/radioterminal/ncr{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_fancy,
+/area/f13/ncr)
 "dGM" = (
 /obj/structure/table/wood,
 /obj/item/pda,
@@ -13611,6 +13623,9 @@
 	pixel_y = 16
 	},
 /obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "kbw" = (
@@ -116391,7 +116406,7 @@ lGC
 ntl
 lGC
 lGC
-lGC
+dGB
 lNP
 lWX
 lWX
@@ -116893,7 +116908,7 @@ plA
 grQ
 oKO
 sDc
-lGC
+bGd
 lNP
 lWX
 lWX
