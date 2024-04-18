@@ -5,7 +5,7 @@
 #define RADIO_CHANNEL_COMMON "Common"
 #define RADIO_KEY_COMMON ";"
 
-#define RADIO_CHANNEL_SECURITY "BDF"
+#define RADIO_CHANNEL_SECURITY "Waypoint Police"
 #define RADIO_KEY_SECURITY "s"
 #define RADIO_TOKEN_SECURITY ".s"
 
@@ -65,7 +65,7 @@
 #define RADIO_KEY_ENCLAVE "z"
 #define RADIO_TOKEN_ENCLAVE ".z"
 
-#define RADIO_CHANNEL_TOWN "Town"
+#define RADIO_CHANNEL_TOWN "Waypoint"
 #define RADIO_KEY_TOWN "f"
 #define RADIO_TOKEN_TOWN ".f"
 
