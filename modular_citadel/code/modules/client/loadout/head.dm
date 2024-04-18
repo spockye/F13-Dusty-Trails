@@ -437,20 +437,19 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 2
 	restricted_desc = "BOS"
-	restricted_roles = list("Paladin Marshal",
+	restricted_roles = list("Elder",
+							"Paladin Commander",
+							"Head Scribe",
+							"Head Knight",
+							"Senior Paladin",
 							"Paladin",
-							"Librarian",
+							"Senior Scribe",
 							"Scribe",
-							"Knight-Captain",
+							"Senior Knight",
 							"Knight",
+							"Squire",
 							"Initiate",
 							"BoS Off-Duty",
-							"Inquisitorial Acolyte",
-							"Baron",
-							"Castellan",
-							"Keeper",
-							"Knight-Commander",
-							"Inquisitorial Acolyte",
 						)
 
 /datum/gear/head/khan_bandana
