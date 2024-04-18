@@ -413,6 +413,13 @@
 	item_color = "initiateS"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/bos/squire
+	name = "Squire pin"
+	desc = "A silver pin with blue cloth, worn by Squires."
+	icon_state = "initiateS"
+	item_color = "initiateS"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/bos/knight
 	name = "Knight pins"
 	desc = "A silver pin with one device and blue coloring, worn by fully fledged Knights of the Brotherhood."
@@ -505,8 +512,8 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/sentinel
-	name = "Head Paladin pins"
-	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on purple-cloth. Worn by the Head Paladin."
+	name = "Paladin Commander pins"
+	desc = "A gold-plated, silver lined pin with one device and two outstretched wings on the side; a golden sword centered on purple-cloth. Worn by the Paladin Commander."
 	icon_state = "sentinel"
 	item_color = "sentinel"
 	minimize_when_attached = TRUE

@@ -267,7 +267,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/datum/outfit/loadout/palacent,				// M1919, Spatha
 		/datum/outfit/loadout/rangerhunter,			// AMR, Hunting Revolver, Spatha
 		/datum/outfit/loadout/centurion,			// Uzi, Goliath, CQC
-		/datum/outfit/loadout/berserkercenturion,	// Love Tap, Berserker Martial Art
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -336,16 +335,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/ammo_box/magazine/msmg9mm/drum = 2,
 	)
 
-/datum/outfit/loadout/berserkercenturion
-	name = "Praetorian Candidate"
-	suit = /obj/item/clothing/suit/armor/f13/legion/centurion
-	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	neck = /obj/item/clothing/neck/mantle/holster/legion
-	backpack_contents = list(
-		/obj/item/melee/unarmed/brass/lovetap = 1,
-		/obj/item/book/granter/martial/berserker = 1,
-	)
-
 // VETERAN DECANUS
 
 /datum/job/CaesarsLegion/Legionnaire/f13decanvet
@@ -412,8 +401,8 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
-	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus
-	suit_store = /obj/item/twohanded/fireaxe/bmprsword
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/decanus/visor
+	suit_store = /obj/item/twohanded/legionaxe
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
@@ -604,8 +593,9 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	exp_requirements = 1020
 
 	loadout_options = list(
-		/datum/outfit/loadout/vexbear,	//	Lever shotgun, Ripper
-		/datum/outfit/loadout/vexfox,	//	Type 93, Spatha
+		/datum/outfit/loadout/vexbear,		//	Lever shotgun, Ripper
+		/datum/outfit/loadout/vexfox,		//	Type 93, Spatha
+		/datum/outfit/loadout/vexstalker, 	//  Legion Sniper, Spatha
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -655,6 +645,15 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/ammo_box/magazine/m5mm = 2,
+	)
+
+/datum/outfit/loadout/vexstalker
+	name = "Nightstalker"
+	head = /obj/item/clothing/head/helmet/f13/legion/veteran/vexillarius/nightstalker
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
+	backpack_contents = list(
+		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/ammo_box/magazine/w308 = 2,
 	)
 
 //EXPLORER
@@ -720,7 +719,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
-	glasses = /obj/item/clothing/glasses/sunglasses/big
 	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
 	backpack_contents = list(
 		/obj/item/attachments/scope = 1,
@@ -786,7 +784,6 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 2,
-		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 1,
 	)
 
 /datum/outfit/loadout/vetshot
@@ -936,7 +933,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	name = "Utah Recruit"
 	suit_store = /obj/item/gun/ballistic/revolver/widowmaker
 	backpack_contents = list(
-		/obj/item/ammo_casing/shotgun/buckshot = 1,
+		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/melee/onehanded/machete = 1,
 	)
 

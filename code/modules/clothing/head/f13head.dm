@@ -109,6 +109,11 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0, "wound" = 15)
 
+/obj/item/clothing/head/helmet/f13/combat/swat/dusty
+	name = "Dusty Trails combat helmet"
+	desc = "A stripped down combat helmet issued to heavily armed Dusty Trails mercenaries."
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
 	desc = "A full head helmet and gas mask, developed for use in heavily contaminated environments."

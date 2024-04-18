@@ -57,7 +57,12 @@
 	item_state = "duster_lawman"
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 10)
 
-
+/obj/item/clothing/suit/armored/light/duster/horner
+	name = "bighorner leather duster"
+	desc = "A long tan leather overcoat with discrete protective reinforcements sewn into the lining."
+	icon_state = "duster_marlow"
+	item_state = "duster_marlow"
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 10)
 
 //////////////////
 // KEVLAR VESTS //

@@ -50,6 +50,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	))
 
 GLOBAL_LIST_INIT(command_positions, list(
+	"Paladin Commander",
 	"Head Scribe",
 
 	"NCR Captain",
@@ -86,10 +87,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Senior Paladin",
 "Paladin",
+"Senior Knight",
 "Knight",
-"Squire",
 "Senior Scribe",
 "Scribe",
+"Squire",
 "Initiate",
 "BoS Off-Duty",
 
@@ -113,7 +115,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Mercenary",
 "Sierra Representative",
 "Shopkeeper",
-"Mercenary",
 "Barkeep",
 "Preacher",
 "Citizen",
@@ -151,10 +152,11 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"Head Scribe",
 	"Senior Paladin",
 	"Paladin",
+	"Senior Knight",
 	"Knight",
-	"Squire",
 	"Senior Scribe",
 	"Scribe",
+	"Squire",
 	"Initiate",
 	"BoS Off-Duty",
 ))
@@ -166,7 +168,6 @@ GLOBAL_LIST_INIT(bighorn_positions, list(
 	"Mercenary",
 	"Sierra Representative",
 	"Shopkeeper",
-	"Mercenary",
 	"Barkeep",
 	"Preacher",
 	"Citizen",

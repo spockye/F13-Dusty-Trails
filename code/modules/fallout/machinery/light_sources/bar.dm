@@ -48,6 +48,81 @@
 /obj/machinery/light/sign/explode() //Hell
 	return
 
+/obj/machinery/light/sign/medical
+	name = "medical sign"
+	icon_state = "health"
+	base_state = "health"
+	icon = 'icons/fallout/objects/structures/wallmounts.dmi'
+	density = 0
+	desc = "A flashing medical sign."
+	light_color = "#7FEA6A"
+	bound_width = 32
+	light_power = 3
+	light_range = 3
+
+/obj/machinery/light/sign/medical/red
+	name = "medical sign"
+	icon_state = "health2"
+	base_state = "health2"
+	light_color = "#da0205"
+	light_power = 3
+	light_range = 3
+
+/obj/machinery/light/sign/techshop
+	name = "tech sign"
+	desc = "A neon tech shop sign."
+	icon_state = "techshop"
+	base_state = "techshop"
+	light_color = "#9fc35d"
+	icon = 'icons/fallout/objects/structures/wallmounts.dmi'
+	bound_width = 32
+	density = 0
+	light_power = 3
+	light_range = 3
+
+/obj/machinery/light/sign/techshop/cityhall
+	name = "city hall sign"
+	desc = "A sign for the city hall."
+	icon_state = "cityhall"
+	base_state = "cityhall"
+
+/obj/machinery/light/sign/techshop/court
+	name = "court sign"
+	desc = "A sign for the court."
+	icon_state = "court"
+	base_state = "court"
+
+/obj/machinery/light/sign/techshop/bar
+	name = "court sign"
+	desc = "A sign for the bar."
+	icon_state = "bar"
+	base_state = "bar"
+	light_color = "#DB68BF"
+
+/obj/machinery/light/sign/guns
+	name = "guns sign"
+	desc = "A flashing gun sign."
+	icon_state = "gunshop"
+	base_state = "gunshop"
+	light_color = "#00CCFF"
+	icon = 'icons/fallout/objects/structures/wallmounts.dmi'
+	bound_width = 32
+	density = 0
+	light_power = 3
+	light_range = 3
+
+/obj/machinery/light/sign/gas
+	name = "gas sign"
+	desc = "A flashing gas sign."
+	icon_state = "gas"
+	base_state = "gas"
+	light_color = "#00CCFF"
+	icon = 'icons/fallout/objects/structures/wallmounts.dmi'
+	bound_width = 32
+	density = 0
+	light_power = 3
+	light_range = 3
+
 /obj/machinery/light/sign/kebab
 	name = "Kebabtown sign"
 	icon_state = "Kebab"
