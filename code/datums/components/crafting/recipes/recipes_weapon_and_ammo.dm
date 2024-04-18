@@ -460,6 +460,7 @@
 	reqs = list(/obj/item/stack/crafting/electronicparts = 5,
 				/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
 				/obj/item/reagent_containers/food/drinks/bottle = 1,
+				/obj/item/stock_parts/cell/ammo/mfc = 1,
 				/obj/item/stack/cable_coil = 3)
 	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL)
 	time = 120
