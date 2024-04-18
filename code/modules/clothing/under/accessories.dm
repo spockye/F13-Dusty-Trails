@@ -413,6 +413,13 @@
 	item_color = "initiateS"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/bos/squire
+	name = "Squire pin"
+	desc = "A silver pin with blue cloth, worn by Squires."
+	icon_state = "initiateS"
+	item_color = "initiateS"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/bos/knight
 	name = "Knight pins"
 	desc = "A silver pin with one device and blue coloring, worn by fully fledged Knights of the Brotherhood."

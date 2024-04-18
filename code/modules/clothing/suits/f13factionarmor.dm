@@ -474,14 +474,14 @@
 
 /obj/item/clothing/suit/armor/f13/ncr/heavygunner/trenchraider //NCR Trench-Raider kit
 	name = "\improper NCR trench-raider plate vest"
-	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins. This one is designed for Trench-Raiders, featuring less constricting adjustments at the cost of overall protection alongside a massive shoulder-pad."
+	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins. This one is designed for Trench-Raiders, featuring less constricting adjustments and greater melee padding at the cost of being worse against bullets and near useless against lasers."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "steel_bib_trench"
 	item_state = "steel_bib_trench"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-	slowdown = 0.15		//0.19 with helmet
+	slowdown = 0.15		//0.18 with helmet
 
 //OFFICER ROLES
 /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer						//NCR Lieutenant armor
@@ -930,20 +930,29 @@
 
 //Town
 
-/obj/item/clothing/suit/armor/f13/combat/sierra
-	name = "mercenary combat armor"
-	desc = "An old military grade pre war combat armor, repainted to the colour scheme of the Sierra Trading Company."
+/obj/item/clothing/suit/armor/f13/combat/dusty
+	name = "Dusty Trails combat armor"
+	desc = "An old military grade pre war combat armor, repainted to the colour scheme of the Dusty Trails Caravan Company."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
-	icon_state = "combat_armor_sierra"
-	item_state = "combat_armor_sierra"
+	icon_state = "combat_armor_dusty"
+	item_state = "combat_armor_dusty"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/dusty
+	name = "reinforced Dusty Trails combat armor"
+	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates, repainted to the colour scheme of the Dusty Trails Caravan Company."
+	icon = 'icons/fallout/clothing/armored_medium.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
+	icon_state = "combat_armor_dusty_mk2"
+	item_state = "combat_armor_dusty_mk2"
 	mutantrace_variation = NONE
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/sierra
-	name = "reinforced mercenary combat armor"
-	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates, repainted to the colour scheme of the Sierra Trading Company."
+/obj/item/clothing/suit/armor/f13/usmcriot/dusty
+	name = "Dusty Trails riot armor"
+	desc = "A custom suit of armor owned by a mercenary Lieutenant, in the colors of the Dusty Trails Caravan Company."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
-	icon_state = "combat_armor_sierra_mk2"
-	item_state = "combat_armor_sierra_mk2"
-	mutantrace_variation = NONE
+	icon_state = "dusty_lieutenant"
+	item_state = "dusty_lieutenant"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 20, "bio" = 25, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 30)

@@ -49,14 +49,14 @@
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
 	slowdown = 0.06
 
-/obj/item/clothing/suit/armor/f13/leather_jacket/combat/sierra
-	name = "Sierra suit jacket"
+/obj/item/clothing/suit/armor/f13/leather_jacket/combat/dusty
+	name = "Dusty Trails armored jacket"
 	icon = 'icons/fallout/clothing/suits_cosmetic.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/suit.dmi'
-	icon_state = "sierrajacket"
-	item_state = "sierrajacket"
-	desc = "An armored suit jacket for the representative of the Sierra Trading Company. Lined with durable padding."
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 25)
+	icon_state = "dustyjacket"
+	item_state = "dustyjacket"
+	desc = "An armored jacket for the hired mercenaries of the Dusty Trails Caravan Company. Lined with durable padding."
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 0, "wound" = 35)
 
 /obj/item/clothing/suit/armor/f13/kit
 	name = "armor kit"

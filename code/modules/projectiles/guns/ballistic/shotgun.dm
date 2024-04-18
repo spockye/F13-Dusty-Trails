@@ -404,8 +404,8 @@
 	force = 10
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt/khan
-	name = "Cold Water"
-	desc = "A personalized Neostead shotgun belonging to a Senior Enforce of the Great Khans."
+	name = "Death-Hand"
+	desc = "A well maintained Neostead belonging to a Senior Enforcer of the Great Khans. Named after a long dead leader of the Khans, it serves as a forceful reminder of the gang's history."
 	fire_delay = 3.5
 	recoil = 1
 	force = 12

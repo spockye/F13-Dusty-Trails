@@ -306,7 +306,7 @@
 	name = "Biggest Iron"
 	desc = "There was forty feet between them, when they stopped to make their play..."
 	force = 25
-	casing_ejector = TRUE//WHAT THE FUCK IS THIS GUN? FASTEST HAND IN THE WEST BETWEEN SHOTS, THAT'S WHAT.
+	casing_ejector = FALSE//WHAT THE FUCK IS THIS GUN? FASTEST HAND IN THE WEST BETWEEN SHOTS, THAT'S WHAT. (This var is actually broken and doesn't work properly on revolvers. It ejects cases, but the spent cases still stay in the gun. Also teleports the cases to you when you actually empty the gun. -foxy)
 	can_scope = TRUE
 	scope_state = "revolver_scope"
 	scope_x_offset = 6
