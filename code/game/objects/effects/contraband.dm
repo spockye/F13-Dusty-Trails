@@ -521,6 +521,12 @@
 	desc = "Loaded? Don't take chances with pick-ups... Loose women may also be loaded with disease."
 	icon_state = "poster49"
 
+/obj/structure/sign/poster/prewar/random
+	name = "random prewar poster"
+	icon_state = "random_contraband"
+	never_random = TRUE
+	random_basetype = /obj/structure/sign/poster/prewar
+
 /obj/structure/sign/poster/prewar/corporate_espionage
 	name = "Only You Can Prevent CORPORATE ESPIONAGE"
 	desc = "This poster shows the silhouette of a man wearing a raincoat with the collar up and a hat groping towards the files in a drawer of a filing cabinet."

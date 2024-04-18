@@ -171,3 +171,6 @@
 	icon = 'icons/turf/decalsbig.dmi'
 	icon_state = "energy"
 
+/obj/effect/turf_decal/big/dustytrails
+	icon = 'icons/turf/decalsvhuge.dmi'
+	icon_state = "dusty"
