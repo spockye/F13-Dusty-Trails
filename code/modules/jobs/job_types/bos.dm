@@ -252,7 +252,7 @@ Head Knight
 	description = "You are the Head Knight, leader of your respective caste in the Chapter. Your knowledge of pre-war tactics, and you have advanced combat training and experience. You are in charge of the detachment's internal security, and your Knights. Delegate to them as necessary."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Elders and the Head Paladin"
+	supervisors = "the Elder and the Paladin Commander"
 	selection_color = "#7f8c8d"
 
 	exp_type = EXP_TYPE_BROTHERHOOD
@@ -341,7 +341,7 @@ Senior Paladin
 	description = "You are the chapter's seniormost member of the Paladin caste. One shaped from years of training and experience. Duties relating to field command fall under you, by default. In matters of trade, exploration and diplomacy - you are the de facto head, unless a Head Scribe exists. Your job is to be the chapter's fist, instilling discipline in your caste of Paladins as you go."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Head Paladin"
+	supervisors = "the Paladin Commander"
 	selection_color = "#95a5a6"
 
 	exp_requirements = 1020
@@ -423,7 +423,7 @@ Paladin
 	description = "You answer to the Paladin Commander, and by extension - the Head Scribe for issues regarding technology aquisition. Be the chapter's shock infantry, and utilize your armour to its fullest capacity. Highly trained from experience as a knight - you are to take field command in the absence of a Senior Paladin. You may also finalize trade and diplomatic decisions in the absence of a superior. You are also required to train Squires, so that they may one day become Paladins themselves."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Head Paladin"
+	supervisors = "the Paladin Commander"
 	selection_color = "#95a5a6"
 	exp_type = EXP_TYPE_BROTHERHOOD
 	exp_requirements = 780
@@ -684,7 +684,7 @@ Scribe
 	description = "You are the senior-most member of your caste in the chapter. Experienced in the fields of combat, reconnaissance and defense; you must lead your caste to victory. Assist Paladins, prepare defense. You are also the one who heads the internal security of the bunker - ensuring personnel are adhering to the Codex, and squashing insubordination."
 	forbids = "The Brotherhood of Steel Expects: Obeying superiors and respecting the Chain that Binds to a degree. Collection and safeguarding of HARMFUL technology from the wasteland. Expanding and making relations only at the benefit of the chapter. Experimentation, research and innovation."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Paladins and Head Paladin"
+	supervisors = "the Paladins and Paladin Commander"
 	selection_color = "#95a5a6"
 	exp_requirements = 600
 	exp_type = EXP_TYPE_BROTHERHOOD

@@ -8,7 +8,7 @@
 	path = /obj/item/storage/belt/holster/paladincape
 	cost = 2
 	restricted_desc = "Paladins"
-	restricted_roles = list("Head Paladin",
+	restricted_roles = list("Paladin Commander",
 							"Senior Paladin",
 							"Paladin"
 						)
@@ -18,7 +18,7 @@
 	path = /obj/item/storage/belt/holster/paladinlongcape
 	cost = 2
 	restricted_desc = "Paladins"
-	restricted_roles = list("Head Paladin",
+	restricted_roles = list("Paladin Commander",
 							"Senior Paladin",
 							"Paladin"
 						)
