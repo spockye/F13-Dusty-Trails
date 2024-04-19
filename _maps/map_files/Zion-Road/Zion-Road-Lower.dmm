@@ -797,13 +797,12 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "aqb" = (
-/obj/machinery/hydroponics/constructable,
-/obj/structure/railing{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/f13/mre{
+	pixel_x = -1;
+	pixel_y = 2
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "neutralrustyfull"
-	},
+/turf/open/floor/wood/wood_fancy,
 /area/f13/brotherhood)
 "aqt" = (
 /obj/structure/flora/rock/jungle{
@@ -4666,12 +4665,18 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "dBT" = (
-/obj/machinery/light/floor{
-	pixel_y = 16
-	},
-/obj/machinery/hydroponics/constructable,
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "neutralrustyfull"
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood)
 "dBV" = (
@@ -5115,6 +5120,11 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel)
+"dXL" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/mre,
+/turf/open/floor/wood/wood_fancy,
+/area/f13/brotherhood)
 "dXZ" = (
 /obj/structure/flora/junglebush,
 /obj/structure/stone_tile/surrounding_tile{
@@ -21165,6 +21175,14 @@
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"rmK" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/f13/mre{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/turf/open/floor/wood/wood_fancy,
+/area/f13/brotherhood)
 "rnh" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -26260,7 +26278,6 @@
 	dir = 9;
 	layer = 3.01
 	},
-/obj/machinery/hydroponics/constructable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "neutralrustyfull"
 	},
@@ -41697,19 +41714,19 @@ wgi
 wgi
 wgi
 nQL
-kyY
+uQh
 kyY
 aIb
 jqy
 jqy
 jqy
 vxO
-aqb
-aqb
-aqb
-aqb
-aqb
 uQh
+uQh
+kyY
+uQh
+uQh
+kyY
 iQq
 jqy
 jqy
@@ -42199,18 +42216,18 @@ wgi
 wgi
 wgi
 ckQ
-ohn
+hiM
 ohn
 dEk
 xuF
 xuF
 xuF
 lGH
+hiM
+hiM
 ohn
-ohn
-ohn
-ohn
-ohn
+hiM
+hiM
 ohn
 qkd
 xuF
@@ -42701,19 +42718,19 @@ wgi
 wgi
 wgi
 ckQ
+hiM
 ohn
 ohn
 ohn
 ohn
 ohn
+jRg
+hiM
+hiM
 ohn
-dBT
 hiM
 hiM
-hiM
-hiM
-hiM
-hiM
+ohn
 jRg
 ohn
 ohn
@@ -43203,18 +43220,18 @@ glG
 hFP
 wgi
 ckQ
-ohn
+hiM
 bOL
 ohn
 ohn
 ohn
 ohn
 ohn
+hiM
+hiM
 ohn
-ohn
-ohn
-ohn
-ohn
+hiM
+hiM
 ohn
 ohn
 ohn
@@ -43711,13 +43728,13 @@ ohn
 ohn
 ohn
 ohn
+ohn
 hiM
 hiM
+ohn
 hiM
 hiM
-hiM
-hiM
-hiM
+ohn
 ohn
 ohn
 ohn
@@ -46727,7 +46744,7 @@ dKB
 cBf
 hwN
 dKB
-bhr
+dBT
 hwN
 dKB
 nQL
@@ -47701,7 +47718,7 @@ fVX
 wGJ
 eFn
 xOj
-gOZ
+rmK
 gOZ
 pXN
 aaX
@@ -48204,7 +48221,7 @@ tXG
 eFn
 xOj
 gOZ
-gOZ
+aqb
 pXN
 aaX
 kOI
@@ -49207,7 +49224,7 @@ fVX
 ihL
 eFn
 xOj
-gOZ
+dXL
 gOZ
 pXN
 aaX

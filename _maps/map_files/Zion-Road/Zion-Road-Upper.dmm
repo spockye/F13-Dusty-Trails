@@ -1836,6 +1836,12 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
+"aWk" = (
+/obj/machinery/radioterminal/ncr{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_fancy,
+/area/f13/ncr)
 "aWS" = (
 /obj/structure/simple_door/interior{
 	name = "La Verkin PD"
@@ -13386,6 +13392,10 @@
 	pixel_y = 16
 	},
 /obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/obj/item/reagent_containers/food/snacks/f13/mre,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "kbw" = (
@@ -24915,6 +24925,12 @@
 /obj/structure/chair/bench,
 /turf/open/floor/carpet/red,
 /area/f13/building)
+"tcj" = (
+/obj/machinery/computer/card/ncr{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_fancy,
+/area/f13/ncr)
 "tcq" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -115401,7 +115417,7 @@ lGC
 ntl
 lGC
 lGC
-lGC
+aWk
 lNP
 lWX
 lWX
@@ -115903,7 +115919,7 @@ plA
 grQ
 oKO
 sDc
-lGC
+tcj
 lNP
 lWX
 lWX
