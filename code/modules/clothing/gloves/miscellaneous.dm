@@ -60,7 +60,7 @@
 	name = "armwraps of unyielding resolve"
 	desc = "A series of armwraps, soaked in holy water. Makes you pretty keen to smite evil magic users."
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	enhancement = 2 //It is not magic that makes you punch harder, but force of will. Trust me.
+	enhancement = 25 // Slightly higher than a mace glove (23) which is a craftable item. This one is unique to the preacher.
 	secondary_trait = TRAIT_ANTIMAGIC
 	var/chaplain_spawnable = TRUE
 

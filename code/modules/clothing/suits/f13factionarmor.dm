@@ -731,7 +731,7 @@
 
 /obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis
 	name = "heavy steel breastplate"
-	desc = "a steel breastplate, inspired by a pre-war design. Looks like Bighorn citizens added an additional layer of metal on the front face."
+	desc = "A steel breastplate, inspired by a pre-war design. Looks like waystation citizens added an additional layer of metal on the front face."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
 	armor = list("melee" = 45, "bullet" = 60, "laser" = 45,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)

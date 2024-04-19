@@ -24,7 +24,8 @@
 	desc = "Deus Vult."
 	icon_state = "knight_templar"
 	item_state = "knight_templar"
-	armor = list("melee" = 41, "bullet" = 15, "laser" = 5,"energy" = 5, "bomb" = 5, "bio" = 2, "rad" = 0, "fire" = 0, "acid" = 50)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 50,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
+	// Identical stats to the heavy steel helmet to match the heavy armor.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 80
@@ -90,6 +91,8 @@
 	icon_state = "knight_templar"
 	item_state = "knight_templar"
 	allowed = list(/obj/item/storage/book/bible, HOLY_WEAPONS, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 45, "bullet" = 60, "laser" = 45,  "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 0, "wound" = 35)
+	// Gives identical armor to steelbib/oasis since preacher is a town job.
 
 // CITADEL CHANGES: More variants
 /obj/item/clothing/suit/armor/riot/chaplain/teutonic
@@ -274,10 +277,11 @@
 	item_state = "nullrod"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	force = 18
+	force = 35 // Base damage for all null rods. Equal to the standard machete in damage but worse in all other ways.
 	throw_speed = 3
 	throw_range = 4
-	throwforce = 10
+	block_chance = 7
+	throwforce = 20
 	w_class = WEIGHT_CLASS_TINY
 	obj_flags = UNIQUE_RENAME
 	wound_bonus = -10
@@ -376,29 +380,31 @@
 	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 
 /obj/item/nullrod/staff
-	icon_state = "godstaff-red"
-	item_state = "godstaff-red"
+	icon_state = "godstaff-blue"
+	item_state = "godstaff-blue"
 	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
 	name = "red holy staff"
 	desc = "It has a mysterious, protective aura."
 	w_class = WEIGHT_CLASS_HUGE
-	force = 5
+	force = 15
 	slot_flags = ITEM_SLOT_BACK
 	block_chance = 50
-	var/shield_icon = "shield-red"
+	var/shield_icon = "shield-old"
 
 /obj/item/nullrod/staff/worn_overlays(isinhands, icon_file, used_state, style_flags = NONE)
 	. = ..()
 	if(isinhands)
 		. += mutable_appearance('icons/effects/effects.dmi', shield_icon, MOB_LAYER + 0.01)
 
+// Red version has no icon, so made it blue and disabled this one.
+/*
 /obj/item/nullrod/staff/blue
 	name = "blue holy staff"
 	icon_state = "godstaff-blue"
 	item_state = "godstaff-blue"
 	shield_icon = "shield-old"
-
+*/
 /obj/item/nullrod/claymore
 	icon_state = "claymore"
 	item_state = "claymore"
@@ -408,7 +414,8 @@
 	desc = "A weapon fit for a crusade!"
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
-	block_chance = 30
+	force = 38 // Equal to the forged claymore. Despite appearences, this is a 1h weapon.
+	block_chance = 30 // Better block than the forged claymore to give it some reason to exist.
 	sharpness = SHARP_EDGED
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
@@ -433,8 +440,8 @@
 /obj/item/nullrod/claymore/chainsaw_sword
 	icon_state = "chainswordon"
 	item_state = "chainswordon"
-	name = "ripper"
-	desc = "A miniature chainsaw, as amazing as it sounds."
+	name = "chain sword"
+	desc = "A longer more durable ripper built into a proper chain sword. Time to purge heretics!"
 	force = 45
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
@@ -443,35 +450,36 @@
 	toolspeed = 1.5 //slower than a real saw
 
 /obj/item/nullrod/claymore/glowing
-	icon_state = "swordon"
-	item_state = "swordon"
+	icon_state = "spectral"
+	item_state = "spectral"
 	name = "force weapon"
 	desc = "The blade glows with the power of faith. Or possibly a battery."
 	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/nullrod/claymore/katana
-	name = "\improper Hanzo steel"
-	desc = "Capable of cutting clean through a holy claymore."
+	name = "\improper shrine maiden blade"
+	desc = "For protecting your shrine from troublesome yokai and kami."
 	icon_state = "katana"
 	item_state = "katana"
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
+	attack_speed = CLICK_CD_MELEE * 0.8 // Glorious nippon steel. Worse than the smithed waki/katana.
 
 /obj/item/nullrod/claymore/multiverse
 	name = "extradimensional blade"
 	desc = "Once the harbinger of an interdimensional war, its sharpness fluctuates wildly."
-	icon_state = "multiverse"
-	item_state = "multiverse"
+	icon_state = "swordoff"
+	item_state = "swordoff"
 	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/nullrod/claymore/multiverse/attack(mob/living/carbon/M, mob/living/carbon/user)
-	force = rand(1, 30)
+	force = rand(30, 45) // Potential to be lower or higher damage.
 	..()
 
 /obj/item/nullrod/claymore/saber
 	name = "light energy sword"
 	hitsound = 'sound/weapons/blade1.ogg'
-	icon_state = "swordblue"
-	item_state = "swordblue"
+	icon_state = "swordpurple"
+	item_state = "swordpurple"
 	desc = "If you strike me down, I shall become more robust than you can possibly imagine."
 	slot_flags = ITEM_SLOT_BELT
 
@@ -481,25 +489,11 @@
 	item_state = "swordred"
 	desc = "Woefully ineffective when used on steep terrain."
 
-
-/obj/item/nullrod/sord
-	name = "\improper UNREAL SORD"
-	desc = "This thing is so unspeakably HOLY you are having a hard time even holding it."
-	icon_state = "sord"
-	item_state = "sord"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	slot_flags = ITEM_SLOT_BELT
-	force = 4.13
-	throwforce = 1
-	hitsound = 'sound/weapons/bladeslice.ogg'
-	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-
 /obj/item/nullrod/scythe
-	icon_state = "scythe1"
-	item_state = "scythe1"
-	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
+	icon_state = "scythe"
+	item_state = "scythe"
+	lefthand_file = 'icons/fallout/onmob/tools/farming_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/tools/farming_righthand.dmi'
 	name = "reaper scythe"
 	desc = "Ask not for whom the bell tolls..."
 	w_class = WEIGHT_CLASS_BULKY
@@ -521,6 +515,232 @@
 	desc = "Bad references are the DNA of the soul."
 	attack_verb = list("chopped", "sliced", "cut", "zandatsu'd")
 	hitsound = 'sound/weapons/rapierhit.ogg'
+
+
+/obj/item/nullrod/hammmer
+	icon_state = "hammeron"
+	item_state = "hammeron"
+	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
+	name = "relic war hammer"
+	desc = "A venerable but still powerful hammer for the righteous."
+	slot_flags = ITEM_SLOT_BELT
+	w_class = WEIGHT_CLASS_HUGE
+	attack_verb = list("smashed", "bashed", "hammered", "crunched")
+	armour_penetration = 0.3 // More armor pen, gives it a reason to exist.
+
+
+/obj/item/nullrod/chainsaw_hand/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
+	AddComponent(/datum/component/butchering, 30, 100, 0, hitsound)
+
+/obj/item/nullrod/armblade
+	name = "dark blessing"
+	desc = "Particularly twisted deities grant gifts of dubious value."
+	icon_state = "arm_blade"
+	item_state = "arm_blade"
+	lefthand_file = 'icons/mob/inhands/antag/changeling_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/antag/changeling_righthand.dmi'
+	item_flags = ABSTRACT
+	w_class = WEIGHT_CLASS_HUGE
+	sharpness = SHARP_EDGED
+	wound_bonus = -20
+	bare_wound_bonus = 25
+	total_mass = TOTAL_MASS_HAND_REPLACEMENT
+
+/obj/item/nullrod/armblade/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
+	AddComponent(/datum/component/butchering, 80, 70)
+
+/obj/item/nullrod/armblade/tentacle
+	name = "unholy blessing"
+	icon_state = "tentacle"
+	item_state = "tentacle"
+
+/obj/item/nullrod/chainsaw_hand
+	name = "chainsaw hand"
+	desc = "Good? Bad? You're the guy with the chainsaw hand."
+	icon_state = "chainsaw_on"
+	item_state = "mounted_chainsaw"
+	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/chainsaw_righthand.dmi'
+	w_class = WEIGHT_CLASS_HUGE
+	item_flags = ABSTRACT
+	sharpness = SHARP_EDGED
+	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
+	hitsound = 'sound/weapons/chainsawhit.ogg'
+	total_mass = TOTAL_MASS_HAND_REPLACEMENT
+	tool_behaviour = TOOL_SAW
+	toolspeed = 2
+
+/obj/item/nullrod/claymore/bostaff //May as well make it a "claymore" and inherit the blocking
+	name = "monk's staff"
+	desc = "A long, tall staff made of polished wood. Traditionally used in ancient old-Earth martial arts, it is now used to fight mutants."
+	w_class = WEIGHT_CLASS_BULKY
+	force = 20 // Slightly more damage.
+	block_chance = 40 //Less block than the quarter staff but attacks faster.
+	attack_speed = CLICK_CD_MELEE * 0.8 // Everybody was kung fu fighting!
+	slot_flags = ITEM_SLOT_BACK
+	sharpness = SHARP_NONE
+	hitsound = "swing_hit"
+	attack_verb = list("smashed", "slammed", "whacked", "thwacked")
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "bostaff0"
+	item_state = "bostaff0"
+	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
+
+/obj/item/nullrod/claymore/bostaff/attack(mob/target, mob/living/user)
+	add_fingerprint(user)
+	if((HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
+		to_chat(user, "<span class ='warning'>You club yourself over the head with [src].</span>")
+		user.DefaultCombatKnockdown(60)
+		if(ishuman(user))
+			var/mob/living/carbon/human/H = user
+			H.apply_damage(2*force, BRUTE, BODY_ZONE_HEAD)
+		else
+			user.take_bodypart_damage(2*force)
+		return
+	if(iscyborg(target))
+		return ..()
+	if(!isliving(target))
+		return ..()
+	var/mob/living/carbon/C = target
+	if(C.stat || C.health < 0 || C.staminaloss > 130 )
+		to_chat(user, "<span class='warning'>It would be dishonorable to attack a foe while they cannot retaliate.</span>")
+		return
+	if(user.a_intent == INTENT_DISARM)
+		if(!ishuman(target))
+			return ..()
+		var/mob/living/carbon/human/H = target
+		var/list/fluffmessages = list("[user] clubs [H] with [src]!", \
+									  "[user] smacks [H] with the butt of [src]!", \
+									  "[user] broadsides [H] with [src]!", \
+									  "[user] smashes [H]'s head with [src]!", \
+									  "[user] beats [H] with front of [src]!", \
+									  "[user] twirls and slams [H] with [src]!")
+		H.visible_message("<span class='warning'>[pick(fluffmessages)]</span>", \
+							   "<span class='userdanger'>[pick(fluffmessages)]</span>")
+		playsound(get_turf(user), 'sound/effects/woodhit.ogg', 75, 1, -1)
+		H.adjustStaminaLoss(rand(12,18))
+		if(prob(25))
+			(INVOKE_ASYNC(src, .proc/jedi_spin, user))
+	else
+		return ..()
+
+/obj/item/nullrod/tribal_knife
+	icon_state = "crysknife"
+	item_state = "crysknife"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	name = "arrhythmic knife"
+	w_class = WEIGHT_CLASS_HUGE
+	desc = "They say fear is the true mind killer, but stabbing them in the head works too. Honour compels you to not sheathe it once drawn."
+	sharpness = SHARP_EDGED
+	slot_flags = null
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	item_flags = SLOWS_WHILE_IN_HAND
+	attack_speed = CLICK_CD_MELEE * 0.85 // Slightly faster than the null rod.
+
+/obj/item/nullrod/tribal_knife/Initialize(mapload)
+	. = ..()
+	START_PROCESSING(SSobj, src)
+	AddComponent(/datum/component/butchering, 50, 100)
+
+/obj/item/nullrod/tribal_knife/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	. = ..()
+
+
+/obj/item/nullrod/egyptian
+	name = "egyptian staff"
+	desc = "A tutorial in mummification is carved into the staff. You could probably craft the wraps if you had some cloth."
+	icon = 'icons/obj/guns/magic.dmi'
+	icon_state = "pharaoh_sceptre"
+	item_state = "pharaoh_sceptre"
+	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
+	w_class = WEIGHT_CLASS_NORMAL
+	attack_verb = list("bashes", "smacks", "whacks")
+
+/obj/item/nullrod/rosary
+	icon_state = "rosary"
+	item_state = null
+	name = "prayer beads"
+	desc = "A set of prayer beads used by many of the more traditional religions in space"
+	force = 4
+	throwforce = 0
+	attack_verb = list("whipped", "repented", "lashed", "flagellated")
+	slot_flags = ITEM_SLOT_NECK
+	var/praying = FALSE
+	var/deity_name = "Coderbus" //This is the default, hopefully won't actually appear if the religion subsystem is running properly
+
+/obj/item/nullrod/rosary/Initialize(mapload)
+	.=..()
+	if(GLOB.deity)
+		deity_name = GLOB.deity
+
+/obj/item/nullrod/rosary/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/pen) || istype(W, /obj/item/toy/crayon))
+		var/my_little_deity = stripped_input(user, "Dedicate this to which deity?", "Insert deity", "Giex", 64, FALSE)
+		if(my_little_deity)
+			deity_name = my_little_deity
+			to_chat(user, span_revennotice("You re-dedicate [src] to [deity_name], praise be their name."))
+		else if(deity_name)
+			to_chat(user, span_revennotice("You keep [src] dedicated to [deity_name], praise be their name."))
+		else
+			deity_name = "Giex"
+			to_chat(user, span_phobia("Something went wrong, now [src] is dedicated to [deity_name], praise be their name."))
+	else
+		. = ..()
+
+/obj/item/nullrod/rosary/attack(mob/living/M, mob/living/user)
+	if(user.a_intent == INTENT_HARM)
+		return ..()
+
+	if(!user.mind || user.mind.assigned_role != "Preacher")
+		to_chat(user, "<span class='notice'>You are not close enough with [deity_name] to use [src].</span>")
+		return
+
+	if(praying)
+		to_chat(user, "<span class='notice'>You are already using [src].</span>")
+		return
+
+	user.visible_message("<span class='info'>[user] kneels[M == user ? null : " next to [M]"] and begins to utter a prayer to [deity_name].</span>", \
+		"<span class='info'>You kneel[M == user ? null : " next to [M]"] and begin a prayer to [deity_name].</span>")
+
+	praying = TRUE
+	if(do_after(user, 20, target = M))
+		M.reagents?.add_reagent(/datum/reagent/water/holywater, 5)
+		to_chat(M, "<span class='notice'>[user]'s prayer to [deity_name] has eased your pain!</span>")
+		M.adjustToxLoss(-5, forced = TRUE)
+		M.adjustOxyLoss(-5)
+		M.adjustBruteLoss(-5)
+		M.adjustFireLoss(-5)
+		praying = FALSE
+	else
+		to_chat(user, "<span class='notice'>Your prayer to [deity_name] was interrupted.</span>")
+		praying = FALSE
+
+
+// Old removed shit.
+/*
+/obj/item/nullrod/sord
+	name = "\improper UNREAL SORD"
+	desc = "This thing is so unspeakably HOLY you are having a hard time even holding it."
+	icon_state = "sord"
+	item_state = "sord"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	slot_flags = ITEM_SLOT_BELT
+	force = 4.13
+	throwforce = 1
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
 
 /obj/item/nullrod/scythe/talking
 	icon_state = "talking_sword"
@@ -595,63 +815,7 @@
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
 	hitsound = 'sound/weapons/chainsawhit.ogg'
 	tool_behaviour = TOOL_SAW
-	toolspeed = 0.5
-
-/obj/item/nullrod/hammmer
-	icon_state = "hammeron"
-	item_state = "hammeron"
-	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
-	name = "relic war hammer"
-	desc = "This war hammer cost the chaplain forty thousand space dollars."
-	slot_flags = ITEM_SLOT_BELT
-	w_class = WEIGHT_CLASS_HUGE
-	attack_verb = list("smashed", "bashed", "hammered", "crunched")
-
-/obj/item/nullrod/chainsaw_hand
-	name = "chainsaw hand"
-	desc = "Good? Bad? You're the guy with the chainsaw hand."
-	icon_state = "chainsaw_on"
-	item_state = "mounted_chainsaw"
-	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/chainsaw_righthand.dmi'
-	w_class = WEIGHT_CLASS_HUGE
-	item_flags = ABSTRACT
-	sharpness = SHARP_EDGED
-	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
-	hitsound = 'sound/weapons/chainsawhit.ogg'
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
-	tool_behaviour = TOOL_SAW
-	toolspeed = 2
-
-/obj/item/nullrod/chainsaw_hand/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
-	AddComponent(/datum/component/butchering, 30, 100, 0, hitsound)
-
-/obj/item/nullrod/armblade
-	name = "dark blessing"
-	desc = "Particularly twisted deities grant gifts of dubious value."
-	icon_state = "arm_blade"
-	item_state = "arm_blade"
-	lefthand_file = 'icons/mob/inhands/antag/changeling_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/antag/changeling_righthand.dmi'
-	item_flags = ABSTRACT
-	w_class = WEIGHT_CLASS_HUGE
-	sharpness = SHARP_EDGED
-	wound_bonus = -20
-	bare_wound_bonus = 25
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
-
-/obj/item/nullrod/armblade/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
-	AddComponent(/datum/component/butchering, 80, 70)
-
-/obj/item/nullrod/armblade/tentacle
-	name = "unholy blessing"
-	icon_state = "tentacle"
-	item_state = "tentacle"
+	toolspeed = 0.5;=
 
 /obj/item/nullrod/carp
 	name = "carp-sie plushie"
@@ -673,135 +837,4 @@
 		user.faction |= "carp"
 		used_blessing = TRUE
 
-/obj/item/nullrod/claymore/bostaff //May as well make it a "claymore" and inherit the blocking
-	name = "monk's staff"
-	desc = "A long, tall staff made of polished wood. Traditionally used in ancient old-Earth martial arts, it is now used to harass the clown."
-	w_class = WEIGHT_CLASS_BULKY
-	force = 15
-	block_chance = 40
-	slot_flags = ITEM_SLOT_BACK
-	sharpness = SHARP_NONE
-	hitsound = "swing_hit"
-	attack_verb = list("smashed", "slammed", "whacked", "thwacked")
-	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "bostaff0"
-	item_state = "bostaff0"
-	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
-
-/obj/item/nullrod/claymore/bostaff/attack(mob/target, mob/living/user)
-	add_fingerprint(user)
-	if((HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
-		to_chat(user, "<span class ='warning'>You club yourself over the head with [src].</span>")
-		user.DefaultCombatKnockdown(60)
-		if(ishuman(user))
-			var/mob/living/carbon/human/H = user
-			H.apply_damage(2*force, BRUTE, BODY_ZONE_HEAD)
-		else
-			user.take_bodypart_damage(2*force)
-		return
-	if(iscyborg(target))
-		return ..()
-	if(!isliving(target))
-		return ..()
-	var/mob/living/carbon/C = target
-	if(C.stat || C.health < 0 || C.staminaloss > 130 )
-		to_chat(user, "<span class='warning'>It would be dishonorable to attack a foe while they cannot retaliate.</span>")
-		return
-	if(user.a_intent == INTENT_DISARM)
-		if(!ishuman(target))
-			return ..()
-		var/mob/living/carbon/human/H = target
-		var/list/fluffmessages = list("[user] clubs [H] with [src]!", \
-									  "[user] smacks [H] with the butt of [src]!", \
-									  "[user] broadsides [H] with [src]!", \
-									  "[user] smashes [H]'s head with [src]!", \
-									  "[user] beats [H] with front of [src]!", \
-									  "[user] twirls and slams [H] with [src]!")
-		H.visible_message("<span class='warning'>[pick(fluffmessages)]</span>", \
-							   "<span class='userdanger'>[pick(fluffmessages)]</span>")
-		playsound(get_turf(user), 'sound/effects/woodhit.ogg', 75, 1, -1)
-		H.adjustStaminaLoss(rand(12,18))
-		if(prob(25))
-			(INVOKE_ASYNC(src, .proc/jedi_spin, user))
-	else
-		return ..()
-
-/obj/item/nullrod/tribal_knife
-	icon_state = "crysknife"
-	item_state = "crysknife"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	name = "arrhythmic knife"
-	w_class = WEIGHT_CLASS_HUGE
-	desc = "They say fear is the true mind killer, but stabbing them in the head works too. Honour compels you to not sheathe it once drawn."
-	sharpness = SHARP_EDGED
-	slot_flags = null
-	hitsound = 'sound/weapons/bladeslice.ogg'
-	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	item_flags = SLOWS_WHILE_IN_HAND
-
-/obj/item/nullrod/tribal_knife/Initialize(mapload)
-	. = ..()
-	START_PROCESSING(SSobj, src)
-	AddComponent(/datum/component/butchering, 50, 100)
-
-/obj/item/nullrod/tribal_knife/Destroy()
-	STOP_PROCESSING(SSobj, src)
-	. = ..()
-
-
-/obj/item/nullrod/egyptian
-	name = "egyptian staff"
-	desc = "A tutorial in mummification is carved into the staff. You could probably craft the wraps if you had some cloth."
-	icon = 'icons/obj/guns/magic.dmi'
-	icon_state = "pharaoh_sceptre"
-	item_state = "pharaoh_sceptre"
-	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/staves_righthand.dmi'
-	w_class = WEIGHT_CLASS_NORMAL
-	attack_verb = list("bashes", "smacks", "whacks")
-
-/obj/item/nullrod/rosary
-	icon_state = "rosary"
-	item_state = null
-	name = "prayer beads"
-	desc = "A set of prayer beads used by many of the more traditional religions in space"
-	force = 4
-	throwforce = 0
-	attack_verb = list("whipped", "repented", "lashed", "flagellated")
-	var/praying = FALSE
-	var/deity_name = "Coderbus" //This is the default, hopefully won't actually appear if the religion subsystem is running properly
-
-/obj/item/nullrod/rosary/Initialize(mapload)
-	.=..()
-	if(GLOB.deity)
-		deity_name = GLOB.deity
-
-/obj/item/nullrod/rosary/attack(mob/living/M, mob/living/user)
-	if(user.a_intent == INTENT_HARM)
-		return ..()
-
-	if(!user.mind || user.mind.assigned_role != "Preacher")
-		to_chat(user, "<span class='notice'>You are not close enough with [deity_name] to use [src].</span>")
-		return
-
-	if(praying)
-		to_chat(user, "<span class='notice'>You are already using [src].</span>")
-		return
-
-	user.visible_message("<span class='info'>[user] kneels[M == user ? null : " next to [M]"] and begins to utter a prayer to [deity_name].</span>", \
-		"<span class='info'>You kneel[M == user ? null : " next to [M]"] and begin a prayer to [deity_name].</span>")
-
-	praying = TRUE
-	if(do_after(user, 20, target = M))
-		M.reagents?.add_reagent(/datum/reagent/water/holywater, 5)
-		to_chat(M, "<span class='notice'>[user]'s prayer to [deity_name] has eased your pain!</span>")
-		M.adjustToxLoss(-5, forced = TRUE)
-		M.adjustOxyLoss(-5)
-		M.adjustBruteLoss(-5)
-		M.adjustFireLoss(-5)
-		praying = FALSE
-	else
-		to_chat(user, "<span class='notice'>Your prayer to [deity_name] was interrupted.</span>")
-		praying = FALSE
+*/
