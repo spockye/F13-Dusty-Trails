@@ -29860,6 +29860,7 @@
 /obj/machinery/plantgenes{
 	pixel_y = 8
 	},
+/obj/item/disk/plantgene,
 /turf/open/floor/f13{
 	icon_state = "greenrustysolid"
 	},
