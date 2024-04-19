@@ -51640,6 +51640,12 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/building)
+"oHP" = (
+/obj/effect/landmark/start/f13/shopkeeper,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/city/bighorn)
 "oHT" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
@@ -72646,7 +72652,6 @@
 	},
 /area/f13/building)
 "uDC" = (
-/obj/effect/landmark/start/f13/prospector,
 /obj/structure/chair/f13foldupchair{
 	dir = 1
 	},
@@ -78316,6 +78321,12 @@
 /obj/structure/sign/poster/prewar/poster82,
 /turf/closed/wall/f13/wood/house,
 /area/f13/building)
+"wjA" = (
+/obj/effect/landmark/start/f13/shopkeeper,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtychess"
+	},
+/area/f13/city/bighorn)
 "wjH" = (
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/caves)
@@ -176517,7 +176528,7 @@ fiV
 qqE
 uVx
 aZX
-aZX
+oHP
 aZX
 mre
 wIu
@@ -182041,7 +182052,7 @@ hdk
 hdk
 tDu
 hYH
-uBs
+wjA
 oQE
 nsV
 exF
