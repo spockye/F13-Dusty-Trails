@@ -1401,6 +1401,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/followersguard,
 /turf/open/floor/f13{
 	icon_state = "whiterusty"
 	},
@@ -1727,12 +1728,17 @@
 /area/f13/building)
 "aRr" = (
 /obj/machinery/light{
-	dir = 1;
-	light_color = "#e8eaff"
+	dir = 8;
+	layer = 2
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/structure/dresser{
+	pixel_y = 17;
+	density = 0
 	},
+/obj/item/storage/secure/safe{
+	pixel_x = -25
+	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "aRV" = (
 /obj/structure/debris/v4,
@@ -3227,9 +3233,7 @@
 /obj/structure/curtain{
 	pixel_x = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "bYI" = (
 /obj/structure/closet/cabinet,
@@ -13204,6 +13208,15 @@
 /obj/structure/flora/rock/pile/largejungle,
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
+"jQq" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/obj/effect/landmark/start/f13/followersdoctor,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/city/bighorn)
 "jQP" = (
 /obj/structure/closet/cardboard,
 /obj/item/stack/rods/twentyfive,
@@ -13347,9 +13360,7 @@
 	dir = 1;
 	termtag = "Business"
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "jYh" = (
 /obj/structure/flora/rock/jungle,
@@ -14784,11 +14795,8 @@
 	},
 /area/f13/building)
 "ldK" = (
-/obj/structure/window/fulltile/house{
-	dir = 2;
-	icon_state = "housewindowbroken"
-	},
 /obj/structure/window/fulltile/house,
+/obj/structure/barricade/bars,
 /turf/open/floor/carpet/red,
 /area/f13/city/bighorn)
 "lek" = (
@@ -14869,12 +14877,10 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "lhg" = (
-/obj/item/storage/secure/safe{
-	pixel_x = -25
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "lhq" = (
 /obj/structure/fence/wooden{
@@ -15948,11 +15954,8 @@
 	},
 /area/f13/building)
 "lYg" = (
-/obj/structure/window/fulltile/house{
-	dir = 2;
-	icon_state = "housewindowbroken"
-	},
 /obj/structure/window/fulltile/house,
+/obj/structure/barricade/bars,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "lYp" = (
@@ -16365,9 +16368,10 @@
 /obj/structure/curtain{
 	pixel_y = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/machinery/msgterminal/newbabylon/followers{
+	dir = 8
 	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "mqj" = (
 /obj/structure/table/reinforced,
@@ -16914,9 +16918,7 @@
 /obj/structure/curtain{
 	pixel_y = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "mNC" = (
 /obj/structure/chair/stool/retro,
@@ -17416,6 +17418,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/followersguard,
 /turf/open/floor/f13{
 	icon_state = "whiterusty"
 	},
@@ -21378,13 +21381,14 @@
 /turf/open/floor/plating/dirt,
 /area/f13/caves)
 "qnl" = (
+/obj/machinery/light{
+	dir = 4
+	},
 /obj/item/kirbyplants{
-	icon_state = "plant-12"
+	icon_state = "plant-12";
+	pixel_x = 4
 	},
-/obj/machinery/light,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "qnm" = (
 /turf/closed/wall/f13/store,
@@ -21926,15 +21930,10 @@
 	},
 /area/f13/building/mall)
 "qFl" = (
-/obj/structure/chair/f13chair2{
-	dir = 8
-	},
 /obj/structure/curtain{
 	pixel_x = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "qFp" = (
 /obj/structure/railing/corner{
@@ -22312,6 +22311,12 @@
 /obj/item/clothing/under/suit/checkered,
 /obj/item/clothing/accessory/waistcoat,
 /turf/open/floor/wood/wood_fancy,
+/area/f13/city/bighorn)
+"qXO" = (
+/obj/effect/landmark/start/f13/followersguard,
+/turf/open/floor/f13{
+	icon_state = "whitedirty"
+	},
 /area/f13/city/bighorn)
 "qXU" = (
 /obj/structure/bed,
@@ -23051,6 +23056,12 @@
 /obj/structure/chair/booth,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"rCg" = (
+/obj/effect/landmark/start/f13/followersguard,
+/turf/open/floor/f13{
+	icon_state = "whiterusty"
+	},
+/area/f13/city/bighorn)
 "rCQ" = (
 /turf/open/floor/f13/wood,
 /area/f13/wasteland/legion)
@@ -24068,11 +24079,11 @@
 /turf/open/floor/wood,
 /area/f13/brotherhood/offices)
 "sru" = (
-/obj/machinery/light/floor,
-/turf/open/floor/f13/wood{
-	icon_state = "oakfloor1"
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
 	},
-/area/f13/wasteland/bighorn)
+/turf/open/floor/wood/wood_mosaic,
+/area/f13/city/bighorn)
 "srA" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -26206,9 +26217,8 @@
 /obj/structure/curtain{
 	pixel_y = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/obj/effect/landmark/start/f13/followersadministrator,
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "tUv" = (
 /obj/structure/chair/sofa{
@@ -26659,9 +26669,10 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
 "ujm" = (
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/structure/curtain{
+	pixel_y = -32
 	},
+/turf/open/floor/carpet/blue,
 /area/f13/city/bighorn)
 "ujo" = (
 /obj/structure/table/reinforced,
@@ -28426,6 +28437,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 10
 	},
+/obj/effect/landmark/start/f13/followersdoctor,
 /turf/open/floor/f13{
 	icon_state = "purplefull"
 	},
@@ -29619,8 +29631,7 @@
 	},
 /area/f13/building)
 "wDv" = (
-/obj/structure/window/fulltile/house,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/blue,
 /area/f13/city/bighorn)
 "wEa" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -29687,7 +29698,7 @@
 /obj/machinery/door/airlock/grunge{
 	id_tag = "sentdorm";
 	req_access_txt = "120";
-	name = "Head Paladin Office"
+	name = "Paladin Commander Office"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/offices)
@@ -30976,10 +30987,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "xKZ" = (
-/obj/item/twohanded/required/kirbyplants/random,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/wood/wood_mosaic,
 /area/f13/city/bighorn)
 "xMG" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -123104,21 +123113,21 @@ roi
 roi
 spN
 spN
-sru
 spN
 spN
 spN
 spN
 spN
 spN
-sru
 spN
 spN
 spN
 spN
 spN
 spN
-sru
+spN
+spN
+spN
 spN
 spN
 roi
@@ -127631,7 +127640,7 @@ roi
 roi
 rdt
 ktq
-ktq
+jQq
 ktq
 ktq
 rdt
@@ -132659,7 +132668,7 @@ hqm
 hqm
 gvu
 huF
-cLg
+qXO
 fEe
 gvu
 roi
@@ -133154,7 +133163,7 @@ roi
 rdt
 aRr
 lhg
-ujm
+sru
 xKZ
 rdt
 hqm
@@ -133655,8 +133664,8 @@ roi
 roi
 gvu
 mNn
-ujm
-ujm
+raG
+wDv
 ujm
 gvu
 hqm
@@ -134158,14 +134167,14 @@ roi
 wrq
 tUj
 jXL
-ujm
-ujm
+wDv
+wDv
 xrn
 hqm
 hqm
 rdt
 oUH
-huF
+rCg
 qpT
 gvu
 roi
@@ -144685,7 +144694,7 @@ ues
 rbf
 kZg
 xas
-wDv
+ldK
 roi
 roi
 roi
@@ -146191,7 +146200,7 @@ qiW
 paC
 paC
 egr
-wDv
+ldK
 roi
 roi
 roi
@@ -146693,7 +146702,7 @@ qiW
 paC
 paC
 egr
-wDv
+ldK
 roi
 roi
 roi
@@ -148701,7 +148710,7 @@ qiW
 paC
 paC
 egr
-wDv
+ldK
 roi
 roi
 roi
@@ -149203,7 +149212,7 @@ qiW
 paC
 paC
 egr
-wDv
+ldK
 roi
 roi
 roi
@@ -150709,7 +150718,7 @@ ues
 rbf
 iGj
 xas
-wDv
+ldK
 roi
 roi
 roi

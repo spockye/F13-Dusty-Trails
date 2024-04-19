@@ -7375,6 +7375,7 @@
 /area/f13/wasteland/bighorn)
 "bWV" = (
 /obj/structure/window/fulltile/house,
+/obj/structure/barricade/bars,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "bWW" = (
@@ -7924,7 +7925,8 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop0"
+	dir = 7;
+	icon_state = "horizontaltopbordertop2right"
 	},
 /area/f13/city/bighorn)
 "cfC" = (
@@ -8519,12 +8521,11 @@
 	},
 /area/f13/wasteland)
 "cnZ" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/nest/mirelurk{
-	max_mobs = 1
+/obj/effect/landmark/start/f13/settler,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
 	},
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
+/area/f13/wasteland/bighorn)
 "coa" = (
 /obj/machinery/door/unpowered/secure_legion{
 	name = "Armory"
@@ -10078,7 +10079,7 @@
 	name = "Waypoint Police Department"
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontaltopborderbottom0"
+	icon_state = "horizontaltopborderbottom2left"
 	},
 /area/f13/city/bighorn)
 "cKG" = (
@@ -11494,6 +11495,11 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland)
+"dep" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/city/bighorn)
 "der" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "cross1"
@@ -12859,7 +12865,8 @@
 	name = "Waypoint Police Department"
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontaltopborderbottom0"
+	dir = 8;
+	icon_state = "horizontaltopborderbottom2left"
 	},
 /area/f13/city/bighorn)
 "dzQ" = (
@@ -13171,6 +13178,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"dEX" = (
+/obj/effect/landmark/start/f13/preacher,
+/turf/open/floor/carpet/royalblack,
+/area/f13/city/bighorn)
 "dEY" = (
 /obj/structure/simple_door/interior{
 	name = "Arties"
@@ -17870,6 +17881,12 @@
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/f13/wasteland)
+"eZl" = (
+/obj/structure/lattice/catwalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/city/bighorn)
 "eZs" = (
 /obj/structure/chair/folding{
 	dir = 4
@@ -20356,7 +20373,8 @@
 /area/f13/building)
 "fIx" = (
 /turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop0"
+	dir = 7;
+	icon_state = "horizontaltopbordertop2right"
 	},
 /area/f13/city/bighorn)
 "fIy" = (
@@ -24566,8 +24584,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
-/obj/effect/landmark/start/f13/followersguard,
-/obj/effect/landmark/start/f13/followersvolunteer,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -24906,16 +24922,10 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "gZN" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/caution/stand_clear/white{
-	dir = 8
-	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	icon_state = "horizontaltopborderbottom2"
 	},
-/area/f13/wasteland/bighorn)
+/area/f13/city/bighorn)
 "gZW" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/twohanded/baseball,
@@ -28951,6 +28961,12 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/building)
+"ihO" = (
+/obj/effect/landmark/start/f13/followersvolunteer,
+/turf/open/floor/f13{
+	icon_state = "whiterusty"
+	},
+/area/f13/city/bighorn)
 "ihP" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/indestructible/ground/outside/desertharsh{
@@ -29513,9 +29529,6 @@
 	dir = 8
 	},
 /obj/effect/landmark/start/f13/followersdoctor,
-/obj/effect/landmark/start/f13/followersscientist,
-/obj/effect/landmark/start/f13/dendoctor,
-/obj/effect/landmark/start/f13/dendoc,
 /turf/open/floor/f13{
 	icon_state = "bluerustyfull"
 	},
@@ -30173,6 +30186,7 @@
 /obj/structure/sign/poster/official/medical_green_cross{
 	pixel_y = 31
 	},
+/obj/effect/landmark/start/f13/followersvolunteer,
 /turf/open/floor/f13{
 	icon_state = "whitedirty"
 	},
@@ -33518,6 +33532,7 @@
 "jxH" = (
 /obj/structure/window/fulltile/house,
 /obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/barricade/bars,
 /turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "jxP" = (
@@ -34745,11 +34760,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jPn" = (
-/obj/effect/landmark/start/f13/farmer,
-/turf/open/floor/f13/wood{
-	icon_state = "oakfloor1"
+/obj/effect/landmark/start/f13/settler,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innercornerpieceleft"
 	},
-/area/f13/city/bighorn)
+/area/f13/wasteland/bighorn)
 "jPq" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4";
@@ -38381,13 +38396,8 @@
 	},
 /area/f13/building)
 "kOS" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 4
-	},
-/obj/effect/landmark/start/f13/prospector,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtysolid"
-	},
+/obj/effect/landmark/start/f13/settler,
+/turf/open/floor/wood/wood_common,
 /area/f13/city/bighorn)
 "kPb" = (
 /obj/structure/rack,
@@ -38765,10 +38775,11 @@
 	},
 /area/f13/building)
 "kUB" = (
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+/obj/structure/lattice/catwalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright1"
 	},
-/area/f13/caves)
+/area/f13/city/bighorn)
 "kUK" = (
 /obj/item/mop,
 /obj/structure/janitorialcart,
@@ -39223,10 +39234,11 @@
 	},
 /area/f13/wasteland)
 "lbR" = (
-/obj/structure/flora/grass/jungle,
-/mob/living/simple_animal/hostile/mirelurk,
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
+/obj/effect/landmark/start/f13/barkeep,
+/turf/open/floor/f13/wood{
+	icon_state = "oakfloor1"
+	},
+/area/f13/city/bighorn)
 "lbW" = (
 /obj/structure/fence{
 	dir = 8
@@ -42189,7 +42201,7 @@
 	},
 /obj/effect/decal/cleanable/oil,
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	icon_state = "horizontalinnermain2"
 	},
 /area/f13/city/bighorn)
 "lWX" = (
@@ -45370,8 +45382,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
-/obj/effect/landmark/start/f13/followersguard,
-/obj/effect/landmark/start/f13/followersvolunteer,
 /turf/open/floor/f13{
 	icon_state = "whiterustysolid"
 	},
@@ -45530,8 +45540,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
-/obj/effect/landmark/start/f13/followersguard,
-/obj/effect/landmark/start/f13/followersvolunteer,
 /turf/open/floor/f13{
 	icon_state = "whitedirtysolid"
 	},
@@ -49670,16 +49678,18 @@
 	id = "mus1";
 	name = "garage shutters";
 	pixel_x = 26;
-	pixel_y = 6
+	pixel_y = 6;
+	req_access_txt = "62"
 	},
 /obj/machinery/button/door{
 	id = "mus2";
 	name = "garage shutters";
 	pixel_x = 26;
-	pixel_y = -6
+	pixel_y = -6;
+	req_access_txt = "62"
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	icon_state = "horizontalinnermain1"
 	},
 /area/f13/wasteland/bighorn)
 "ofu" = (
@@ -52059,7 +52069,7 @@
 	pixel_x = 15
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	icon_state = "horizontalinnermain2"
 	},
 /area/f13/city/bighorn)
 "oNA" = (
@@ -54867,7 +54877,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/followersdoctor,
+/obj/effect/landmark/start/f13/followersvolunteer,
 /turf/open/floor/carpet/blue,
 /area/f13/city/bighorn)
 "pBm" = (
@@ -56738,9 +56748,6 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/f13/followersdoctor,
-/obj/effect/landmark/start/f13/followersscientist,
-/obj/effect/landmark/start/f13/dendoctor,
-/obj/effect/landmark/start/f13/dendoc,
 /turf/open/floor/f13{
 	icon_state = "bluedirtyfull"
 	},
@@ -62952,6 +62959,11 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/building)
+"rRy" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom1"
+	},
+/area/f13/city/bighorn)
 "rRB" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -64799,6 +64811,7 @@
 /area/f13/wasteland)
 "ssZ" = (
 /obj/structure/window/fulltile/house,
+/obj/structure/barricade/bars,
 /turf/open/floor/wood/wood_wide,
 /area/f13/city/bighorn)
 "ste" = (
@@ -65827,11 +65840,9 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "sFW" = (
-/obj/structure/nest/mirelurk{
-	max_mobs = 1
-	},
-/turf/open/floor/plating/dirt/dark,
-/area/f13/caves)
+/obj/structure/chair/stool/bar,
+/turf/open/floor/wood/wood_common,
+/area/f13/city/bighorn)
 "sFZ" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -67784,14 +67795,11 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/ncr)
 "tiy" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 8
+/obj/effect/landmark/start/f13/settler,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
 	},
-/obj/effect/landmark/start/f13/prospector,
-/turf/open/floor/f13{
-	icon_state = "yellowdirtysolid"
-	},
-/area/f13/city/bighorn)
+/area/f13/wasteland/bighorn)
 "tiQ" = (
 /obj/effect/decal/waste{
 	icon_state = "goo5"
@@ -69321,7 +69329,7 @@
 	name = "Waypoint Police Department"
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
+	icon_state = "horizontalinnermain1"
 	},
 /area/f13/city/bighorn)
 "tEW" = (
@@ -69656,6 +69664,12 @@
 	name = "dirty floor"
 	},
 /area/f13/building)
+"tJW" = (
+/obj/effect/landmark/start/f13/followersvolunteer,
+/turf/open/floor/f13{
+	icon_state = "whitedirty"
+	},
+/area/f13/city/bighorn)
 "tKd" = (
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood/house,
@@ -74260,16 +74274,18 @@
 	id = "mus1";
 	name = "garage shutters";
 	pixel_x = -26;
-	pixel_y = 6
+	pixel_y = 6;
+	req_access_txt = "62"
 	},
 /obj/machinery/button/door{
 	id = "mus2";
 	name = "garage shutters";
 	pixel_x = -26;
-	pixel_y = -6
+	pixel_y = -6;
+	req_access_txt = "62"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop0"
+	icon_state = "horizontaltopbordertop2"
 	},
 /area/f13/city/bighorn)
 "vds" = (
@@ -74492,6 +74508,12 @@
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"vgq" = (
+/obj/effect/landmark/start/f13/settler,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertopright"
+	},
+/area/f13/wasteland/bighorn)
 "vgv" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/f13/outside/roof{
@@ -75051,8 +75073,6 @@
 /obj/structure/chair/f13chair2{
 	dir = 4
 	},
-/obj/effect/landmark/start/f13/followersguard,
-/obj/effect/landmark/start/f13/followersvolunteer,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -76891,7 +76911,7 @@
 	desc = "The flagship motorcycle of Waypoint Police Department. Looks like the engine still works, anyway."
 	},
 /turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontaltopborderbottom0"
+	icon_state = "horizontaltopborderbottom2right"
 	},
 /area/f13/city/bighorn)
 "vPB" = (
@@ -93444,7 +93464,7 @@ jqZ
 egN
 nTH
 nTH
-sFW
+egN
 egN
 bTO
 iFY
@@ -95454,7 +95474,7 @@ mkd
 iFY
 nEp
 egN
-lbR
+nTH
 egN
 iFY
 egN
@@ -96965,7 +96985,7 @@ mkd
 egN
 tHE
 tHE
-cnZ
+mkd
 xBs
 ixK
 jqZ
@@ -170966,7 +170986,7 @@ gNl
 gNl
 mUt
 jGZ
-koF
+dHw
 dHw
 hzl
 gNl
@@ -171468,7 +171488,7 @@ koF
 dHw
 dHw
 dHw
-koF
+dHw
 dHw
 dHw
 dHw
@@ -171970,7 +171990,7 @@ dHw
 dHw
 dHw
 dHw
-koF
+dHw
 dHw
 dHw
 dHw
@@ -176973,7 +176993,7 @@ uho
 gtg
 gtg
 nmt
-xfj
+dEX
 tVA
 xfj
 xfj
@@ -177497,8 +177517,8 @@ faX
 nmx
 ajn
 iuE
-kOS
-kOS
+qng
+qng
 kmI
 yiM
 mre
@@ -178496,13 +178516,13 @@ aOe
 mCD
 frZ
 dEu
-nmx
+cnZ
 faX
 nmx
 syA
 usY
-tiy
-tiy
+fiV
+fiV
 nCJ
 jbI
 aZX
@@ -182992,7 +183012,7 @@ uho
 uho
 owd
 ktS
-ktS
+kOS
 ktS
 rpq
 uho
@@ -183987,7 +184007,7 @@ exF
 uho
 kEr
 jhe
-jhe
+lbR
 jhe
 uho
 mEr
@@ -184998,7 +185018,7 @@ sDb
 mEr
 mKk
 mdO
-iJN
+sFW
 ktS
 ktS
 ktS
@@ -185500,7 +185520,7 @@ hTJ
 mEr
 mEr
 mdO
-iJN
+sFW
 ktS
 ktS
 nrP
@@ -186031,7 +186051,7 @@ nmx
 faX
 faX
 faX
-faX
+tiy
 iyU
 rdP
 fqb
@@ -186504,7 +186524,7 @@ mEr
 mEr
 mKk
 mdO
-iJN
+sFW
 ktS
 ktS
 arV
@@ -186519,9 +186539,9 @@ sCt
 nvZ
 snn
 laW
+tJW
 laW
-laW
-laW
+tJW
 fau
 idL
 snn
@@ -187543,7 +187563,7 @@ uNc
 svV
 vjN
 tcq
-kHb
+jPn
 faX
 ikT
 exF
@@ -188026,7 +188046,7 @@ sCt
 snn
 izr
 laW
-rns
+ihO
 rns
 fau
 idL
@@ -188513,9 +188533,9 @@ xWO
 rir
 uho
 rwK
-jPn
 jhe
-jPn
+jhe
+jhe
 jhe
 prx
 gYU
@@ -191035,7 +191055,7 @@ viS
 aqC
 imp
 qos
-bqM
+vgq
 pjY
 mBW
 viS
@@ -191056,7 +191076,7 @@ nmx
 faX
 sQq
 sQq
-faX
+tiy
 viS
 sFj
 jTC
@@ -192554,7 +192574,7 @@ hSw
 rRB
 eIT
 ofr
-gZN
+rRB
 eIT
 fPd
 eVn
@@ -193555,11 +193575,11 @@ ktS
 ktS
 snn
 jFz
-oGY
+gZN
 oNt
 vdq
-oGY
-oma
+gZN
+dep
 snn
 gPC
 bit
@@ -194057,11 +194077,11 @@ ktS
 ktS
 snn
 lro
-oGY
-oma
+gZN
+dep
 fIx
 vPs
-oma
+dep
 snn
 mOM
 bit
@@ -194559,10 +194579,10 @@ ktS
 ktS
 snn
 cfA
-oGY
-oma
+rRy
+dep
 slA
-oGY
+rRy
 lWU
 snn
 rLi
@@ -195061,11 +195081,11 @@ yeY
 yeY
 snn
 nhs
+kUB
+kUB
 iMV
-iMV
-iMV
-iMV
-iMV
+kUB
+eZl
 snn
 kMp
 bit
@@ -208144,7 +208164,7 @@ mPv
 bxZ
 dAC
 ksF
-kUB
+dHw
 dHw
 dHw
 gwB
