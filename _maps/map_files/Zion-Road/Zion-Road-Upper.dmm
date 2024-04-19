@@ -30580,6 +30580,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"xsk" = (
+/obj/effect/landmark/start/f13/shopkeeper,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtychess"
+	},
+/area/f13/city/bighorn)
 "xsv" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -129171,7 +129177,7 @@ ieC
 qlK
 kIg
 kIg
-kIg
+xsk
 kIg
 ryJ
 vIn
