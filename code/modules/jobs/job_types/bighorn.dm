@@ -511,7 +511,7 @@ Mayor
 	backpack_contents = list(
 		/obj/item/nullrod = 1,
 		/obj/item/clothing/suit/armor/f13/atomzealot = 1,
-		/obj/item/clothing/under/f13/atombeliever = 1,
+		/obj/item/clothing/under/f13/atombomb/atombeliever = 1,
 		/obj/item/grenade/f13/radiation = 2,
 		/obj/item/reagent_containers/blood/radaway = 2,
 		/obj/item/book/granter/trait/explosives = 1 // So we can give people division with force.

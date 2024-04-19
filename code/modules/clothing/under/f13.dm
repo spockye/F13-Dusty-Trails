@@ -1709,35 +1709,44 @@
 	item_state = "bosformgold_m"
 	item_color = "bosformgold_m"
 
-/obj/item/clothing/under/f13/atomfaithful
+// Subtype made using the same stats as a radiation suit, specifically for the Atom's Light preacher to make them immune to radiation.
+/obj/item/clothing/under/f13/atombomb
+	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	gas_transfer_coefficient = 0.9
+	permeability_coefficient = 0.5
+	clothing_flags = THICKMATERIAL
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS|HEAD
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 60, "rad" = 100, "fire" = 20, "acid" = 40)
+	// Strip delays to prevent meta maxxing.
+	strip_delay = 60
+	equip_delay_other = 60
+
+/obj/item/clothing/under/f13/atombomb/atomfaithful
 	name = "faithful attire"
 	desc = "The attire worn by those Faithful to the Division."
 	icon_state = "atomfaithful"
 	item_state = "atomfaithful"
 	item_color = "atomfaithful"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 
-/obj/item/clothing/under/f13/atomwitchunder
+/obj/item/clothing/under/f13/atombomb/atomwitchunder
 	name = "seers underclothes"
 	desc = "The underclothes of the female seers of the Division."
 	icon_state = "atomwitchunder"
 	item_state = "atomwitchunder"
 	item_color = "atomwitchunder"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
 	mutantrace_variation = STYLE_DIGITIGRADE
 
 
-/obj/item/clothing/under/f13/atombeliever
+/obj/item/clothing/under/f13/atombomb/atombeliever
 	name = "believer clothes"
 	desc = "The clothes of a true Believer in the Division."
 	icon_state = "atombeliever"
 	item_state = "atombeliever"
 	item_color = "atombeliever"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 100, "fire" = 20, "acid" = 40)
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE
