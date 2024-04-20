@@ -22490,6 +22490,7 @@
 /area/f13/building/mall)
 "rex" = (
 /obj/structure/bed/dogbed,
+/mob/living/simple_animal/hostile/molerat/ncrpet,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "reI" = (
@@ -30344,6 +30345,12 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
 	},
+/mob/living/simple_animal/pet/dog/pug{
+	real_name = "Fenty";
+	desc = "Oh! Just a normal pug, huh?";
+	name = "Fenty"
+	},
+/obj/structure/bed/dogbed,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "xiv" = (

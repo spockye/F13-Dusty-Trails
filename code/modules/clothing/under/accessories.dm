@@ -415,9 +415,9 @@
 
 /obj/item/clothing/accessory/bos/squire
 	name = "Squire pin"
-	desc = "A silver pin with blue cloth, worn by Squires."
-	icon_state = "initiateS"
-	item_color = "initiateS"
+	desc = "A silver pin with purple cloth, worn by Squires."
+	icon_state = "squire"
+	item_color = "squire"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/bos/knight
