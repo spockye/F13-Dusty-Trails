@@ -375,7 +375,7 @@ Mayor
 	access = list(ACCESS_BAR, ACCESS_FUSION, ACCESS_TOWN)
 	minimal_access = list(ACCESS_BAR)
 
-//Wasteland Preacher
+// Waystation Preacher
 /datum/job/bighorn/f13preacher
 	title = "Preacher"
 	flag = F13PREACHER
@@ -392,10 +392,17 @@ Mayor
 
 	outfit = /datum/outfit/job/bighorn/f13preacher
 
+	// Most of these loadout options are made for flavor but balanced for preacher being a single person.
+	// That said, nothing could really be considered end game. -Possum
 	loadout_options = list(
-	/datum/outfit/loadout/crusader, 	//This is kinda a given. You bet.
-	/datum/outfit/loadout/samaritan, 	//Water and food to share with the wastes.
-	/datum/outfit/loadout/cleanser		//Just some bombs.
+	/datum/outfit/loadout/rural_preacher, 	// Part preacher part farmer, good for druid types but not tribals.
+	/datum/outfit/loadout/forge_priest, 	// Kind of a mix between tech priest and wasteland smith.
+	/datum/outfit/loadout/warrior_priest,	// Finally, we can be a badass priest without roman larping.
+	/datum/outfit/loadout/gun_priest,		// Badass gunslinging priest.
+	/datum/outfit/loadout/healing_priest,	// Because religion can be more than violence.
+	/datum/outfit/loadout/monk,				// Inward perfection!
+	/datum/outfit/loadout/atom,				// Flavor from setting.
+	/datum/outfit/loadout/hubology	 		// Flavor from setting.
 	)
 
 	access = list(ACCESS_BAR, ACCESS_TOWN, ACCESS_CHAPEL_OFFICE, ACCESS_FUSION)		//we can expand on this and make alterations as people suggest different loadouts
@@ -410,32 +417,115 @@ Mayor
 	)
 
 
-
-/datum/outfit/loadout/crusader
-	name = "Crusader"
+// A preacher who tills the land and the soil, a cowboy.
+/datum/outfit/loadout/rural_preacher
+	name = "Rural Preacher"
 	backpack_contents = list(
-		/obj/item/clothing/suit/armor/knight = 1,
-		/obj/item/clothing/head/helmet/knight/red = 1,
-		/obj/item/melee/onehanded/machete = 1,
-	)
-
-/datum/outfit/loadout/samaritan
-	name = "Samaritan"
-	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/store/bread/plain = 5,
-		/obj/item/reagent_containers/food/snacks/fishmeat/salmon = 2,
-		/obj/item/reagent_containers/glass/beaker/waterbottle = 2,
 		/obj/item/nullrod = 1,
-	)	//Matthew 14:17 RSVCE and KJV - Kitsunemitsu
+		/obj/item/clothing/head/f13/cowboy = 1,
+		/obj/item/clothing/shoes/f13/cowboy = 1,
+		/obj/item/clothing/suit/f13/cowboybvest = 1,
+		/obj/item/clothing/under/f13/cowboyb = 1,
+		/obj/item/storage/belt = 1,
+		/obj/item/stack/sheet/metal/fifty = 1,
+		/obj/item/stack/sheet/mineral/wood/fifty = 1,
+		/obj/item/pickaxe/mini = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/reagent_containers/glass/bucket = 1,
+		/obj/item/storage/bag/plants/portaseeder = 1,
+		/obj/item/gun/ballistic/revolver/widowmaker = 1,
+		/obj/item/ammo_box/shotgun/buck = 1,
+		/obj/item/book/granter/trait/trekking = 1
+	) // Basically wastelander settler with a shotgun.
 
-/datum/outfit/loadout/cleanser
-	name = "Cleanser"
+// A preacher who relies on technology, a wasteland savant.
+/datum/outfit/loadout/forge_priest
+	name = "Forge Priest"
 	backpack_contents = list(
-		/obj/item/grenade/homemade/coffeepotbomb = 2,	//This is funny. I swear guys.
-		/obj/item/gun/ballistic/revolver/m29 = 1,		//Moved here for more *variety*
-		/obj/item/ammo_box/m44 = 2
-	)
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/shoes/f13/explorer = 1,
+		/obj/item/clothing/gloves/f13/blacksmith = 1,
+		/obj/item/clothing/neck/apron/labor/forge/khan = 1,
+		/obj/item/storage/belt/utility/artisan/full = 1,
+		/obj/item/clothing/glasses/welding = 1,
+		/obj/item/book/granter/trait/techno = 1
+	) // No weapons, you should be crafting them or using your null rod.
 
+// A preacher who brings god's enemies to the sword, a warrior of faith.
+/datum/outfit/loadout/warrior_priest
+	name = "Witch Hunter"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/suit/armor/riot/chaplain/witchhunter = 1,
+		/obj/item/clothing/head/helmet/chaplain/witchunter_hat = 1,
+		/obj/item/clothing/gloves/legion/plated = 1,
+		/obj/item/clothing/shoes/f13/military/plated = 1,
+		/obj/item/shield/riot/tower/scrap = 1,
+		/obj/item/book/granter/trait/bigleagues = 1
+	) // Nullrod is your melee weapon, but you get lovely armor on par with the town steel bib and heavy steel helmet with a tower shield.
+
+// A preacher who delivers lead clots to god's enemies, a gunslinger.
+/datum/outfit/loadout/gun_priest
+	name = "Iron Priest"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/grenade/homemade/coffeepotbomb = 2,
+		/obj/item/gun/ballistic/revolver/m29 = 1,
+		/obj/item/ammo_box/m44 = 2,
+		/obj/item/ammo_box/m44box = 1,
+		/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat = 1, // 10/10 drip
+		/obj/item/book/granter/trait/gunslinger = 1
+	) // Basically the cleanser but with a null rod and decent light armor.
+
+// A priest who remembers a majority of them are charitable healers, a doctor of god.
+/datum/outfit/loadout/healing_priest
+	name = "Faith Healer"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/neck/stethoscope = 1,
+		/obj/item/storage/belt/medical = 1,
+		/obj/item/reagent_containers/medspray/synthflesh = 1,
+		/obj/item/smelling_salts = 1,
+		/obj/item/healthanalyzer = 1,
+		/obj/item/reagent_containers/glass/bottle/epinephrine = 1,
+		/obj/item/storage/backpack/duffelbag/med/surgery = 1,
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/book/granter/trait/midsurgery
+	) // Wasteland doctor with a null rod.
+
+// A priest who looks inward for answers, a pious monk.
+/datum/outfit/loadout/monk
+	name = "Monk"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/shoes/f13/rag = 1,
+		/obj/item/clothing/gloves/fingerless/pugilist/chaplain = 1,
+		/obj/item/nullrod/rosary = 1,
+		/obj/item/clothing/suit/hooded/robes = 1,
+		/obj/item/book/granter/trait/iron_fist = 1
+	) // Mostly for flavor, but starting with a rosary and gloves is a really nice bonus.
+
+// Division is truth.
+/datum/outfit/loadout/atom
+	name = "Atom's Light"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/suit/armor/f13/atomzealot = 1,
+		/obj/item/clothing/under/f13/atombomb/atombeliever = 1,
+		/obj/item/grenade/f13/radiation = 2,
+		/obj/item/reagent_containers/blood/radaway = 2,
+		/obj/item/book/granter/trait/explosives = 1 // So we can give people division with force.
+	) // Mostly for flavor. The under clothes does give 100 rad protection though and the grenades could be fun if not really deadly.
+
+// For the right price, you too can be saved!
+/datum/outfit/loadout/hubology
+	name = "Hubologist"
+	backpack_contents = list(
+		/obj/item/nullrod = 1,
+		/obj/item/clothing/suit/f13/hubologist = 1,
+		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,
+		/obj/item/book/granter/trait/medical = 1 // You have some form of training to make those rad devices they use in lore.
+	) // Mostly for flavor. Hubology is heavily focused on getting caps (snrk) so you at least start with alot more.
 
 /datum/job/bighorn/f13preacher/after_spawn(mob/living/H, mob/M)
 	. = ..()
@@ -449,7 +539,7 @@ Mayor
 		B.name = GLOB.bible_name
 		B.icon_state = GLOB.bible_icon_state
 		B.item_state = GLOB.bible_item_state
-		to_chat(H, "There is already an established religion onboard the station. You are an acolyte of [GLOB.deity]. Defer to the Chaplain.")
+		to_chat(H, "There is already an established religion in these parts. You are an acolyte of [GLOB.deity]. Defer to the Preacher.")
 		H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
 		var/nrt = GLOB.holy_weapon_type || /obj/item/nullrod
 		var/obj/item/nullrod/N = new nrt(H)

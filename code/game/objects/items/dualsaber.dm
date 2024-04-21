@@ -380,8 +380,9 @@
 	parry_failed_stagger_duration = 3 SECONDS
 	parry_failed_clickcd_duration = 2 SECONDS
 
+// Force is high at 50 because this HAS to be used 2h and is useless in one hand. No armor pen, but you get a light and parry.
 /obj/item/dualsaber/hypereutactic/chaplain/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=20, \
+	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=50, \
 					wieldsound='sound/weapons/nebon.ogg', unwieldsound='sound/weapons/nebhit.ogg')
 	AddComponent(/datum/component/anti_magic, TRUE, TRUE, FALSE, null, null, FALSE)
