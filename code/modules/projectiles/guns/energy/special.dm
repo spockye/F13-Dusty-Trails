@@ -412,6 +412,8 @@
 	icon_state = "lasmusket"
 	item_state = "lasmusket"
 	fire_delay = 15
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
 	dryfire_sound = 'sound/f13weapons/noammoenergy.ogg'
 	dryfire_text = "*power failure*"
 	can_bayonet = TRUE
