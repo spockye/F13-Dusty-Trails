@@ -36,7 +36,7 @@
 //Legion specific
 #define RECIPE_LANCE "ddbs" //draw draw bend shrink
 #define RECIPE_GLADIUS "ddp" //draw draw punch
-#define RECIPE_SPATHA "fduf" // fold draw upset fold
+#define RECIPE_SPATHA "ffuf" // fold fold upset fold
 #define RECIPE_WARHONED "udsb" //upset draw shrink bend
 
 // Armor
